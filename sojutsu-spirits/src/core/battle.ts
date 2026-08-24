@@ -83,6 +83,7 @@ export interface BattleOptions {
 export type BattlePhase =
   | 'intro'
   | 'awaiting-command'
+  | 'awaiting-switch'
   | 'resolving'
   | 'finish-window'
   | 'won'
@@ -98,6 +99,16 @@ export interface BattleLogEntry {
 export interface BattleState {
   phase: BattlePhase;
   turn: number;
+  /**
+   * The player's Bound Circle, in order. `ally` is always `party[activeIndex]`.
+   *
+   * The battle holds the whole circle rather than a single spirit because
+   * `sojutsu-battle-math.md` §0 makes the party six and §6 says stages reset on switch-out —
+   * both statements are meaningless without switching, and a one-spirit battle makes the
+   * Aspect chart decorative.
+   */
+  party: Fighter[];
+  activeIndex: number;
   ally: Fighter;
   foe: Fighter;
   log: BattleLogEntry[];
@@ -125,14 +136,29 @@ export class Battle {
   private readonly dex: BattleDex;
   private readonly opts: BattleOptions;
 
-  constructor(dex: BattleDex, ally: SpiritInstance, foe: SpiritInstance, opts: BattleOptions) {
+  constructor(
+    dex: BattleDex,
+    party: SpiritInstance | SpiritInstance[],
+    foe: SpiritInstance,
+    opts: BattleOptions,
+  ) {
     this.dex = dex;
     this.opts = opts;
     this.rng = new Rng(opts.seed);
+
+    const members = (Array.isArray(party) ? party : [party]).slice(0, 6);
+    if (members.length === 0) throw new Error('Battle: the Bound Circle is empty');
+    const fighters = members.map((m) => this.makeFighter('ally', m));
+    // Lead with the first spirit still standing.
+    const lead = Math.max(0, fighters.findIndex((f) => f.instance.currentHp > 0));
+    fighters[lead]!.participated = true;
+
     this.state = {
       phase: 'intro',
       turn: 0,
-      ally: this.makeFighter('ally', ally),
+      party: fighters,
+      activeIndex: lead,
+      ally: fighters[lead]!,
       foe: this.makeFighter('foe', foe),
       log: [],
       chain: 0,
@@ -229,16 +255,58 @@ export class Battle {
       case 'move':
         this.resolveTurnWithMove(command);
         break;
+      case 'switch':
+        // §8: switching resolves before all attacks. It costs the turn, which is what makes
+        // a switch a real decision rather than a free look at the matchup.
+        if (this.switchTo(command.uid)) this.foeTurn();
+        break;
       case 'bind':
       case 'sever':
-      case 'switch':
-        // Binding is only legal in the Finish window; switching is not modelled in v1's
-        // single-spirit encounters and falls through to the foe's turn.
+        // Binding is only legal in the Finish window.
         this.foeTurn();
         break;
     }
 
     this.endOfTurn();
+  }
+
+  /**
+   * Swaps the active spirit.
+   *
+   * §6: stages reset on switch-out, and §7 resets the Venom counter with them. Both are done
+   * here rather than at the call site so no caller can forget.
+   */
+  private switchTo(uid: string): boolean {
+    const index = this.state.party.findIndex((f) => f.instance.uid === uid);
+    if (index < 0) {
+      this.say('No such spirit in the Circle.', 'system');
+      return false;
+    }
+    if (index === this.state.activeIndex) {
+      this.say(`${this.state.ally.species.name} is already out.`, 'system');
+      return false;
+    }
+    const next = this.state.party[index]!;
+    if (next.instance.currentHp <= 0) {
+      this.say(`${next.species.name} cannot fight.`, 'system');
+      return false;
+    }
+
+    const leaving = this.state.ally;
+    leaving.stages = freshStages();
+    onSwitchOut(leaving.status);
+    leaving.charging = null;
+
+    this.state.activeIndex = index;
+    this.state.ally = next;
+    next.participated = true;
+    this.say(`${leaving.species.name} steps back. ${next.species.name} steps up.`, 'system');
+    return true;
+  }
+
+  /** Spirits that could still be sent out. */
+  availableSwitches(): Fighter[] {
+    return this.state.party.filter((f, i) => i !== this.state.activeIndex && f.instance.currentHp > 0);
   }
 
   private resolveTurnWithMove(cmd: Extract<BattleCommand, { kind: 'move' }>): void {
@@ -576,11 +644,31 @@ export class Battle {
 
     if (ally.instance.currentHp <= 0) {
       this.say(`${ally.species.name} can fight no more.`, 'faint');
+      if (this.availableSwitches().length > 0) {
+        // The Circle is not spent — the player chooses who steps up next.
+        this.state.phase = 'awaiting-switch';
+        return true;
+      }
       this.state.phase = 'lost';
       return true;
     }
 
     return false;
+  }
+
+  /** Sends out a replacement after a faint. Free — it does not cost a turn. */
+  sendOut(uid: string): boolean {
+    if (this.state.phase !== 'awaiting-switch') return false;
+    // The fainted spirit is not "switched out"; it is replaced, so skip the stage reset dance.
+    const index = this.state.party.findIndex((f) => f.instance.uid === uid);
+    const next = index >= 0 ? this.state.party[index] : undefined;
+    if (!next || next.instance.currentHp <= 0) return false;
+    this.state.activeIndex = index;
+    this.state.ally = next;
+    next.participated = true;
+    this.say(`${next.species.name} steps up.`, 'system');
+    this.state.phase = 'awaiting-command';
+    return true;
   }
 
   /* -------------------------------------------------------- finish window */
@@ -626,21 +714,27 @@ export class Battle {
 
   private awardSpoils(): void {
     const foe = this.state.foe;
-    const ally = this.state.ally;
 
-    this.state.xpPending = xpAward(foe.species.baseExpYield, foe.instance.level, 1, false);
-    ally.instance.xp += this.state.xpPending;
-    awardResonance(ally.instance.resonance, foe.species);
+    // §10: XP is split between participants, and every participant banks Resonance.
+    const participants = this.state.party.filter((f) => f.participated && f.instance.currentHp > 0);
+    const share = participants.length > 0 ? participants : [this.state.ally];
+    this.state.xpPending = xpAward(foe.species.baseExpYield, foe.instance.level, share.length, false);
 
-    const before = ally.instance.level;
-    const after = levelFromXp(ally.species.growth, ally.instance.xp);
-    if (after > before) {
-      ally.instance.level = after;
-      this.say(`${ally.species.name} reached Lv ${after}.`, 'system');
-      const evo = checkEvolution(ally.species, after, true);
-      if (evo.evolves && evo.into) {
-        this.say(`${ally.species.name} is changing shape...`, 'system');
-        ally.instance.species = evo.into;
+    for (const member of share) {
+      member.instance.xp += this.state.xpPending;
+      awardResonance(member.instance.resonance, foe.species);
+
+      const before = member.instance.level;
+      const after = levelFromXp(member.species.growth, member.instance.xp);
+      if (after > before) {
+        member.instance.level = after;
+        this.say(`${member.species.name} reached Lv ${after}.`, 'system');
+        const evo = checkEvolution(member.species, after, true);
+        if (evo.evolves && evo.into) {
+          this.say(`${member.species.name} is changing shape...`, 'system');
+          member.instance.species = evo.into;
+          member.species = this.dex.species(evo.into);
+        }
       }
     }
 
@@ -672,7 +766,7 @@ export class Battle {
 
   /** Applies the volatile battle state back onto the persistent instances. */
   commit(): void {
-    for (const f of [this.state.ally, this.state.foe]) {
+    for (const f of [...this.state.party, this.state.foe]) {
       f.instance.status = f.status.kind;
       f.instance.venomTurns = f.status.venomTurns;
       f.instance.sleepTurns = f.status.sleepTurns;

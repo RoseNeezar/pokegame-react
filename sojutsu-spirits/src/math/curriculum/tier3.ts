@@ -12,9 +12,15 @@
  *    grams, millilitres, minutes — so the thing typed is a whole number. This is not a
  *    simplification of the curriculum; converting "3.4 kg" into "34 hundred-gram weights" is
  *    the decimal understanding being tested.
- * 2. **A question must survive without its picture.** The bar-chart prompts print their own
- *    data and the solid-identification prompt numbers its own options, so the equation strip is
- *    answerable on its own and `visual` is an enrichment, never a dependency.
+ * 2. **A question must survive without its picture — with one honest exception.** The bar-chart
+ *    prompts print their own data, numbered where the reading needs numbering, so the equation
+ *    strip is answerable on its own and the picture is an enrichment. `solid-identify` is the
+ *    exception and cannot be anything else: its answer is *which drawn shape*, so the picture is
+ *    the question and the strip only names the target. Numbering the option names in the prompt
+ *    would make the picture decorative and turn shape recognition into text matching, which is
+ *    not the skill p21 is about. Two consequences follow, and both are pinned by tests: the
+ *    renderer must draw the `shapes` visual for this kind, and two `solid-identify` questions can
+ *    share a prompt (and therefore an id — see `questionId`) while having different answers.
  */
 import type { Rng } from '../../core/rng.ts';
 import type { QuestionDraft, QuestionTemplate } from '../question.ts';
@@ -147,12 +153,16 @@ function clockInterval(rng: Rng): QuestionDraft {
   const start = `${pad2(startHour)}:${pad2(startMinute)}`;
   const end = `${pad2(Math.floor(endTotal / 60) % 24)}:${pad2(endTotal % 60)}`;
 
-  // Two workings, because there are two methods: bridge the hour, or stay inside it.
+  // Three workings, because there are three cases, and claiming the wrong one teaches the wrong
+  // method: landing exactly on the hour is neither "stay inside the hour" nor "and then some".
   const toNextHour = 60 - startMinute;
+  const nextHour = `${pad2((startHour + 1) % 24)}:00`;
   const explain =
     duration > toNextHour
-      ? `${start} to ${pad2((startHour + 1) % 24)}:00 is ${toNextHour} min, then ${duration - toNextHour} min more. ${toNextHour} ${OP.plus} ${duration - toNextHour} = ${duration} min.`
-      : `Both times sit in the same hour: ${startMinute + duration} ${OP.minus} ${startMinute} = ${duration} min.`;
+      ? `${start} to ${nextHour} is ${toNextHour} min, then ${duration - toNextHour} min more. ${toNextHour} ${OP.plus} ${duration - toNextHour} = ${duration} min.`
+      : duration === toNextHour
+        ? `${start} runs exactly to ${nextHour}: ${toNextHour} min.`
+        : `Both times sit in the same hour: ${startMinute + duration} ${OP.minus} ${startMinute} = ${duration} min.`;
 
   return {
     kind: 'clock-interval',

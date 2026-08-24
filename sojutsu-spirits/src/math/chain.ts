@@ -77,10 +77,12 @@ export function chainMultiplier(chain: number): number {
 }
 
 /**
- * What the HUD's chain counter reads.
+ * Floors a weighted chain to an integer.
  *
- * The chain bar is an integer readout — the manga counts links, it does not count decimals —
- * so the float is floored for display only. `raw` stays authoritative for damage.
+ * The HUD does *not* use this. What the player sees is the count of consecutive solves
+ * (`ChainState.links`), because CRG weights how much a solve is worth, not whether it happened
+ * — and telling a player who answered correctly that their chain is still zero would be a lie.
+ * This remains for anything that genuinely needs the weighted value as a whole number.
  */
 export function displayChain(rawChain: number): number {
   return Math.floor(Math.max(0, rawChain));
@@ -162,14 +164,28 @@ export function answerTimeMs(move: MoveDef, tier: 1 | 2 | 3 = move.engine.mathTi
  * readout, and no UI can mutate the number that damage is computed from.
  */
 export class ChainState {
-  /** The authoritative, possibly fractional, chain. */
+  /** The authoritative, possibly fractional, chain that damage is computed from. */
   readonly raw: number;
   /** The longest raw chain reached in this battle. Survives a drop — that is the point. */
   readonly best: number;
+  /**
+   * Consecutive correct solves. This, not `raw`, is what the player sees.
+   *
+   * The two are separate on purpose. CRG weights how much a move's solve is *worth*, so a
+   * cheap utility move at crg 0.8 contributes 0.8 to `raw` — but a player who answers
+   * correctly and is told their chain is still zero has been lied to. The manga counts
+   * solves ("your chain broke at seven", "I drop them at nine now"), so the display counts
+   * solves and the multiplier carries the weighting.
+   */
+  readonly links: number;
+  /** The longest run of solves this battle. */
+  readonly bestLinks: number;
 
-  constructor(raw = 0, best = 0) {
+  constructor(raw = 0, best = 0, links = 0, bestLinks = 0) {
     this.raw = round4(Math.max(0, raw));
     this.best = round4(Math.max(this.raw, best));
+    this.links = Math.max(0, Math.floor(links));
+    this.bestLinks = Math.max(this.links, Math.floor(bestLinks));
   }
 
   /** A fresh chain. */
@@ -177,14 +193,25 @@ export class ChainState {
     return new ChainState();
   }
 
-  /** The integer the HUD shows. */
+  /**
+   * A chain of `links` plain solves — the state a player would be in mid-run.
+   *
+   * Saves callers (and tests) from having to keep `raw` and `links` consistent by hand, which
+   * is the one way to construct a state the game itself can never produce.
+   */
+  static held(links: number, best = links, weightPerLink = CHAIN_GAIN_PER_SOLVE): ChainState {
+    const n = Math.max(0, Math.floor(links));
+    return new ChainState(n * weightPerLink, Math.max(n, best) * weightPerLink, n, Math.max(n, best));
+  }
+
+  /** The integer the HUD shows: how many in a row you have held. */
   get display(): number {
-    return displayChain(this.raw);
+    return this.links;
   }
 
   /** The integer the post-battle "best chain" line shows. */
   get bestDisplay(): number {
-    return displayChain(this.best);
+    return this.bestLinks;
   }
 
   /** The damage multiplier this chain is currently worth. */
@@ -204,10 +231,15 @@ export class ChainState {
     return this.add(mods.chainGain);
   }
 
-  /** Adds raw links. Used by `solve` and by anything that awards chain outside a move. */
-  add(links: number): ChainState {
-    if (links <= 0) return this;
-    return new ChainState(this.raw + links, this.best);
+  /**
+   * Adds one link, worth `weight` toward the multiplier.
+   *
+   * The link count always rises by exactly one — a solve is a solve — while the weight is what
+   * CRG scales.
+   */
+  add(weight: number): ChainState {
+    if (weight <= 0) return this;
+    return new ChainState(this.raw + weight, this.best, this.links + 1, this.bestLinks);
   }
 
   /**
@@ -218,7 +250,7 @@ export class ChainState {
    * here that makes a drop cost more than the multiplier breaks the game's design pillar.
    */
   drop(): ChainState {
-    if (this.raw === 0) return this;
-    return new ChainState(0, this.best);
+    if (this.raw === 0 && this.links === 0) return this;
+    return new ChainState(0, this.best, 0, this.bestLinks);
   }
 }

@@ -15,6 +15,7 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { existsSync, readdirSync } from 'node:fs';
 import { join, extname, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { KEYPAD } from '../../src/game/layout.ts';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const DIST = join(ROOT, 'dist');
@@ -230,8 +231,14 @@ async function main(): Promise<void> {
     }
 
     // Pick the first move; the question strip and keypad should appear.
+    await waitFor(
+      page,
+      `window.__SOJUTSU__.scene.getScene('Battle').phase === 'choosing'`,
+      8000,
+    );
     await tapLogical(page, 140, 800);
-    await page.waitForTimeout(700);
+    await waitFor(page, `window.__SOJUTSU__.scene.getScene('Battle').phase === 'question'`, 5000);
+    await page.waitForTimeout(350);
     await shot(page, '06-math-combat');
 
     const question = await probe<{ prompt: string; answer: number } | null>(
@@ -252,8 +259,29 @@ async function main(): Promise<void> {
 
     // Answer correctly via the on-screen keypad, then drive the fight to the Finish window.
     if (question) {
+      const chainBefore = await probe<number>(
+        page,
+        `window.__SOJUTSU__.scene.getScene('Battle').battle.state.chain`,
+      );
       await typeAnswer(page, question.answer);
-      await page.waitForTimeout(1200);
+      await waitFor(
+        page,
+        `window.__SOJUTSU__.scene.getScene('Battle').phase !== 'question'`,
+        6000,
+      );
+      const chainAfter = await probe<number>(
+        page,
+        `window.__SOJUTSU__.scene.getScene('Battle').battle.state.chain`,
+      );
+      if (chainAfter <= chainBefore) {
+        problems.push({
+          where: 'math',
+          detail: `a correct answer did not advance the chain (${chainBefore} -> ${chainAfter})`,
+        });
+      } else {
+        step(`correct answer advanced the chain to ${chainAfter}`);
+      }
+      await page.waitForTimeout(900);
       await shot(page, '07-after-solve');
     }
 
@@ -269,7 +297,24 @@ async function main(): Promise<void> {
 
     const reachedFinish = await driveToFinish(page);
     if (!reachedFinish) {
-      problems.push({ where: 'finish', detail: 'never reached the Finish window' });
+      const why = await probe<unknown>(
+        page,
+        `(() => {
+           const b = window.__SOJUTSU__.scene.getScene('Battle');
+           if (!b) return { battleScene: 'stopped' };
+           return {
+             ui: b.phase,
+             engine: b.battle ? b.battle.state.phase : 'none',
+             foeHp: b.battle ? b.battle.state.foe.instance.currentHp : -1,
+             allyHp: b.battle ? b.battle.state.ally.instance.currentHp : -1,
+             log: b.battle ? b.battle.state.log.slice(-6).map((l) => l.text) : [],
+           };
+         })()`,
+      );
+      problems.push({
+        where: 'finish',
+        detail: `never reached the Finish window — ${JSON.stringify(why)}`,
+      });
     } else {
       step('reached the Finish window');
       // The deck morphs on the overlay's own timeline, not the engine's, so wait for the
@@ -320,6 +365,45 @@ async function main(): Promise<void> {
       step('menu and report card render');
     } else {
       problems.push({ where: 'menu', detail: 'Menu scene never opened' });
+    }
+
+    /* ------------------------------------------------------- other biomes */
+
+    // The starting route is one biome out of eight. A town, a shrine and a cavern each use a
+    // different terrain map, prop set and encounter rule, and each is a chance for a zone to
+    // throw on entry — which the console listener would catch.
+    await probe(page, `(() => { window.__SOJUTSU__.scene.getScene('Menu').scene.stop(); return true; })()`);
+    await page.waitForTimeout(300);
+
+    for (const [zoneId, shotName] of [
+      ['rantings-rest', '11-town'],
+      ['shrine-thicket', '12-shrine'],
+      ['echo-cavern', '13-cavern'],
+    ] as const) {
+      await probe(
+        page,
+        `(() => {
+           const g = window.__SOJUTSU__;
+           g.scene.getScene('World').scene.restart({
+             state: g.registry.get('state'),
+             zone: ${JSON.stringify(zoneId)},
+           });
+           return true;
+         })()`,
+      );
+      const arrived = await waitFor(
+        page,
+        `window.__SOJUTSU__.registry.get('state').zone === ${JSON.stringify(zoneId)}` +
+          ` && window.__SOJUTSU__.scene.isActive('World')`,
+        8000,
+      );
+      if (!arrived) {
+        problems.push({ where: 'zones', detail: `could not enter ${zoneId}` });
+        continue;
+      }
+      await page.waitForTimeout(1200);
+      await shot(page, shotName);
+      step(`rendered ${zoneId}`);
     }
   } finally {
     await context.close();
@@ -442,43 +526,75 @@ async function tapText(page: Page, needle: string): Promise<void> {
   await tapLogical(page, pos.x, pos.y);
 }
 
-/** Types a number on the in-game keypad — the same taps a player would make. */
-async function typeAnswer(page: Page, answer: number): Promise<void> {
-  const digits = String(answer).split('');
-  const keyPos: Record<string, [number, number]> = {
-    '1': [96, 738],
-    '2': [270, 738],
-    '3': [444, 738],
-    '4': [96, 820],
-    '5': [270, 820],
-    '6': [444, 820],
-    '7': [96, 902],
-    '8': [270, 902],
-    '9': [444, 902],
-    '0': [270, 984],
+/**
+ * Types a number on the in-game keypad — the same taps a player would make.
+ *
+ * Key centres are computed from the game's own layout constants rather than hardcoded. They
+ * were hardcoded once, drifted by a row, and the harness spent a whole run reporting that
+ * questions were being answered while every tap missed the pad and the timer ran out instead.
+ * A verification harness that cannot fail loudly is worse than none.
+ */
+function keyCentre(row: number, col: number): { x: number; y: number } {
+  return {
+    x: KEYPAD.origin.x + col * (KEYPAD.keyWidth + KEYPAD.gapX) + KEYPAD.keyWidth / 2,
+    y: KEYPAD.origin.y + row * (KEYPAD.keyHeight + KEYPAD.gapY) + KEYPAD.keyHeight / 2,
   };
-  for (const d of digits) {
-    const p = keyPos[d];
-    if (!p) continue;
-    await tapLogical(page, p[0], p[1]);
-    await page.waitForTimeout(90);
-  }
-  await tapLogical(page, 444, 984); // OK
 }
 
-/** Keeps taking turns until the battle reaches the Finish window or gives up. */
+/** Same order as ControlDeck.KEYS: 1-9, then backspace, 0, OK. */
+const KEY_POSITION: Record<string, { x: number; y: number }> = {
+  '1': keyCentre(0, 0),
+  '2': keyCentre(0, 1),
+  '3': keyCentre(0, 2),
+  '4': keyCentre(1, 0),
+  '5': keyCentre(1, 1),
+  '6': keyCentre(1, 2),
+  '7': keyCentre(2, 0),
+  '8': keyCentre(2, 1),
+  '9': keyCentre(2, 2),
+  '\u232b': keyCentre(3, 0),
+  '0': keyCentre(3, 1),
+  OK: keyCentre(3, 2),
+};
+
+async function typeAnswer(page: Page, answer: number): Promise<void> {
+  for (const d of String(answer).split('')) {
+    const p = KEY_POSITION[d];
+    if (!p) continue;
+    await tapLogical(page, p.x, p.y);
+    await page.waitForTimeout(80);
+  }
+  const ok = KEY_POSITION['OK']!;
+  await tapLogical(page, ok.x, ok.y);
+}
+
+/**
+ * Keeps taking turns until the battle reaches the Finish window.
+ *
+ * The engine and the presentation run on different clocks: the core battle can be back at
+ * `awaiting-command` while the overlay is still playing the banner from the last turn. Tapping
+ * during that gap does nothing and silently burns an attempt, so every step waits for the
+ * *overlay* to say it is ready rather than for the engine.
+ */
 async function driveToFinish(page: Page): Promise<boolean> {
-  for (let i = 0; i < 14; i++) {
-    const phase = await probe<string>(
-      page,
-      `(() => { const b = window.__SOJUTSU__.scene.getScene('Battle'); return b && b.battle ? b.battle.state.phase : 'gone'; })()`,
-    );
-    if (phase === 'finish-window') return true;
+  const overlayPhase = `(() => { const b = window.__SOJUTSU__.scene.getScene('Battle'); return b ? b.phase : 'gone'; })()`;
+  const enginePhase = `(() => { const b = window.__SOJUTSU__.scene.getScene('Battle'); return b && b.battle ? b.battle.state.phase : 'gone'; })()`;
+
+  for (let i = 0; i < 16; i++) {
+    if (await waitFor(page, `${overlayPhase} === 'finish'`, 250)) return true;
+
+    const phase = await probe<string>(page, enginePhase);
     if (phase === 'gone' || phase === 'lost' || phase === 'won') return false;
 
-    // Choose the first move, then answer whatever it asks — correctly when we can read it.
+    // Wait for the move list to actually be on screen before tapping it.
+    if (!(await waitFor(page, `${overlayPhase} === 'choosing'`, 6000))) {
+      if (await waitFor(page, `${overlayPhase} === 'finish'`, 3000)) return true;
+      continue;
+    }
+
     await tapLogical(page, 140, 800);
-    await page.waitForTimeout(500);
+    if (!(await waitFor(page, `${overlayPhase} === 'question'`, 4000))) continue;
+
     const q = await probe<{ answer: number } | null>(
       page,
       `(() => {
@@ -488,7 +604,7 @@ async function driveToFinish(page: Page): Promise<boolean> {
        })()`,
     );
     if (q) await typeAnswer(page, q.answer);
-    await page.waitForTimeout(1500);
+    await waitFor(page, `${overlayPhase} !== 'question'`, 5000);
   }
   return false;
 }

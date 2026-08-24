@@ -363,3 +363,207 @@ const NEIGHBOURS: ReadonlyArray<readonly [number, number]> = [
   [0, 1],
   [0, -1],
 ];
+
+/* ------------------------------------------------------------- seamless */
+
+export interface SeamlessOptions {
+  /** How many pixels either side of the seam are rebuilt. */
+  readonly band?: number;
+  /** Deterministic dither seed. */
+  readonly seed?: number;
+}
+
+/**
+ * Makes a tile actually tile.
+ *
+ * `seamless: true` in the asset plan is a *request* to the generator, and generators do not
+ * honour it. PixelLab returns a handsome 32 × 32 sprite — with its own dark border, because it
+ * is drawing a sprite. Repeated across a field, that border is a lattice, and the map reads as
+ * a grid of tiles rather than as ground.
+ *
+ * Two steps:
+ *
+ *  1. **Roll** by half the width and height. Afterwards column 0 holds what used to be column
+ *     w/2 and column w−1 holds what used to be column w/2 − 1 — *adjacent columns in the
+ *     original* — so the new outer edges match each other by construction. The old border has
+ *     moved to a cross through the middle, where it can be dealt with.
+ *  2. **Clone over that cross** with clean texture taken from outside the band, jittered so the
+ *     repeat is not obvious.
+ *
+ * The clone matters. An earlier version merely dithered the two sides of the seam into each
+ * other, which mixes a dark border with a dark border and leaves the lattice exactly where it
+ * was, only offset by half a tile. You cannot blend away a line that is present on both sides;
+ * you have to replace it.
+ */
+export function makeSeamless(img: RawImage, options: SeamlessOptions = {}): RawImage {
+  const { width: w, height: h } = img;
+  if (w < 12 || h < 12) return cloneImage(img);
+
+  const band = Math.max(2, Math.min(options.band ?? Math.round(Math.min(w, h) / 8), Math.floor(Math.min(w, h) / 6)));
+  const hx = Math.floor(w / 2);
+  const hy = Math.floor(h / 2);
+  const seed = options.seed ?? 0x5eed;
+
+  // 1. Roll.
+  const rolled = blankImage(w, h);
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      copy(rolled, x, y, img, (x + hx) % w, (y + hy) % h);
+    }
+  }
+
+  // 2. Clone clean texture over the cross, reading from a frozen copy.
+  const source = cloneImage(rolled);
+  const jitter = (x: number, y: number, salt: number): number => {
+    let n = (x * 374761393 + y * 668265263 + seed + salt) >>> 0;
+    n = Math.imul(n ^ (n >>> 13), 1274126177) >>> 0;
+    return n % 3; // −1, 0 or +1 after the shift below
+  };
+
+  const inCross = (x: number, y: number): boolean =>
+    Math.abs(x - hx) < band + 1 || Math.abs(y - hy) < band + 1;
+
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      if (!inCross(x, y)) continue;
+
+      // Reach past the band to unspoiled texture, on whichever side this pixel sits.
+      let sx = x;
+      let sy = y;
+      if (Math.abs(x - hx) < band + 1) {
+        const dir = x < hx ? -1 : 1;
+        sx = x + dir * (2 * band + 2) + (jitter(x, y, 1) - 1);
+      }
+      if (Math.abs(y - hy) < band + 1) {
+        const dir = y < hy ? -1 : 1;
+        sy = y + dir * (2 * band + 2) + (jitter(x, y, 2) - 1);
+      }
+
+      // Wrap rather than clamp: the rolled image already tiles, so wrapping stays in texture.
+      sx = ((sx % w) + w) % w;
+      sy = ((sy % h) + h) % h;
+      // Never sample the cross itself, or the border comes straight back.
+      if (inCross(sx, sy)) {
+        sx = ((x + hx + band) % w + w) % w;
+        sy = ((y + hy + band) % h + h) % h;
+        if (inCross(sx, sy)) continue;
+      }
+      copy(rolled, x, y, source, sx, sy);
+    }
+  }
+
+  return rolled;
+}
+
+function copy(dst: RawImage, dx: number, dy: number, src: RawImage, sx: number, sy: number): void {
+  const from = (sy * src.width + sx) * 4;
+  const to = (dy * dst.width + dx) * 4;
+  dst.data[to] = src.data[from]!;
+  dst.data[to + 1] = src.data[from + 1]!;
+  dst.data[to + 2] = src.data[from + 2]!;
+  dst.data[to + 3] = src.data[from + 3]!;
+}
+
+/* -------------------------------------------------------- hue stripping */
+
+export interface StripHueOptions {
+  /** Hue window to remove, in degrees. Greens are roughly 70°–170°. */
+  readonly fromHue: number;
+  readonly toHue: number;
+  /** Ignore near-grey pixels, which have an unstable hue. */
+  readonly minSaturation?: number;
+}
+
+/**
+ * Removes one hue band from a tile, keeping its texture.
+ *
+ * A generator asked for "packed wet dirt footpath" reliably draws the *verges* as well as the
+ * path, because that is what a path looks like in a picture. Repeated across a road, those
+ * verges read as green stripes rather than as ground — the tile is describing a scene when it
+ * needs to describe a surface.
+ *
+ * Regenerating does not fix it (three prompts, three sets of hedges), and falling back to flat
+ * noise throws away the gravel and cart ruts that make the tile worth having. So the vegetation
+ * is removed by hue instead: every offending pixel is replaced with the tile's own dominant
+ * remaining colour, re-lit to its original brightness. The texture survives; the hedges do not.
+ */
+export function stripHue(img: RawImage, options: StripHueOptions): RawImage {
+  const { fromHue, toHue } = options;
+  const minSat = options.minSaturation ?? 0.18;
+  const out = cloneImage(img);
+
+  // The dominant colour among the pixels we are keeping, so the fill matches the tile.
+  const buckets = new Map<string, { n: number; r: number; g: number; b: number }>();
+  for (let i = 0; i < img.data.length; i += 4) {
+    const r = img.data[i]!;
+    const g = img.data[i + 1]!;
+    const b = img.data[i + 2]!;
+    if (img.data[i + 3]! < 8) continue;
+    if (inHueBand(r, g, b, fromHue, toHue, minSat)) continue;
+    const key = `${r >> 4},${g >> 4},${b >> 4}`;
+    const e = buckets.get(key) ?? { n: 0, r: 0, g: 0, b: 0 };
+    e.n += 1;
+    e.r += r;
+    e.g += g;
+    e.b += b;
+    buckets.set(key, e);
+  }
+
+  let best = { n: 0, r: 128, g: 110, b: 90 };
+  for (const e of buckets.values()) if (e.n > best.n) best = e;
+  const fill =
+    best.n > 0
+      ? { r: best.r / best.n, g: best.g / best.n, b: best.b / best.n }
+      : { r: 128, g: 110, b: 90 };
+  const fillLuma = luma(fill.r, fill.g, fill.b) || 1;
+
+  for (let i = 0; i < out.data.length; i += 4) {
+    const r = out.data[i]!;
+    const g = out.data[i + 1]!;
+    const b = out.data[i + 2]!;
+    if (out.data[i + 3]! < 8) continue;
+    if (!inHueBand(r, g, b, fromHue, toHue, minSat)) continue;
+
+    // Keep the pixel's own brightness so ruts, shadows and highlights are preserved.
+    const scale = Math.max(0.35, Math.min(1.6, luma(r, g, b) / fillLuma));
+    out.data[i] = clamp255(fill.r * scale);
+    out.data[i + 1] = clamp255(fill.g * scale);
+    out.data[i + 2] = clamp255(fill.b * scale);
+  }
+
+  return out;
+}
+
+function luma(r: number, g: number, b: number): number {
+  return 0.299 * r + 0.587 * g + 0.114 * b;
+}
+
+function clamp255(v: number): number {
+  return Math.max(0, Math.min(255, Math.round(v)));
+}
+
+function inHueBand(
+  r: number,
+  g: number,
+  b: number,
+  fromHue: number,
+  toHue: number,
+  minSat: number,
+): boolean {
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  if (max === 0) return false;
+  const sat = (max - min) / max;
+  if (sat < minSat) return false;
+
+  const d = max - min;
+  if (d === 0) return false;
+  let hue: number;
+  if (max === r) hue = ((g - b) / d) % 6;
+  else if (max === g) hue = (b - r) / d + 2;
+  else hue = (r - g) / d + 4;
+  hue *= 60;
+  if (hue < 0) hue += 360;
+
+  return hue >= fromHue && hue <= toHue;
+}

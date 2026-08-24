@@ -71,6 +71,14 @@ export interface TileFrame {
   readonly overhead?: boolean;
   /** Tiles must tile; props must not be treated as seamless. */
   readonly seamless: boolean;
+  /**
+   * Remove the green hue band from the source art.
+   *
+   * Set where the generator baked vegetation into a surface tile — it draws the verges of a
+   * road as readily as the road, and repeated across a map those verges read as stripes.
+   * See `stripHue()` in pixel-ops.
+   */
+  readonly stripGreens?: boolean;
 }
 
 export interface UiFrame {
@@ -143,7 +151,18 @@ export const TILE_FRAMES: readonly TileFrame[] = [
   { frame: 'tiles/grass-0', file: 'tiles/grass-0.png', size: 32, region: 'R1-meadow', seamless: true },
   { frame: 'tiles/grass-1', file: 'tiles/grass-1.png', size: 32, region: 'R2-riverside', seamless: true },
   { frame: 'tiles/grass-2', file: 'tiles/grass-2.png', size: 32, region: 'R3-highland', seamless: true },
-  { frame: 'tiles/dirt-path-0', file: 'tiles/dirt-path-0.png', size: 32, region: 'R1-meadow', seamless: true },
+  { frame: 'tiles/tall-grass-0', file: 'tiles/tall-grass-0.png', size: 32, region: 'R1-meadow', seamless: true },
+  { frame: 'tiles/tall-grass-1', file: 'tiles/tall-grass-1.png', size: 32, region: 'R2-riverside', seamless: true },
+  { frame: 'tiles/tall-grass-2', file: 'tiles/tall-grass-2.png', size: 32, region: 'R3-highland', seamless: true },
+  {
+    frame: 'tiles/dirt-path-0',
+    file: 'tiles/dirt-path-0.png',
+    size: 32,
+    region: 'R1-meadow',
+    seamless: true,
+    // The generator draws verges on every road it is asked for. See stripHue().
+    stripGreens: true,
+  },
   { frame: 'tiles/dirt-path-1', file: 'tiles/dirt-path-1.png', size: 32, region: 'R3-highland', seamless: true },
   { frame: 'tiles/stone-0', file: 'tiles/stone-0.png', size: 32, region: 'R3-highland', seamless: true },
   { frame: 'tiles/stone-1', file: 'tiles/stone-1.png', size: 32, region: null, seamless: true },
@@ -152,6 +171,13 @@ export const TILE_FRAMES: readonly TileFrame[] = [
   // Reeds are a clump you stand beside, not a floor you stand on — a prop, so it gets cut out.
   { frame: 'tiles/reeds-0', file: 'tiles/reeds-0.png', size: 32, region: 'R2-riverside', seamless: false },
   { frame: 'tiles/bridge-planks-0', file: 'tiles/bridge-planks-0.png', size: 32, region: 'R2-riverside', seamless: true },
+  { frame: 'tiles/bush-0', file: 'tiles/bush-0.png', size: 32, region: null, seamless: false },
+  { frame: 'tiles/bush-1', file: 'tiles/bush-1.png', size: 32, region: 'R3-highland', seamless: false },
+  { frame: 'tiles/flower-0', file: 'tiles/flower-0.png', size: 32, region: null, seamless: false },
+  { frame: 'tiles/stump-0', file: 'tiles/stump-0.png', size: 32, region: null, seamless: false },
+  { frame: 'tiles/crate-0', file: 'tiles/crate-0.png', size: 32, region: null, seamless: false },
+  { frame: 'tiles/house-0', file: 'tiles/house-0.png', size: 96, region: null, seamless: false, overhead: true },
+  { frame: 'tiles/house-1', file: 'tiles/house-1.png', size: 96, region: null, seamless: false, overhead: true },
   { frame: 'tiles/rock-0', file: 'tiles/rock-0.png', size: 32, region: null, seamless: false },
   { frame: 'tiles/rock-1', file: 'tiles/rock-1.png', size: 64, region: 'R3-highland', seamless: false },
   { frame: 'tiles/waystone-0', file: 'tiles/waystone-0.png', size: 64, region: 'R1-meadow', seamless: false },
@@ -171,8 +197,24 @@ export const TILE_FRAMES: readonly TileFrame[] = [
 const TILE_PROMPTS: Readonly<Record<string, string>> = {
   'tiles/grass-0.png': 'lush wet meadow grass with tiny pale wildflowers, ' + TILE_STYLE,
   'tiles/grass-1.png': 'damp riverbank grass with silt and scattered pebbles, ' + TILE_STYLE,
+  // Tall grass is where wild spirits are met, so it has to read as *different* from the plain
+  // ground beside it at a glance, not merely as a slightly darker green.
+  'tiles/tall-grass-0.png':
+    'dense tall meadow grass, long upright blades filling the whole square, much darker and ' +
+    'taller than short lawn grass, flat repeating swatch, no horizon, no scene, ' + TILE_STYLE,
+  'tiles/tall-grass-1.png':
+    'dense tall riverbank sedge, long wet upright blades filling the whole square, ' +
+    'flat repeating swatch, no horizon, no scene, ' + TILE_STYLE,
+  'tiles/tall-grass-2.png':
+    'coarse tall highland tussock grass, long wind-bent blades filling the whole square, ' +
+    'flat repeating swatch, no horizon, no scene, ' + TILE_STYLE,
   'tiles/grass-2.png': 'sparse highland turf over cold grey bedrock, ' + TILE_STYLE,
-  'tiles/dirt-path-0.png': 'packed wet dirt footpath with shallow puddles and cart ruts, ' + TILE_STYLE,
+  // Rewritten after the first pass drew hedgerows down both sides of the path: repeated across
+  // a road, that reads as green stripes rather than as ground.
+  'tiles/dirt-path-0.png':
+    'flat repeating swatch of packed wet brown earth with fine gravel and shallow puddles, ' +
+    'bare soil only, no plants, no grass, no leaves, no edges, no horizon, no scene, ' +
+    TILE_STYLE,
   // Rewritten after the first pass returned a landscape vignette with a horizon in it.
   'tiles/dirt-path-1.png':
     'flat repeating swatch of loose grey highland gravel, no horizon, no sky, no scene, ' + TILE_STYLE,
@@ -185,6 +227,21 @@ const TILE_PROMPTS: Readonly<Record<string, string>> = {
     TILE_STYLE,
   'tiles/reeds-0.png': 'clump of tall marsh reeds standing in shallow water, ' + TILE_STYLE,
   'tiles/bridge-planks-0.png': 'weathered wooden bridge planks with iron nails, ' + TILE_STYLE,
+  'tiles/bush-0.png': 'small round shrub of wet dark-green leaves seen from above, transparent background, ' + TILE_STYLE,
+  'tiles/bush-1.png': 'low windbitten highland shrub with sparse grey-green leaves, transparent background, ' + TILE_STYLE,
+  // Rewritten after the first pass painted the clump onto a patch of grass: with no flat
+  // border to key on, the cut-out returns the whole square and it renders as a rectangle.
+  'tiles/flower-0.png':
+    'a single small clump of pale wildflowers on thin stems, isolated object, nothing else, ' +
+    'plain solid flat white background, no grass, no ground, no soil, no shadow, ' + TILE_STYLE,
+  'tiles/stump-0.png': 'cut tree stump with visible rings and moss, transparent background, ' + TILE_STYLE,
+  'tiles/crate-0.png': 'weathered wooden supply crate bound with rope, transparent background, ' + TILE_STYLE,
+  'tiles/house-0.png':
+    'small village house with dark timber walls and a steep wet tiled roof, seen from a low ' +
+    'top-down angle, whole building, transparent background, ' + TILE_STYLE,
+  'tiles/house-1.png':
+    'village shop stall with a cloth awning and a wooden counter, seen from a low top-down ' +
+    'angle, whole building, transparent background, ' + TILE_STYLE,
   'tiles/rock-0.png': 'small mossy grey boulder, transparent background, ' + TILE_STYLE,
   'tiles/rock-1.png': 'large cracked granite boulder with moss and rain streaks, transparent background, ' + TILE_STYLE,
   'tiles/waystone-0.png':
@@ -192,7 +249,12 @@ const TILE_PROMPTS: Readonly<Record<string, string>> = {
     TILE_STYLE,
   'tiles/lantern-0.png':
     'stone pedestal lantern with a warm ember flame inside, transparent background, ' + TILE_STYLE,
-  'tiles/tree-trunk-0.png': 'dark wet tree trunk with exposed roots, transparent background, ' + TILE_STYLE,
+  // Rewritten alongside flower-0: the first pass drew the trunk standing in a patch of
+  // undergrowth, which leaves nothing for the border flood to key on.
+  'tiles/tree-trunk-0.png':
+    'a single dark wet tree trunk with exposed roots, isolated object, nothing else, ' +
+    'plain solid flat white background, no grass, no ground, no undergrowth, no shadow, ' +
+    TILE_STYLE,
   'tiles/shrine-torii-0.png':
     'weathered dark wood torii shrine gate hung with a faded rope, transparent background, ' + TILE_STYLE,
   // Rewritten after the first pass returned a whole clearing rather than one crown.

@@ -120,6 +120,14 @@ export function digitsIn(value: number): number {
  *
  * That is what makes `avoidIds` mean "don't ask me that again" rather than "don't reuse that
  * object", and it keeps ids stable across a save/load without storing the question itself.
+ *
+ * The id addresses the *prompt*, not the answer, and for one kind those differ: `solid-identify`
+ * asks which drawn shape is the cone, so two draws can print the same prompt over a different
+ * shuffle and answer 2 and 4. An id is therefore "this question text", not "this exact question",
+ * and the only thing that reads it — the avoid list — wants the text anyway: asking for the cone
+ * twice in a row reads as a repeat to the player whichever shape it lands on. Nothing may key a
+ * *result* off an id. The exception is pinned by name in `question.test.ts`, so a future template
+ * cannot quietly join it.
  */
 export function questionId(tier: MathTier, kind: string, prompt: string): string {
   return `t${tier}:${kind}:${fnv1a(prompt).toString(36)}`;

@@ -85,13 +85,16 @@ export class ControlDeck extends Phaser.Events.EventEmitter {
     this.actionBtn = new RoundButton(scene, { ...DECK.action, icon: bladeIcon, accent: true });
     this.backpackBtn = new RoundButton(scene, { ...DECK.backpack, icon: backpackIcon });
 
+    // Centred across the whole deck, not under the button: the button sits close to the right
+    // edge, and a label centred on it runs off the screen.
     this.actionLabel = scene.add
-      .text(DECK.action.cx, DECK.action.cy + DECK.action.radius + 14, '', {
+      .text(LOGICAL_WIDTH / 2, DECK_TOP + 14, '', {
         fontFamily: 'ui-monospace, monospace',
-        fontSize: '15px',
+        fontSize: '14px',
         color: '#74d8f0',
+        align: 'center',
       })
-      .setOrigin(0.5)
+      .setOrigin(0.5, 0)
       .setScrollFactor(0);
 
     this.exploreLayer.add([
@@ -331,7 +334,7 @@ export class ControlDeck extends Phaser.Events.EventEmitter {
     this.joystick.setVisible(explore);
 
     if (mode === 'finish') {
-      this.actionLabel.setText('FINISH  ·  hold to BIND');
+      this.actionLabel.setText('FINISH — tap to sever, hold to bind');
       this.dashBtn.setEnabledState(false);
     } else {
       this.actionLabel.setText('');

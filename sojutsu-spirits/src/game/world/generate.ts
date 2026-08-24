@@ -26,7 +26,7 @@ export type Terrain =
   | 'floor'; // walkable interior / shrine stone
 
 export interface PropInstance {
-  /** Tile coordinates. */
+  /** Tile coordinates of the prop's *base* — where it touches the ground. */
   readonly tx: number;
   readonly ty: number;
   readonly kind: PropKind;
@@ -34,6 +34,13 @@ export interface PropInstance {
   readonly overhead: boolean;
   /** Blocks movement at its base. */
   readonly solid: boolean;
+  /**
+   * How many tiles of ground the base actually occupies, centred on `tx`.
+   *
+   * A tree is one tile of trunk; a building is not. Without this a player walks straight
+   * through a house because only its centre column was ever marked solid.
+   */
+  readonly footprint?: { readonly w: number; readonly h: number };
   readonly variant: number;
 }
 
@@ -67,6 +74,33 @@ const WALKABLE: ReadonlySet<Terrain> = new Set<Terrain>(['ground', 'path', 'gras
 
 export function isWalkable(t: Terrain): boolean {
   return WALKABLE.has(t);
+}
+
+/**
+ * Which terrain a wild spirit can be met on, per biome.
+ *
+ * Outdoors this is tall grass, which is the genre's contract with the player: the road is
+ * safe, the grass is not. Underground there is no grass, so the loose rubble floor between the
+ * stone plays the same role — otherwise Echo Cavern would have an approved encounter table and
+ * no way on earth to trigger it.
+ */
+const ENCOUNTER_TERRAIN: Record<Biome, readonly Terrain[]> = {
+  meadow: ['grass'],
+  thicket: ['grass'],
+  riverside: ['grass'],
+  shallows: ['grass', 'shallow'],
+  highland: ['grass'],
+  cavern: ['ground'],
+  town: [],
+  shrine: [],
+};
+
+export function encounterTerrainFor(biome: Biome): readonly Terrain[] {
+  return ENCOUNTER_TERRAIN[biome];
+}
+
+export function isEncounterTerrain(biome: Biome, t: Terrain): boolean {
+  return ENCOUNTER_TERRAIN[biome].includes(t);
 }
 
 /* ------------------------------------------------------------------ noise */
@@ -165,7 +199,17 @@ export function generateZone(zone: ZoneDef): GeneratedZone {
   /* 6. Solidity, derived once so the scene never recomputes it. */
   const solid = terrain.map((t) => !isWalkable(t));
   for (const p of props) {
-    if (p.solid && inBounds(p.tx, p.ty)) solid[idx(p.tx, p.ty)] = true;
+    if (!p.solid) continue;
+    const fw = p.footprint?.w ?? 1;
+    const fh = p.footprint?.h ?? 1;
+    const x0 = p.tx - Math.floor((fw - 1) / 2);
+    for (let dy = 0; dy < fh; dy++) {
+      for (let dx = 0; dx < fw; dx++) {
+        const x = x0 + dx;
+        const y = p.ty - dy;
+        if (inBounds(x, y)) solid[idx(x, y)] = true;
+      }
+    }
   }
 
   const edgeSpawns = computeEdgeSpawns(zone, w, h, solid);
@@ -385,11 +429,30 @@ function addTownBuildings(
 ): void {
   for (const npc of zone.npcs) {
     if (!/mender|provisioner/i.test(npc.id)) continue;
-    const tx = clamp(Math.round(npc.at[0] * (w - 4)) + 1, 2, w - 3);
-    const ty = clamp(Math.round(npc.at[1] * (h - 4)), 2, h - 4);
-    props.push({ tx, ty, kind: 'house', overhead: true, solid: true, variant: rng.int(0, 1) });
-    // The doorway tile in front of the building stays walkable.
-    if (ty + 1 < h) terrain[(ty + 1) * w + tx] = 'path';
+    // The NPC anchor is the doorway. The building stands behind them, so the shopkeeper is
+    // visible in front of their own shop rather than buried in its back wall.
+    const doorX = clamp(Math.round(npc.at[0] * (w - 3)) + 1, 3, w - 4);
+    const doorY = clamp(Math.round(npc.at[1] * (h - 3)) + 1, 4, h - 3);
+    const baseY = doorY - 1;
+
+    props.push({
+      tx: doorX,
+      ty: baseY,
+      kind: 'house',
+      overhead: false,
+      solid: true,
+      footprint: { w: 3, h: 2 },
+      variant: rng.int(0, 1),
+    });
+
+    // A walkable apron in front of the door, so the shop is always approachable.
+    for (let dx = -1; dx <= 1; dx++) {
+      for (let dy = 0; dy <= 1; dy++) {
+        const x = doorX + dx;
+        const y = doorY + dy;
+        if (x > 0 && y > 0 && x < w - 1 && y < h - 1) terrain[y * w + x] = 'path';
+      }
+    }
   }
 }
 
@@ -402,11 +465,13 @@ function computeEdgeSpawns(
   solid: boolean[],
 ): GeneratedZone['edgeSpawns'] {
   const nodes = exitNodes(zone, w, h);
+  // Defaults are resolved against solid ground too: an edge with no exit today can still be
+  // used tomorrow, and a spawn point inside a rock is not a failure anyone would debug quickly.
   const result = {
-    north: { tx: Math.floor(w / 2), ty: 2 },
-    south: { tx: Math.floor(w / 2), ty: h - 3 },
-    east: { tx: w - 3, ty: Math.floor(h / 2) },
-    west: { tx: 2, ty: Math.floor(h / 2) },
+    north: nearestWalkable(Math.floor(w / 2), 2, w, h, solid),
+    south: nearestWalkable(Math.floor(w / 2), h - 3, w, h, solid),
+    east: nearestWalkable(w - 3, Math.floor(h / 2), w, h, solid),
+    west: nearestWalkable(2, Math.floor(h / 2), w, h, solid),
   };
 
   zone.exits.forEach((exit, i) => {

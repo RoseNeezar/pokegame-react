@@ -13,8 +13,8 @@
  */
 import Phaser from 'phaser';
 import { DEPTH, PALETTE, TILE } from '../layout.ts';
-import type { GeneratedZone, PropKind, Terrain } from './generate.ts';
-import type { ZoneDef } from './zones.ts';
+import { isEncounterTerrain, type GeneratedZone, type PropKind, type Terrain } from './generate.ts';
+import type { Biome, ZoneDef } from './zones.ts';
 
 /** Fallback flat colours, used per-tile when the tiles atlas has no matching frame. */
 const TERRAIN_COLOUR: Record<Terrain, number> = {
@@ -43,28 +43,89 @@ const PROP_COLOUR: Record<PropKind, number> = {
 };
 
 /**
- * Terrain → atlas frame.
+ * Terrain → atlas frame, per biome.
  *
- * The tiles atlas ships a small, shared terrain set rather than one per biome, so a biome is
- * expressed through *which* terrains its generator paints and through the props scattered on
- * top, not through a separate tileset per region. That keeps the atlas at 256 × 512 instead of
- * six times that, which matters on a phone.
+ * The tiles atlas ships one grass and one road per region rather than a full tileset per biome,
+ * so a region's identity comes from *which* terrain its generator paints and what is scattered
+ * on top. That keeps the atlas at 256 × 512 instead of six times that, which matters on a phone.
  */
-const TERRAIN_FRAMES: Record<Terrain, readonly string[]> = {
-  ground: ['tiles/grass-1'],
-  path: ['tiles/dirt-path-0'],
-  grass: ['tiles/grass-0', 'tiles/grass-2'],
-  water: ['tiles/water-deep-0'],
-  shallow: ['tiles/water-edge-0'],
-  rock: ['tiles/stone-1'],
-  wall: ['tiles/stone-0'],
-  floor: ['tiles/stone-0', 'tiles/stone-1'],
+type TerrainMap = Partial<Record<Terrain, string>>;
+
+const BIOME_TERRAIN: Record<Biome, TerrainMap> = {
+  meadow: {
+    ground: 'tiles/grass-0',
+    grass: 'tiles/tall-grass-0',
+    path: 'tiles/dirt-path-0',
+    rock: 'tiles/stone-1',
+    wall: 'tiles/stone-0',
+    floor: 'tiles/stone-0',
+  },
+  thicket: {
+    ground: 'tiles/grass-0',
+    grass: 'tiles/tall-grass-0',
+    path: 'tiles/dirt-path-0',
+    rock: 'tiles/stone-1',
+    wall: 'tiles/stone-0',
+    floor: 'tiles/stone-0',
+  },
+  riverside: {
+    ground: 'tiles/grass-1',
+    grass: 'tiles/tall-grass-1',
+    path: 'tiles/dirt-path-0',
+    rock: 'tiles/stone-1',
+    wall: 'tiles/stone-0',
+    floor: 'tiles/bridge-planks-0',
+  },
+  shallows: {
+    ground: 'tiles/grass-1',
+    grass: 'tiles/tall-grass-1',
+    path: 'tiles/bridge-planks-0',
+    rock: 'tiles/stone-1',
+    wall: 'tiles/stone-0',
+    floor: 'tiles/bridge-planks-0',
+  },
+  highland: {
+    ground: 'tiles/grass-2',
+    grass: 'tiles/tall-grass-2',
+    path: 'tiles/dirt-path-1',
+    rock: 'tiles/stone-1',
+    wall: 'tiles/stone-0',
+    floor: 'tiles/stone-0',
+  },
+  cavern: {
+    ground: 'tiles/dirt-path-1',
+    grass: 'tiles/dirt-path-1',
+    path: 'tiles/dirt-path-1',
+    rock: 'tiles/stone-1',
+    wall: 'tiles/stone-0',
+    floor: 'tiles/stone-0',
+  },
+  town: {
+    ground: 'tiles/grass-0',
+    grass: 'tiles/grass-0',
+    path: 'tiles/stone-0',
+    rock: 'tiles/stone-1',
+    wall: 'tiles/stone-0',
+    floor: 'tiles/stone-0',
+  },
+  shrine: {
+    ground: 'tiles/grass-2',
+    grass: 'tiles/tall-grass-2',
+    path: 'tiles/stone-1',
+    rock: 'tiles/stone-1',
+    wall: 'tiles/stone-0',
+    floor: 'tiles/stone-1',
+  },
 };
 
-function terrainFrame(t: Terrain, variant: number): string | null {
-  const options = TERRAIN_FRAMES[t];
-  if (options.length === 0) return null;
-  return options[variant % options.length] ?? options[0]!;
+/** Water is the same everywhere; only its margin changes. */
+const WATER_FRAMES: TerrainMap = {
+  water: 'tiles/water-deep-0',
+  shallow: 'tiles/water-edge-0',
+};
+
+function terrainFrame(biome: Biome, t: Terrain): string | null {
+  return WATER_FRAMES[t] ?? BIOME_TERRAIN[biome][t] ?? null;
 }
 
 /**
@@ -82,6 +143,13 @@ const PROP_FRAMES: Partial<Record<PropKind, { lower?: string[]; overhead?: strin
   waystone: { lower: ['tiles/waystone-0'] },
   lantern: { lower: ['tiles/lantern-0'] },
   torii: { overhead: ['tiles/shrine-torii-0'] },
+  bush: { lower: ['tiles/bush-0', 'tiles/bush-1'] },
+  flower: { lower: ['tiles/flower-0'] },
+  stump: { lower: ['tiles/stump-0'] },
+  crate: { lower: ['tiles/crate-0'] },
+  // A house is tall: its walls belong under the actors and its roof over them, so the player
+  // walks in at the door and disappears behind the eaves.
+  house: { lower: ['tiles/house-0', 'tiles/house-1'], overhead: [] },
 };
 
 function propFrames(kind: PropKind, variant: number): { lower: string | null; overhead: string | null } {
@@ -89,6 +157,13 @@ function propFrames(kind: PropKind, variant: number): { lower: string | null; ov
   const pick = (list?: string[]): string | null =>
     list && list.length > 0 ? (list[variant % list.length] ?? list[0]!) : null;
   return { lower: pick(entry?.lower), overhead: pick(entry?.overhead) };
+}
+
+/** Deterministic per-tile hash, used to vary orientation. */
+function tileHash(tx: number, ty: number): number {
+  let h = (tx * 374761393 + ty * 668265263) >>> 0;
+  h = Math.imul(h ^ (h >>> 13), 1274126177) >>> 0;
+  return h >>> 0;
 }
 
 export class ZoneRenderer {
@@ -138,6 +213,20 @@ export class ZoneRenderer {
 
   /* ------------------------------------------------------------- ground */
 
+  /**
+   * Bakes the ground.
+   *
+   * Terrain tiles are drawn unmirrored, deliberately. Mirroring is the obvious way to break up
+   * repetition and it is wrong here: the tiles are made seamless by matching their own opposite
+   * edges, and a mirrored tile's edge no longer matches its unmirrored neighbour's. Flipping
+   * them put a dark seam back on every other tile boundary — the exact grid it was meant to
+   * hide.
+   *
+   * Variety comes from the props scattered on top instead. Encounter terrain also gets a tuft
+   * overlay, which is not decoration: it is the game saying, in the genre's own language, where
+   * a spirit can reach you. The road is safe and the grass is not, and that must be visible at
+   * a glance.
+   */
   private paintGround(hasTiles: boolean): void {
     const { width, height, terrain } = this.data;
     const tex = hasTiles ? this.scene.textures.get('tiles') : null;
@@ -147,17 +236,27 @@ export class ZoneRenderer {
     for (let ty = 0; ty < height; ty++) {
       for (let tx = 0; tx < width; tx++) {
         const t = terrain[ty * width + tx]!;
-        const variant = ((tx * 7 + ty * 13) % 3 + 3) % 3;
-        const frame = terrainFrame(t, variant);
+        const frame = terrainFrame(this.zone.biome, t);
+        const h = tileHash(tx, ty);
 
         if (frame && tex?.has(frame)) {
           this.ground.batchDrawFrame('tiles', frame, tx * TILE, ty * TILE);
         } else {
           // No authored tile: paint a shaded flat colour so the map is still readable.
           swatch.clear();
+          const variant = h % 3;
           const base = TERRAIN_COLOUR[t];
           swatch.fillStyle(shade(base, variant === 0 ? 0 : variant === 1 ? 0.06 : -0.06), 1);
           swatch.fillRect(0, 0, TILE, TILE);
+          this.ground.batchDraw(swatch, tx * TILE, ty * TILE);
+        }
+
+        // Encounter terrain now has its own tile per region, so it no longer needs an
+        // overlay to be told apart from the ground beside it. The tufts remain only as the
+        // fallback for a build with no tiles atlas at all.
+        if (!tex && isEncounterTerrain(this.zone.biome, t)) {
+          swatch.clear();
+          drawTufts(swatch, h);
           this.ground.batchDraw(swatch, tx * TILE, ty * TILE);
         }
       }
@@ -377,5 +476,27 @@ function drawFallbackProp(g: Phaser.GameObjects.Graphics, kind: PropKind, varian
       g.fillStyle(shade(c, 0.2), 1);
       g.fillCircle(TILE * 0.42, TILE * 0.58, TILE * 0.14);
       break;
+  }
+}
+
+/**
+ * Tall-grass tufts.
+ *
+ * Drawn over encounter terrain so the player can see, without being told, where a wild spirit
+ * can reach them. Three blades on a per-tile hash, so they never march in step with the tile
+ * grid underneath.
+ */
+function drawTufts(g: Phaser.GameObjects.Graphics, hash: number): void {
+  const blades = 3 + (hash % 2);
+  for (let i = 0; i < blades; i++) {
+    const h = (hash >>> (i * 5)) & 0x1f;
+    const x = 4 + ((h * 7) % (TILE - 8));
+    const y = 6 + ((h * 11) % (TILE - 12));
+    const tall = 5 + (h % 4);
+    g.fillStyle(0x1e3318, 0.55);
+    g.fillRect(x, y, 2, tall);
+    g.fillStyle(0x4d7a35, 0.85);
+    g.fillRect(x - 1, y + 1, 2, tall - 2);
+    g.fillRect(x + 2, y + 3, 2, tall - 4);
   }
 }

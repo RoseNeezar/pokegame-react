@@ -65,22 +65,36 @@ describe('the chain curve (DESIGN.md §4.1 [A-1])', () => {
   });
 });
 
-describe('raw vs display chain', () => {
-  it('floors the float for the HUD but keeps the float for damage', () => {
-    const state = new ChainState(2.7);
-    expect(state.raw).toBe(2.7);
-    expect(state.display).toBe(2);
-    expect(state.multiplier).toBe(chainMultiplier(2.7));
+describe('what the player sees vs what damage uses', () => {
+  it('shows the count of solves, and multiplies by the weighted total', () => {
+    // A cheap move is worth 0.8 toward the multiplier, but it is still one solve. A player who
+    // answered correctly must never be told their chain is zero.
+    const cheap = MOVES.find((m) => m.engine.crgModifier === 0.8 && m.engine.radModifier > 0)!;
+    const after = ChainState.empty().solve(cheap);
+    expect(after.display).toBe(1);
+    expect(after.raw).toBe(0.8);
+    expect(after.multiplier).toBe(chainMultiplier(0.8));
+  });
+
+  it('counts every solve exactly once, whatever it was worth', () => {
+    let state = ChainState.empty();
+    for (let i = 0; i < 40; i++) state = state.add(1.35);
+    expect(state.display).toBe(40);
+    expect(state.raw).toBe(54);
+    expect(state.multiplier).toBe(chainMultiplier(54));
+  });
+
+  it('still floors a weighted value where one is genuinely wanted', () => {
     expect(displayChain(2.7)).toBe(2);
     expect(displayChain(0)).toBe(0);
     expect(displayChain(-3)).toBe(0);
   });
 
-  it('does not let float drift accumulate across a long chain', () => {
-    let state = ChainState.empty();
-    for (let i = 0; i < 40; i++) state = state.add(1.35);
-    expect(state.raw).toBe(54);
-    expect(state.display).toBe(54);
+  it('keeps ChainState.held self-consistent', () => {
+    const held = ChainState.held(7, 9);
+    expect(held.display).toBe(7);
+    expect(held.raw).toBe(7);
+    expect(held.bestDisplay).toBe(9);
   });
 });
 
@@ -242,9 +256,11 @@ describe('the drop cost', () => {
   it('is the multiplier and nothing else', () => {
     // There is no API on this layer that can cost a turn. The only thing a drop returns is a
     // chain of zero; the battle engine's turn loop is not reachable from here at all.
-    const dropped = new ChainState(12).drop();
+    const dropped = ChainState.held(12).drop();
     expect(dropped.multiplier).toBe(1);
+    expect(dropped.display).toBe(0);
+    expect(dropped.bestDisplay).toBe(12); // the run is remembered, only the multiplier is lost
     expect(REDUCED_POWER_SCALE).toBe(0.5);
-    expect(Object.keys(dropped).sort()).toEqual(['best', 'raw']);
+    expect(Object.keys(dropped).sort()).toEqual(['best', 'bestLinks', 'links', 'raw']);
   });
 });

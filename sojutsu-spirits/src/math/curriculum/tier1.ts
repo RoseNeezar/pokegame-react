@@ -82,11 +82,20 @@ function countingOn(rng: Rng): QuestionDraft {
   };
 }
 
-/** `2, 4, 6, ?` — a constant step, up or down. Down never crosses zero. */
+/**
+ * `2, 4, 6, ?` — a constant step, up or down. Down never crosses zero.
+ *
+ * One start is refused: an ascending triple whose start equals its step reads `d, 2d, 3d`, and
+ * `3d = d + 2d` makes it a valid `sequence-fib` triple as well. The player would see `2, 4, 6, ?`
+ * and have two defensible answers — 8 by the step rule, 10 by the "add the two before it" rule —
+ * with no way to tell which one the game wants. Both templates refuse the overlap; see
+ * `sequenceFib` for the other half.
+ */
 function sequenceStep(rng: Rng): QuestionDraft {
   const step = rng.int(1, 5);
   const ascending = rng.chance(0.7);
-  const start = ascending ? rng.int(0, 9) : rng.int(step * 3, step * 3 + 12);
+  let start = ascending ? rng.int(0, 9) : rng.int(step * 3, step * 3 + 12);
+  while (ascending && start === step) start = rng.int(0, 9);
   const delta = ascending ? step : -step;
   const last = start + delta * 2;
   const terms: readonly number[] = [start, start + delta, last];
@@ -100,10 +109,17 @@ function sequenceStep(rng: Rng): QuestionDraft {
   };
 }
 
-/** `3, 5, 8, ?` — the p03 rule: add the two before it. */
+/**
+ * `3, 5, 8, ?` — the p03 rule: add the two before it.
+ *
+ * `b = 2a` is refused for the reason given on `sequenceStep`: it yields `a, 2a, 3a`, which is a
+ * constant-step triple too, and a prompt with two right answers is a prompt that punishes a
+ * player for reasoning correctly.
+ */
 function sequenceFib(rng: Rng): QuestionDraft {
   const a = rng.int(1, 5);
-  const b = rng.int(2, 6);
+  let b = rng.int(2, 6);
+  while (b === 2 * a) b = rng.int(2, 6);
   const c = a + b;
   const answer = b + c;
   return {

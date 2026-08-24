@@ -208,6 +208,45 @@ describe('the committed atlases', () => {
   });
 });
 
+describe('the committed atlases are not stale', () => {
+  /**
+   * The only test that compares `assets/generated/` against the code that produced it.
+   *
+   * Everything above checks the shipped files are internally consistent, which they stay even if
+   * nobody re-ran the build after editing a prompt, a tile size or the packer. The build is
+   * deterministic by design, so a fresh one over the same inputs must land on the same output —
+   * and if it does not, the committed atlases are older than the pipeline and the game is
+   * shipping pixels no source in the repo explains.
+   *
+   * PNGs are compared as *decoded pixels* rather than as encoded bytes: the pixels are what the
+   * game draws, and comparing the deflate stream would make this fail on a machine whose libvips
+   * compresses differently, which is a portability trap, not a staleness signal. The JSON is
+   * pure JavaScript output, so that is compared byte for byte.
+   */
+  it('rebuild from the same inputs reproduces exactly what is committed', async () => {
+    const dir = await mkdtemp(path.join(tmpdir(), 'sojutsu-atlas-fresh-'));
+    try {
+      await buildAtlases({ repoRoot: REPO_ROOT, outDir: dir });
+
+      const stale = 'differs from a fresh build — run "npm run assets" and commit the result';
+
+      for (const file of ['manifest.json', ...manifest.atlases.map((a) => a.json)]) {
+        const fresh = await readFile(path.join(dir, file), 'utf8');
+        const shipped = await readFile(path.join(OUT_DIR, file), 'utf8');
+        expect(fresh, `${file} ${stale}`).toBe(shipped);
+      }
+
+      for (const entry of manifest.atlases) {
+        const fresh = await sharp(path.join(dir, entry.image)).ensureAlpha().raw().toBuffer();
+        const shipped = await sharp(path.join(OUT_DIR, entry.image)).ensureAlpha().raw().toBuffer();
+        expect(fresh.equals(shipped), `${entry.image} ${stale}`).toBe(true);
+      }
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  }, 120_000);
+});
+
 describe('the offline build', () => {
   // Slower than the rest: it renders and packs all six atlases from nothing.
   it('produces every frame with no source art and no reference art at all', async () => {

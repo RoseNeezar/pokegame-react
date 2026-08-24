@@ -436,6 +436,88 @@ describe('visuals', () => {
   });
 });
 
+/**
+ * The per-kind verifiers above check each template against its own rule, which is exactly the
+ * blind spot these two tests cover: a prompt can satisfy one template's rule *and another's*,
+ * and each verifier would happily call its own answer correct. The player, who sees only the
+ * prompt, would then be marked wrong for reasoning correctly.
+ */
+describe('no prompt has two right answers', () => {
+  /**
+   * `solid-identify` is the one kind whose answer is not a function of its prompt: the answer is
+   * which drawn shape is the cone, so the same prompt over a different shuffle answers 2 or 4.
+   * That is inherent to the question and documented on the template; it is pinned here by name so
+   * a future template cannot quietly join it.
+   */
+  const ANSWER_LIVES_IN_THE_PICTURE = new Set(['solid-identify']);
+
+  it('never prints the same prompt with two different answers', () => {
+    const byPrompt = new Map<string, { answer: number; kind: string }>();
+    const offenders: string[] = [];
+    let compared = 0;
+
+    for (const tier of TIERS) {
+      sweep(tier, (q) => {
+        if (ANSWER_LIVES_IN_THE_PICTURE.has(q.kind)) return;
+        const seen = byPrompt.get(q.prompt);
+        if (!seen) {
+          byPrompt.set(q.prompt, { answer: q.answer, kind: q.kind });
+          return;
+        }
+        compared++;
+        if (seen.answer !== q.answer) {
+          offenders.push(`"${q.prompt}" → ${seen.answer} (${seen.kind}) and ${q.answer} (${q.kind})`);
+        }
+      });
+    }
+
+    expect(compared).toBeGreaterThan(1000); // the check has to actually be comparing things
+    expect([...new Set(offenders)]).toEqual([]);
+  });
+
+  it('leaves every sequence with exactly one rule the curriculum teaches', () => {
+    let checked = 0;
+    const ambiguous: string[] = [];
+
+    for (const tier of TIERS) {
+      sweep(tier, (q) => {
+        if (!q.kind.startsWith('sequence')) return;
+        const t = sequenceTerms(q.prompt);
+        const last = t[t.length - 1]!;
+        const rules = new Map<string, number>();
+
+        const d = t[1]! - t[0]!;
+        if (t.every((v, i) => i === 0 || v - t[i - 1]! === d)) rules.set('constant step', last + d);
+        if (t.every((v, i) => i < 2 || v === t[i - 1]! + t[i - 2]!)) {
+          rules.set('add the two before', last + t[t.length - 2]!);
+        }
+        const ratio = t[0]! === 0 ? 0 : t[1]! / t[0]!;
+        if (ratio > 1 && Number.isInteger(ratio) && t.every((v, i) => i === 0 || v === t[i - 1]! * ratio)) {
+          rules.set('geometric', last * ratio);
+        }
+        if (t.length >= 4) {
+          const diffs = t.slice(1).map((v, i) => v - t[i]!);
+          if (diffs.every((v, i) => i === 0 || v === diffs[i - 1]! + 1)) {
+            rules.set('growing step', last + diffs[diffs.length - 1]! + 1);
+          }
+        }
+
+        checked++;
+        expect(rules.size, `${q.kind} follows no rule: ${q.prompt}`).toBeGreaterThan(0);
+        if (new Set(rules.values()).size > 1) {
+          ambiguous.push(
+            `${q.prompt} — ${[...rules].map(([r, v]) => `${r} → ${v}`).join(', ')} (answers ${q.answer})`,
+          );
+        }
+        expect([...rules.values()]).toContain(q.answer);
+      });
+    }
+
+    expect(checked).toBeGreaterThan(500);
+    expect([...new Set(ambiguous)]).toEqual([]);
+  });
+});
+
 describe('templates in isolation', () => {
   it('are deterministic — the same seed makes the same question, every time', () => {
     for (const template of ALL_TEMPLATES) {

@@ -71,7 +71,13 @@ export interface MathOutcome {
   readonly correctAnswer: number | null;
   /** The working. Shown on a drop — the manga's mentors always show the working. */
   readonly explain: string | null;
-  /** What the player typed, for the "you said 46" line. Null on a timeout or auto-resolve. */
+  /**
+   * What the player typed, for the "you said 46" line.
+   *
+   * Null when there was nothing to record: an expired bar (`timeout()`) or an auto-resolve. An
+   * answer that arrived after the bar drained still reports `reason: 'timeout'` but keeps what
+   * was typed, so the strip can show both what the player said and that it was too late.
+   */
   readonly submitted: number | null;
 }
 
@@ -199,7 +205,13 @@ export class MathSession {
     };
   }
 
-  /** Drops the chain without consuming a turn — used when the player backs out of a move. */
+  /**
+   * Abandons the posed question — the player pressed `BACK` before answering.
+   *
+   * The chain is deliberately left alone. Backing out of a move is not a wrong answer, and only
+   * a wrong answer may cost the multiplier; charging for a mis-tap would make the deck's own
+   * `BACK` button a trap. No turn is consumed either, so the caller may `start` again at once.
+   */
   cancel(): void {
     this.turn = null;
   }

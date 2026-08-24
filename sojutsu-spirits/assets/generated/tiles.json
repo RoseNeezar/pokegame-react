@@ -2,8 +2,8 @@
   "frames": {
     "tiles/grass-0": {
       "frame": {
-        "x": 196,
-        "y": 102,
+        "x": 136,
+        "y": 262,
         "w": 32,
         "h": 32
       },
@@ -23,8 +23,8 @@
     },
     "tiles/grass-1": {
       "frame": {
-        "x": 196,
-        "y": 136,
+        "x": 170,
+        "y": 264,
         "w": 32,
         "h": 32
       },
@@ -44,112 +44,7 @@
     },
     "tiles/grass-2": {
       "frame": {
-        "x": 196,
-        "y": 170,
-        "w": 32,
-        "h": 32
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 32,
-        "h": 32
-      },
-      "sourceSize": {
-        "w": 32,
-        "h": 32
-      },
-      "duration": 100
-    },
-    "tiles/dirt-path-0": {
-      "frame": {
-        "x": 196,
-        "y": 34,
-        "w": 32,
-        "h": 32
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 32,
-        "h": 32
-      },
-      "sourceSize": {
-        "w": 32,
-        "h": 32
-      },
-      "duration": 100
-    },
-    "tiles/dirt-path-1": {
-      "frame": {
-        "x": 196,
-        "y": 68,
-        "w": 32,
-        "h": 32
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 32,
-        "h": 32
-      },
-      "sourceSize": {
-        "w": 32,
-        "h": 32
-      },
-      "duration": 100
-    },
-    "tiles/stone-0": {
-      "frame": {
-        "x": 0,
-        "y": 260,
-        "w": 32,
-        "h": 32
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 32,
-        "h": 32
-      },
-      "sourceSize": {
-        "w": 32,
-        "h": 32
-      },
-      "duration": 100
-    },
-    "tiles/stone-1": {
-      "frame": {
-        "x": 34,
-        "y": 260,
-        "w": 32,
-        "h": 32
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 32,
-        "h": 32
-      },
-      "sourceSize": {
-        "w": 32,
-        "h": 32
-      },
-      "duration": 100
-    },
-    "tiles/water-edge-0": {
-      "frame": {
-        "x": 102,
+        "x": 204,
         "y": 264,
         "w": 32,
         "h": 32
@@ -168,7 +63,70 @@
       },
       "duration": 100
     },
-    "tiles/water-deep-0": {
+    "tiles/tall-grass-0": {
+      "frame": {
+        "x": 102,
+        "y": 330,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/tall-grass-1": {
+      "frame": {
+        "x": 68,
+        "y": 362,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/tall-grass-2": {
+      "frame": {
+        "x": 136,
+        "y": 330,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/dirt-path-0": {
       "frame": {
         "x": 68,
         "y": 260,
@@ -189,10 +147,115 @@
       },
       "duration": 100
     },
+    "tiles/dirt-path-1": {
+      "frame": {
+        "x": 102,
+        "y": 262,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/stone-0": {
+      "frame": {
+        "x": 136,
+        "y": 296,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/stone-1": {
+      "frame": {
+        "x": 170,
+        "y": 298,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/water-edge-0": {
+      "frame": {
+        "x": 68,
+        "y": 430,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/water-deep-0": {
+      "frame": {
+        "x": 66,
+        "y": 396,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
     "tiles/reeds-0": {
       "frame": {
-        "x": 196,
-        "y": 204,
+        "x": 102,
+        "y": 296,
         "w": 32,
         "h": 32
       },
@@ -212,8 +275,8 @@
     },
     "tiles/bridge-planks-0": {
       "frame": {
-        "x": 196,
-        "y": 0,
+        "x": 0,
+        "y": 458,
         "w": 32,
         "h": 32
       },
@@ -231,10 +294,157 @@
       },
       "duration": 100
     },
-    "tiles/rock-0": {
+    "tiles/bush-0": {
+      "frame": {
+        "x": 34,
+        "y": 458,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/bush-1": {
       "frame": {
         "x": 196,
-        "y": 238,
+        "y": 196,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/flower-0": {
+      "frame": {
+        "x": 68,
+        "y": 294,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/stump-0": {
+      "frame": {
+        "x": 204,
+        "y": 298,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/crate-0": {
+      "frame": {
+        "x": 196,
+        "y": 230,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 100
+    },
+    "tiles/house-0": {
+      "frame": {
+        "x": 130,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 100
+    },
+    "tiles/house-1": {
+      "frame": {
+        "x": 130,
+        "y": 98,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 100
+    },
+    "tiles/rock-0": {
+      "frame": {
+        "x": 68,
+        "y": 328,
         "w": 32,
         "h": 32
       },
@@ -254,8 +464,8 @@
     },
     "tiles/rock-1": {
       "frame": {
-        "x": 130,
-        "y": 66,
+        "x": 0,
+        "y": 260,
         "w": 64,
         "h": 64
       },
@@ -275,8 +485,8 @@
     },
     "tiles/waystone-0": {
       "frame": {
-        "x": 130,
-        "y": 198,
+        "x": 0,
+        "y": 392,
         "w": 64,
         "h": 64
       },
@@ -297,7 +507,7 @@
     "tiles/lantern-0": {
       "frame": {
         "x": 130,
-        "y": 0,
+        "y": 196,
         "w": 64,
         "h": 64
       },
@@ -317,8 +527,8 @@
     },
     "tiles/tree-trunk-0": {
       "frame": {
-        "x": 130,
-        "y": 132,
+        "x": 0,
+        "y": 326,
         "w": 64,
         "h": 64
       },

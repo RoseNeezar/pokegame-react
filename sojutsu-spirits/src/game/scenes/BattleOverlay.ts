@@ -92,14 +92,14 @@ export class BattleOverlay extends Phaser.Scene {
     this.world = this.scene.get('World') as unknown as WorldScene;
     this.deck = this.registry.get('deck') as ControlDeck;
 
-    const ally = activeSpirit(this.state);
-    if (!ally) {
+    if (this.state.party.length === 0 || !activeSpirit(this.state)) {
       this.close();
       return;
     }
 
     const seed = `battle:${this.init_.foe.uid}:${Math.floor(this.state.playedMs)}`;
-    this.battle = new Battle(dex, ally, this.init_.foe, {
+    // The whole Bound Circle enters the fight, not just the lead — see docs/BALANCE.md.
+    this.battle = new Battle(dex, this.state.party, this.init_.foe, {
       kind: this.init_.kind,
       seed,
       canFlee: this.init_.kind === 'wild',
@@ -108,6 +108,7 @@ export class BattleOverlay extends Phaser.Scene {
     });
     this.session = new MathSession({ rng: new Rng(`${seed}:math`) });
 
+    this.world.spawnBattleFoe(this.init_.foe.species);
     this.buildHud();
     this.buildDeckOverlay();
     this.pushCamera(CAMERA.battleZoom);
@@ -140,7 +141,10 @@ export class BattleOverlay extends Phaser.Scene {
       })
       .setOrigin(0.5, 1)
       .setScrollFactor(0)
-      .setDepth(DEPTH.worldUi + 2);
+      .setDepth(DEPTH.worldUi + 2)
+      // A Text with a background colour paints its padding even with no text in it, which
+      // leaves a small dark box floating over the scene. Hide it rather than blank it.
+      .setVisible(false);
 
     this.bannerText = this.add
       .text(LOGICAL_WIDTH / 2, WORLD_HEIGHT * 0.42, '', {
@@ -366,26 +370,122 @@ export class BattleOverlay extends Phaser.Scene {
       }
     });
 
-    // Flee / Bag row, only where the rules allow it.
+    // Switch and Break Away share the last row.
+    const y = top + 2 * (bh + 12);
+    const bwf = (LOGICAL_WIDTH - pad * 3) / 2;
+
+    const canSwitch = this.battle.availableSwitches().length > 0;
+    this.smallButton(g, pad, y, bwf, 'CHANGE SPIRIT', canSwitch, () => this.showSwitchList(false));
+
     if (this.init_.kind === 'wild') {
-      const y = top + 2 * (bh + 12);
-      const bwf = (LOGICAL_WIDTH - pad * 3) / 2;
-      drawKey(g, pad, y, bwf, 46, 10, { muted: true });
-      const flee = this.add
-        .text(pad + bwf / 2, y + 23, 'BREAK AWAY', {
-          fontFamily: 'ui-monospace, monospace',
-          fontSize: '13px',
-          color: '#1b2340',
-        })
-        .setOrigin(0.5)
-        .setScrollFactor(0);
-      const fleeZone = this.add
-        .zone(pad + bwf / 2, y + 23, bwf, 46)
-        .setScrollFactor(0)
-        .setInteractive({ useHandCursor: true });
-      fleeZone.on('pointerdown', () => this.flee());
-      this.moveLayer.add([flee, fleeZone]);
+      this.smallButton(g, pad * 2 + bwf, y, bwf, 'BREAK AWAY', true, () => this.flee());
     }
+  }
+
+  private smallButton(
+    g: Phaser.GameObjects.Graphics,
+    x: number,
+    y: number,
+    w: number,
+    label: string,
+    enabled: boolean,
+    onPress: () => void,
+  ): void {
+    drawKey(g, x, y, w, 46, 10, { muted: !enabled });
+    const t = this.add
+      .text(x + w / 2, y + 23, label, {
+        fontFamily: 'ui-monospace, monospace',
+        fontSize: '13px',
+        color: enabled ? '#1b2340' : '#8d8b85',
+      })
+      .setOrigin(0.5)
+      .setScrollFactor(0);
+    this.moveLayer.add(t);
+    if (!enabled) return;
+    const zone = this.add
+      .zone(x + w / 2, y + 23, w, 46)
+      .setScrollFactor(0)
+      .setInteractive({ useHandCursor: true });
+    zone.on('pointerdown', onPress);
+    this.moveLayer.add(zone);
+  }
+
+  /**
+   * The Bound Circle.
+   *
+   * `forced` is true after a faint, when the player must send someone out and cannot back
+   * out — that send-out is free, where a voluntary change costs the turn.
+   */
+  private showSwitchList(forced: boolean): void {
+    this.moveLayer.removeAll(true);
+    const g = this.moveGfx;
+    g.clear();
+    g.fillStyle(PALETTE.deckNavy, 1);
+    g.fillRect(0, DECK_TOP, LOGICAL_WIDTH, DECK_HEIGHT);
+
+    const title = this.add
+      .text(LOGICAL_WIDTH / 2, DECK_TOP + 14, forced ? 'WHO STEPS UP?' : 'THE BOUND CIRCLE', {
+        fontFamily: 'ui-monospace, monospace',
+        fontSize: '14px',
+        color: '#eadbc6',
+      })
+      .setOrigin(0.5, 0)
+      .setScrollFactor(0);
+    this.moveLayer.add(title);
+
+    const h = 46;
+    const top = DECK_TOP + 44;
+    this.battle.state.party.forEach((f, i) => {
+      const y = top + i * (h + 8);
+      const alive = f.instance.currentHp > 0;
+      const isActive = i === this.battle.state.activeIndex;
+      const usable = alive && !isActive;
+      const maxHp = this.battle.maxHp(f);
+
+      this.smallButton(
+        g,
+        20,
+        y,
+        LOGICAL_WIDTH - 40,
+        `${f.species.name.toUpperCase()}  Lv ${f.instance.level}   ${f.instance.currentHp}/${maxHp}${
+          isActive ? '   (out)' : alive ? '' : '   (down)'
+        }`,
+        usable,
+        () => this.doSwitch(f.instance.uid, forced),
+      );
+    });
+
+    if (!forced) {
+      this.smallButton(g, 20, top + this.battle.state.party.length * (h + 8) + 6, LOGICAL_WIDTH - 40, '◀ BACK', true, () =>
+        this.enterChoosing(),
+      );
+    }
+  }
+
+  private doSwitch(uid: string, forced: boolean): void {
+    if (forced) {
+      this.battle.sendOut(uid);
+      this.rebuildHudForNewAlly();
+      this.enterChoosing();
+      return;
+    }
+    this.phase = 'resolving';
+    this.moveLayer.removeAll(true);
+    this.moveGfx.clear();
+    this.lastLogLength = this.battle.state.log.length;
+    this.battle.submit({ kind: 'switch', uid });
+    this.flushLog();
+    this.rebuildHudForNewAlly();
+    this.refreshHud();
+    this.time.delayedCall(900, () => this.afterTurn());
+  }
+
+  /** The ally portrait and name belong to whoever is out now. */
+  private rebuildHudForNewAlly(): void {
+    this.allyPortrait?.destroy();
+    const ally = this.battle.state.ally;
+    this.allyPortrait = this.makePortrait(ally.species.dexNo, ally.species.id, true);
+    this.refreshHud();
   }
 
   private chooseMove(slot: number): void {
@@ -539,6 +639,9 @@ export class BattleOverlay extends Phaser.Scene {
       case 'finish-window':
         this.enterFinish();
         break;
+      case 'awaiting-switch':
+        this.showSwitchList(true);
+        break;
       case 'lost':
         this.onLoss();
         break;
@@ -554,8 +657,12 @@ export class BattleOverlay extends Phaser.Scene {
   private flushLog(): void {
     const fresh = this.battle.state.log.slice(this.lastLogLength);
     if (fresh.length === 0) return;
-    this.logText.setText(fresh.map((l) => l.text).join('  '));
+    this.logText.setText(fresh.map((l) => l.text).join('  ')).setVisible(true);
     this.lastLogLength = this.battle.state.log.length;
+
+    // The log is a report of what just happened, not a permanent fixture; clear it before the
+    // next turn so it never sits stale over the scene.
+    this.time.delayedCall(2600, () => this.logText.setVisible(false));
   }
 
   /* --------------------------------------------------------- Finish mode */
@@ -569,6 +676,7 @@ export class BattleOverlay extends Phaser.Scene {
    */
   private enterFinish(): void {
     this.phase = 'finish';
+    this.world.foeFaints();
     this.moveLayer.removeAll(true);
     this.moveGfx.clear();
     this.deck.setMode('finish');
@@ -667,6 +775,7 @@ export class BattleOverlay extends Phaser.Scene {
   private playFinishFlourish(): void {
     const cam = this.cameras.main;
     const g = this.add.graphics().setScrollFactor(0).setDepth(DEPTH.overlay - 1);
+    // Centred on the world viewport, which is where the camera has framed the fallen spirit.
     const cx = LOGICAL_WIDTH * 0.5;
     const cy = WORLD_HEIGHT * 0.5;
 

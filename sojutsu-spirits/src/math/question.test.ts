@@ -190,7 +190,7 @@ describe('question identity', () => {
     expect(q.id.split(':')[1]).toBe(q.kind);
   });
 
-  it('collides only when the questions really are the same question', () => {
+  it('collides only on prompts that really are the same prompt', () => {
     const rng = new Rng('collide');
     const byId = new Map<string, string>();
     for (let i = 0; i < 4000; i++) {
@@ -200,6 +200,38 @@ describe('question identity', () => {
       byId.set(q.id, q.prompt);
     }
     expect(byId.size).toBeGreaterThan(500);
+  });
+
+  /**
+   * The id addresses the prompt, and for all but one kind the prompt determines the answer too,
+   * so an id is effectively the whole question. `solid-identify` is the exception — its answer is
+   * which drawn shape is the target, so one prompt covers several shuffles — and it is named here
+   * so a future template cannot silently join it and make ids mean less than they are documented
+   * to mean. Nothing may key a *result* off an id while this set is non-empty.
+   */
+  it('pins the one kind whose id does not fix its answer', () => {
+    const ANSWER_LIVES_IN_THE_PICTURE = ['solid-identify'];
+    const answersById = new Map<string, { answer: number; kind: string }>();
+    const ambiguous = new Set<string>();
+    let compared = 0;
+
+    for (const tier of TIERS) {
+      const rng = new Rng(`id-answer-${tier}`);
+      for (let i = 0; i < 4000; i++) {
+        const q = generateQuestion({ tier, segmentCeiling: 3, rng });
+        const seen = answersById.get(q.id);
+        if (!seen) {
+          answersById.set(q.id, { answer: q.answer, kind: q.kind });
+          continue;
+        }
+        compared++;
+        expect(seen.kind).toBe(q.kind);
+        if (seen.answer !== q.answer) ambiguous.add(q.kind);
+      }
+    }
+
+    expect(compared).toBeGreaterThan(1000); // the check has to actually be comparing things
+    expect([...ambiguous].sort()).toEqual(ANSWER_LIVES_IN_THE_PICTURE);
   });
 });
 

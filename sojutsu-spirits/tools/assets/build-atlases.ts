@@ -46,6 +46,8 @@ import {
   fitInto,
   flop,
   removeFlatBackground,
+  makeSeamless,
+  stripHue,
   resizeNearest,
   type RawImage,
 } from './pixel-ops.ts';
@@ -136,13 +138,26 @@ interface BuiltAtlas {
 
 class SourceResolver {
   readonly origins = new Map<string, FrameOrigin>();
-  readonly placeholders: string[] = [];
 
   constructor(private readonly jobs: ReadonlyMap<string, GenerationJob>) {}
 
   note(frame: string, origin: FrameOrigin): void {
     this.origins.set(frame, origin);
-    if (origin === 'placeholder') this.placeholders.push(frame);
+  }
+
+  /**
+   * Derived from `origins`, never accumulated alongside it.
+   *
+   * A frame can be noted twice — `buildUiAtlas` re-notes a composed button once it knows whether
+   * the glyph it carries was generated — and a parallel array would keep the first reading
+   * forever. `manifest.placeholders` and `manifest.origins` have to agree (the atlas test asserts
+   * it), so there is exactly one place the answer lives.
+   */
+  get placeholders(): string[] {
+    return [...this.origins]
+      .filter(([, origin]) => origin === 'placeholder')
+      .map(([frame]) => frame)
+      .sort();
   }
 
   prefersProcedural(file: string): boolean {
@@ -401,6 +416,23 @@ async function resolveUiPiece(
   return placeholderFrame(piece.frame, piece.width, piece.height);
 }
 
+/** What share of a cut-out prop is still opaque. 1.0 means nothing was removed. */
+function opaqueFraction(img: { data: Uint8Array | Uint8ClampedArray; width: number; height: number }): number {
+  let opaque = 0;
+  for (let i = 3; i < img.data.length; i += 4) if (img.data[i]! > 10) opaque += 1;
+  return opaque / (img.width * img.height);
+}
+
+/** Stable per-name seed, so a tile's dither is reproducible across builds. */
+function hashName(name: string): number {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < name.length; i++) {
+    h ^= name.charCodeAt(i);
+    h = Math.imul(h, 16777619) >>> 0;
+  }
+  return h || 1;
+}
+
 async function buildTilesAtlas(sourceDir: string, resolver: SourceResolver): Promise<BuiltAtlas> {
   const frames: FrameInput[] = [];
 
@@ -409,13 +441,49 @@ async function buildTilesAtlas(sourceDir: string, resolver: SourceResolver): Pro
     if (generated) {
       // Seamless terrain keeps its full square — cutting a "background" out of a grass tile would
       // punch holes in the ground. Props are cut out and fitted, because they stand on the ground.
-      const image = tile.seamless
-        ? resizeNearest(generated, tile.size, tile.size)
-        : fitInto(removeFlatBackground(generated, { clearEnclosed: true }), tile.size, tile.size, {
-            trim: true,
-            anchorY: 1,
-          });
-      frames.push({ name: tile.frame, image });
+      // Seamless terrain keeps its full square — cutting a "background" out of a grass tile
+      // would punch holes in the ground — and is then genuinely made to tile. Asking the
+      // generator for a seamless tile is not the same as getting one; see makeSeamless().
+      const cleaned = tile.stripGreens
+        ? stripHue(generated, { fromHue: 65, toHue: 175 })
+        : generated;
+
+      if (tile.seamless) {
+        frames.push({
+          name: tile.frame,
+          image: makeSeamless(resizeNearest(cleaned, tile.size, tile.size), {
+            seed: hashName(tile.frame),
+          }),
+        });
+        resolver.note(tile.frame, 'generated');
+        continue;
+      }
+
+      const cut = removeFlatBackground(cleaned, { clearEnclosed: true });
+
+      // A prop stands *on* the ground, so it must be cut out of its own picture. When the
+      // generator paints the subject onto textured grass rather than a flat field, the border
+      // flood has nothing to key on and returns the whole square — which then renders as an
+      // opaque rectangle sitting in the middle of the map. Detect that and take the procedural
+      // shape instead: a clean silhouette beats a beautiful rectangle.
+      if (opaqueFraction(cut) > 0.9) {
+        const fallback = drawTile(tile.frame, tile.size);
+        if (fallback) {
+          frames.push({ name: tile.frame, image: fallback });
+          resolver.note(tile.frame, 'procedural');
+          console.warn(
+            `  ! ${tile.frame}: background removal failed (still ${Math.round(
+              opaqueFraction(cut) * 100,
+            )}% opaque) — using the procedural shape`,
+          );
+          continue;
+        }
+      }
+
+      frames.push({
+        name: tile.frame,
+        image: fitInto(cut, tile.size, tile.size, { trim: true, anchorY: 1 }),
+      });
       resolver.note(tile.frame, 'generated');
       continue;
     }

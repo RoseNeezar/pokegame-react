@@ -100,7 +100,7 @@ describe('the auto-resolve path (radModifier 0)', () => {
   });
 
   it('resolves as solved, at full power, and grants no chain', () => {
-    const s = session('auto', new ChainState(6));
+    const s = session('auto', ChainState.held(6));
     s.start(detonate, 3);
     const outcome = s.resolveAuto();
     expect(outcome.solved).toBe(true);
@@ -114,7 +114,7 @@ describe('the auto-resolve path (radModifier 0)', () => {
   });
 
   it('still spends the chain the player was holding', () => {
-    const s = session('auto-mult', new ChainState(10));
+    const s = session('auto-mult', ChainState.held(10));
     s.start(cataclysmBurst, 3);
     expect(s.resolveAuto().chainMultiplier).toBe(2);
   });
@@ -333,7 +333,7 @@ describe('session bookkeeping', () => {
   });
 
   it('resumes a chain handed in at construction', () => {
-    const s = session('resume', new ChainState(5, 8));
+    const s = session('resume', ChainState.held(5, 8));
     expect(s.chain.display).toBe(5);
     expect(s.chain.best).toBe(8);
     expect(solveTurn(s, emberFlick).chain).toBe(6);

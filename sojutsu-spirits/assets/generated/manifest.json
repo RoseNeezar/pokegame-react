@@ -437,6 +437,9 @@
         "tiles/grass-0",
         "tiles/grass-1",
         "tiles/grass-2",
+        "tiles/tall-grass-0",
+        "tiles/tall-grass-1",
+        "tiles/tall-grass-2",
         "tiles/dirt-path-0",
         "tiles/dirt-path-1",
         "tiles/stone-0",
@@ -445,6 +448,13 @@
         "tiles/water-deep-0",
         "tiles/reeds-0",
         "tiles/bridge-planks-0",
+        "tiles/bush-0",
+        "tiles/bush-1",
+        "tiles/flower-0",
+        "tiles/stump-0",
+        "tiles/crate-0",
+        "tiles/house-0",
+        "tiles/house-1",
         "tiles/rock-0",
         "tiles/rock-1",
         "tiles/waystone-0",
@@ -1153,6 +1163,27 @@
       "seamless": true
     },
     {
+      "frame": "tiles/tall-grass-0",
+      "size": 32,
+      "region": "R1-meadow",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/tall-grass-1",
+      "size": 32,
+      "region": "R2-riverside",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/tall-grass-2",
+      "size": 32,
+      "region": "R3-highland",
+      "overhead": false,
+      "seamless": true
+    },
+    {
       "frame": "tiles/dirt-path-0",
       "size": 32,
       "region": "R1-meadow",
@@ -1207,6 +1238,55 @@
       "region": "R2-riverside",
       "overhead": false,
       "seamless": true
+    },
+    {
+      "frame": "tiles/bush-0",
+      "size": 32,
+      "region": null,
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/bush-1",
+      "size": 32,
+      "region": "R3-highland",
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/flower-0",
+      "size": 32,
+      "region": null,
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/stump-0",
+      "size": 32,
+      "region": null,
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/crate-0",
+      "size": 32,
+      "region": null,
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/house-0",
+      "size": 96,
+      "region": null,
+      "overhead": true,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/house-1",
+      "size": 96,
+      "region": null,
+      "overhead": true,
+      "seamless": false
     },
     {
       "frame": "tiles/rock-0",
@@ -1552,11 +1632,17 @@
     "spirit/095-glacivane": "reference",
     "spirit/096-oracowl": "reference",
     "tiles/bridge-planks-0": "generated",
+    "tiles/bush-0": "generated",
+    "tiles/bush-1": "generated",
+    "tiles/crate-0": "generated",
     "tiles/dirt-path-0": "generated",
     "tiles/dirt-path-1": "generated",
+    "tiles/flower-0": "generated",
     "tiles/grass-0": "generated",
     "tiles/grass-1": "generated",
     "tiles/grass-2": "generated",
+    "tiles/house-0": "generated",
+    "tiles/house-1": "generated",
     "tiles/lantern-0": "generated",
     "tiles/reeds-0": "generated",
     "tiles/rock-0": "generated",
@@ -1564,6 +1650,10 @@
     "tiles/shrine-torii-0": "generated",
     "tiles/stone-0": "generated",
     "tiles/stone-1": "generated",
+    "tiles/stump-0": "generated",
+    "tiles/tall-grass-0": "generated",
+    "tiles/tall-grass-1": "generated",
+    "tiles/tall-grass-2": "generated",
     "tiles/tree-canopy-0": "generated",
     "tiles/tree-trunk-0": "generated",
     "tiles/water-deep-0": "generated",

@@ -18,7 +18,7 @@ import {
 } from '../layout.ts';
 import { ControlDeck } from '../../ui/ControlDeck.ts';
 import { Actor, Follower, vectorToFacing, type Facing } from '../world/Actor.ts';
-import { generateZone, type GeneratedZone } from '../world/generate.ts';
+import { generateZone, isEncounterTerrain, type GeneratedZone } from '../world/generate.ts';
 import { ZoneRenderer } from '../world/ZoneRenderer.ts';
 import { exitBetween, oppositeEdge, zoneDef, type ZoneDef, type ZoneExit } from '../world/zones.ts';
 import { Rng } from '../../core/rng.ts';
@@ -370,7 +370,7 @@ export class WorldScene extends Phaser.Scene {
     const tx = Math.floor(this.player.x / TILE);
     const ty = Math.floor(this.player.y / TILE);
     const t = this.generated.terrain[ty * this.generated.width + tx];
-    if (t !== 'grass') return;
+    if (!t || !isEncounterTerrain(this.zone.biome, t)) return;
 
     this.stepsSinceEncounter += delta / 1000;
     const rate = this.zone.encounterRate * (dashing ? 1.5 : 1);
@@ -403,6 +403,7 @@ export class WorldScene extends Phaser.Scene {
 
   /** Called by the battle overlay when it finishes. */
   onBattleEnd(): void {
+    this.clearBattleFoe();
     this.busy = false;
     this.encounterCooldown = 2200;
     this.deck.setMode('explore');
@@ -517,7 +518,13 @@ export class WorldScene extends Phaser.Scene {
     const inRange =
       tx >= 0 && ty >= 0 && tx < this.generated.width && ty < this.generated.height;
     const t = inRange ? this.generated.terrain[ty * this.generated.width + tx] : undefined;
-    if (t === 'grass' && this.zone.encounterZone && this.encounterCooldown <= 0 && this.rng.chance(0.4)) {
+    if (
+      t &&
+      isEncounterTerrain(this.zone.biome, t) &&
+      this.zone.encounterZone &&
+      this.encounterCooldown <= 0 &&
+      this.rng.chance(0.4)
+    ) {
       this.startWildBattle();
     }
   }
@@ -584,6 +591,100 @@ export class WorldScene extends Phaser.Scene {
 
   getState(): GameState {
     return this.state;
+  }
+
+  /* ------------------------------------------------------ battle staging */
+
+  private foeSprite: Phaser.GameObjects.Image | null = null;
+  private foeShadow: Phaser.GameObjects.Ellipse | null = null;
+
+  /**
+   * Puts the opposing spirit into the world for the fight.
+   *
+   * Combat in this game happens where you are standing, so the foe has to actually be there.
+   * It is placed a short way in front of the player, on the ground, sorted by feet-Y like any
+   * other actor, and it bobs so a still frame does not read as a decal.
+   */
+  spawnBattleFoe(speciesId: string): { x: number; y: number } {
+    this.clearBattleFoe();
+
+    const dir = facingVector(this.player.facing);
+    const x = Phaser.Math.Clamp(
+      this.player.x + dir.x * 72,
+      TILE,
+      this.zoneRenderer.pixelWidth - TILE,
+    );
+    const y = Phaser.Math.Clamp(
+      this.player.y + dir.y * 72,
+      TILE * 2,
+      this.zoneRenderer.pixelHeight - TILE,
+    );
+
+    this.foeShadow = this.add
+      .ellipse(x, y + 2, 26, 10, 0x000000, 0.35)
+      .setDepth(DEPTH.actors + y - 1);
+
+    const s = species(speciesId);
+    const frame = `spirit/${String(s.dexNo).padStart(3, '0')}-${s.id}`;
+    if (this.textures.exists('spirits') && this.textures.get('spirits').has(frame)) {
+      this.foeSprite = this.add
+        .image(x, y, 'spirits', frame)
+        .setOrigin(0.5, 1)
+        .setScale(1.4)
+        .setDepth(DEPTH.actors + y);
+    } else {
+      this.foeSprite = this.add
+        .image(x, y, '__WHITE')
+        .setOrigin(0.5, 1)
+        .setDisplaySize(26, 30)
+        .setTint(0xd9503f)
+        .setDepth(DEPTH.actors + y);
+    }
+
+    // The world camera owns this; the UI camera must not draw it a second time.
+    this.uiCamera?.ignore([this.foeSprite, this.foeShadow]);
+
+    this.tweens.add({
+      targets: this.foeSprite,
+      y: y - 4,
+      duration: 700,
+      yoyo: true,
+      repeat: -1,
+      ease: 'Sine.easeInOut',
+    });
+
+    // Both the player and the bound spirit turn to face it.
+    const toFoe = vectorToFacing(x - this.player.x, y - this.player.y, this.player.facing);
+    this.player.face(toFoe);
+    this.companion?.face(toFoe);
+
+    return { x, y };
+  }
+
+  clearBattleFoe(): void {
+    if (this.foeSprite) this.tweens.killTweensOf(this.foeSprite);
+    this.foeSprite?.destroy();
+    this.foeShadow?.destroy();
+    this.foeSprite = null;
+    this.foeShadow = null;
+  }
+
+  /** Where the foe is standing, for effects that need to land on it. */
+  getFoePoint(): { x: number; y: number } | null {
+    return this.foeSprite ? { x: this.foeSprite.x, y: this.foeSprite.y } : null;
+  }
+
+  /** Plays the foe's defeat: it drops and fades. */
+  foeFaints(): void {
+    if (!this.foeSprite) return;
+    this.tweens.killTweensOf(this.foeSprite);
+    this.tweens.add({
+      targets: [this.foeSprite, this.foeShadow].filter(Boolean),
+      alpha: 0.35,
+      angle: 14,
+      duration: 320,
+      ease: 'Quad.easeOut',
+    });
   }
 
   /** Spawns a shrine ace where the keeper stands, for a scripted shrine battle. */
