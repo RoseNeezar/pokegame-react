@@ -1,0 +1,97 @@
+Monster,Stage,Type/Theme,Mapped Pokemon Red Equivalent,HP,Attack,Defense,Speed,Special,Total,Appearance (Gyms 1-3),Rarity,Game Segment,Growth Rate,Evolves At (Lv),Total XP at Evo Lv,Base EXP Yield,XP Given (at seg. level),Version / Release
+Helmling,Base,Steel,Magnemite,25,34,69,44,93,265,Sunken Ruins — floors,Uncommon,Gym 3 segment,Medium Fast,15,3375,55,220,v1
+Knighton,Stage 2,Steel,Magneton,44,52,83,61,105,345,Sunken Ruins — floors,Rare,Gym 3 segment,Medium Fast,30,27000,120,480,v1
+Aureguard,Final A,Steel/Fairy,Clefable,105,78,81,67,94,425,Not wild — evolve,—,Gym 3 segment,Medium Fast,—,—,195,780,v1 — sole final form
+Dreadhelm,Final B,Steel/Dark,Gengar,60,65,60,110,130,425,Not wild — evolve,—,Gym 3 segment,Medium Fast,—,—,195,780,TBD — reserved for v2 (Sojutsu: second version)
+Gearbit,Base,Steel,Rattata,36,68,43,88,30,265,Route 1 — grass,Common,Gym 1 segment,Medium Fast,15,3375,55,62,v1
+Cogskitter,Stage 2,Steel,Raticate,55,81,60,99,50,345,Route 2 — grass,Uncommon,Gym 1 segment,Medium Fast,30,27000,120,137,v1
+Voltracer,Final A,Electric/Steel,Electrode,64,53,74,149,85,425,Not wild — evolve,—,Gym 1 segment,Medium Fast,—,—,195,222,v1 — sole final form
+Scraprowl,Final B,Steel/Dark,Persian,74,79,68,130,74,425,Not wild — evolve,—,Gym 1 segment,Medium Fast,—,—,195,222,TBD — reserved for v2 (Sojutsu: second version)
+Nectenna,Base,Bug,Oddish,47,52,57,31,78,265,Verdant Thicket — grass,Common,Gym 1 segment,Medium Fast,15,3375,55,62,v1
+Sproutide,Stage 2,Grass,Gloom,65,70,75,43,92,345,Verdant Thicket — grass,Rare,Gym 1 segment,Medium Fast,30,27000,120,137,v1
+Lotusurge,Final A,Grass/Water,Tangela,70,59,123,65,108,425,Not wild — evolve,—,Gym 1 segment,Medium Fast,—,—,195,222,v1 — sole final form
+Voltroot,Final B,Grass/Electric,Vileplume,82,87,93,54,109,425,Not wild — evolve,—,Gym 1 segment,Medium Fast,—,—,195,222,TBD — reserved for v2 (Sojutsu: second version)
+Budbloom,Base,Grass,Bellsprout,49,74,34,39,69,265,"Route 5, Route 6 — grass",Common,Gym 3 segment,Medium Fast,15,3375,55,220,v1
+Petalisk,Stage 2,Grass,Weepinbell,65,90,50,55,85,345,Route 6 — grass,Uncommon,Gym 3 segment,Medium Fast,30,27000,120,480,v1
+Orchlume,Final A,Grass/Fairy,Vileplume,82,87,93,54,109,425,Not wild — evolve,—,Gym 3 segment,Medium Fast,—,—,195,780,v1 — sole final form
+Venobloom,Final B,Grass/Poison,Victreebel,81,106,66,71,101,425,Not wild — evolve,—,Gym 3 segment,Medium Fast,—,—,195,780,TBD — reserved for v2 (Sojutsu: second version)
+Brontide,Base,Water,Horsea,29,39,69,59,69,265,Riverside — surf/fishing,Uncommon,Gym 3 segment,Medium Fast,15,3375,55,220,v1
+Brontaur,Stage 2,Water,Seadra,48,57,83,74,83,345,Riverside — surf,Rare,Gym 3 segment,Medium Fast,30,27000,120,480,v1
+Glacisaur,Final A,Water/Ice,Dewgong,94,73,84,73,101,425,Not wild — evolve,—,Gym 3 segment,Medium Fast,—,—,195,780,v1 — sole final form
+Dracotide,Final B,Water/Dragon,Gyarados,84,110,70,72,89,425,Not wild — evolve,—,Gym 3 segment,Medium Fast,—,—,195,780,TBD — reserved for v2 (Sojutsu: second version)
+Buzzle,Base,Bug,Weedle,61,53,45,76,30,265,"Route 2, Verdant Thicket — grass",Common,Gym 1 segment,Medium Fast,15,3375,55,62,v1
+Buzzguard,Stage 2,Bug/Flying,Beedrill,74,90,45,85,51,345,Verdant Thicket — grass,Uncommon,Gym 1 segment,Medium Fast,30,27000,120,137,v1
+Voltwing,Final A,Bug/Electric,Scyther,71,111,81,106,56,425,Not wild — evolve,—,Gym 1 segment,Medium Fast,—,—,195,222,v1 — sole final form
+Jabjacket,Final B,Bug/Fighting,Pinsir,64,124,99,84,54,425,Not wild — evolve,—,Gym 1 segment,Medium Fast,—,—,195,222,TBD — reserved for v2 (Sojutsu: second version)
+Frondove,Base,Grass/Flying,Pidgey,49,55,49,69,43,265,"Route 1, Route 2 — grass",Common,Gym 1 segment,Medium Fast,15,3375,55,62,v1
+Leaflark,Stage 2,Grass/Flying,Pidgeotto,73,69,63,82,58,345,Verdant Thicket — grass,Rare,Gym 1 segment,Medium Fast,30,27000,120,137,v1
+Floravian,Final A,Grass/Fairy,Pidgeot,88,85,80,97,75,425,Not wild — evolve,—,Gym 1 segment,Medium Fast,—,—,195,222,v1 — sole final form
+Thornraven,Final B,Grass/Dark,Fearow,73,100,73,111,68,425,Not wild — evolve,—,Gym 1 segment,Medium Fast,—,—,195,222,TBD — reserved for v2 (Sojutsu: second version)
+Bloomble,Base,Grass,Paras,39,76,61,28,61,265,Echo Cavern — floors,Uncommon,Gym 2 segment,Medium Fast,15,3375,55,141,v1
+Mossmallow,Stage 2,Grass,Parasect,60,95,80,30,80,345,Not wild — evolve,—,Gym 2 segment,Medium Fast,30,27000,120,308,v1
+Floraglee,Final A,Grass/Fairy,Exeggutor,89,89,79,51,117,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,v1 — sole final form
+Sporebog,Final B,Grass/Poison,Vileplume,82,87,93,54,109,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,TBD — reserved for v2 (Sojutsu: second version)
+Cherubick,Base,Fairy/Flying,Clefairy,72,46,49,36,62,265,Sunken Ruins — floors,Rare,Gym 3 segment,Slow,16,5120,55,220,v1
+Halowing,Stage 2,Fairy/Flying,Clefable,85,63,66,54,77,345,Not wild — evolve,—,Gym 3 segment,Slow,30,33750,120,480,v1
+Seraphlume,Final A,Fairy/Flying,Butterfree,84,63,70,98,110,425,Not wild — evolve,—,Gym 3 segment,Slow,—,—,195,780,v1 — sole final form
+Duskrael,Final B,Dark/Flying,Golbat,82,87,76,98,82,425,Not wild — evolve,—,Gym 3 segment,Slow,—,—,195,780,TBD — reserved for v2 (Sojutsu: second version)
+Shellot,Base,Normal,Doduo,34,82,43,72,34,265,Route 5 — grass,Uncommon,Gym 3 segment,Medium Fast,15,3375,55,220,v1
+Shellark,Stage 2,Flying,Dodrio,52,95,60,86,52,345,Route 6 — grass,Rare,Gym 3 segment,Medium Fast,30,27000,120,480,v1
+Solroost,Final A,Fire/Flying,Moltres,77,86,77,77,108,425,Not wild — evolve,—,Gym 3 segment,Medium Fast,—,—,195,780,v1 — sole final form
+Lunowl,Final B,Ice/Flying,Articuno,79,74,88,74,110,425,Not wild — evolve,—,Gym 3 segment,Medium Fast,—,—,195,780,TBD — reserved for v2 (Sojutsu: second version)
+Roswyrm,Base,Water,Dratini,43,68,48,53,53,265,Riverside — fishing (Super Rod),Rare,Gym 3 segment,Slow,16,5120,55,220,v1
+Roscale,Stage 2,Water/Dragon,Dragonair,60,83,64,69,69,345,Not wild — evolve,—,Gym 3 segment,Slow,30,33750,120,480,v1
+Pearleserp,Final A,Water/Fairy,Dragonite,77,114,81,68,85,425,Not wild — evolve,—,Gym 3 segment,Slow,—,—,195,780,v1 — sole final form
+Venomare,Final B,Water/Poison,Tentacruel,78,68,64,98,117,425,Not wild — evolve,—,Gym 3 segment,Slow,—,—,195,780,TBD — reserved for v2 (Sojutsu: second version)
+Dottella,Base,Bug,Krabby,26,93,80,44,22,265,Route 3 — grass,Common,Gym 2 segment,Medium Fast,15,3375,55,141,v1
+Carapotta,Stage 2,Bug,Kingler,45,105,93,61,41,345,Route 4 — grass,Uncommon,Gym 2 segment,Medium Fast,30,27000,120,308,v1
+Aegibug,Final A,Bug/Steel,Parasect,74,116,99,37,99,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,v1 — sole final form
+Magmara,Final B,Bug/Fire,Magmar,70,103,61,100,91,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,TBD — reserved for v2 (Sojutsu: second version)
+Pinchitin,Base,Bug,Kabuto,26,71,79,49,40,265,Route 3 — grass,Uncommon,Gym 2 segment,Medium Fast,15,3375,55,141,v1
+Clamptera,Stage 2,Bug,Kabutops,48,93,84,64,56,345,Echo Cavern — floors,Rare,Gym 2 segment,Medium Fast,30,27000,120,308,v1
+Ferraclaw,Final A,Bug/Steel,Golem,81,111,131,46,56,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,v1 — sole final form
+Noxpincer,Final B,Bug/Dark,Weezing,66,91,121,61,86,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,TBD — reserved for v2 (Sojutsu: second version)
+Verdusk,Base,Grass/Flying,Zubat,49,55,43,69,49,265,Echo Cavern — floors,Common,Gym 2 segment,Medium Fast,15,3375,55,141,v1
+Frondbat,Stage 2,Grass/Flying,Golbat,66,71,62,80,66,345,Echo Cavern (deep) — floors,Uncommon,Gym 2 segment,Medium Fast,30,27000,120,308,v1
+Lunabloom,Final A,Grass/Fairy,Venomoth,79,74,68,102,102,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,v1 — sole final form
+Wraithleaf,Final B,Grass/Ghost,Gengar,60,65,60,110,130,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,TBD — reserved for v2 (Sojutsu: second version)
+Skettera,Base,Bug,Venonat,64,58,53,48,42,265,Route 4 — grass,Common,Gym 2 segment,Medium Fast,15,3375,55,141,v1
+Skeetrike,Stage 2,Bug/Flying,Venomoth,64,60,55,83,83,345,Route 4 — grass,Rare,Gym 2 segment,Medium Fast,30,27000,120,308,v1
+Aquasting,Final A,Bug/Water,Tentacool,60,60,52,104,149,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,v1 — sole final form
+Venatrix,Final B,Bug/Poison,Beedrill,91,110,56,105,63,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,TBD — reserved for v2 (Sojutsu: second version)
+Fleeceling,Base,Normal,Eevee,52,52,47,52,62,265,Route 5 — grass,Common,Gym 3 segment,Medium Fast,15,3375,55,220,v1
+Ramblewool,Stage 2,Normal,Clefable,85,63,66,54,77,345,Route 6 — grass,Uncommon,Gym 3 segment,Medium Fast,30,27000,120,480,v1
+Voltaram,Final A,Electric,Jolteon,64,64,59,129,109,425,Not wild — evolve,—,Gym 3 segment,Medium Fast,—,—,195,780,v1 — sole final form
+Glacifleece,Final B,Ice,Lapras,122,80,76,57,90,425,Not wild — evolve,—,Gym 3 segment,Medium Fast,—,—,195,780,TBD — reserved for v2 (Sojutsu: second version)
+Spriglim,Base,Grass,Bulbasaur,48,52,52,48,70,270,Starter — Prof's Lab,Starter (1 of 3),Gym 1 segment,Medium Slow,16,2535,58,66,v1
+Leafkin,Stage 2,Grass,Ivysaur,66,68,69,66,86,355,Not wild — evolve,—,Gym 1 segment,Medium Slow,30,21760,126,144,v1
+Sylphlora,Final A,Grass/Fairy,Venusaur,82,84,85,82,102,435,Not wild — evolve,—,Gym 1 segment,Medium Slow,—,—,204,233,v1 — sole final form
+Verdraxis,Final B,Grass/Dragon,Exeggutor,91,91,81,53,119,435,Not wild — evolve,—,Gym 1 segment,Medium Slow,—,—,204,233,TBD — reserved for v2 (Sojutsu: second version)
+Fawnix,Base,Fire,Vulpix,41,44,43,72,70,270,Starter — Prof's Lab,Starter (1 of 3),Gym 1 segment,Medium Slow,16,2535,58,66,v1
+Vulpine,Stage 2,Fire,Ninetales,61,64,63,83,84,355,Not wild — evolve,—,Gym 1 segment,Medium Slow,30,21760,126,144,v1
+Ferravulp,Final A,Fire/Steel,Arcanine,86,106,76,91,76,435,Not wild — evolve,—,Gym 1 segment,Medium Slow,—,—,204,233,v1 — sole final form
+Cindusk,Final B,Dark/Fire,Persian,75,81,70,134,75,435,Not wild — evolve,—,Gym 1 segment,Medium Slow,—,—,204,233,TBD — reserved for v2 (Sojutsu: second version)
+Frostel,Base,Ice,Seel,63,43,53,43,68,270,Starter — Prof's Lab,Starter (1 of 3),Gym 1 segment,Medium Slow,16,2535,58,66,v1
+Erminice,Stage 2,Ice,Dewgong,79,61,70,61,84,355,Not wild — evolve,—,Gym 1 segment,Medium Slow,30,21760,126,144,v1
+Aurorine,Final A,Ice/Fairy,Cloyster,45,86,164,63,77,435,Not wild — evolve,—,Gym 1 segment,Medium Slow,—,—,204,233,v1 — sole final form
+Blizzlash,Final B,Ice/Dark,Persian,75,81,70,134,75,435,Not wild — evolve,—,Gym 1 segment,Medium Slow,—,—,204,233,TBD — reserved for v2 (Sojutsu: second version)
+Bloopuff,Base,Normal,Jigglypuff,135,53,24,24,29,265,"Route 3, Route 4 — grass",Uncommon,Gym 2 segment,Medium Fast,15,3375,55,141,v1
+Floofin,Stage 2,Normal,Wigglytuff,139,69,44,44,49,345,Not wild — evolve,—,Gym 2 segment,Medium Fast,30,27000,120,308,v1
+Nimbuspry,Final A,Ice/Fairy,Clefable,105,78,81,67,94,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,v1 — sole final form
+Stormuff,Final B,Electric/Dark,Electrode,64,53,74,149,85,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,TBD — reserved for v2 (Sojutsu: second version)
+Mosscoil,Base,Grass,Metapod,74,29,81,44,37,265,Verdant Thicket — grass,Uncommon,Gym 1 segment,Medium Fast,15,3375,55,62,v1
+Grovesnail,Stage 2,Grass,Parasect,60,95,80,30,80,345,Not wild — evolve,—,Gym 1 segment,Medium Fast,30,27000,120,137,v1
+Lotushell,Final A,Grass/Water,Vileplume,82,87,93,54,109,425,Not wild — evolve,—,Gym 1 segment,Medium Fast,—,—,195,222,v1 — sole final form
+Ruincoil,Final B,Grass/Rock,Golem,81,111,131,46,56,425,Not wild — evolve,—,Gym 1 segment,Medium Fast,—,—,195,222,TBD — reserved for v2 (Sojutsu: second version)
+Wickisp,Base,Ghost,Gastly,29,34,29,77,96,265,Sunken Ruins — floors,Rare,Gym 3 segment,Slow,16,5120,55,220,v1
+Candlurk,Stage 2,Fire/Ghost,Haunter,44,49,44,94,114,345,Sunken Ruins (deep) — floors,Rare,Gym 3 segment,Slow,30,33750,120,480,v1
+Halolume,Final A,Fire/Fairy,Ninetales,73,76,75,101,100,425,Not wild — evolve,—,Gym 3 segment,Slow,—,—,195,780,v1 — sole final form
+Hexabra,Final B,Fire/Ghost,Gengar,60,65,60,110,130,425,Not wild — evolve,—,Gym 3 segment,Slow,—,—,195,780,TBD — reserved for v2 (Sojutsu: second version)
+Terratot,Base,Ground,Cubone,49,49,94,34,39,265,Echo Cavern — floors,Common,Gym 2 segment,Medium Fast,15,3375,55,141,v1
+Burrosaur,Stage 2,Ground,Marowak,60,80,110,45,50,345,Echo Cavern (deep) — floors,Uncommon,Gym 2 segment,Medium Fast,30,27000,120,308,v1
+Ferradillo,Final A,Ground/Steel,Rhydon,101,126,116,39,43,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,v1 — sole final form
+Rumblejaw,Final B,Ground/Fighting,Nidoking,84,95,80,88,78,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,TBD — reserved for v2 (Sojutsu: second version)
+Hootusk,Base,Flying,Spearow,46,69,34,80,36,265,Route 3 — grass,Common,Gym 2 segment,Medium Fast,15,3375,55,141,v1
+Hornowl,Stage 2,Flying,Fearow,59,81,59,91,55,345,Route 4 — grass,Uncommon,Gym 2 segment,Medium Fast,30,27000,120,308,v1
+Glacivane,Final A,Ice/Flying,Articuno,79,74,88,74,110,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,v1 — sole final form
+Oracowl,Final B,Psychic/Flying,Alakazam,58,52,47,126,142,425,Not wild — evolve,—,Gym 2 segment,Medium Fast,—,—,195,501,TBD — reserved for v2 (Sojutsu: second version)

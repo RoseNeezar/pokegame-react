@@ -1,0 +1,862 @@
+{
+  "part1": [
+    {
+      "zone": "Route 1",
+      "region": "R1 Meadow",
+      "levelRange": [
+        2,
+        4
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Gearbit",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.5
+        },
+        {
+          "species": "Frondove",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "zone": "Waystone Road",
+      "region": "R1 Meadow",
+      "levelRange": [
+        4,
+        7
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Buzzle",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.4
+        },
+        {
+          "species": "Frondove",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.4
+        },
+        {
+          "species": "Cogskitter",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.2
+        }
+      ]
+    },
+    {
+      "zone": "Verdant Thicket",
+      "region": "R1 Meadow",
+      "levelRange": [
+        6,
+        10
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Nectenna",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.3
+        },
+        {
+          "species": "Buzzle",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.3
+        },
+        {
+          "species": "Buzzguard",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.15
+        },
+        {
+          "species": "Mosscoil",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.15
+        },
+        {
+          "species": "Sproutide",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Leaflark",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        }
+      ]
+    },
+    {
+      "zone": "Riverside Trail",
+      "region": "R2 Riverside",
+      "levelRange": [
+        12,
+        15
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Brontide",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.375
+        },
+        {
+          "species": "Skettera",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.375
+        },
+        {
+          "species": "Budbloom",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.1875
+        },
+        {
+          "species": "Sproutide",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.0625
+        }
+      ]
+    },
+    {
+      "zone": "Kawa Crossing",
+      "region": "R2 Riverside",
+      "levelRange": [
+        14,
+        18
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Fleeceling",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.3158
+        },
+        {
+          "species": "Budbloom",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.3158
+        },
+        {
+          "species": "Skeetrike",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.1579
+        },
+        {
+          "species": "Brontaur",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.1579
+        },
+        {
+          "species": "Petalisk",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.0526
+        }
+      ]
+    },
+    {
+      "zone": "The Shallows",
+      "region": "R2 Riverside",
+      "levelRange": [
+        16,
+        19
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Skettera",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.4615
+        },
+        {
+          "species": "Brontaur",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.2308
+        },
+        {
+          "species": "Ramblewool",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.2308
+        },
+        {
+          "species": "Roswyrm",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.0769
+        }
+      ]
+    },
+    {
+      "zone": "Stone Steps",
+      "region": "R3 Highland",
+      "levelRange": [
+        20,
+        23
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Hootusk",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.375
+        },
+        {
+          "species": "Bloopuff",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.375
+        },
+        {
+          "species": "Verdusk",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.1875
+        },
+        {
+          "species": "Terratot",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.0625
+        }
+      ]
+    },
+    {
+      "zone": "Echo Cavern",
+      "region": "R3 Highland",
+      "levelRange": [
+        22,
+        26
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Terratot",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.3
+        },
+        {
+          "species": "Verdusk",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.3
+        },
+        {
+          "species": "Dottella",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.15
+        },
+        {
+          "species": "Pinchitin",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.15
+        },
+        {
+          "species": "Burrosaur",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Wickisp",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        }
+      ]
+    },
+    {
+      "zone": "Ridge Path",
+      "region": "R3 Highland",
+      "levelRange": [
+        24,
+        27
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Frondbat",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.3158
+        },
+        {
+          "species": "Hornowl",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.3158
+        },
+        {
+          "species": "Clamptera",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.1579
+        },
+        {
+          "species": "Ramblewool",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.1579
+        },
+        {
+          "species": "Grovesnail",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.0526
+        }
+      ]
+    }
+  ],
+  "part2": [
+    {
+      "zone": "Route 6 · Way Station Rd",
+      "region": "P2 seg4 Bug",
+      "levelRange": [
+        28,
+        34
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Bloomble",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 0.8571
+        },
+        {
+          "species": "Candlurk",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.1429
+        }
+      ]
+    },
+    {
+      "zone": "Hive Hollow",
+      "region": "P2 seg4 Bug",
+      "levelRange": [
+        28,
+        34
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Mossmallow",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Wickisp",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.0204
+        },
+        {
+          "species": "Cogskitter",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Leaflark",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Buzzguard",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Sproutide",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Grovesnail",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Floofin",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Burrosaur",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Frondbat",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Hornowl",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Carapotta",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Clamptera",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Brontaur",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Skeetrike",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Ramblewool",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        },
+        {
+          "species": "Petalisk",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.0612
+        }
+      ]
+    },
+    {
+      "zone": "The Long Wait",
+      "region": "P2 seg4 Bug",
+      "levelRange": [
+        28,
+        32
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Shellot",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 1
+        }
+      ]
+    },
+    {
+      "zone": "Petitioners' Field",
+      "region": "P2 seg4 Bug",
+      "levelRange": [
+        28,
+        34
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Shellark",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 0.75
+        },
+        {
+          "species": "Helmling",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "zone": "Route 7 · Ash Pass",
+      "region": "P2 seg5 Steel",
+      "levelRange": [
+        35,
+        39
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Helmling",
+          "rarity": "Common",
+          "weight": 6,
+          "chance": 1
+        }
+      ]
+    },
+    {
+      "zone": "Tatara Slope",
+      "region": "P2 seg5 Steel",
+      "levelRange": [
+        35,
+        41
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Knighton",
+          "rarity": "Uncommon",
+          "weight": 3,
+          "chance": 1
+        }
+      ]
+    },
+    {
+      "zone": "The Kiln Warren",
+      "region": "P2 seg5 Steel",
+      "levelRange": [
+        35,
+        39
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Roswyrm",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 1
+        }
+      ]
+    },
+    {
+      "zone": "Forge Outskirts",
+      "region": "P2 seg5 Steel",
+      "levelRange": [
+        35,
+        41
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Roscale",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Voltracer",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Floravian",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Voltwing",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Lotusurge",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Lotushell",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Nimbuspry",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Ferradillo",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Lunabloom",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Glacivane",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Aegibug",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Ferraclaw",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Glacisaur",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Aquasting",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Voltaram",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Orchlume",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Floraglee",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Solroost",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Halolume",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Cherubick",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        }
+      ]
+    },
+    {
+      "zone": "Route 8 · Capital Approach",
+      "region": "P2 seg6 Fairy",
+      "levelRange": [
+        42,
+        46
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Cherubick",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 1
+        }
+      ]
+    },
+    {
+      "zone": "The Offering Vault",
+      "region": "P2 seg6 Fairy",
+      "levelRange": [
+        42,
+        49
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Halowing",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 1
+        }
+      ]
+    },
+    {
+      "zone": "Heian-kyō Outskirts",
+      "region": "P2 seg6 Fairy",
+      "levelRange": [
+        42,
+        49
+      ],
+      "note": null,
+      "encounters": [
+        {
+          "species": "Voltracer",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Floravian",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Voltwing",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Lotusurge",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Lotushell",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Nimbuspry",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Ferradillo",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Lunabloom",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Glacivane",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Aegibug",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Ferraclaw",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Glacisaur",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Aquasting",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Voltaram",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Orchlume",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Floraglee",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Solroost",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Halolume",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Aureguard",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        },
+        {
+          "species": "Pearleserp",
+          "rarity": "Rare",
+          "weight": 1,
+          "chance": 0.05
+        }
+      ]
+    }
+  ]
+}

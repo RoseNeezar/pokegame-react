@@ -1,0 +1,6682 @@
+[
+  {
+    "dexNo": 1,
+    "id": "helmling",
+    "name": "Helmling",
+    "stage": "Base",
+    "aspects": [
+      "Steel"
+    ],
+    "base": {
+      "hp": 25,
+      "attack": 34,
+      "defense": 69,
+      "speed": 44,
+      "special": 93
+    },
+    "bst": 265,
+    "catchRate": 190,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "knighton",
+    "baseExpYield": 55,
+    "rarity": "Uncommon",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Iron Rap"
+      },
+      {
+        "level": 5,
+        "move": "Plate Guard"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Iron Rap",
+      "Star Shower",
+      "Plate Guard",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Golden armored hatchling"
+  },
+  {
+    "dexNo": 2,
+    "id": "knighton",
+    "name": "Knighton",
+    "stage": "Stage 2",
+    "aspects": [
+      "Steel"
+    ],
+    "base": {
+      "hp": 44,
+      "attack": 52,
+      "defense": 83,
+      "speed": 61,
+      "special": 105
+    },
+    "bst": 345,
+    "catchRate": 90,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "aureguard",
+    "baseExpYield": 120,
+    "rarity": "Rare",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Iron Rap"
+      },
+      {
+        "level": 5,
+        "move": "Plate Guard"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Steel Cleave"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Steel Cleave",
+      "Full Body Crash",
+      "Plate Guard",
+      "Iron Rap"
+    ],
+    "inV1": true,
+    "blurb": "Golden shield knight"
+  },
+  {
+    "dexNo": 3,
+    "id": "aureguard",
+    "name": "Aureguard",
+    "stage": "Final A",
+    "aspects": [
+      "Steel",
+      "Fairy"
+    ],
+    "base": {
+      "hp": 105,
+      "attack": 78,
+      "defense": 81,
+      "speed": 67,
+      "special": 94
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Iron Rap"
+      },
+      {
+        "level": 5,
+        "move": "Plate Guard"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Steel Cleave"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Lunar Burst"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Forge Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Lunar Burst",
+      "Full Body Crash",
+      "Plate Guard",
+      "Steel Cleave"
+    ],
+    "inV1": true,
+    "blurb": "Radiant paladin"
+  },
+  {
+    "dexNo": 4,
+    "id": "dreadhelm",
+    "name": "Dreadhelm",
+    "stage": "Final B",
+    "aspects": [
+      "Steel",
+      "Dark"
+    ],
+    "base": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "speed": 110,
+      "special": 130
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Iron Rap"
+      },
+      {
+        "level": 5,
+        "move": "Plate Guard"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Steel Cleave"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Umbral Rend"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Forge Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Umbral Rend",
+      "Full Body Crash",
+      "Plate Guard",
+      "Steel Cleave"
+    ],
+    "inV1": false,
+    "blurb": "Fallen black knight"
+  },
+  {
+    "dexNo": 5,
+    "id": "gearbit",
+    "name": "Gearbit",
+    "stage": "Base",
+    "aspects": [
+      "Steel"
+    ],
+    "base": {
+      "hp": 36,
+      "attack": 68,
+      "defense": 43,
+      "speed": 88,
+      "special": 30
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "cogskitter",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Iron Rap"
+      },
+      {
+        "level": 5,
+        "move": "Plate Guard"
+      },
+      {
+        "level": 9,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      }
+    ],
+    "recommendedSet": [
+      "Iron Rap",
+      "Star Shower",
+      "Plate Guard",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Clockwork mouse"
+  },
+  {
+    "dexNo": 6,
+    "id": "cogskitter",
+    "name": "Cogskitter",
+    "stage": "Stage 2",
+    "aspects": [
+      "Steel"
+    ],
+    "base": {
+      "hp": 55,
+      "attack": 81,
+      "defense": 60,
+      "speed": 99,
+      "special": 50
+    },
+    "bst": 345,
+    "catchRate": 120,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "voltracer",
+    "baseExpYield": 120,
+    "rarity": "Uncommon",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Iron Rap"
+      },
+      {
+        "level": 5,
+        "move": "Plate Guard"
+      },
+      {
+        "level": 9,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Steel Cleave"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Steel Cleave",
+      "Full Body Crash",
+      "Plate Guard",
+      "Iron Rap"
+    ],
+    "inV1": true,
+    "blurb": "Toothed-wheel runner"
+  },
+  {
+    "dexNo": 7,
+    "id": "voltracer",
+    "name": "Voltracer",
+    "stage": "Final A",
+    "aspects": [
+      "Electric",
+      "Steel"
+    ],
+    "base": {
+      "hp": 64,
+      "attack": 53,
+      "defense": 74,
+      "speed": 149,
+      "special": 85
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Iron Rap"
+      },
+      {
+        "level": 5,
+        "move": "Plate Guard"
+      },
+      {
+        "level": 9,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Steel Cleave"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Forge Strike"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Volt Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Forge Strike",
+      "Full Body Crash",
+      "Plate Guard",
+      "Steel Cleave"
+    ],
+    "inV1": true,
+    "blurb": "Turbine lightning racer"
+  },
+  {
+    "dexNo": 8,
+    "id": "scraprowl",
+    "name": "Scraprowl",
+    "stage": "Final B",
+    "aspects": [
+      "Steel",
+      "Dark"
+    ],
+    "base": {
+      "hp": 74,
+      "attack": 79,
+      "defense": 68,
+      "speed": 130,
+      "special": 74
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Iron Rap"
+      },
+      {
+        "level": 5,
+        "move": "Plate Guard"
+      },
+      {
+        "level": 9,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Steel Cleave"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Umbral Rend"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Forge Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Umbral Rend",
+      "Full Body Crash",
+      "Plate Guard",
+      "Steel Cleave"
+    ],
+    "inV1": false,
+    "blurb": "Black-iron gear prowler"
+  },
+  {
+    "dexNo": 9,
+    "id": "nectenna",
+    "name": "Nectenna",
+    "stage": "Base",
+    "aspects": [
+      "Bug"
+    ],
+    "base": {
+      "hp": 47,
+      "attack": 52,
+      "defense": 57,
+      "speed": 31,
+      "special": 78
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "sproutide",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      }
+    ],
+    "recommendedSet": [
+      "Pincer Nip",
+      "Star Shower",
+      "Silk Snare",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Blue nectar-antenna bug"
+  },
+  {
+    "dexNo": 10,
+    "id": "sproutide",
+    "name": "Sproutide",
+    "stage": "Stage 2",
+    "aspects": [
+      "Grass"
+    ],
+    "base": {
+      "hp": 65,
+      "attack": 70,
+      "defense": 75,
+      "speed": 43,
+      "special": 92
+    },
+    "bst": 345,
+    "catchRate": 90,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "lotusurge",
+    "baseExpYield": 120,
+    "rarity": "Rare",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Spore Cloud"
+      }
+    ],
+    "recommendedSet": [
+      "Bramble Rend",
+      "Full Body Crash",
+      "Silk Snare",
+      "Star Shower"
+    ],
+    "inV1": true,
+    "blurb": "Three-crowned nectar bulb"
+  },
+  {
+    "dexNo": 11,
+    "id": "lotusurge",
+    "name": "Lotusurge",
+    "stage": "Final A",
+    "aspects": [
+      "Grass",
+      "Water"
+    ],
+    "base": {
+      "hp": 70,
+      "attack": 59,
+      "defense": 123,
+      "speed": 65,
+      "special": 108
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 30,
+        "move": "Tidal Wave"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Tidal Wave",
+      "Full Body Crash",
+      "Silk Snare",
+      "Bramble Rend"
+    ],
+    "inV1": true,
+    "blurb": "Lotus reservoir guardian"
+  },
+  {
+    "dexNo": 12,
+    "id": "voltroot",
+    "name": "Voltroot",
+    "stage": "Final B",
+    "aspects": [
+      "Grass",
+      "Electric"
+    ],
+    "base": {
+      "hp": 82,
+      "attack": 87,
+      "defense": 93,
+      "speed": 54,
+      "special": 109
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 30,
+        "move": "Storm Bolt"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Storm Bolt",
+      "Full Body Crash",
+      "Silk Snare",
+      "Bramble Rend"
+    ],
+    "inV1": false,
+    "blurb": "Lightning-sap storm sprout"
+  },
+  {
+    "dexNo": 13,
+    "id": "budbloom",
+    "name": "Budbloom",
+    "stage": "Base",
+    "aspects": [
+      "Grass"
+    ],
+    "base": {
+      "hp": 49,
+      "attack": 74,
+      "defense": 34,
+      "speed": 39,
+      "special": 69
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "petalisk",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      }
+    ],
+    "recommendedSet": [
+      "Leaf Cutter",
+      "Star Shower",
+      "Spore Cloud",
+      "Life Siphon"
+    ],
+    "inV1": true,
+    "blurb": "Purple bud creature"
+  },
+  {
+    "dexNo": 14,
+    "id": "petalisk",
+    "name": "Petalisk",
+    "stage": "Stage 2",
+    "aspects": [
+      "Grass"
+    ],
+    "base": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 50,
+      "speed": 55,
+      "special": 85
+    },
+    "bst": 345,
+    "catchRate": 120,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "orchlume",
+    "baseExpYield": 120,
+    "rarity": "Uncommon",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      }
+    ],
+    "recommendedSet": [
+      "Bramble Rend",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Leaf Cutter"
+    ],
+    "inV1": true,
+    "blurb": "Thorn-vine walking bud"
+  },
+  {
+    "dexNo": 15,
+    "id": "orchlume",
+    "name": "Orchlume",
+    "stage": "Final A",
+    "aspects": [
+      "Grass",
+      "Fairy"
+    ],
+    "base": {
+      "hp": 82,
+      "attack": 87,
+      "defense": 93,
+      "speed": 54,
+      "special": 109
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Lunar Burst"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Lunar Burst",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": true,
+    "blurb": "Radiant orchid guardian"
+  },
+  {
+    "dexNo": 16,
+    "id": "venobloom",
+    "name": "Venobloom",
+    "stage": "Final B",
+    "aspects": [
+      "Grass",
+      "Poison"
+    ],
+    "base": {
+      "hp": 81,
+      "attack": 106,
+      "defense": 66,
+      "speed": 71,
+      "special": 101
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Sludge Wave"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Sludge Wave",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": false,
+    "blurb": "Carnivorous toxic bloom"
+  },
+  {
+    "dexNo": 17,
+    "id": "brontide",
+    "name": "Brontide",
+    "stage": "Base",
+    "aspects": [
+      "Water"
+    ],
+    "base": {
+      "hp": 29,
+      "attack": 39,
+      "defense": 69,
+      "speed": 59,
+      "special": 69
+    },
+    "bst": 265,
+    "catchRate": 190,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "brontaur",
+    "baseExpYield": 55,
+    "rarity": "Uncommon",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Water Splash"
+      },
+      {
+        "level": 5,
+        "move": "Mist Shroud"
+      },
+      {
+        "level": 9,
+        "move": "Bubble Burst"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Bubble Burst",
+      "Star Shower",
+      "Mist Shroud",
+      "Water Splash"
+    ],
+    "inV1": true,
+    "blurb": "Gentle blue long-neck"
+  },
+  {
+    "dexNo": 18,
+    "id": "brontaur",
+    "name": "Brontaur",
+    "stage": "Stage 2",
+    "aspects": [
+      "Water"
+    ],
+    "base": {
+      "hp": 48,
+      "attack": 57,
+      "defense": 83,
+      "speed": 74,
+      "special": 83
+    },
+    "bst": 345,
+    "catchRate": 90,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "glacisaur",
+    "baseExpYield": 120,
+    "rarity": "Rare",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Water Splash"
+      },
+      {
+        "level": 5,
+        "move": "Mist Shroud"
+      },
+      {
+        "level": 9,
+        "move": "Bubble Burst"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Torrent Fang"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Torrent Fang",
+      "Full Body Crash",
+      "Mist Shroud",
+      "Bubble Burst"
+    ],
+    "inV1": true,
+    "blurb": "Wave-marked aquatic long-neck"
+  },
+  {
+    "dexNo": 19,
+    "id": "glacisaur",
+    "name": "Glacisaur",
+    "stage": "Final A",
+    "aspects": [
+      "Water",
+      "Ice"
+    ],
+    "base": {
+      "hp": 94,
+      "attack": 73,
+      "defense": 84,
+      "speed": 73,
+      "special": 101
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Water Splash"
+      },
+      {
+        "level": 5,
+        "move": "Mist Shroud"
+      },
+      {
+        "level": 9,
+        "move": "Bubble Burst"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Torrent Fang"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Glacial Storm"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Tidal Wave"
+      }
+    ],
+    "recommendedSet": [
+      "Glacial Storm",
+      "Full Body Crash",
+      "Mist Shroud",
+      "Torrent Fang"
+    ],
+    "inV1": true,
+    "blurb": "Glacier-backed long-neck"
+  },
+  {
+    "dexNo": 20,
+    "id": "dracotide",
+    "name": "Dracotide",
+    "stage": "Final B",
+    "aspects": [
+      "Water",
+      "Dragon"
+    ],
+    "base": {
+      "hp": 84,
+      "attack": 110,
+      "defense": 70,
+      "speed": 72,
+      "special": 89
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Water Splash"
+      },
+      {
+        "level": 5,
+        "move": "Mist Shroud"
+      },
+      {
+        "level": 9,
+        "move": "Bubble Burst"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Torrent Fang"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Draco Surge"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Tidal Wave"
+      }
+    ],
+    "recommendedSet": [
+      "Draco Surge",
+      "Full Body Crash",
+      "Mist Shroud",
+      "Torrent Fang"
+    ],
+    "inV1": false,
+    "blurb": "Storm sea sauropod"
+  },
+  {
+    "dexNo": 21,
+    "id": "buzzle",
+    "name": "Buzzle",
+    "stage": "Base",
+    "aspects": [
+      "Bug"
+    ],
+    "base": {
+      "hp": 61,
+      "attack": 53,
+      "defense": 45,
+      "speed": 76,
+      "special": 30
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "buzzguard",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      }
+    ],
+    "recommendedSet": [
+      "Pincer Nip",
+      "Star Shower",
+      "Silk Snare",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Bumblebee scout"
+  },
+  {
+    "dexNo": 22,
+    "id": "buzzguard",
+    "name": "Buzzguard",
+    "stage": "Stage 2",
+    "aspects": [
+      "Bug",
+      "Flying"
+    ],
+    "base": {
+      "hp": 74,
+      "attack": 90,
+      "defense": 45,
+      "speed": 85,
+      "special": 51
+    },
+    "bst": 345,
+    "catchRate": 120,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "voltwing",
+    "baseExpYield": 120,
+    "rarity": "Uncommon",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Skyward Dive",
+      "Star Shower",
+      "Silk Snare",
+      "Swarm Strike"
+    ],
+    "inV1": true,
+    "blurb": "Armored hive scout"
+  },
+  {
+    "dexNo": 23,
+    "id": "voltwing",
+    "name": "Voltwing",
+    "stage": "Final A",
+    "aspects": [
+      "Bug",
+      "Electric"
+    ],
+    "base": {
+      "hp": 71,
+      "attack": 111,
+      "defense": 81,
+      "speed": 106,
+      "special": 56
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Storm Bolt"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Hive Fury"
+      }
+    ],
+    "recommendedSet": [
+      "Storm Bolt",
+      "Skyward Dive",
+      "Silk Snare",
+      "Swarm Strike"
+    ],
+    "inV1": true,
+    "blurb": "Thunder-wing speedster"
+  },
+  {
+    "dexNo": 24,
+    "id": "jabjacket",
+    "name": "Jabjacket",
+    "stage": "Final B",
+    "aspects": [
+      "Bug",
+      "Fighting"
+    ],
+    "base": {
+      "hp": 64,
+      "attack": 124,
+      "defense": 99,
+      "speed": 84,
+      "special": 54
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Grapple Slam"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Hive Fury"
+      }
+    ],
+    "recommendedSet": [
+      "Grapple Slam",
+      "Skyward Dive",
+      "Silk Snare",
+      "Swarm Strike"
+    ],
+    "inV1": false,
+    "blurb": "Lancer hornet"
+  },
+  {
+    "dexNo": 25,
+    "id": "frondove",
+    "name": "Frondove",
+    "stage": "Base",
+    "aspects": [
+      "Grass",
+      "Flying"
+    ],
+    "base": {
+      "hp": 49,
+      "attack": 55,
+      "defense": 49,
+      "speed": 69,
+      "special": 43
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "leaflark",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      }
+    ],
+    "recommendedSet": [
+      "Leaf Cutter",
+      "Star Shower",
+      "Spore Cloud",
+      "Life Siphon"
+    ],
+    "inV1": true,
+    "blurb": "Leaf-winged bird"
+  },
+  {
+    "dexNo": 26,
+    "id": "leaflark",
+    "name": "Leaflark",
+    "stage": "Stage 2",
+    "aspects": [
+      "Grass",
+      "Flying"
+    ],
+    "base": {
+      "hp": 73,
+      "attack": 69,
+      "defense": 63,
+      "speed": 82,
+      "special": 58
+    },
+    "bst": 345,
+    "catchRate": 90,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "floravian",
+    "baseExpYield": 120,
+    "rarity": "Rare",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      }
+    ],
+    "recommendedSet": [
+      "Bramble Rend",
+      "Star Shower",
+      "Spore Cloud",
+      "Skyward Dive"
+    ],
+    "inV1": true,
+    "blurb": "Canopy leaf bird"
+  },
+  {
+    "dexNo": 27,
+    "id": "floravian",
+    "name": "Floravian",
+    "stage": "Final A",
+    "aspects": [
+      "Grass",
+      "Fairy"
+    ],
+    "base": {
+      "hp": 88,
+      "attack": 85,
+      "defense": 80,
+      "speed": 97,
+      "special": 75
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Lunar Burst"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Lunar Burst",
+      "Skyward Dive",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": true,
+    "blurb": "Spring blossom bird"
+  },
+  {
+    "dexNo": 28,
+    "id": "thornraven",
+    "name": "Thornraven",
+    "stage": "Final B",
+    "aspects": [
+      "Grass",
+      "Dark"
+    ],
+    "base": {
+      "hp": 73,
+      "attack": 100,
+      "defense": 73,
+      "speed": 111,
+      "special": 68
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Umbral Rend"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Umbral Rend",
+      "Skyward Dive",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": false,
+    "blurb": "Bramble-shadow raven"
+  },
+  {
+    "dexNo": 29,
+    "id": "bloomble",
+    "name": "Bloomble",
+    "stage": "Base",
+    "aspects": [
+      "Grass"
+    ],
+    "base": {
+      "hp": 39,
+      "attack": 76,
+      "defense": 61,
+      "speed": 28,
+      "special": 61
+    },
+    "bst": 265,
+    "catchRate": 190,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "mossmallow",
+    "baseExpYield": 55,
+    "rarity": "Uncommon",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      }
+    ],
+    "recommendedSet": [
+      "Leaf Cutter",
+      "Star Shower",
+      "Spore Cloud",
+      "Life Siphon"
+    ],
+    "inV1": true,
+    "blurb": "Cheerful blossom blob"
+  },
+  {
+    "dexNo": 30,
+    "id": "mossmallow",
+    "name": "Mossmallow",
+    "stage": "Stage 2",
+    "aspects": [
+      "Grass"
+    ],
+    "base": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 80,
+      "speed": 30,
+      "special": 80
+    },
+    "bst": 345,
+    "catchRate": 90,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "floraglee",
+    "baseExpYield": 120,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      }
+    ],
+    "recommendedSet": [
+      "Bramble Rend",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Leaf Cutter"
+    ],
+    "inV1": true,
+    "blurb": "Flowered jelly mound"
+  },
+  {
+    "dexNo": 31,
+    "id": "floraglee",
+    "name": "Floraglee",
+    "stage": "Final A",
+    "aspects": [
+      "Grass",
+      "Fairy"
+    ],
+    "base": {
+      "hp": 89,
+      "attack": 89,
+      "defense": 79,
+      "speed": 51,
+      "special": 117
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Lunar Burst"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Lunar Burst",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": true,
+    "blurb": "Meadow fairy blob"
+  },
+  {
+    "dexNo": 32,
+    "id": "sporebog",
+    "name": "Sporebog",
+    "stage": "Final B",
+    "aspects": [
+      "Grass",
+      "Poison"
+    ],
+    "base": {
+      "hp": 82,
+      "attack": 87,
+      "defense": 93,
+      "speed": 54,
+      "special": 109
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Sludge Wave"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Sludge Wave",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": false,
+    "blurb": "Toxic mushroom blob"
+  },
+  {
+    "dexNo": 33,
+    "id": "cherubick",
+    "name": "Cherubick",
+    "stage": "Base",
+    "aspects": [
+      "Fairy",
+      "Flying"
+    ],
+    "base": {
+      "hp": 72,
+      "attack": 46,
+      "defense": 49,
+      "speed": 36,
+      "special": 62
+    },
+    "bst": 265,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": 16,
+    "evolvesInto": "halowing",
+    "baseExpYield": 55,
+    "rarity": "Rare",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Glimmer Tap"
+      },
+      {
+        "level": 5,
+        "move": "Charm Ward"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      }
+    ],
+    "recommendedSet": [
+      "Glimmer Tap",
+      "Star Shower",
+      "Charm Ward",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Winged cherub chick"
+  },
+  {
+    "dexNo": 34,
+    "id": "halowing",
+    "name": "Halowing",
+    "stage": "Stage 2",
+    "aspects": [
+      "Fairy",
+      "Flying"
+    ],
+    "base": {
+      "hp": 85,
+      "attack": 63,
+      "defense": 66,
+      "speed": 54,
+      "special": 77
+    },
+    "bst": 345,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "seraphlume",
+    "baseExpYield": 120,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Glimmer Tap"
+      },
+      {
+        "level": 5,
+        "move": "Charm Ward"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Radiant Flash"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Radiant Flash",
+      "Star Shower",
+      "Charm Ward",
+      "Skyward Dive"
+    ],
+    "inV1": true,
+    "blurb": "Golden four-wing dove"
+  },
+  {
+    "dexNo": 35,
+    "id": "seraphlume",
+    "name": "Seraphlume",
+    "stage": "Final A",
+    "aspects": [
+      "Fairy",
+      "Flying"
+    ],
+    "base": {
+      "hp": 84,
+      "attack": 63,
+      "defense": 70,
+      "speed": 98,
+      "special": 110
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Glimmer Tap"
+      },
+      {
+        "level": 5,
+        "move": "Charm Ward"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Radiant Flash"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Dive Bomb"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Lunar Burst"
+      }
+    ],
+    "recommendedSet": [
+      "Dive Bomb",
+      "Star Shower",
+      "Charm Ward",
+      "Radiant Flash"
+    ],
+    "inV1": true,
+    "blurb": "Six-wing radiant bird"
+  },
+  {
+    "dexNo": 36,
+    "id": "duskrael",
+    "name": "Duskrael",
+    "stage": "Final B",
+    "aspects": [
+      "Dark",
+      "Flying"
+    ],
+    "base": {
+      "hp": 82,
+      "attack": 87,
+      "defense": 76,
+      "speed": 98,
+      "special": 82
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Glimmer Tap"
+      },
+      {
+        "level": 5,
+        "move": "Charm Ward"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Radiant Flash"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Dive Bomb"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Umbral Rend"
+      }
+    ],
+    "recommendedSet": [
+      "Dive Bomb",
+      "Radiant Flash",
+      "Charm Ward",
+      "Skyward Dive"
+    ],
+    "inV1": false,
+    "blurb": "Eclipse-wing predator"
+  },
+  {
+    "dexNo": 37,
+    "id": "shellot",
+    "name": "Shellot",
+    "stage": "Base",
+    "aspects": [
+      "Normal"
+    ],
+    "base": {
+      "hp": 34,
+      "attack": 82,
+      "defense": 43,
+      "speed": 72,
+      "special": 34
+    },
+    "bst": 265,
+    "catchRate": 190,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "shellark",
+    "baseExpYield": 55,
+    "rarity": "Uncommon",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      }
+    ],
+    "recommendedSet": [
+      "Star Shower",
+      "Blade Ritual",
+      "Slash Strike",
+      "Coin Toss"
+    ],
+    "inV1": true,
+    "blurb": "Walking egg hatchling"
+  },
+  {
+    "dexNo": 38,
+    "id": "shellark",
+    "name": "Shellark",
+    "stage": "Stage 2",
+    "aspects": [
+      "Flying"
+    ],
+    "base": {
+      "hp": 52,
+      "attack": 95,
+      "defense": 60,
+      "speed": 86,
+      "special": 52
+    },
+    "bst": 345,
+    "catchRate": 90,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "solroost",
+    "baseExpYield": 120,
+    "rarity": "Rare",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 25,
+        "move": "Updraft"
+      }
+    ],
+    "recommendedSet": [
+      "Skyward Dive",
+      "Full Body Crash",
+      "Blade Ritual",
+      "Star Shower"
+    ],
+    "inV1": true,
+    "blurb": "Shell-armored juvenile bird"
+  },
+  {
+    "dexNo": 39,
+    "id": "solroost",
+    "name": "Solroost",
+    "stage": "Final A",
+    "aspects": [
+      "Fire",
+      "Flying"
+    ],
+    "base": {
+      "hp": 77,
+      "attack": 86,
+      "defense": 77,
+      "speed": 77,
+      "special": 108
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 25,
+        "move": "Updraft"
+      },
+      {
+        "level": 30,
+        "move": "Dive Bomb"
+      },
+      {
+        "level": 34,
+        "move": "Cinder Veil"
+      },
+      {
+        "level": 38,
+        "move": "Inferno Burst"
+      }
+    ],
+    "recommendedSet": [
+      "Dive Bomb",
+      "Full Body Crash",
+      "Blade Ritual",
+      "Skyward Dive"
+    ],
+    "inV1": true,
+    "blurb": "Sunfire rooster"
+  },
+  {
+    "dexNo": 40,
+    "id": "lunowl",
+    "name": "Lunowl",
+    "stage": "Final B",
+    "aspects": [
+      "Ice",
+      "Flying"
+    ],
+    "base": {
+      "hp": 79,
+      "attack": 74,
+      "defense": 88,
+      "speed": 74,
+      "special": 110
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 25,
+        "move": "Updraft"
+      },
+      {
+        "level": 30,
+        "move": "Dive Bomb"
+      },
+      {
+        "level": 34,
+        "move": "Frost Veil"
+      },
+      {
+        "level": 38,
+        "move": "Frost Ray"
+      }
+    ],
+    "recommendedSet": [
+      "Dive Bomb",
+      "Full Body Crash",
+      "Blade Ritual",
+      "Skyward Dive"
+    ],
+    "inV1": false,
+    "blurb": "Frost moon owl"
+  },
+  {
+    "dexNo": 41,
+    "id": "roswyrm",
+    "name": "Roswyrm",
+    "stage": "Base",
+    "aspects": [
+      "Water"
+    ],
+    "base": {
+      "hp": 43,
+      "attack": 68,
+      "defense": 48,
+      "speed": 53,
+      "special": 53
+    },
+    "bst": 265,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": 16,
+    "evolvesInto": "roscale",
+    "baseExpYield": 55,
+    "rarity": "Rare",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Water Splash"
+      },
+      {
+        "level": 5,
+        "move": "Mist Shroud"
+      },
+      {
+        "level": 9,
+        "move": "Bubble Burst"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Bubble Burst",
+      "Star Shower",
+      "Mist Shroud",
+      "Water Splash"
+    ],
+    "inV1": true,
+    "blurb": "Rose sea wyrm"
+  },
+  {
+    "dexNo": 42,
+    "id": "roscale",
+    "name": "Roscale",
+    "stage": "Stage 2",
+    "aspects": [
+      "Water",
+      "Dragon"
+    ],
+    "base": {
+      "hp": 60,
+      "attack": 83,
+      "defense": 64,
+      "speed": 69,
+      "special": 69
+    },
+    "bst": 345,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "pearleserp",
+    "baseExpYield": 120,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Water Splash"
+      },
+      {
+        "level": 5,
+        "move": "Mist Shroud"
+      },
+      {
+        "level": 9,
+        "move": "Bubble Burst"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Scale Ripple"
+      },
+      {
+        "level": 21,
+        "move": "Torrent Fang"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Torrent Fang",
+      "Star Shower",
+      "Mist Shroud",
+      "Bubble Burst"
+    ],
+    "inV1": true,
+    "blurb": "Rose-crested sea serpent"
+  },
+  {
+    "dexNo": 43,
+    "id": "pearleserp",
+    "name": "Pearleserp",
+    "stage": "Final A",
+    "aspects": [
+      "Water",
+      "Fairy"
+    ],
+    "base": {
+      "hp": 77,
+      "attack": 114,
+      "defense": 81,
+      "speed": 68,
+      "special": 85
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Water Splash"
+      },
+      {
+        "level": 5,
+        "move": "Mist Shroud"
+      },
+      {
+        "level": 9,
+        "move": "Bubble Burst"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Scale Ripple"
+      },
+      {
+        "level": 21,
+        "move": "Torrent Fang"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Lunar Burst"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Tidal Wave"
+      }
+    ],
+    "recommendedSet": [
+      "Lunar Burst",
+      "Star Shower",
+      "Mist Shroud",
+      "Torrent Fang"
+    ],
+    "inV1": true,
+    "blurb": "Pearl coral sea dragon"
+  },
+  {
+    "dexNo": 44,
+    "id": "venomare",
+    "name": "Venomare",
+    "stage": "Final B",
+    "aspects": [
+      "Water",
+      "Poison"
+    ],
+    "base": {
+      "hp": 78,
+      "attack": 68,
+      "defense": 64,
+      "speed": 98,
+      "special": 117
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Water Splash"
+      },
+      {
+        "level": 5,
+        "move": "Mist Shroud"
+      },
+      {
+        "level": 9,
+        "move": "Bubble Burst"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Scale Ripple"
+      },
+      {
+        "level": 21,
+        "move": "Torrent Fang"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Sludge Wave"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Tidal Wave"
+      }
+    ],
+    "recommendedSet": [
+      "Sludge Wave",
+      "Star Shower",
+      "Mist Shroud",
+      "Torrent Fang"
+    ],
+    "inV1": false,
+    "blurb": "Abyssal venom serpent"
+  },
+  {
+    "dexNo": 45,
+    "id": "dottella",
+    "name": "Dottella",
+    "stage": "Base",
+    "aspects": [
+      "Bug"
+    ],
+    "base": {
+      "hp": 26,
+      "attack": 93,
+      "defense": 80,
+      "speed": 44,
+      "special": 22
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "carapotta",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      }
+    ],
+    "recommendedSet": [
+      "Pincer Nip",
+      "Star Shower",
+      "Silk Snare",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Spotted lady beetle"
+  },
+  {
+    "dexNo": 46,
+    "id": "carapotta",
+    "name": "Carapotta",
+    "stage": "Stage 2",
+    "aspects": [
+      "Bug"
+    ],
+    "base": {
+      "hp": 45,
+      "attack": 105,
+      "defense": 93,
+      "speed": 61,
+      "special": 41
+    },
+    "bst": 345,
+    "catchRate": 120,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "aegibug",
+    "baseExpYield": 120,
+    "rarity": "Uncommon",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Swarm Strike",
+      "Full Body Crash",
+      "Silk Snare",
+      "Pincer Nip"
+    ],
+    "inV1": true,
+    "blurb": "Horned spotted beetle"
+  },
+  {
+    "dexNo": 47,
+    "id": "aegibug",
+    "name": "Aegibug",
+    "stage": "Final A",
+    "aspects": [
+      "Bug",
+      "Steel"
+    ],
+    "base": {
+      "hp": 74,
+      "attack": 116,
+      "defense": 99,
+      "speed": 37,
+      "special": 99
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Forge Strike"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Hive Fury"
+      }
+    ],
+    "recommendedSet": [
+      "Forge Strike",
+      "Full Body Crash",
+      "Silk Snare",
+      "Swarm Strike"
+    ],
+    "inV1": true,
+    "blurb": "Fortress shield beetle"
+  },
+  {
+    "dexNo": 48,
+    "id": "magmara",
+    "name": "Magmara",
+    "stage": "Final B",
+    "aspects": [
+      "Bug",
+      "Fire"
+    ],
+    "base": {
+      "hp": 70,
+      "attack": 103,
+      "defense": 61,
+      "speed": 100,
+      "special": 91
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Inferno Burst"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Hive Fury"
+      }
+    ],
+    "recommendedSet": [
+      "Inferno Burst",
+      "Full Body Crash",
+      "Silk Snare",
+      "Swarm Strike"
+    ],
+    "inV1": false,
+    "blurb": "Volcanic ladybird"
+  },
+  {
+    "dexNo": 49,
+    "id": "pinchitin",
+    "name": "Pinchitin",
+    "stage": "Base",
+    "aspects": [
+      "Bug"
+    ],
+    "base": {
+      "hp": 26,
+      "attack": 71,
+      "defense": 79,
+      "speed": 49,
+      "special": 40
+    },
+    "bst": 265,
+    "catchRate": 190,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "clamptera",
+    "baseExpYield": 55,
+    "rarity": "Uncommon",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Pincer Nip",
+      "Star Shower",
+      "Silk Snare",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Violet pincer beetle"
+  },
+  {
+    "dexNo": 50,
+    "id": "clamptera",
+    "name": "Clamptera",
+    "stage": "Stage 2",
+    "aspects": [
+      "Bug"
+    ],
+    "base": {
+      "hp": 48,
+      "attack": 93,
+      "defense": 84,
+      "speed": 64,
+      "special": 56
+    },
+    "bst": 345,
+    "catchRate": 90,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "ferraclaw",
+    "baseExpYield": 120,
+    "rarity": "Rare",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Swarm Strike",
+      "Full Body Crash",
+      "Silk Snare",
+      "Pincer Nip"
+    ],
+    "inV1": true,
+    "blurb": "Heavy pincer beetle"
+  },
+  {
+    "dexNo": 51,
+    "id": "ferraclaw",
+    "name": "Ferraclaw",
+    "stage": "Final A",
+    "aspects": [
+      "Bug",
+      "Steel"
+    ],
+    "base": {
+      "hp": 81,
+      "attack": 111,
+      "defense": 131,
+      "speed": 46,
+      "special": 56
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Forge Strike"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Hive Fury"
+      }
+    ],
+    "recommendedSet": [
+      "Forge Strike",
+      "Full Body Crash",
+      "Silk Snare",
+      "Swarm Strike"
+    ],
+    "inV1": true,
+    "blurb": "Fortress crusher beetle"
+  },
+  {
+    "dexNo": 52,
+    "id": "noxpincer",
+    "name": "Noxpincer",
+    "stage": "Final B",
+    "aspects": [
+      "Bug",
+      "Dark"
+    ],
+    "base": {
+      "hp": 66,
+      "attack": 91,
+      "defense": 121,
+      "speed": 61,
+      "special": 86
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Umbral Rend"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Hive Fury"
+      }
+    ],
+    "recommendedSet": [
+      "Umbral Rend",
+      "Full Body Crash",
+      "Silk Snare",
+      "Swarm Strike"
+    ],
+    "inV1": false,
+    "blurb": "Shadow ambush beetle"
+  },
+  {
+    "dexNo": 53,
+    "id": "verdusk",
+    "name": "Verdusk",
+    "stage": "Base",
+    "aspects": [
+      "Grass",
+      "Flying"
+    ],
+    "base": {
+      "hp": 49,
+      "attack": 55,
+      "defense": 43,
+      "speed": 69,
+      "special": 49
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "frondbat",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      }
+    ],
+    "recommendedSet": [
+      "Leaf Cutter",
+      "Star Shower",
+      "Spore Cloud",
+      "Life Siphon"
+    ],
+    "inV1": true,
+    "blurb": "Leaf-winged bat"
+  },
+  {
+    "dexNo": 54,
+    "id": "frondbat",
+    "name": "Frondbat",
+    "stage": "Stage 2",
+    "aspects": [
+      "Grass",
+      "Flying"
+    ],
+    "base": {
+      "hp": 66,
+      "attack": 71,
+      "defense": 62,
+      "speed": 80,
+      "special": 66
+    },
+    "bst": 345,
+    "catchRate": 120,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "lunabloom",
+    "baseExpYield": 120,
+    "rarity": "Uncommon",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      }
+    ],
+    "recommendedSet": [
+      "Bramble Rend",
+      "Star Shower",
+      "Spore Cloud",
+      "Skyward Dive"
+    ],
+    "inV1": true,
+    "blurb": "Layered leaf-wing bat"
+  },
+  {
+    "dexNo": 55,
+    "id": "lunabloom",
+    "name": "Lunabloom",
+    "stage": "Final A",
+    "aspects": [
+      "Grass",
+      "Fairy"
+    ],
+    "base": {
+      "hp": 79,
+      "attack": 74,
+      "defense": 68,
+      "speed": 102,
+      "special": 102
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Lunar Burst"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Lunar Burst",
+      "Skyward Dive",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": true,
+    "blurb": "Moon-blossom canopy bat"
+  },
+  {
+    "dexNo": 56,
+    "id": "wraithleaf",
+    "name": "Wraithleaf",
+    "stage": "Final B",
+    "aspects": [
+      "Grass",
+      "Ghost"
+    ],
+    "base": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "speed": 110,
+      "special": 130
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Soul Rend"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Soul Rend",
+      "Skyward Dive",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": false,
+    "blurb": "Dead-leaf phantom bat"
+  },
+  {
+    "dexNo": 57,
+    "id": "skettera",
+    "name": "Skettera",
+    "stage": "Base",
+    "aspects": [
+      "Bug"
+    ],
+    "base": {
+      "hp": 64,
+      "attack": 58,
+      "defense": 53,
+      "speed": 48,
+      "special": 42
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "skeetrike",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      }
+    ],
+    "recommendedSet": [
+      "Pincer Nip",
+      "Star Shower",
+      "Silk Snare",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Crimson mosquito"
+  },
+  {
+    "dexNo": 58,
+    "id": "skeetrike",
+    "name": "Skeetrike",
+    "stage": "Stage 2",
+    "aspects": [
+      "Bug",
+      "Flying"
+    ],
+    "base": {
+      "hp": 64,
+      "attack": 60,
+      "defense": 55,
+      "speed": 83,
+      "special": 83
+    },
+    "bst": 345,
+    "catchRate": 90,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "aquasting",
+    "baseExpYield": 120,
+    "rarity": "Rare",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Skyward Dive",
+      "Star Shower",
+      "Silk Snare",
+      "Swarm Strike"
+    ],
+    "inV1": true,
+    "blurb": "Long-needle mosquito"
+  },
+  {
+    "dexNo": 59,
+    "id": "aquasting",
+    "name": "Aquasting",
+    "stage": "Final A",
+    "aspects": [
+      "Bug",
+      "Water"
+    ],
+    "base": {
+      "hp": 60,
+      "attack": 60,
+      "defense": 52,
+      "speed": 104,
+      "special": 149
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Tidal Wave"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Hive Fury"
+      }
+    ],
+    "recommendedSet": [
+      "Tidal Wave",
+      "Skyward Dive",
+      "Silk Snare",
+      "Swarm Strike"
+    ],
+    "inV1": true,
+    "blurb": "Rain-skimming mosquito"
+  },
+  {
+    "dexNo": 60,
+    "id": "venatrix",
+    "name": "Venatrix",
+    "stage": "Final B",
+    "aspects": [
+      "Bug",
+      "Poison"
+    ],
+    "base": {
+      "hp": 91,
+      "attack": 110,
+      "defense": 56,
+      "speed": 105,
+      "special": 63
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Pincer Nip"
+      },
+      {
+        "level": 5,
+        "move": "Silk Snare"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 21,
+        "move": "Swarm Strike"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Sludge Wave"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Hive Fury"
+      }
+    ],
+    "recommendedSet": [
+      "Sludge Wave",
+      "Skyward Dive",
+      "Silk Snare",
+      "Swarm Strike"
+    ],
+    "inV1": false,
+    "blurb": "Crimson venom mosquito"
+  },
+  {
+    "dexNo": 61,
+    "id": "fleeceling",
+    "name": "Fleeceling",
+    "stage": "Base",
+    "aspects": [
+      "Normal"
+    ],
+    "base": {
+      "hp": 52,
+      "attack": 52,
+      "defense": 47,
+      "speed": 52,
+      "special": 62
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "ramblewool",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      }
+    ],
+    "recommendedSet": [
+      "Star Shower",
+      "Blade Ritual",
+      "Slash Strike",
+      "Coin Toss"
+    ],
+    "inV1": true,
+    "blurb": "Cloud-fleece sheep"
+  },
+  {
+    "dexNo": 62,
+    "id": "ramblewool",
+    "name": "Ramblewool",
+    "stage": "Stage 2",
+    "aspects": [
+      "Normal"
+    ],
+    "base": {
+      "hp": 85,
+      "attack": 63,
+      "defense": 66,
+      "speed": 54,
+      "special": 77
+    },
+    "bst": 345,
+    "catchRate": 120,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "voltaram",
+    "baseExpYield": 120,
+    "rarity": "Uncommon",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Warm Recovery"
+      }
+    ],
+    "recommendedSet": [
+      "Full Body Crash",
+      "Blade Ritual",
+      "Power Jab",
+      "Star Shower"
+    ],
+    "inV1": true,
+    "blurb": "Young cloud ram"
+  },
+  {
+    "dexNo": 63,
+    "id": "voltaram",
+    "name": "Voltaram",
+    "stage": "Final A",
+    "aspects": [
+      "Electric"
+    ],
+    "base": {
+      "hp": 64,
+      "attack": 64,
+      "defense": 59,
+      "speed": 129,
+      "special": 109
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Warm Recovery"
+      },
+      {
+        "level": 30,
+        "move": "Storm Bolt"
+      },
+      {
+        "level": 34,
+        "move": "Static Pulse"
+      },
+      {
+        "level": 38,
+        "move": "Volt Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Storm Bolt",
+      "Full Body Crash",
+      "Blade Ritual",
+      "Power Jab"
+    ],
+    "inV1": true,
+    "blurb": "Thunder-fleece ram"
+  },
+  {
+    "dexNo": 64,
+    "id": "glacifleece",
+    "name": "Glacifleece",
+    "stage": "Final B",
+    "aspects": [
+      "Ice"
+    ],
+    "base": {
+      "hp": 122,
+      "attack": 80,
+      "defense": 76,
+      "speed": 57,
+      "special": 90
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Warm Recovery"
+      },
+      {
+        "level": 30,
+        "move": "Glacial Storm"
+      },
+      {
+        "level": 34,
+        "move": "Frost Veil"
+      },
+      {
+        "level": 38,
+        "move": "Frost Ray"
+      }
+    ],
+    "recommendedSet": [
+      "Glacial Storm",
+      "Full Body Crash",
+      "Blade Ritual",
+      "Power Jab"
+    ],
+    "inV1": false,
+    "blurb": "Glacier-wool ram"
+  },
+  {
+    "dexNo": 65,
+    "id": "spriglim",
+    "name": "Spriglim",
+    "stage": "Base",
+    "aspects": [
+      "Grass"
+    ],
+    "base": {
+      "hp": 48,
+      "attack": 52,
+      "defense": 52,
+      "speed": 48,
+      "special": 70
+    },
+    "bst": 270,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": 16,
+    "evolvesInto": "leafkin",
+    "baseExpYield": 58,
+    "rarity": "Starter (1 of 3)",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      }
+    ],
+    "recommendedSet": [
+      "Leaf Cutter",
+      "Star Shower",
+      "Spore Cloud",
+      "Life Siphon"
+    ],
+    "inV1": true,
+    "blurb": "Tiny leaf sprite"
+  },
+  {
+    "dexNo": 66,
+    "id": "leafkin",
+    "name": "Leafkin",
+    "stage": "Stage 2",
+    "aspects": [
+      "Grass"
+    ],
+    "base": {
+      "hp": 66,
+      "attack": 68,
+      "defense": 69,
+      "speed": 66,
+      "special": 86
+    },
+    "bst": 355,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "sylphlora",
+    "baseExpYield": 126,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      }
+    ],
+    "recommendedSet": [
+      "Bramble Rend",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Leaf Cutter"
+    ],
+    "inV1": true,
+    "blurb": "Walking leaf familiar"
+  },
+  {
+    "dexNo": 67,
+    "id": "sylphlora",
+    "name": "Sylphlora",
+    "stage": "Final A",
+    "aspects": [
+      "Grass",
+      "Fairy"
+    ],
+    "base": {
+      "hp": 82,
+      "attack": 84,
+      "defense": 85,
+      "speed": 82,
+      "special": 102
+    },
+    "bst": 435,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 204,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Lunar Burst"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Lunar Burst",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": true,
+    "blurb": "Forest blessing spirit"
+  },
+  {
+    "dexNo": 68,
+    "id": "verdraxis",
+    "name": "Verdraxis",
+    "stage": "Final B",
+    "aspects": [
+      "Grass",
+      "Dragon"
+    ],
+    "base": {
+      "hp": 91,
+      "attack": 91,
+      "defense": 81,
+      "speed": 53,
+      "special": 119
+    },
+    "bst": 435,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 204,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Draco Surge"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Draco Surge",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": false,
+    "blurb": "Vine-scaled leaf drake"
+  },
+  {
+    "dexNo": 69,
+    "id": "fawnix",
+    "name": "Fawnix",
+    "stage": "Base",
+    "aspects": [
+      "Fire"
+    ],
+    "base": {
+      "hp": 41,
+      "attack": 44,
+      "defense": 43,
+      "speed": 72,
+      "special": 70
+    },
+    "bst": 270,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": 16,
+    "evolvesInto": "vulpine",
+    "baseExpYield": 58,
+    "rarity": "Starter (1 of 3)",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Ember Flick"
+      },
+      {
+        "level": 5,
+        "move": "Cinder Veil"
+      },
+      {
+        "level": 9,
+        "move": "Flame Lash"
+      },
+      {
+        "level": 13,
+        "move": "Star Shower"
+      }
+    ],
+    "recommendedSet": [
+      "Flame Lash",
+      "Star Shower",
+      "Cinder Veil",
+      "Ember Flick"
+    ],
+    "inV1": true,
+    "blurb": "Ember-tailed fox"
+  },
+  {
+    "dexNo": 70,
+    "id": "vulpine",
+    "name": "Vulpine",
+    "stage": "Stage 2",
+    "aspects": [
+      "Fire"
+    ],
+    "base": {
+      "hp": 61,
+      "attack": 64,
+      "defense": 63,
+      "speed": 83,
+      "special": 84
+    },
+    "bst": 355,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "ferravulp",
+    "baseExpYield": 126,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Ember Flick"
+      },
+      {
+        "level": 5,
+        "move": "Cinder Veil"
+      },
+      {
+        "level": 9,
+        "move": "Flame Lash"
+      },
+      {
+        "level": 13,
+        "move": "Star Shower"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Blaze Fang"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Blaze Fang",
+      "Full Body Crash",
+      "Cinder Veil",
+      "Flame Lash"
+    ],
+    "inV1": true,
+    "blurb": "Taller flame-tailed fox"
+  },
+  {
+    "dexNo": 71,
+    "id": "ferravulp",
+    "name": "Ferravulp",
+    "stage": "Final A",
+    "aspects": [
+      "Fire",
+      "Steel"
+    ],
+    "base": {
+      "hp": 86,
+      "attack": 106,
+      "defense": 76,
+      "speed": 91,
+      "special": 76
+    },
+    "bst": 435,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 204,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Ember Flick"
+      },
+      {
+        "level": 5,
+        "move": "Cinder Veil"
+      },
+      {
+        "level": 9,
+        "move": "Flame Lash"
+      },
+      {
+        "level": 13,
+        "move": "Star Shower"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Blaze Fang"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Forge Strike"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Inferno Burst"
+      }
+    ],
+    "recommendedSet": [
+      "Forge Strike",
+      "Full Body Crash",
+      "Cinder Veil",
+      "Blaze Fang"
+    ],
+    "inV1": true,
+    "blurb": "Chrome-furred forge fox"
+  },
+  {
+    "dexNo": 72,
+    "id": "cindusk",
+    "name": "Cindusk",
+    "stage": "Final B",
+    "aspects": [
+      "Dark",
+      "Fire"
+    ],
+    "base": {
+      "hp": 75,
+      "attack": 81,
+      "defense": 70,
+      "speed": 134,
+      "special": 75
+    },
+    "bst": 435,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 204,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Ember Flick"
+      },
+      {
+        "level": 5,
+        "move": "Cinder Veil"
+      },
+      {
+        "level": 9,
+        "move": "Flame Lash"
+      },
+      {
+        "level": 13,
+        "move": "Star Shower"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Blaze Fang"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Inferno Burst"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Umbral Rend"
+      }
+    ],
+    "recommendedSet": [
+      "Inferno Burst",
+      "Full Body Crash",
+      "Cinder Veil",
+      "Blaze Fang"
+    ],
+    "inV1": false,
+    "blurb": "Crimson-maned shadow fox"
+  },
+  {
+    "dexNo": 73,
+    "id": "frostel",
+    "name": "Frostel",
+    "stage": "Base",
+    "aspects": [
+      "Ice"
+    ],
+    "base": {
+      "hp": 63,
+      "attack": 43,
+      "defense": 53,
+      "speed": 43,
+      "special": 68
+    },
+    "bst": 270,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": 16,
+    "evolvesInto": "erminice",
+    "baseExpYield": 58,
+    "rarity": "Starter (1 of 3)",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Chill Touch"
+      },
+      {
+        "level": 5,
+        "move": "Frost Veil"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Chill Touch",
+      "Star Shower",
+      "Frost Veil",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Snow-white weasel"
+  },
+  {
+    "dexNo": 74,
+    "id": "erminice",
+    "name": "Erminice",
+    "stage": "Stage 2",
+    "aspects": [
+      "Ice"
+    ],
+    "base": {
+      "hp": 79,
+      "attack": 61,
+      "defense": 70,
+      "speed": 61,
+      "special": 84
+    },
+    "bst": 355,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "aurorine",
+    "baseExpYield": 126,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Chill Touch"
+      },
+      {
+        "level": 5,
+        "move": "Frost Veil"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Chill Touch",
+      "Full Body Crash",
+      "Frost Veil",
+      "Power Jab"
+    ],
+    "inV1": true,
+    "blurb": "Long-bodied snow weasel"
+  },
+  {
+    "dexNo": 75,
+    "id": "aurorine",
+    "name": "Aurorine",
+    "stage": "Final A",
+    "aspects": [
+      "Ice",
+      "Fairy"
+    ],
+    "base": {
+      "hp": 45,
+      "attack": 86,
+      "defense": 164,
+      "speed": 63,
+      "special": 77
+    },
+    "bst": 435,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 204,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Chill Touch"
+      },
+      {
+        "level": 5,
+        "move": "Frost Veil"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Lunar Burst"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Frost Ray"
+      }
+    ],
+    "recommendedSet": [
+      "Lunar Burst",
+      "Full Body Crash",
+      "Frost Veil",
+      "Chill Touch"
+    ],
+    "inV1": true,
+    "blurb": "Aurora ermine"
+  },
+  {
+    "dexNo": 76,
+    "id": "blizzlash",
+    "name": "Blizzlash",
+    "stage": "Final B",
+    "aspects": [
+      "Ice",
+      "Dark"
+    ],
+    "base": {
+      "hp": 75,
+      "attack": 81,
+      "defense": 70,
+      "speed": 134,
+      "special": 75
+    },
+    "bst": 435,
+    "catchRate": 45,
+    "growth": "Medium Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 204,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Chill Touch"
+      },
+      {
+        "level": 5,
+        "move": "Frost Veil"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Umbral Rend"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Frost Ray"
+      }
+    ],
+    "recommendedSet": [
+      "Umbral Rend",
+      "Full Body Crash",
+      "Frost Veil",
+      "Chill Touch"
+    ],
+    "inV1": false,
+    "blurb": "Blizzard hunter"
+  },
+  {
+    "dexNo": 77,
+    "id": "bloopuff",
+    "name": "Bloopuff",
+    "stage": "Base",
+    "aspects": [
+      "Normal"
+    ],
+    "base": {
+      "hp": 135,
+      "attack": 53,
+      "defense": 24,
+      "speed": 24,
+      "special": 29
+    },
+    "bst": 265,
+    "catchRate": 190,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "floofin",
+    "baseExpYield": 55,
+    "rarity": "Uncommon",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      }
+    ],
+    "recommendedSet": [
+      "Star Shower",
+      "Blade Ritual",
+      "Slash Strike",
+      "Coin Toss"
+    ],
+    "inV1": true,
+    "blurb": "Azure furball"
+  },
+  {
+    "dexNo": 78,
+    "id": "floofin",
+    "name": "Floofin",
+    "stage": "Stage 2",
+    "aspects": [
+      "Normal"
+    ],
+    "base": {
+      "hp": 139,
+      "attack": 69,
+      "defense": 44,
+      "speed": 44,
+      "special": 49
+    },
+    "bst": 345,
+    "catchRate": 90,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "nimbuspry",
+    "baseExpYield": 120,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Warm Recovery"
+      }
+    ],
+    "recommendedSet": [
+      "Full Body Crash",
+      "Blade Ritual",
+      "Power Jab",
+      "Star Shower"
+    ],
+    "inV1": true,
+    "blurb": "Bouncing blue fluff beast"
+  },
+  {
+    "dexNo": 79,
+    "id": "nimbuspry",
+    "name": "Nimbuspry",
+    "stage": "Final A",
+    "aspects": [
+      "Ice",
+      "Fairy"
+    ],
+    "base": {
+      "hp": 105,
+      "attack": 78,
+      "defense": 81,
+      "speed": 67,
+      "special": 94
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Warm Recovery"
+      },
+      {
+        "level": 30,
+        "move": "Lunar Burst"
+      },
+      {
+        "level": 34,
+        "move": "Decoy Form"
+      },
+      {
+        "level": 38,
+        "move": "Frost Ray"
+      }
+    ],
+    "recommendedSet": [
+      "Lunar Burst",
+      "Full Body Crash",
+      "Blade Ritual",
+      "Power Jab"
+    ],
+    "inV1": true,
+    "blurb": "Snow-cloud puff"
+  },
+  {
+    "dexNo": 80,
+    "id": "stormuff",
+    "name": "Stormuff",
+    "stage": "Final B",
+    "aspects": [
+      "Electric",
+      "Dark"
+    ],
+    "base": {
+      "hp": 64,
+      "attack": 53,
+      "defense": 74,
+      "speed": 149,
+      "special": 85
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 5,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 9,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 13,
+        "move": "Afterimage"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Warm Recovery"
+      },
+      {
+        "level": 30,
+        "move": "Umbral Rend"
+      },
+      {
+        "level": 34,
+        "move": "Decoy Form"
+      },
+      {
+        "level": 38,
+        "move": "Volt Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Umbral Rend",
+      "Full Body Crash",
+      "Blade Ritual",
+      "Power Jab"
+    ],
+    "inV1": false,
+    "blurb": "Static storm puff"
+  },
+  {
+    "dexNo": 81,
+    "id": "mosscoil",
+    "name": "Mosscoil",
+    "stage": "Base",
+    "aspects": [
+      "Grass"
+    ],
+    "base": {
+      "hp": 74,
+      "attack": 29,
+      "defense": 81,
+      "speed": 44,
+      "special": 37
+    },
+    "bst": 265,
+    "catchRate": 190,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "grovesnail",
+    "baseExpYield": 55,
+    "rarity": "Uncommon",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      }
+    ],
+    "recommendedSet": [
+      "Leaf Cutter",
+      "Star Shower",
+      "Spore Cloud",
+      "Life Siphon"
+    ],
+    "inV1": true,
+    "blurb": "Moss-shelled snail"
+  },
+  {
+    "dexNo": 82,
+    "id": "grovesnail",
+    "name": "Grovesnail",
+    "stage": "Stage 2",
+    "aspects": [
+      "Grass"
+    ],
+    "base": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 80,
+      "speed": 30,
+      "special": 80
+    },
+    "bst": 345,
+    "catchRate": 90,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "lotushell",
+    "baseExpYield": 120,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      }
+    ],
+    "recommendedSet": [
+      "Bramble Rend",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Leaf Cutter"
+    ],
+    "inV1": true,
+    "blurb": "Leafy spiral snail"
+  },
+  {
+    "dexNo": 83,
+    "id": "lotushell",
+    "name": "Lotushell",
+    "stage": "Final A",
+    "aspects": [
+      "Grass",
+      "Water"
+    ],
+    "base": {
+      "hp": 82,
+      "attack": 87,
+      "defense": 93,
+      "speed": 54,
+      "special": 109
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Tidal Wave"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Tidal Wave",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Bramble Rend"
+    ],
+    "inV1": true,
+    "blurb": "Pond-lotus guardian snail"
+  },
+  {
+    "dexNo": 84,
+    "id": "ruincoil",
+    "name": "Ruincoil",
+    "stage": "Final B",
+    "aspects": [
+      "Grass",
+      "Rock"
+    ],
+    "base": {
+      "hp": 81,
+      "attack": 111,
+      "defense": 131,
+      "speed": 46,
+      "special": 56
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 1 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Life Siphon"
+      },
+      {
+        "level": 5,
+        "move": "Star Shower"
+      },
+      {
+        "level": 9,
+        "move": "Leaf Cutter"
+      },
+      {
+        "level": 13,
+        "move": "Spore Cloud"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Bramble Rend"
+      },
+      {
+        "level": 25,
+        "move": "Root Bind"
+      },
+      {
+        "level": 30,
+        "move": "Boulder Fall"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Sunray Blast"
+      }
+    ],
+    "recommendedSet": [
+      "Bramble Rend",
+      "Full Body Crash",
+      "Spore Cloud",
+      "Boulder Fall"
+    ],
+    "inV1": false,
+    "blurb": "Ancient stone-shell snail"
+  },
+  {
+    "dexNo": 85,
+    "id": "wickisp",
+    "name": "Wickisp",
+    "stage": "Base",
+    "aspects": [
+      "Ghost"
+    ],
+    "base": {
+      "hp": 29,
+      "attack": 34,
+      "defense": 29,
+      "speed": 77,
+      "special": 96
+    },
+    "bst": 265,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": 16,
+    "evolvesInto": "candlurk",
+    "baseExpYield": 55,
+    "rarity": "Rare",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Spectral Touch"
+      },
+      {
+        "level": 5,
+        "move": "Haunt Whisper"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      }
+    ],
+    "recommendedSet": [
+      "Spectral Touch",
+      "Star Shower",
+      "Haunt Whisper",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Candle-flame ghost"
+  },
+  {
+    "dexNo": 86,
+    "id": "candlurk",
+    "name": "Candlurk",
+    "stage": "Stage 2",
+    "aspects": [
+      "Fire",
+      "Ghost"
+    ],
+    "base": {
+      "hp": 44,
+      "attack": 49,
+      "defense": 44,
+      "speed": 94,
+      "special": 114
+    },
+    "bst": 345,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "halolume",
+    "baseExpYield": 120,
+    "rarity": "Rare",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Spectral Touch"
+      },
+      {
+        "level": 5,
+        "move": "Haunt Whisper"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Phantom Rend"
+      },
+      {
+        "level": 21,
+        "move": "Blaze Fang"
+      },
+      {
+        "level": 25,
+        "move": "Cinder Veil"
+      }
+    ],
+    "recommendedSet": [
+      "Phantom Rend",
+      "Star Shower",
+      "Haunt Whisper",
+      "Blaze Fang"
+    ],
+    "inV1": true,
+    "blurb": "Dripping candle ghost"
+  },
+  {
+    "dexNo": 87,
+    "id": "halolume",
+    "name": "Halolume",
+    "stage": "Final A",
+    "aspects": [
+      "Fire",
+      "Fairy"
+    ],
+    "base": {
+      "hp": 73,
+      "attack": 76,
+      "defense": 75,
+      "speed": 101,
+      "special": 100
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Spectral Touch"
+      },
+      {
+        "level": 5,
+        "move": "Haunt Whisper"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Phantom Rend"
+      },
+      {
+        "level": 21,
+        "move": "Blaze Fang"
+      },
+      {
+        "level": 25,
+        "move": "Cinder Veil"
+      },
+      {
+        "level": 30,
+        "move": "Lunar Burst"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Inferno Burst"
+      }
+    ],
+    "recommendedSet": [
+      "Lunar Burst",
+      "Phantom Rend",
+      "Haunt Whisper",
+      "Blaze Fang"
+    ],
+    "inV1": true,
+    "blurb": "Sanctuary lantern spirit"
+  },
+  {
+    "dexNo": 88,
+    "id": "hexabra",
+    "name": "Hexabra",
+    "stage": "Final B",
+    "aspects": [
+      "Fire",
+      "Ghost"
+    ],
+    "base": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "speed": 110,
+      "special": 130
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Slow",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 3 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 1,
+        "move": "Spectral Touch"
+      },
+      {
+        "level": 5,
+        "move": "Haunt Whisper"
+      },
+      {
+        "level": 9,
+        "move": "Star Shower"
+      },
+      {
+        "level": 13,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 17,
+        "move": "Phantom Rend"
+      },
+      {
+        "level": 21,
+        "move": "Blaze Fang"
+      },
+      {
+        "level": 25,
+        "move": "Cinder Veil"
+      },
+      {
+        "level": 30,
+        "move": "Soul Rend"
+      },
+      {
+        "level": 34,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 38,
+        "move": "Inferno Burst"
+      }
+    ],
+    "recommendedSet": [
+      "Soul Rend",
+      "Star Shower",
+      "Haunt Whisper",
+      "Phantom Rend"
+    ],
+    "inV1": false,
+    "blurb": "Cursed chandelier ghost"
+  },
+  {
+    "dexNo": 89,
+    "id": "terratot",
+    "name": "Terratot",
+    "stage": "Base",
+    "aspects": [
+      "Ground"
+    ],
+    "base": {
+      "hp": 49,
+      "attack": 49,
+      "defense": 94,
+      "speed": 34,
+      "special": 39
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "burrosaur",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Sand Lash"
+      },
+      {
+        "level": 5,
+        "move": "Mud Veil"
+      },
+      {
+        "level": 9,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      }
+    ],
+    "recommendedSet": [
+      "Sand Lash",
+      "Star Shower",
+      "Mud Veil",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Burrowing baby dinosaur"
+  },
+  {
+    "dexNo": 90,
+    "id": "burrosaur",
+    "name": "Burrosaur",
+    "stage": "Stage 2",
+    "aspects": [
+      "Ground"
+    ],
+    "base": {
+      "hp": 60,
+      "attack": 80,
+      "defense": 110,
+      "speed": 45,
+      "special": 50
+    },
+    "bst": 345,
+    "catchRate": 120,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "ferradillo",
+    "baseExpYield": 120,
+    "rarity": "Uncommon",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Sand Lash"
+      },
+      {
+        "level": 5,
+        "move": "Mud Veil"
+      },
+      {
+        "level": 9,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Sand Lash",
+      "Full Body Crash",
+      "Mud Veil",
+      "Power Jab"
+    ],
+    "inV1": true,
+    "blurb": "Burrowing juvenile dinosaur"
+  },
+  {
+    "dexNo": 91,
+    "id": "ferradillo",
+    "name": "Ferradillo",
+    "stage": "Final A",
+    "aspects": [
+      "Ground",
+      "Steel"
+    ],
+    "base": {
+      "hp": 101,
+      "attack": 126,
+      "defense": 116,
+      "speed": 39,
+      "special": 43
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Sand Lash"
+      },
+      {
+        "level": 5,
+        "move": "Mud Veil"
+      },
+      {
+        "level": 9,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Forge Strike"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Ground Rupture"
+      }
+    ],
+    "recommendedSet": [
+      "Forge Strike",
+      "Full Body Crash",
+      "Mud Veil",
+      "Sand Lash"
+    ],
+    "inV1": true,
+    "blurb": "Drill-plated burrower"
+  },
+  {
+    "dexNo": 92,
+    "id": "rumblejaw",
+    "name": "Rumblejaw",
+    "stage": "Final B",
+    "aspects": [
+      "Ground",
+      "Fighting"
+    ],
+    "base": {
+      "hp": 84,
+      "attack": 95,
+      "defense": 80,
+      "speed": 88,
+      "special": 78
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Star Shower"
+      },
+      {
+        "level": 1,
+        "move": "Sand Lash"
+      },
+      {
+        "level": 5,
+        "move": "Mud Veil"
+      },
+      {
+        "level": 9,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 13,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Power Jab"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Grapple Slam"
+      },
+      {
+        "level": 34,
+        "move": "Afterimage"
+      },
+      {
+        "level": 38,
+        "move": "Ground Rupture"
+      }
+    ],
+    "recommendedSet": [
+      "Grapple Slam",
+      "Full Body Crash",
+      "Mud Veil",
+      "Sand Lash"
+    ],
+    "inV1": false,
+    "blurb": "Earthquake brawler dinosaur"
+  },
+  {
+    "dexNo": 93,
+    "id": "hootusk",
+    "name": "Hootusk",
+    "stage": "Base",
+    "aspects": [
+      "Flying"
+    ],
+    "base": {
+      "hp": 46,
+      "attack": 69,
+      "defense": 34,
+      "speed": 80,
+      "special": 36
+    },
+    "bst": 265,
+    "catchRate": 255,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 15,
+    "evolvesInto": "hornowl",
+    "baseExpYield": 55,
+    "rarity": "Common",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 5,
+        "move": "Updraft"
+      },
+      {
+        "level": 9,
+        "move": "Wing Slice"
+      },
+      {
+        "level": 13,
+        "move": "Star Shower"
+      }
+    ],
+    "recommendedSet": [
+      "Wing Slice",
+      "Star Shower",
+      "Updraft",
+      "Slash Strike"
+    ],
+    "inV1": true,
+    "blurb": "Horned night owl"
+  },
+  {
+    "dexNo": 94,
+    "id": "hornowl",
+    "name": "Hornowl",
+    "stage": "Stage 2",
+    "aspects": [
+      "Flying"
+    ],
+    "base": {
+      "hp": 59,
+      "attack": 81,
+      "defense": 59,
+      "speed": 91,
+      "special": 55
+    },
+    "bst": 345,
+    "catchRate": 120,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": 30,
+    "evolvesInto": "glacivane",
+    "baseExpYield": 120,
+    "rarity": "Uncommon",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 5,
+        "move": "Updraft"
+      },
+      {
+        "level": 9,
+        "move": "Wing Slice"
+      },
+      {
+        "level": 13,
+        "move": "Star Shower"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      }
+    ],
+    "recommendedSet": [
+      "Skyward Dive",
+      "Full Body Crash",
+      "Updraft",
+      "Wing Slice"
+    ],
+    "inV1": true,
+    "blurb": "Broad-wing horned owl"
+  },
+  {
+    "dexNo": 95,
+    "id": "glacivane",
+    "name": "Glacivane",
+    "stage": "Final A",
+    "aspects": [
+      "Ice",
+      "Flying"
+    ],
+    "base": {
+      "hp": 79,
+      "attack": 74,
+      "defense": 88,
+      "speed": 74,
+      "special": 110
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 5,
+        "move": "Updraft"
+      },
+      {
+        "level": 9,
+        "move": "Wing Slice"
+      },
+      {
+        "level": 13,
+        "move": "Star Shower"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Dive Bomb"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Frost Ray"
+      }
+    ],
+    "recommendedSet": [
+      "Dive Bomb",
+      "Full Body Crash",
+      "Updraft",
+      "Skyward Dive"
+    ],
+    "inV1": true,
+    "blurb": "Snow-horn owl"
+  },
+  {
+    "dexNo": 96,
+    "id": "oracowl",
+    "name": "Oracowl",
+    "stage": "Final B",
+    "aspects": [
+      "Psychic",
+      "Flying"
+    ],
+    "base": {
+      "hp": 58,
+      "attack": 52,
+      "defense": 47,
+      "speed": 126,
+      "special": 142
+    },
+    "bst": 425,
+    "catchRate": 45,
+    "growth": "Medium Fast",
+    "evolvesAtLevel": null,
+    "evolvesInto": null,
+    "baseExpYield": 195,
+    "rarity": "—",
+    "segment": "Gym 2 segment",
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Slash Strike"
+      },
+      {
+        "level": 1,
+        "move": "Coin Toss"
+      },
+      {
+        "level": 5,
+        "move": "Updraft"
+      },
+      {
+        "level": 9,
+        "move": "Wing Slice"
+      },
+      {
+        "level": 13,
+        "move": "Star Shower"
+      },
+      {
+        "level": 17,
+        "move": "Full Body Crash"
+      },
+      {
+        "level": 21,
+        "move": "Skyward Dive"
+      },
+      {
+        "level": 25,
+        "move": "Blade Ritual"
+      },
+      {
+        "level": 30,
+        "move": "Dive Bomb"
+      },
+      {
+        "level": 34,
+        "move": "Crushing Kick"
+      },
+      {
+        "level": 38,
+        "move": "Mind Crush"
+      }
+    ],
+    "recommendedSet": [
+      "Dive Bomb",
+      "Full Body Crash",
+      "Updraft",
+      "Skyward Dive"
+    ],
+    "inV1": false,
+    "blurb": "Rune-eyed oracle owl"
+  }
+]

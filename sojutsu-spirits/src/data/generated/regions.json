@@ -1,0 +1,59 @@
+[
+  {
+    "id": "r1-meadow",
+    "name": "R1 Meadow",
+    "segment": 1,
+    "shrineAspect": "Grass",
+    "shrineKeeper": "Tok Ranting",
+    "shrineName": "Thicket Shrine",
+    "shrineAce": {
+      "species": "leaflark",
+      "level": 14
+    },
+    "sigil": 1,
+    "zones": [
+      "Route 1",
+      "Waystone Road",
+      "Verdant Thicket"
+    ],
+    "expectedPlayerLevel": 12
+  },
+  {
+    "id": "r2-riverside",
+    "name": "R2 Riverside",
+    "segment": 2,
+    "shrineAspect": "Water",
+    "shrineKeeper": "Tok Sungai",
+    "shrineName": "Ferry Shrine",
+    "shrineAce": {
+      "species": "glacisaur",
+      "level": 22
+    },
+    "sigil": 2,
+    "zones": [
+      "Riverside Trail",
+      "Kawa Crossing",
+      "The Shallows"
+    ],
+    "expectedPlayerLevel": 20
+  },
+  {
+    "id": "r3-highland",
+    "name": "R3 Highland",
+    "segment": 3,
+    "shrineAspect": "Ground",
+    "shrineKeeper": "Tok Batu",
+    "shrineName": "Quarry Shrine",
+    "shrineAce": {
+      "species": "burrosaur",
+      "level": 29
+    },
+    "sigil": 3,
+    "zones": [
+      "Stone Steps",
+      "Echo Cavern",
+      "Ridge Path"
+    ],
+    "expectedPlayerLevel": 30
+  }
+]

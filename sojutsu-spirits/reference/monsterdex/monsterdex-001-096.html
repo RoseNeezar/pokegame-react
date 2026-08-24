@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Math Mon Monsterdex — #001–#096</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0f18;
+      --panel: #151c29;
+      --line: #263247;
+      --text: #f2f6ff;
+      --muted: #97a5ba;
+      --accent: #5eead4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at 15% 0%, #17243d 0, transparent 28rem), var(--bg);
+      color: var(--text);
+      font: 14px/1.45 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main { width: min(1120px, 100%); margin: 0 auto; padding: 28px 16px 48px; }
+    header { margin-bottom: 22px; }
+    .eyebrow {
+      display: inline-flex;
+      margin-bottom: 8px;
+      padding: 5px 8px;
+      border: 1px solid #2d6f67;
+      border-radius: 999px;
+      background: #102e2a;
+      color: #99f6e4;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: .12em;
+    }
+    h1 { margin: 0; font-size: clamp(25px, 7vw, 40px); letter-spacing: -.035em; }
+    header p { margin: 7px 0 0; color: var(--muted); }
+    .dex { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .line-heading {
+      display: flex;
+      grid-column: 1 / -1;
+      align-items: center;
+      gap: 12px;
+      margin: 18px 0 1px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--line);
+      color: var(--text);
+      font-size: 13px;
+      letter-spacing: .04em;
+    }
+    .line-heading:first-of-type { margin-top: 0; }
+    .line-copy { display: grid; gap: 2px; }
+    .line-copy > span { color: var(--muted); font-size: 10px; letter-spacing: .1em; }
+    .monster {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: linear-gradient(145deg, #182132, var(--panel));
+    }
+    .portrait {
+      display: grid;
+      min-height: 132px;
+      place-items: center;
+      background:
+        linear-gradient(45deg, #eff2f5 25%, transparent 25%),
+        linear-gradient(-45deg, #eff2f5 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #eff2f5 75%),
+        linear-gradient(-45deg, transparent 75%, #eff2f5 75%),
+        #fff;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+      background-size: 16px 16px;
+    }
+    .portrait img {
+      width: 112px;
+      height: 112px;
+      object-fit: contain;
+      image-rendering: pixelated;
+    }
+    .identity { padding: 11px 12px 13px; }
+    .number { color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+    h2 { margin: 2px 0 1px; color: var(--accent); font-size: 16px; letter-spacing: .035em; }
+    .description { margin: 0; color: #bdc7d6; font-size: 12px; }
+    .badge {
+      display: inline-flex;
+      margin-top: 9px;
+      padding: 4px 7px;
+      border: 1px solid #3a4659;
+      border-radius: 999px;
+      background: #202938;
+      color: #9aa8bb;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: .1em;
+    }
+    .monster.stage-base { border-color: #287f70; }
+    .monster.stage-base .badge { border-color: #23786a; background: #102e2a; color: #5eead4; }
+    .monster.stage-two { border-color: #315a8b; }
+    .monster.stage-two .badge { border-color: #315a8b; background: #14243a; color: #93c5fd; }
+    .monster.branch-a { border-color: #73539b; }
+    .monster.branch-a .badge { border-color: #73539b; background: #281b3a; color: #d8b4fe; }
+    .monster.branch-b { border-color: #863f4b; }
+    .monster.branch-b .badge { border-color: #863f4b; background: #351820; color: #fda4af; }
+    @media (min-width: 620px) {
+      main { padding: 44px 24px 64px; }
+      .dex { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+      .portrait { min-height: 160px; }
+      .portrait img { width: 132px; height: 132px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="eyebrow">MONSTERDEX · #001–#096</span>
+      <h1>Math Mon Monsterdex</h1>
+      <p>24 evolution lines, 4 forms each — 96 catalogued monsters. Repository-backed catalogue: all sprites live in assets/world-pack/monsters/dex.</p>
+    </header>
+    <section class="dex" aria-label="Math Mon Monsterdex entries #001 to #096">
+      <h3 class="line-heading"><span class="line-copy"><span>#001–#004</span>Helmling evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/001-helmling.png" alt="Helmling, golden armored hatchling" loading="lazy"></div><div class="identity"><span class="number">#001</span><h2>HELMLING</h2><p class="description">Golden armored hatchling</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/002-knighton.png" alt="Knighton, golden shield knight · steel" loading="lazy"></div><div class="identity"><span class="number">#002</span><h2>KNIGHTON</h2><p class="description">Golden shield knight · Steel</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/003-aureguard.png" alt="Aureguard, radiant paladin · steel/fairy" loading="lazy"></div><div class="identity"><span class="number">#003</span><h2>AUREGUARD</h2><p class="description">Radiant paladin · Steel/Fairy</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/004-dreadhelm.png" alt="Dreadhelm, fallen black knight · steel/dark" loading="lazy"></div><div class="identity"><span class="number">#004</span><h2>DREADHELM</h2><p class="description">Fallen black knight · Steel/Dark</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#005–#008</span>Gearbit evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/005-gearbit.png" alt="Gearbit, clockwork mouse" loading="lazy"></div><div class="identity"><span class="number">#005</span><h2>GEARBIT</h2><p class="description">Clockwork mouse</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/006-cogskitter.png" alt="Cogskitter, toothed-wheel runner · steel" loading="lazy"></div><div class="identity"><span class="number">#006</span><h2>COGSKITTER</h2><p class="description">Toothed-wheel runner · Steel</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/007-voltracer.png" alt="Voltracer, turbine lightning racer · electric/steel" loading="lazy"></div><div class="identity"><span class="number">#007</span><h2>VOLTRACER</h2><p class="description">Turbine lightning racer · Electric/Steel</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/008-scraprowl.png" alt="Scraprowl, black-iron gear prowler · steel/dark" loading="lazy"></div><div class="identity"><span class="number">#008</span><h2>SCRAPROWL</h2><p class="description">Black-iron gear prowler · Steel/Dark</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#009–#012</span>Nectenna evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/009-nectenna.png" alt="Nectenna, blue nectar-antenna bug" loading="lazy"></div><div class="identity"><span class="number">#009</span><h2>NECTENNA</h2><p class="description">Blue nectar-antenna bug</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/010-sproutide.png" alt="Sproutide, three-crowned nectar bulb · grass" loading="lazy"></div><div class="identity"><span class="number">#010</span><h2>SPROUTIDE</h2><p class="description">Three-crowned nectar bulb · Grass</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/011-lotusurge.png" alt="Lotusurge, lotus reservoir guardian · grass/water" loading="lazy"></div><div class="identity"><span class="number">#011</span><h2>LOTUSURGE</h2><p class="description">Lotus reservoir guardian · Grass/Water</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/012-voltroot.png" alt="Voltroot, lightning-sap storm sprout · grass/electric" loading="lazy"></div><div class="identity"><span class="number">#012</span><h2>VOLTROOT</h2><p class="description">Lightning-sap storm sprout · Grass/Electric</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#013–#016</span>Budbloom evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/013-budbloom.png" alt="Budbloom, purple bud creature" loading="lazy"></div><div class="identity"><span class="number">#013</span><h2>BUDBLOOM</h2><p class="description">Purple bud creature</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/014-petalisk.png" alt="Petalisk, thorn-vine walking bud · grass" loading="lazy"></div><div class="identity"><span class="number">#014</span><h2>PETALISK</h2><p class="description">Thorn-vine walking bud · Grass</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/015-orchlume.png" alt="Orchlume, radiant orchid guardian · grass/fairy" loading="lazy"></div><div class="identity"><span class="number">#015</span><h2>ORCHLUME</h2><p class="description">Radiant orchid guardian · Grass/Fairy</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/016-venobloom.png" alt="Venobloom, carnivorous toxic bloom · grass/poison" loading="lazy"></div><div class="identity"><span class="number">#016</span><h2>VENOBLOOM</h2><p class="description">Carnivorous toxic bloom · Grass/Poison</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#017–#020</span>Brontide evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/017-brontide.png" alt="Brontide, gentle blue long-neck" loading="lazy"></div><div class="identity"><span class="number">#017</span><h2>BRONTIDE</h2><p class="description">Gentle blue long-neck</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/018-brontaur.png" alt="Brontaur, wave-marked aquatic long-neck · water" loading="lazy"></div><div class="identity"><span class="number">#018</span><h2>BRONTAUR</h2><p class="description">Wave-marked aquatic long-neck · Water</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/019-glacisaur.png" alt="Glacisaur, glacier-backed long-neck · water/ice" loading="lazy"></div><div class="identity"><span class="number">#019</span><h2>GLACISAUR</h2><p class="description">Glacier-backed long-neck · Water/Ice</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/020-dracotide.png" alt="Dracotide, storm sea sauropod · water/dragon" loading="lazy"></div><div class="identity"><span class="number">#020</span><h2>DRACOTIDE</h2><p class="description">Storm sea sauropod · Water/Dragon</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#021–#024</span>Buzzle evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/021-buzzle.png" alt="Buzzle, bumblebee scout" loading="lazy"></div><div class="identity"><span class="number">#021</span><h2>BUZZLE</h2><p class="description">Bumblebee scout</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/022-buzzguard.png" alt="Buzzguard, armored hive scout · bug/flying" loading="lazy"></div><div class="identity"><span class="number">#022</span><h2>BUZZGUARD</h2><p class="description">Armored hive scout · Bug/Flying</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/023-voltwing.png" alt="Voltwing, thunder-wing speedster · bug/electric" loading="lazy"></div><div class="identity"><span class="number">#023</span><h2>VOLTWING</h2><p class="description">Thunder-wing speedster · Bug/Electric</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/024-jabjacket.png" alt="Jabjacket, lancer hornet · bug/fighting" loading="lazy"></div><div class="identity"><span class="number">#024</span><h2>JABJACKET</h2><p class="description">Lancer hornet · Bug/Fighting</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#025–#028</span>Frondove evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/025-frondove.png" alt="Frondove, leaf-winged bird" loading="lazy"></div><div class="identity"><span class="number">#025</span><h2>FRONDOVE</h2><p class="description">Leaf-winged bird</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/026-leaflark.png" alt="Leaflark, canopy leaf bird · grass/flying" loading="lazy"></div><div class="identity"><span class="number">#026</span><h2>LEAFLARK</h2><p class="description">Canopy leaf bird · Grass/Flying</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/027-floravian.png" alt="Floravian, spring blossom bird · grass/fairy" loading="lazy"></div><div class="identity"><span class="number">#027</span><h2>FLORAVIAN</h2><p class="description">Spring blossom bird · Grass/Fairy</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/028-thornraven.png" alt="Thornraven, bramble-shadow raven · grass/dark" loading="lazy"></div><div class="identity"><span class="number">#028</span><h2>THORNRAVEN</h2><p class="description">Bramble-shadow raven · Grass/Dark</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#029–#032</span>Bloomble evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/029-bloomble.png" alt="Bloomble, cheerful blossom blob" loading="lazy"></div><div class="identity"><span class="number">#029</span><h2>BLOOMBLE</h2><p class="description">Cheerful blossom blob</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/030-mossmallow.png" alt="Mossmallow, flowered jelly mound · grass" loading="lazy"></div><div class="identity"><span class="number">#030</span><h2>MOSSMALLOW</h2><p class="description">Flowered jelly mound · Grass</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/031-floraglee.png" alt="Floraglee, meadow fairy blob · grass/fairy" loading="lazy"></div><div class="identity"><span class="number">#031</span><h2>FLORAGLEE</h2><p class="description">Meadow fairy blob · Grass/Fairy</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/032-sporebog.png" alt="Sporebog, toxic mushroom blob · grass/poison" loading="lazy"></div><div class="identity"><span class="number">#032</span><h2>SPOREBOG</h2><p class="description">Toxic mushroom blob · Grass/Poison</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#033–#036</span>Cherubick evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/033-cherubick.png" alt="Cherubick, winged cherub chick" loading="lazy"></div><div class="identity"><span class="number">#033</span><h2>CHERUBICK</h2><p class="description">Winged cherub chick</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/034-halowing.png" alt="Halowing, golden four-wing dove · fairy/flying" loading="lazy"></div><div class="identity"><span class="number">#034</span><h2>HALOWING</h2><p class="description">Golden four-wing dove · Fairy/Flying</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/035-seraphlume.png" alt="Seraphlume, six-wing radiant bird · fairy/flying" loading="lazy"></div><div class="identity"><span class="number">#035</span><h2>SERAPHLUME</h2><p class="description">Six-wing radiant bird · Fairy/Flying</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/036-duskrael.png" alt="Duskrael, eclipse-wing predator · dark/flying" loading="lazy"></div><div class="identity"><span class="number">#036</span><h2>DUSKRAEL</h2><p class="description">Eclipse-wing predator · Dark/Flying</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#037–#040</span>Shellot evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/037-shellot.png" alt="Shellot, walking egg hatchling" loading="lazy"></div><div class="identity"><span class="number">#037</span><h2>SHELLOT</h2><p class="description">Walking egg hatchling</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/038-shellark.png" alt="Shellark, shell-armored juvenile bird · flying" loading="lazy"></div><div class="identity"><span class="number">#038</span><h2>SHELLARK</h2><p class="description">Shell-armored juvenile bird · Flying</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/039-solroost.png" alt="Solroost, sunfire rooster · fire/flying" loading="lazy"></div><div class="identity"><span class="number">#039</span><h2>SOLROOST</h2><p class="description">Sunfire rooster · Fire/Flying</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/040-lunowl.png" alt="Lunowl, frost moon owl · ice/flying" loading="lazy"></div><div class="identity"><span class="number">#040</span><h2>LUNOWL</h2><p class="description">Frost moon owl · Ice/Flying</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#041–#044</span>Roswyrm evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/041-roswyrm.png" alt="Roswyrm, rose sea wyrm" loading="lazy"></div><div class="identity"><span class="number">#041</span><h2>ROSWYRM</h2><p class="description">Rose sea wyrm</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/042-roscale.png" alt="Roscale, rose-crested sea serpent · water/dragon" loading="lazy"></div><div class="identity"><span class="number">#042</span><h2>ROSCALE</h2><p class="description">Rose-crested sea serpent · Water/Dragon</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/043-pearleserp.png" alt="Pearleserp, pearl coral sea dragon · water/fairy" loading="lazy"></div><div class="identity"><span class="number">#043</span><h2>PEARLESERP</h2><p class="description">Pearl coral sea dragon · Water/Fairy</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/044-venomare.png" alt="Venomare, abyssal venom serpent · water/poison" loading="lazy"></div><div class="identity"><span class="number">#044</span><h2>VENOMARE</h2><p class="description">Abyssal venom serpent · Water/Poison</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#045–#048</span>Dottella evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/045-dottella.png" alt="Dottella, spotted lady beetle" loading="lazy"></div><div class="identity"><span class="number">#045</span><h2>DOTTELLA</h2><p class="description">Spotted lady beetle</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/046-carapotta.png" alt="Carapotta, horned spotted beetle · bug" loading="lazy"></div><div class="identity"><span class="number">#046</span><h2>CARAPOTTA</h2><p class="description">Horned spotted beetle · Bug</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/047-aegibug.png" alt="Aegibug, fortress shield beetle · bug/steel" loading="lazy"></div><div class="identity"><span class="number">#047</span><h2>AEGIBUG</h2><p class="description">Fortress shield beetle · Bug/Steel</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/048-magmara.png" alt="Magmara, volcanic ladybird · bug/fire" loading="lazy"></div><div class="identity"><span class="number">#048</span><h2>MAGMARA</h2><p class="description">Volcanic ladybird · Bug/Fire</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#049–#052</span>Pinchitin evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/049-pinchitin.png" alt="Pinchitin, violet pincer beetle" loading="lazy"></div><div class="identity"><span class="number">#049</span><h2>PINCHITIN</h2><p class="description">Violet pincer beetle</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/050-clamptera.png" alt="Clamptera, heavy pincer beetle · bug" loading="lazy"></div><div class="identity"><span class="number">#050</span><h2>CLAMPTERA</h2><p class="description">Heavy pincer beetle · Bug</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/051-ferraclaw.png" alt="Ferraclaw, fortress crusher beetle · bug/steel" loading="lazy"></div><div class="identity"><span class="number">#051</span><h2>FERRACLAW</h2><p class="description">Fortress crusher beetle · Bug/Steel</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/052-noxpincer.png" alt="Noxpincer, shadow ambush beetle · bug/dark" loading="lazy"></div><div class="identity"><span class="number">#052</span><h2>NOXPINCER</h2><p class="description">Shadow ambush beetle · Bug/Dark</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#053–#056</span>Verdusk evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/053-verdusk.png" alt="Verdusk, leaf-winged bat" loading="lazy"></div><div class="identity"><span class="number">#053</span><h2>VERDUSK</h2><p class="description">Leaf-winged bat</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/054-frondbat.png" alt="Frondbat, layered leaf-wing bat · grass/flying" loading="lazy"></div><div class="identity"><span class="number">#054</span><h2>FRONDBAT</h2><p class="description">Layered leaf-wing bat · Grass/Flying</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/055-lunabloom.png" alt="Lunabloom, moon-blossom canopy bat · grass/fairy" loading="lazy"></div><div class="identity"><span class="number">#055</span><h2>LUNABLOOM</h2><p class="description">Moon-blossom canopy bat · Grass/Fairy</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/056-wraithleaf.png" alt="Wraithleaf, dead-leaf phantom bat · grass/ghost" loading="lazy"></div><div class="identity"><span class="number">#056</span><h2>WRAITHLEAF</h2><p class="description">Dead-leaf phantom bat · Grass/Ghost</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#057–#060</span>Skettera evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/057-skettera.png" alt="Skettera, crimson mosquito" loading="lazy"></div><div class="identity"><span class="number">#057</span><h2>SKETTERA</h2><p class="description">Crimson mosquito</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/058-skeetrike.png" alt="Skeetrike, long-needle mosquito · bug/flying" loading="lazy"></div><div class="identity"><span class="number">#058</span><h2>SKEETRIKE</h2><p class="description">Long-needle mosquito · Bug/Flying</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/059-aquasting.png" alt="Aquasting, rain-skimming mosquito · bug/water" loading="lazy"></div><div class="identity"><span class="number">#059</span><h2>AQUASTING</h2><p class="description">Rain-skimming mosquito · Bug/Water</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/060-venatrix.png" alt="Venatrix, crimson venom mosquito · bug/poison" loading="lazy"></div><div class="identity"><span class="number">#060</span><h2>VENATRIX</h2><p class="description">Crimson venom mosquito · Bug/Poison</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#061–#064</span>Fleeceling evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/061-fleeceling.png" alt="Fleeceling, cloud-fleece sheep" loading="lazy"></div><div class="identity"><span class="number">#061</span><h2>FLEECELING</h2><p class="description">Cloud-fleece sheep</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/062-ramblewool.png" alt="Ramblewool, young cloud ram · normal" loading="lazy"></div><div class="identity"><span class="number">#062</span><h2>RAMBLEWOOL</h2><p class="description">Young cloud ram · Normal</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/063-voltaram.png" alt="Voltaram, thunder-fleece ram · electric" loading="lazy"></div><div class="identity"><span class="number">#063</span><h2>VOLTARAM</h2><p class="description">Thunder-fleece ram · Electric</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/064-glacifleece.png" alt="Glacifleece, glacier-wool ram · ice" loading="lazy"></div><div class="identity"><span class="number">#064</span><h2>GLACIFLEECE</h2><p class="description">Glacier-wool ram · Ice</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#065–#068</span>Spriglim evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/065-spriglim.png" alt="Spriglim, tiny leaf sprite" loading="lazy"></div><div class="identity"><span class="number">#065</span><h2>SPRIGLIM</h2><p class="description">Tiny leaf sprite</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/066-leafkin.png" alt="Leafkin, walking leaf familiar · grass" loading="lazy"></div><div class="identity"><span class="number">#066</span><h2>LEAFKIN</h2><p class="description">Walking leaf familiar · Grass</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/067-sylphlora.png" alt="Sylphlora, forest blessing spirit · grass/fairy" loading="lazy"></div><div class="identity"><span class="number">#067</span><h2>SYLPHLORA</h2><p class="description">Forest blessing spirit · Grass/Fairy</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/068-verdraxis.png" alt="Verdraxis, vine-scaled leaf drake · grass/dragon" loading="lazy"></div><div class="identity"><span class="number">#068</span><h2>VERDRAXIS</h2><p class="description">Vine-scaled leaf drake · Grass/Dragon</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#069–#072</span>Fawnix evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/069-fawnix.png" alt="Fawnix, ember-tailed fox" loading="lazy"></div><div class="identity"><span class="number">#069</span><h2>FAWNIX</h2><p class="description">Ember-tailed fox</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/070-vulpine.png" alt="Vulpine, taller flame-tailed fox · fire" loading="lazy"></div><div class="identity"><span class="number">#070</span><h2>VULPINE</h2><p class="description">Taller flame-tailed fox · Fire</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/071-ferravulp.png" alt="Ferravulp, chrome-furred forge fox · fire/steel" loading="lazy"></div><div class="identity"><span class="number">#071</span><h2>FERRAVULP</h2><p class="description">Chrome-furred forge fox · Fire/Steel</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/072-cindusk.png" alt="Cindusk, crimson-maned shadow fox · dark/fire" loading="lazy"></div><div class="identity"><span class="number">#072</span><h2>CINDUSK</h2><p class="description">Crimson-maned shadow fox · Dark/Fire</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#073–#076</span>Frostel evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/073-frostel.png" alt="Frostel, snow-white weasel" loading="lazy"></div><div class="identity"><span class="number">#073</span><h2>FROSTEL</h2><p class="description">Snow-white weasel</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/074-erminice.png" alt="Erminice, long-bodied snow weasel · ice" loading="lazy"></div><div class="identity"><span class="number">#074</span><h2>ERMINICE</h2><p class="description">Long-bodied snow weasel · Ice</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/075-aurorine.png" alt="Aurorine, aurora ermine · ice/fairy" loading="lazy"></div><div class="identity"><span class="number">#075</span><h2>AURORINE</h2><p class="description">Aurora ermine · Ice/Fairy</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/076-blizzlash.png" alt="Blizzlash, blizzard hunter · ice/dark" loading="lazy"></div><div class="identity"><span class="number">#076</span><h2>BLIZZLASH</h2><p class="description">Blizzard hunter · Ice/Dark</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#077–#080</span>Bloopuff evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/077-bloopuff.png" alt="Bloopuff, azure furball" loading="lazy"></div><div class="identity"><span class="number">#077</span><h2>BLOOPUFF</h2><p class="description">Azure furball</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/078-floofin.png" alt="Floofin, bouncing blue fluff beast · normal" loading="lazy"></div><div class="identity"><span class="number">#078</span><h2>FLOOFIN</h2><p class="description">Bouncing blue fluff beast · Normal</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/079-nimbuspry.png" alt="Nimbuspry, snow-cloud puff · ice/fairy" loading="lazy"></div><div class="identity"><span class="number">#079</span><h2>NIMBUSPRY</h2><p class="description">Snow-cloud puff · Ice/Fairy</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/080-stormuff.png" alt="Stormuff, static storm puff · electric/dark" loading="lazy"></div><div class="identity"><span class="number">#080</span><h2>STORMUFF</h2><p class="description">Static storm puff · Electric/Dark</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#081–#084</span>Mosscoil evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/081-mosscoil.png" alt="Mosscoil, moss-shelled snail" loading="lazy"></div><div class="identity"><span class="number">#081</span><h2>MOSSCOIL</h2><p class="description">Moss-shelled snail</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/082-grovesnail.png" alt="Grovesnail, leafy spiral snail · grass" loading="lazy"></div><div class="identity"><span class="number">#082</span><h2>GROVESNAIL</h2><p class="description">Leafy spiral snail · Grass</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/083-lotushell.png" alt="Lotushell, pond-lotus guardian snail · grass/water" loading="lazy"></div><div class="identity"><span class="number">#083</span><h2>LOTUSHELL</h2><p class="description">Pond-lotus guardian snail · Grass/Water</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/084-ruincoil.png" alt="Ruincoil, ancient stone-shell snail · grass/rock" loading="lazy"></div><div class="identity"><span class="number">#084</span><h2>RUINCOIL</h2><p class="description">Ancient stone-shell snail · Grass/Rock</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#085–#088</span>Wickisp evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/085-wickisp.png" alt="Wickisp, candle-flame ghost" loading="lazy"></div><div class="identity"><span class="number">#085</span><h2>WICKISP</h2><p class="description">Candle-flame ghost</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/086-candlurk.png" alt="Candlurk, dripping candle ghost · fire/ghost" loading="lazy"></div><div class="identity"><span class="number">#086</span><h2>CANDLURK</h2><p class="description">Dripping candle ghost · Fire/Ghost</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/087-halolume.png" alt="Halolume, sanctuary lantern spirit · fire/fairy" loading="lazy"></div><div class="identity"><span class="number">#087</span><h2>HALOLUME</h2><p class="description">Sanctuary lantern spirit · Fire/Fairy</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/088-hexabra.png" alt="Hexabra, cursed chandelier ghost · fire/ghost" loading="lazy"></div><div class="identity"><span class="number">#088</span><h2>HEXABRA</h2><p class="description">Cursed chandelier ghost · Fire/Ghost</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#089–#092</span>Terratot evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/089-terratot.png" alt="Terratot, burrowing baby dinosaur" loading="lazy"></div><div class="identity"><span class="number">#089</span><h2>TERRATOT</h2><p class="description">Burrowing baby dinosaur</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/090-burrosaur.png" alt="Burrosaur, burrowing juvenile dinosaur · ground" loading="lazy"></div><div class="identity"><span class="number">#090</span><h2>BURROSAUR</h2><p class="description">Burrowing juvenile dinosaur · Ground</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/091-ferradillo.png" alt="Ferradillo, drill-plated burrower · ground/steel" loading="lazy"></div><div class="identity"><span class="number">#091</span><h2>FERRADILLO</h2><p class="description">Drill-plated burrower · Ground/Steel</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/092-rumblejaw.png" alt="Rumblejaw, earthquake brawler dinosaur · ground/fighting" loading="lazy"></div><div class="identity"><span class="number">#092</span><h2>RUMBLEJAW</h2><p class="description">Earthquake brawler dinosaur · Ground/Fighting</p><span class="badge">FINAL · BRANCH B</span></div></article>
+      <h3 class="line-heading"><span class="line-copy"><span>#093–#096</span>Hootusk evolution line</span></h3>
+      <article class="monster stage-base"><div class="portrait"><img src="../assets/world-pack/monsters/dex/093-hootusk.png" alt="Hootusk, horned night owl" loading="lazy"></div><div class="identity"><span class="number">#093</span><h2>HOOTUSK</h2><p class="description">Horned night owl</p><span class="badge">BASE FORM</span></div></article>
+      <article class="monster stage-two"><div class="portrait"><img src="../assets/world-pack/monsters/dex/094-hornowl.png" alt="Hornowl, broad-wing horned owl · flying" loading="lazy"></div><div class="identity"><span class="number">#094</span><h2>HORNOWL</h2><p class="description">Broad-wing horned owl · Flying</p><span class="badge">STAGE 2</span></div></article>
+      <article class="monster branch-a"><div class="portrait"><img src="../assets/world-pack/monsters/dex/095-glacivane.png" alt="Glacivane, snow-horn owl · ice/flying" loading="lazy"></div><div class="identity"><span class="number">#095</span><h2>GLACIVANE</h2><p class="description">Snow-horn owl · Ice/Flying</p><span class="badge">FINAL · BRANCH A</span></div></article>
+      <article class="monster branch-b"><div class="portrait"><img src="../assets/world-pack/monsters/dex/096-oracowl.png" alt="Oracowl, rune-eyed oracle owl · psychic/flying" loading="lazy"></div><div class="identity"><span class="number">#096</span><h2>ORACOWL</h2><p class="description">Rune-eyed oracle owl · Psychic/Flying</p><span class="badge">FINAL · BRANCH B</span></div></article>
+    </section>
+  </main>
+</body>
+</html>
