@@ -1,0 +1,112 @@
+Segment,Shrine Aspect,Area,Spirit,Stage,Aspect(s),Rarity,Wild Lv,BST
+1,Grass,Route 1 · Lower Trail,Gearbit,Base,Steel,Common,3-7,265
+1,Grass,Route 2 · Waystone Road,Frondove,Base,Grass/Flying,Common,3-7,265
+1,Grass,Verdant Thicket,Buzzle,Base,Bug,Common,3-7,265
+1,Grass,Thicket Deep,Nectenna,Base,Bug,Uncommon,3-7,265
+1,Grass,Route 1 · Lower Trail,Mosscoil,Base,Grass,Uncommon,3-7,265
+1,Grass,Route 2 · Waystone Road,Bloopuff,Base,Normal,Uncommon,3-7,265
+1,Grass,Thicket Deep,Terratot,Base,Ground,Rare,10-12,265
+2,Ground,Route 3 · Stone Steps,Terratot,Base,Ground,Common,13-17,265
+2,Ground,Route 4 · Ridge Path,Burrosaur,Stage 2,Ground,Uncommon,18-20,345
+2,Ground,Echo Cavern,Verdusk,Base,Grass/Flying,Common,13-17,265
+2,Ground,Cavern Deep,Frondbat,Stage 2,Grass/Flying,Uncommon,18-20,345
+2,Ground,Route 4 · Ridge Path,Hootusk,Base,Flying,Common,13-17,265
+2,Ground,Route 3 · Stone Steps,Hornowl,Stage 2,Flying,Uncommon,18-20,345
+2,Ground,Cavern Deep,Dottella,Base,Bug,Uncommon,13-17,265
+2,Ground,Echo Cavern,Carapotta,Stage 2,Bug,Uncommon,18-20,345
+2,Ground,Route 3 · Stone Steps,Pinchitin,Base,Bug,Uncommon,13-17,265
+2,Ground,Route 4 · Ridge Path,Clamptera,Stage 2,Bug,Uncommon,18-20,345
+2,Ground,Route 4 · Ridge Path,Cogskitter,Stage 2,Steel,Uncommon,18-20,345
+2,Ground,Route 4 · Ridge Path,Leaflark,Stage 2,Grass/Flying,Uncommon,18-20,345
+2,Ground,Route 4 · Ridge Path,Buzzguard,Stage 2,Bug/Flying,Uncommon,18-20,345
+2,Ground,Route 4 · Ridge Path,Sproutide,Stage 2,Grass,Uncommon,18-20,345
+2,Ground,Route 4 · Ridge Path,Grovesnail,Stage 2,Grass,Uncommon,18-20,345
+2,Ground,Route 4 · Ridge Path,Floofin,Stage 2,Normal,Uncommon,18-20,345
+2,Ground,Cavern Deep,Brontide,Base,Water,Rare,18-20,265
+3,Water,Route 5 · Riverside,Brontide,Base,Water,Common,21-25,265
+3,Water,The Drowned Village,Brontaur,Stage 2,Water,Uncommon,21-27,345
+3,Water,Kawa Crossing,Skettera,Base,Bug,Common,21-25,265
+3,Water,Mizuchi Bend,Skeetrike,Stage 2,Bug/Flying,Uncommon,21-27,345
+3,Water,The Drowned Village,Fleeceling,Base,Normal,Common,21-25,265
+3,Water,Route 5 · Riverside,Ramblewool,Stage 2,Normal,Uncommon,21-27,345
+3,Water,Mizuchi Bend,Budbloom,Base,Grass,Uncommon,21-25,265
+3,Water,Kawa Crossing,Petalisk,Stage 2,Grass,Uncommon,21-27,345
+3,Water,The Drowned Village,Cogskitter,Stage 2,Steel,Uncommon,21-27,345
+3,Water,The Drowned Village,Leaflark,Stage 2,Grass/Flying,Uncommon,21-27,345
+3,Water,The Drowned Village,Buzzguard,Stage 2,Bug/Flying,Uncommon,21-27,345
+3,Water,The Drowned Village,Sproutide,Stage 2,Grass,Uncommon,21-27,345
+3,Water,The Drowned Village,Grovesnail,Stage 2,Grass,Uncommon,21-27,345
+3,Water,The Drowned Village,Floofin,Stage 2,Normal,Uncommon,21-27,345
+3,Water,The Drowned Village,Burrosaur,Stage 2,Ground,Uncommon,21-27,345
+3,Water,The Drowned Village,Frondbat,Stage 2,Grass/Flying,Uncommon,21-27,345
+3,Water,The Drowned Village,Hornowl,Stage 2,Flying,Uncommon,21-27,345
+3,Water,The Drowned Village,Carapotta,Stage 2,Bug,Uncommon,21-27,345
+3,Water,The Drowned Village,Clamptera,Stage 2,Bug,Uncommon,21-27,345
+3,Water,Mizuchi Bend,Bloomble,Base,Grass,Rare,25-27,265
+4,Bug,Route 6 · Way Station Rd,Bloomble,Base,Grass,Common,28-32,265
+4,Bug,Hive Hollow,Mossmallow,Stage 2,Grass,Uncommon,28-34,345
+4,Bug,The Long Wait,Shellot,Base,Normal,Common,28-32,265
+4,Bug,Petitioners' Field,Shellark,Stage 2,Flying,Uncommon,28-34,345
+4,Bug,Hive Hollow,Wickisp,Base,Ghost,Rare,28-32,265
+4,Bug,Route 6 · Way Station Rd,Candlurk,Stage 2,Fire/Ghost,Rare,28-34,345
+4,Bug,Hive Hollow,Cogskitter,Stage 2,Steel,Uncommon,28-34,345
+4,Bug,Hive Hollow,Leaflark,Stage 2,Grass/Flying,Uncommon,28-34,345
+4,Bug,Hive Hollow,Buzzguard,Stage 2,Bug/Flying,Uncommon,28-34,345
+4,Bug,Hive Hollow,Sproutide,Stage 2,Grass,Uncommon,28-34,345
+4,Bug,Hive Hollow,Grovesnail,Stage 2,Grass,Uncommon,28-34,345
+4,Bug,Hive Hollow,Floofin,Stage 2,Normal,Uncommon,28-34,345
+4,Bug,Hive Hollow,Burrosaur,Stage 2,Ground,Uncommon,28-34,345
+4,Bug,Hive Hollow,Frondbat,Stage 2,Grass/Flying,Uncommon,28-34,345
+4,Bug,Hive Hollow,Hornowl,Stage 2,Flying,Uncommon,28-34,345
+4,Bug,Hive Hollow,Carapotta,Stage 2,Bug,Uncommon,28-34,345
+4,Bug,Hive Hollow,Clamptera,Stage 2,Bug,Uncommon,28-34,345
+4,Bug,Hive Hollow,Brontaur,Stage 2,Water,Uncommon,28-34,345
+4,Bug,Hive Hollow,Skeetrike,Stage 2,Bug/Flying,Uncommon,28-34,345
+4,Bug,Hive Hollow,Ramblewool,Stage 2,Normal,Uncommon,28-34,345
+4,Bug,Hive Hollow,Petalisk,Stage 2,Grass,Uncommon,28-34,345
+4,Bug,Petitioners' Field,Helmling,Base,Steel,Rare,32-34,265
+5,Steel,Route 7 · Ash Pass,Helmling,Base,Steel,Common,35-39,265
+5,Steel,Tatara Slope,Knighton,Stage 2,Steel,Uncommon,35-41,345
+5,Steel,The Kiln Warren,Roswyrm,Base,Water,Rare,35-39,265
+5,Steel,Forge Outskirts,Roscale,Stage 2,Water/Dragon,Rare,35-41,345
+5,Steel,Forge Outskirts,Voltracer,Final A,Electric/Steel,Rare,36-41,425
+5,Steel,Forge Outskirts,Floravian,Final A,Grass/Fairy,Rare,36-41,425
+5,Steel,Forge Outskirts,Voltwing,Final A,Bug/Electric,Rare,36-41,425
+5,Steel,Forge Outskirts,Lotusurge,Final A,Grass/Water,Rare,36-41,425
+5,Steel,Forge Outskirts,Lotushell,Final A,Grass/Water,Rare,36-41,425
+5,Steel,Forge Outskirts,Nimbuspry,Final A,Ice/Fairy,Rare,36-41,425
+5,Steel,Forge Outskirts,Ferradillo,Final A,Ground/Steel,Rare,36-41,425
+5,Steel,Forge Outskirts,Lunabloom,Final A,Grass/Fairy,Rare,36-41,425
+5,Steel,Forge Outskirts,Glacivane,Final A,Ice/Flying,Rare,36-41,425
+5,Steel,Forge Outskirts,Aegibug,Final A,Bug/Steel,Rare,36-41,425
+5,Steel,Forge Outskirts,Ferraclaw,Final A,Bug/Steel,Rare,36-41,425
+5,Steel,Forge Outskirts,Glacisaur,Final A,Water/Ice,Rare,36-41,425
+5,Steel,Forge Outskirts,Aquasting,Final A,Bug/Water,Rare,36-41,425
+5,Steel,Forge Outskirts,Voltaram,Final A,Electric,Rare,36-41,425
+5,Steel,Forge Outskirts,Orchlume,Final A,Grass/Fairy,Rare,36-41,425
+5,Steel,Forge Outskirts,Floraglee,Final A,Grass/Fairy,Rare,36-41,425
+5,Steel,Forge Outskirts,Solroost,Final A,Fire/Flying,Rare,36-41,425
+5,Steel,Forge Outskirts,Halolume,Final A,Fire/Fairy,Rare,40-41,425
+5,Steel,Forge Outskirts,Cherubick,Base,Fairy/Flying,Rare,39-41,265
+6,Fairy,Route 8 · Capital Approach,Cherubick,Base,Fairy/Flying,Rare,42-46,265
+6,Fairy,The Offering Vault,Halowing,Stage 2,Fairy/Flying,Rare,42-49,345
+6,Fairy,Heian-kyō Outskirts,Voltracer,Final A,Electric/Steel,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Floravian,Final A,Grass/Fairy,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Voltwing,Final A,Bug/Electric,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Lotusurge,Final A,Grass/Water,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Lotushell,Final A,Grass/Water,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Nimbuspry,Final A,Ice/Fairy,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Ferradillo,Final A,Ground/Steel,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Lunabloom,Final A,Grass/Fairy,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Glacivane,Final A,Ice/Flying,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Aegibug,Final A,Bug/Steel,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Ferraclaw,Final A,Bug/Steel,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Glacisaur,Final A,Water/Ice,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Aquasting,Final A,Bug/Water,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Voltaram,Final A,Electric,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Orchlume,Final A,Grass/Fairy,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Floraglee,Final A,Grass/Fairy,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Solroost,Final A,Fire/Flying,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Halolume,Final A,Fire/Fairy,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Aureguard,Final A,Steel/Fairy,Rare,42-49,425
+6,Fairy,Heian-kyō Outskirts,Pearleserp,Final A,Water/Fairy,Rare,42-49,425

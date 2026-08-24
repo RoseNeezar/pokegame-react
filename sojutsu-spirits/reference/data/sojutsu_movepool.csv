@@ -1,0 +1,105 @@
+Move,Aspect,Category,Power,Accuracy,PP,Effect,Tier,Animation,Animation Source
+Power Jab,Normal,Phys,80,100,15,—,Mid,Generic hit flash,original
+Wind Slicer,Normal,Phys,80,100,15,—,Mid,"Charge, then blade slash",original
+Blade Ritual,Normal,Status,0,100,15,Raises Attack (self),Status,Spinning blades around user,original
+Gale Force,Normal,Status,0,100,15,Forces switch,Status,"Minimal, forces switch",original
+Crushing Kick,Normal,Phys,120,100,15,—,Signature,Generic hit flash,original
+Venom Curse,Poison,Status,0,100,15,Badly poisons,Status,Purple splash overlay,original
+Piercing Spiral,Normal,Phys,OHKO,100,15,None (OHKO),Mid,"Drill spiral, screen shake",original
+Full Body Crash,Normal,Phys,85,100,15,Paralysis (30%),Mid,Generic hit flash,original
+Reckless Charge,Normal,Phys,90,100,15,Recoil to self,Strong,Hit flash + recoil,original
+All-Out Tackle,Normal,Phys,100,100,15,Recoil to self,Strong,Hit flash + recoil,original
+Bubble Burst,Water,Spec,65,100,15,Lowers Speed (10%),Mid,Bubbles stream,original
+Water Splash,Water,Spec,40,100,15,—,Early,Water jet,original
+Frost Ray,Ice,Spec,95,100,15,Freeze (10%),Strong,Beam + freeze sparkle,original
+Glacial Storm,Ice,Spec,110,100,15,Freeze (10%),Strong,Snowflake barrage,original
+Overload Beam,Normal,Phys,150,100,15,Recharge next turn,Signature,Big orange beam blast,original
+Coin Toss,Normal,Phys,40,100,15,—,Early,Coins scatter,original
+Grapple Slam,Fighting,Phys,80,100,15,Recoil to self,Mid,Hit flash + recoil,original
+Retaliate,Fighting,Phys,2x dmg taken,100,15,—,Mid,Generic hit flash,original
+Gravity Slam,Fighting,Phys,= user level,100,15,None (fixed),Mid,Generic hit flash,original
+Fury Build,Normal,Phys,20,100,15,Atk rises when hit,Early,"Hit flash, red tint builds",original
+Life Siphon,Grass,Spec,40,100,15,Heals user,Early,"Green beam, drains HP",original
+Sunray Blast,Grass,Spec,120,100,15,None (2-turn),Signature,"Charge glow, then beam",original
+Draconic Burst,Dragon,Spec,40 fixed,100,15,None (fixed),Mid,Orange spiral blast,original
+Volt Strike,Electric,Spec,95,100,15,Paralysis (10%),Strong,Lightning strike,original
+Storm Bolt,Electric,Spec,110,100,15,Paralysis (10%),Strong,Large lightning + flash,original
+Ground Rupture,Ground,Phys,100,100,15,—,Strong,"Screen shake, tremors",original
+Chasm Split,Ground,Phys,OHKO,100,15,None (OHKO),Mid,"Ground crack, shake",original
+Burrow Strike,Ground,Phys,100,100,15,None (2-turn),Strong,"Vanish, reappear",original
+Mind Crush,Psychic,Spec,90,100,15,Lowers Sp. (10%),Strong,Wavy purple distortion,original
+Phase Shift,Psychic,Status,0,100,15,Escapes battle,Status,Vanish in sparkle,original
+Mirror Act,Normal,Status,0,100,15,Copies last move,Status,Sparkle overlay,original
+Afterimage,Normal,Status,0,100,15,Raises evasion,Status,Afterimage flicker,original
+Barrier Ward,Psychic,Status,0,100,15,Raises Defense,Status,Blue shimmer barrier,original
+Patient Fury,Normal,Phys,2x stored dmg,100,15,Delayed counter-hit,Mid,"Flashes red, charges",original
+Wildcard,Normal,Phys,Varies,100,15,Random,Mid,Finger-wag sparkle,original
+Detonate,Normal,Phys,130,100,15,User faints,Signature,Big white flash,original
+Bomb Toss,Normal,Phys,100,100,15,—,Strong,Generic hit flash,original
+Inferno Burst,Fire,Spec,110,100,15,Burn (10%),Strong,Large flame burst,original
+Star Shower,Normal,Phys,60,100,15,None (never misses),Mid,Yellow stars fly,original
+Headlong Charge,Normal,Phys,100,100,15,Def up on charge turn,Strong,"Charge (def up), then hit",original
+Warm Recovery,Normal,Status,0,100,15,Heals user,Status,Green sparkle overlay,original
+Nightmare Feast,Psychic,Spec,100,100,15,Heals user,Strong,Dark swirl/drain,original
+Dive Bomb,Flying,Phys,140,100,15,None (2-turn),Signature,"Charge, then diving hit",original
+Deep Slumber,Psychic,Status,0,100,15,Sleep + full heal,Status,"Blue ""Zzz"" sparkle",original
+Static Pulse,Electric,Status,0,100,15,Paralysis,Status,Small spark overlay,original
+Mind Pulse,Psychic,Spec,~level-based,100,15,None (random),Mid,Wavy purple pulse,original
+Cataclysm Burst,Normal,Phys,170,100,15,User faints,Signature,Big white flash,original
+Boulder Fall,Rock,Phys,75,100,15,—,Mid,Rocks fall from top,original
+Triple Strike,Normal,Phys,80,100,15,—,Mid,Tri-colored beam,original
+Decoy Form,Normal,Status,0 (costs 25% HP),100,15,Creates substitute,Status,Decoy doll appears,original
+Slash Strike,Normal,Phys,50,100,15,—,Early,Slash lines,original
+Skyward Dive,Flying,Phys,70,100,15,None (2-turn),Mid,"Flies off, then dives",original
+Tidal Wave,Water,Spec,95,100,15,—,Strong,Large wave washes over,original
+Brute Force,Normal,Phys,80,100,15,—,Mid,Generic hit flash,original
+Blinding Light,Normal,Status,0,100,15,Lowers accuracy,Status,Screen flash,original
+Fang Snap,Dark,Phys,60,100,15,Flinch (30%),Mid,"Fang chomp, flinch back",original
+Jaw Crush,Dark,Phys,80,100,15,Lowers Defense (20%),Mid,"Bite down, screen shudders",original
+Shadow Jab,Dark,Phys,70,100,15,None (priority),Mid,Quick shadow-jab,original
+Lunar Burst,Fairy,Spec,95,100,15,Lowers Sp. Atk (30%),Strong,Pink lunar orb bursts,original
+Radiant Flash,Fairy,Spec,80,100,15,—,Mid,"Sparkling flash, wide-hit",original
+Pincer Nip,Bug,Phys,45,100,15,—,Early,Generic hit flash,reuses: Power Jab
+Silk Snare,Bug,Status,0,100,15,Sharply lowers Speed,Status,Sparkle overlay,reuses: Mirror Act
+Swarm Strike,Bug,Phys,70,100,15,—,Mid,Yellow stars fly,reuses: Star Shower
+Hive Fury,Bug,Phys,95,100,15,20% flinch,Strong,"Drill spiral, screen shake",reuses: Piercing Spiral
+Iron Rap,Steel,Phys,50,100,15,—,Early,Generic hit flash,reuses: Power Jab
+Plate Guard,Steel,Status,0,100,15,Sharply raises Defense,Status,Blue shimmer barrier,reuses: Barrier Ward
+Steel Cleave,Steel,Phys,80,100,15,High crit rate,Mid,Slash lines,reuses: Slash Strike
+Forge Strike,Steel,Phys,100,100,15,—,Strong,"Charge, then blade slash",reuses: Wind Slicer
+Spectral Touch,Ghost,Phys,45,100,15,20% flinch,Early,Vanish in sparkle,reuses: Phase Shift
+Haunt Whisper,Ghost,Status,0,100,15,Sharply lowers Attack,Status,Wavy purple pulse,reuses: Mind Pulse
+Phantom Rend,Ghost,Phys,80,100,15,—,Mid,Dark swirl/drain,reuses: Nightmare Feast
+Soul Rend,Ghost,Phys,95,100,15,Heals user by half damage,Strong,Dark swirl/drain,reuses: Nightmare Feast
+Leaf Cutter,Grass,Spec,55,100,15,High crit rate,Mid,Slash lines,reuses: Slash Strike
+Bramble Rend,Grass,Spec,80,100,15,—,Mid,"Charge, then blade slash",reuses: Wind Slicer
+Spore Cloud,Grass,Status,0,100,15,Puts target to sleep,Status,Green sparkle overlay,reuses: Warm Recovery
+Root Bind,Grass,Status,0,100,15,Sharply lowers Speed,Status,"Green beam, drains HP",reuses: Life Siphon
+Wing Slice,Flying,Phys,60,100,15,—,Mid,Slash lines,reuses: Slash Strike
+Updraft,Flying,Status,0,100,15,Raises Speed,Status,Afterimage flicker,reuses: Afterimage
+Glimmer Tap,Fairy,Spec,40,100,15,—,Early,"Sparkling flash, wide-hit",reuses: Radiant Flash
+Charm Ward,Fairy,Status,0,100,15,Sharply lowers Attack,Status,Sparkle overlay,reuses: Mirror Act
+Ember Flick,Fire,Spec,40,100,15,10% burn,Early,Large flame burst,reuses: Inferno Burst
+Flame Lash,Fire,Spec,65,100,15,10% burn,Mid,Large flame burst,reuses: Inferno Burst
+Blaze Fang,Fire,Spec,80,100,15,10% burn,Mid,"Fang chomp, flinch back",reuses: Fang Snap
+Cinder Veil,Fire,Status,0,100,15,Raises Special,Status,Sparkle overlay,reuses: Mirror Act
+Chill Touch,Ice,Spec,40,100,15,10% freeze,Early,Beam + freeze sparkle,reuses: Frost Ray
+Frost Veil,Ice,Status,0,100,15,Raises Defense,Status,Blue shimmer barrier,reuses: Barrier Ward
+Toxic Spit,Poison,Phys,40,100,15,20% poison,Early,Purple splash overlay,reuses: Venom Curse
+Venom Fang,Poison,Phys,70,100,15,20% poison,Mid,"Fang chomp, flinch back",reuses: Fang Snap
+Sludge Wave,Poison,Phys,90,100,15,30% poison,Strong,Purple splash overlay,reuses: Venom Curse
+Spite Glare,Dark,Status,0,100,15,Sharply lowers Attack,Status,Screen flash,reuses: Blinding Light
+Umbral Rend,Dark,Phys,95,100,15,—,Strong,Dark swirl/drain,reuses: Nightmare Feast
+Mist Shroud,Water,Status,0,100,15,Raises evasion,Status,Afterimage flicker,reuses: Afterimage
+Torrent Fang,Water,Spec,80,100,15,—,Mid,Water jet,reuses: Water Splash
+Spark Nip,Electric,Spec,40,100,15,10% paralysis,Early,Small spark overlay,reuses: Static Pulse
+Arc Lash,Electric,Spec,65,100,15,10% paralysis,Mid,Lightning strike,reuses: Volt Strike
+Sand Lash,Ground,Phys,45,100,15,—,Early,"Screen shake, tremors",reuses: Ground Rupture
+Mud Veil,Ground,Status,0,100,15,Lowers target accuracy,Status,Screen flash,reuses: Blinding Light
+Scale Ripple,Dragon,Spec,60,100,15,—,Mid,Orange spiral blast,reuses: Draconic Burst
+Wyrm Roar,Dragon,Status,0,100,15,Raises Attack and Special,Status,Spinning blades around user,reuses: Blade Ritual
+Draco Surge,Dragon,Spec,100,100,15,—,Strong,Orange spiral blast,reuses: Draconic Burst
+Stone Fling,Rock,Phys,50,100,15,—,Early,Rocks fall from top,reuses: Boulder Fall
+Granite Guard,Rock,Status,0,100,15,Sharply raises Defense,Status,Blue shimmer barrier,reuses: Barrier Ward
+Palm Thrust,Fighting,Phys,50,100,15,—,Early,Generic hit flash,reuses: Power Jab
+Focus Stance,Fighting,Status,0,100,15,Sharply raises Attack,Status,Spinning blades around user,reuses: Blade Ritual

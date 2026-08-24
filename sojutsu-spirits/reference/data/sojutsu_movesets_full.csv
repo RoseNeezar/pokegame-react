@@ -1,0 +1,841 @@
+Spirit,Stage,Aspect(s),Learn Level,Move,Move Aspect,Category,Power,Effect,Source,Animation,Animation Source
+Helmling,Base,Steel,1,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Helmling,Base,Steel,1,Iron Rap,Steel,Phys,50,—,own,Generic hit flash,reuses: Power Jab
+Helmling,Base,Steel,5,Plate Guard,Steel,Status,0,Sharply raises Defense,own,Blue shimmer barrier,reuses: Barrier Ward
+Helmling,Base,Steel,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Helmling,Base,Steel,13,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Knighton,Stage 2,Steel,1,Coin Toss,Normal,Phys,40,—,inherited from Helmling,Coins scatter,original
+Knighton,Stage 2,Steel,1,Iron Rap,Steel,Phys,50,—,inherited from Helmling,Generic hit flash,reuses: Power Jab
+Knighton,Stage 2,Steel,5,Plate Guard,Steel,Status,0,Sharply raises Defense,inherited from Helmling,Blue shimmer barrier,reuses: Barrier Ward
+Knighton,Stage 2,Steel,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Helmling,Yellow stars fly,original
+Knighton,Stage 2,Steel,13,Slash Strike,Normal,Phys,50,—,inherited from Helmling,Slash lines,original
+Knighton,Stage 2,Steel,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Knighton,Stage 2,Steel,21,Steel Cleave,Steel,Phys,80,High crit rate,own,Slash lines,reuses: Slash Strike
+Knighton,Stage 2,Steel,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Aureguard,Final A,Steel/Fairy,1,Coin Toss,Normal,Phys,40,—,inherited from Helmling,Coins scatter,original
+Aureguard,Final A,Steel/Fairy,1,Iron Rap,Steel,Phys,50,—,inherited from Helmling,Generic hit flash,reuses: Power Jab
+Aureguard,Final A,Steel/Fairy,5,Plate Guard,Steel,Status,0,Sharply raises Defense,inherited from Helmling,Blue shimmer barrier,reuses: Barrier Ward
+Aureguard,Final A,Steel/Fairy,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Helmling,Yellow stars fly,original
+Aureguard,Final A,Steel/Fairy,13,Slash Strike,Normal,Phys,50,—,inherited from Helmling,Slash lines,original
+Aureguard,Final A,Steel/Fairy,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Knighton,Generic hit flash,original
+Aureguard,Final A,Steel/Fairy,21,Steel Cleave,Steel,Phys,80,High crit rate,inherited from Knighton,Slash lines,reuses: Slash Strike
+Aureguard,Final A,Steel/Fairy,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Knighton,Spinning blades around user,original
+Aureguard,Final A,Steel/Fairy,30,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Aureguard,Final A,Steel/Fairy,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Aureguard,Final A,Steel/Fairy,38,Forge Strike,Steel,Phys,100,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Dreadhelm,Final B,Steel/Dark,1,Coin Toss,Normal,Phys,40,—,inherited from Helmling,Coins scatter,original
+Dreadhelm,Final B,Steel/Dark,1,Iron Rap,Steel,Phys,50,—,inherited from Helmling,Generic hit flash,reuses: Power Jab
+Dreadhelm,Final B,Steel/Dark,5,Plate Guard,Steel,Status,0,Sharply raises Defense,inherited from Helmling,Blue shimmer barrier,reuses: Barrier Ward
+Dreadhelm,Final B,Steel/Dark,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Helmling,Yellow stars fly,original
+Dreadhelm,Final B,Steel/Dark,13,Slash Strike,Normal,Phys,50,—,inherited from Helmling,Slash lines,original
+Dreadhelm,Final B,Steel/Dark,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Knighton,Generic hit flash,original
+Dreadhelm,Final B,Steel/Dark,21,Steel Cleave,Steel,Phys,80,High crit rate,inherited from Knighton,Slash lines,reuses: Slash Strike
+Dreadhelm,Final B,Steel/Dark,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Knighton,Spinning blades around user,original
+Dreadhelm,Final B,Steel/Dark,30,Umbral Rend,Dark,Phys,95,—,own,Dark swirl/drain,reuses: Nightmare Feast
+Dreadhelm,Final B,Steel/Dark,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Dreadhelm,Final B,Steel/Dark,38,Forge Strike,Steel,Phys,100,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Gearbit,Base,Steel,1,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Gearbit,Base,Steel,1,Iron Rap,Steel,Phys,50,—,own,Generic hit flash,reuses: Power Jab
+Gearbit,Base,Steel,5,Plate Guard,Steel,Status,0,Sharply raises Defense,own,Blue shimmer barrier,reuses: Barrier Ward
+Gearbit,Base,Steel,9,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Gearbit,Base,Steel,13,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Cogskitter,Stage 2,Steel,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Gearbit,Yellow stars fly,original
+Cogskitter,Stage 2,Steel,1,Iron Rap,Steel,Phys,50,—,inherited from Gearbit,Generic hit flash,reuses: Power Jab
+Cogskitter,Stage 2,Steel,5,Plate Guard,Steel,Status,0,Sharply raises Defense,inherited from Gearbit,Blue shimmer barrier,reuses: Barrier Ward
+Cogskitter,Stage 2,Steel,9,Slash Strike,Normal,Phys,50,—,inherited from Gearbit,Slash lines,original
+Cogskitter,Stage 2,Steel,13,Coin Toss,Normal,Phys,40,—,inherited from Gearbit,Coins scatter,original
+Cogskitter,Stage 2,Steel,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Cogskitter,Stage 2,Steel,21,Steel Cleave,Steel,Phys,80,High crit rate,own,Slash lines,reuses: Slash Strike
+Cogskitter,Stage 2,Steel,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Voltracer,Final A,Electric/Steel,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Gearbit,Yellow stars fly,original
+Voltracer,Final A,Electric/Steel,1,Iron Rap,Steel,Phys,50,—,inherited from Gearbit,Generic hit flash,reuses: Power Jab
+Voltracer,Final A,Electric/Steel,5,Plate Guard,Steel,Status,0,Sharply raises Defense,inherited from Gearbit,Blue shimmer barrier,reuses: Barrier Ward
+Voltracer,Final A,Electric/Steel,9,Slash Strike,Normal,Phys,50,—,inherited from Gearbit,Slash lines,original
+Voltracer,Final A,Electric/Steel,13,Coin Toss,Normal,Phys,40,—,inherited from Gearbit,Coins scatter,original
+Voltracer,Final A,Electric/Steel,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Cogskitter,Generic hit flash,original
+Voltracer,Final A,Electric/Steel,21,Steel Cleave,Steel,Phys,80,High crit rate,inherited from Cogskitter,Slash lines,reuses: Slash Strike
+Voltracer,Final A,Electric/Steel,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Cogskitter,Spinning blades around user,original
+Voltracer,Final A,Electric/Steel,30,Forge Strike,Steel,Phys,100,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Voltracer,Final A,Electric/Steel,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Voltracer,Final A,Electric/Steel,38,Volt Strike,Electric,Spec,95,Paralysis (10%),own,Lightning strike,original
+Scraprowl,Final B,Steel/Dark,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Gearbit,Yellow stars fly,original
+Scraprowl,Final B,Steel/Dark,1,Iron Rap,Steel,Phys,50,—,inherited from Gearbit,Generic hit flash,reuses: Power Jab
+Scraprowl,Final B,Steel/Dark,5,Plate Guard,Steel,Status,0,Sharply raises Defense,inherited from Gearbit,Blue shimmer barrier,reuses: Barrier Ward
+Scraprowl,Final B,Steel/Dark,9,Slash Strike,Normal,Phys,50,—,inherited from Gearbit,Slash lines,original
+Scraprowl,Final B,Steel/Dark,13,Coin Toss,Normal,Phys,40,—,inherited from Gearbit,Coins scatter,original
+Scraprowl,Final B,Steel/Dark,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Cogskitter,Generic hit flash,original
+Scraprowl,Final B,Steel/Dark,21,Steel Cleave,Steel,Phys,80,High crit rate,inherited from Cogskitter,Slash lines,reuses: Slash Strike
+Scraprowl,Final B,Steel/Dark,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Cogskitter,Spinning blades around user,original
+Scraprowl,Final B,Steel/Dark,30,Umbral Rend,Dark,Phys,95,—,own,Dark swirl/drain,reuses: Nightmare Feast
+Scraprowl,Final B,Steel/Dark,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Scraprowl,Final B,Steel/Dark,38,Forge Strike,Steel,Phys,100,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Nectenna,Base,Bug,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Nectenna,Base,Bug,1,Pincer Nip,Bug,Phys,45,—,own,Generic hit flash,reuses: Power Jab
+Nectenna,Base,Bug,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,own,Sparkle overlay,reuses: Mirror Act
+Nectenna,Base,Bug,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Nectenna,Base,Bug,13,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Sproutide,Stage 2,Grass,1,Slash Strike,Normal,Phys,50,—,inherited from Nectenna,Slash lines,original
+Sproutide,Stage 2,Grass,1,Pincer Nip,Bug,Phys,45,—,inherited from Nectenna,Generic hit flash,reuses: Power Jab
+Sproutide,Stage 2,Grass,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Nectenna,Sparkle overlay,reuses: Mirror Act
+Sproutide,Stage 2,Grass,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Nectenna,Yellow stars fly,original
+Sproutide,Stage 2,Grass,13,Coin Toss,Normal,Phys,40,—,inherited from Nectenna,Coins scatter,original
+Sproutide,Stage 2,Grass,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Sproutide,Stage 2,Grass,21,Bramble Rend,Grass,Spec,80,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Sproutide,Stage 2,Grass,25,Spore Cloud,Grass,Status,0,Puts target to sleep,own,Green sparkle overlay,reuses: Warm Recovery
+Lotusurge,Final A,Grass/Water,1,Slash Strike,Normal,Phys,50,—,inherited from Nectenna,Slash lines,original
+Lotusurge,Final A,Grass/Water,1,Pincer Nip,Bug,Phys,45,—,inherited from Nectenna,Generic hit flash,reuses: Power Jab
+Lotusurge,Final A,Grass/Water,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Nectenna,Sparkle overlay,reuses: Mirror Act
+Lotusurge,Final A,Grass/Water,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Nectenna,Yellow stars fly,original
+Lotusurge,Final A,Grass/Water,13,Coin Toss,Normal,Phys,40,—,inherited from Nectenna,Coins scatter,original
+Lotusurge,Final A,Grass/Water,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Sproutide,Generic hit flash,original
+Lotusurge,Final A,Grass/Water,21,Bramble Rend,Grass,Spec,80,—,inherited from Sproutide,"Charge, then blade slash",reuses: Wind Slicer
+Lotusurge,Final A,Grass/Water,25,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Sproutide,Green sparkle overlay,reuses: Warm Recovery
+Lotusurge,Final A,Grass/Water,30,Tidal Wave,Water,Spec,95,—,own,Large wave washes over,original
+Lotusurge,Final A,Grass/Water,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Lotusurge,Final A,Grass/Water,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Voltroot,Final B,Grass/Electric,1,Slash Strike,Normal,Phys,50,—,inherited from Nectenna,Slash lines,original
+Voltroot,Final B,Grass/Electric,1,Pincer Nip,Bug,Phys,45,—,inherited from Nectenna,Generic hit flash,reuses: Power Jab
+Voltroot,Final B,Grass/Electric,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Nectenna,Sparkle overlay,reuses: Mirror Act
+Voltroot,Final B,Grass/Electric,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Nectenna,Yellow stars fly,original
+Voltroot,Final B,Grass/Electric,13,Coin Toss,Normal,Phys,40,—,inherited from Nectenna,Coins scatter,original
+Voltroot,Final B,Grass/Electric,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Sproutide,Generic hit flash,original
+Voltroot,Final B,Grass/Electric,21,Bramble Rend,Grass,Spec,80,—,inherited from Sproutide,"Charge, then blade slash",reuses: Wind Slicer
+Voltroot,Final B,Grass/Electric,25,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Sproutide,Green sparkle overlay,reuses: Warm Recovery
+Voltroot,Final B,Grass/Electric,30,Storm Bolt,Electric,Spec,110,Paralysis (10%),own,Large lightning + flash,original
+Voltroot,Final B,Grass/Electric,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Voltroot,Final B,Grass/Electric,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Budbloom,Base,Grass,1,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Budbloom,Base,Grass,1,Life Siphon,Grass,Spec,40,Heals user,own,"Green beam, drains HP",original
+Budbloom,Base,Grass,5,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Budbloom,Base,Grass,9,Leaf Cutter,Grass,Spec,55,High crit rate,own,Slash lines,reuses: Slash Strike
+Budbloom,Base,Grass,13,Spore Cloud,Grass,Status,0,Puts target to sleep,own,Green sparkle overlay,reuses: Warm Recovery
+Petalisk,Stage 2,Grass,1,Coin Toss,Normal,Phys,40,—,inherited from Budbloom,Coins scatter,original
+Petalisk,Stage 2,Grass,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Budbloom,"Green beam, drains HP",original
+Petalisk,Stage 2,Grass,5,Star Shower,Normal,Phys,60,None (never misses),inherited from Budbloom,Yellow stars fly,original
+Petalisk,Stage 2,Grass,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Budbloom,Slash lines,reuses: Slash Strike
+Petalisk,Stage 2,Grass,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Budbloom,Green sparkle overlay,reuses: Warm Recovery
+Petalisk,Stage 2,Grass,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Petalisk,Stage 2,Grass,21,Bramble Rend,Grass,Spec,80,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Petalisk,Stage 2,Grass,25,Root Bind,Grass,Status,0,Sharply lowers Speed,own,"Green beam, drains HP",reuses: Life Siphon
+Orchlume,Final A,Grass/Fairy,1,Coin Toss,Normal,Phys,40,—,inherited from Budbloom,Coins scatter,original
+Orchlume,Final A,Grass/Fairy,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Budbloom,"Green beam, drains HP",original
+Orchlume,Final A,Grass/Fairy,5,Star Shower,Normal,Phys,60,None (never misses),inherited from Budbloom,Yellow stars fly,original
+Orchlume,Final A,Grass/Fairy,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Budbloom,Slash lines,reuses: Slash Strike
+Orchlume,Final A,Grass/Fairy,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Budbloom,Green sparkle overlay,reuses: Warm Recovery
+Orchlume,Final A,Grass/Fairy,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Petalisk,Generic hit flash,original
+Orchlume,Final A,Grass/Fairy,21,Bramble Rend,Grass,Spec,80,—,inherited from Petalisk,"Charge, then blade slash",reuses: Wind Slicer
+Orchlume,Final A,Grass/Fairy,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Petalisk,"Green beam, drains HP",reuses: Life Siphon
+Orchlume,Final A,Grass/Fairy,30,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Orchlume,Final A,Grass/Fairy,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Orchlume,Final A,Grass/Fairy,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Venobloom,Final B,Grass/Poison,1,Coin Toss,Normal,Phys,40,—,inherited from Budbloom,Coins scatter,original
+Venobloom,Final B,Grass/Poison,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Budbloom,"Green beam, drains HP",original
+Venobloom,Final B,Grass/Poison,5,Star Shower,Normal,Phys,60,None (never misses),inherited from Budbloom,Yellow stars fly,original
+Venobloom,Final B,Grass/Poison,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Budbloom,Slash lines,reuses: Slash Strike
+Venobloom,Final B,Grass/Poison,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Budbloom,Green sparkle overlay,reuses: Warm Recovery
+Venobloom,Final B,Grass/Poison,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Petalisk,Generic hit flash,original
+Venobloom,Final B,Grass/Poison,21,Bramble Rend,Grass,Spec,80,—,inherited from Petalisk,"Charge, then blade slash",reuses: Wind Slicer
+Venobloom,Final B,Grass/Poison,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Petalisk,"Green beam, drains HP",reuses: Life Siphon
+Venobloom,Final B,Grass/Poison,30,Sludge Wave,Poison,Phys,90,30% poison,own,Purple splash overlay,reuses: Venom Curse
+Venobloom,Final B,Grass/Poison,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Venobloom,Final B,Grass/Poison,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Brontide,Base,Water,1,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Brontide,Base,Water,1,Water Splash,Water,Spec,40,—,own,Water jet,original
+Brontide,Base,Water,5,Mist Shroud,Water,Status,0,Raises evasion,own,Afterimage flicker,reuses: Afterimage
+Brontide,Base,Water,9,Bubble Burst,Water,Spec,65,Lowers Speed (10%),own,Bubbles stream,original
+Brontide,Base,Water,13,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Brontaur,Stage 2,Water,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Brontide,Yellow stars fly,original
+Brontaur,Stage 2,Water,1,Water Splash,Water,Spec,40,—,inherited from Brontide,Water jet,original
+Brontaur,Stage 2,Water,5,Mist Shroud,Water,Status,0,Raises evasion,inherited from Brontide,Afterimage flicker,reuses: Afterimage
+Brontaur,Stage 2,Water,9,Bubble Burst,Water,Spec,65,Lowers Speed (10%),inherited from Brontide,Bubbles stream,original
+Brontaur,Stage 2,Water,13,Slash Strike,Normal,Phys,50,—,inherited from Brontide,Slash lines,original
+Brontaur,Stage 2,Water,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Brontaur,Stage 2,Water,21,Torrent Fang,Water,Spec,80,—,own,Water jet,reuses: Water Splash
+Brontaur,Stage 2,Water,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Glacisaur,Final A,Water/Ice,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Brontide,Yellow stars fly,original
+Glacisaur,Final A,Water/Ice,1,Water Splash,Water,Spec,40,—,inherited from Brontide,Water jet,original
+Glacisaur,Final A,Water/Ice,5,Mist Shroud,Water,Status,0,Raises evasion,inherited from Brontide,Afterimage flicker,reuses: Afterimage
+Glacisaur,Final A,Water/Ice,9,Bubble Burst,Water,Spec,65,Lowers Speed (10%),inherited from Brontide,Bubbles stream,original
+Glacisaur,Final A,Water/Ice,13,Slash Strike,Normal,Phys,50,—,inherited from Brontide,Slash lines,original
+Glacisaur,Final A,Water/Ice,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Brontaur,Generic hit flash,original
+Glacisaur,Final A,Water/Ice,21,Torrent Fang,Water,Spec,80,—,inherited from Brontaur,Water jet,reuses: Water Splash
+Glacisaur,Final A,Water/Ice,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Brontaur,Spinning blades around user,original
+Glacisaur,Final A,Water/Ice,30,Glacial Storm,Ice,Spec,110,Freeze (10%),own,Snowflake barrage,original
+Glacisaur,Final A,Water/Ice,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Glacisaur,Final A,Water/Ice,38,Tidal Wave,Water,Spec,95,—,own,Large wave washes over,original
+Dracotide,Final B,Water/Dragon,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Brontide,Yellow stars fly,original
+Dracotide,Final B,Water/Dragon,1,Water Splash,Water,Spec,40,—,inherited from Brontide,Water jet,original
+Dracotide,Final B,Water/Dragon,5,Mist Shroud,Water,Status,0,Raises evasion,inherited from Brontide,Afterimage flicker,reuses: Afterimage
+Dracotide,Final B,Water/Dragon,9,Bubble Burst,Water,Spec,65,Lowers Speed (10%),inherited from Brontide,Bubbles stream,original
+Dracotide,Final B,Water/Dragon,13,Slash Strike,Normal,Phys,50,—,inherited from Brontide,Slash lines,original
+Dracotide,Final B,Water/Dragon,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Brontaur,Generic hit flash,original
+Dracotide,Final B,Water/Dragon,21,Torrent Fang,Water,Spec,80,—,inherited from Brontaur,Water jet,reuses: Water Splash
+Dracotide,Final B,Water/Dragon,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Brontaur,Spinning blades around user,original
+Dracotide,Final B,Water/Dragon,30,Draco Surge,Dragon,Spec,100,—,own,Orange spiral blast,reuses: Draconic Burst
+Dracotide,Final B,Water/Dragon,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Dracotide,Final B,Water/Dragon,38,Tidal Wave,Water,Spec,95,—,own,Large wave washes over,original
+Buzzle,Base,Bug,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Buzzle,Base,Bug,1,Pincer Nip,Bug,Phys,45,—,own,Generic hit flash,reuses: Power Jab
+Buzzle,Base,Bug,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,own,Sparkle overlay,reuses: Mirror Act
+Buzzle,Base,Bug,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Buzzle,Base,Bug,13,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Buzzguard,Stage 2,Bug/Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Buzzle,Slash lines,original
+Buzzguard,Stage 2,Bug/Flying,1,Pincer Nip,Bug,Phys,45,—,inherited from Buzzle,Generic hit flash,reuses: Power Jab
+Buzzguard,Stage 2,Bug/Flying,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Buzzle,Sparkle overlay,reuses: Mirror Act
+Buzzguard,Stage 2,Bug/Flying,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Buzzle,Yellow stars fly,original
+Buzzguard,Stage 2,Bug/Flying,13,Coin Toss,Normal,Phys,40,—,inherited from Buzzle,Coins scatter,original
+Buzzguard,Stage 2,Bug/Flying,17,Skyward Dive,Flying,Phys,70,None (2-turn),own,"Flies off, then dives",original
+Buzzguard,Stage 2,Bug/Flying,21,Swarm Strike,Bug,Phys,70,—,own,Yellow stars fly,reuses: Star Shower
+Buzzguard,Stage 2,Bug/Flying,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Voltwing,Final A,Bug/Electric,1,Slash Strike,Normal,Phys,50,—,inherited from Buzzle,Slash lines,original
+Voltwing,Final A,Bug/Electric,1,Pincer Nip,Bug,Phys,45,—,inherited from Buzzle,Generic hit flash,reuses: Power Jab
+Voltwing,Final A,Bug/Electric,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Buzzle,Sparkle overlay,reuses: Mirror Act
+Voltwing,Final A,Bug/Electric,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Buzzle,Yellow stars fly,original
+Voltwing,Final A,Bug/Electric,13,Coin Toss,Normal,Phys,40,—,inherited from Buzzle,Coins scatter,original
+Voltwing,Final A,Bug/Electric,17,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Buzzguard,"Flies off, then dives",original
+Voltwing,Final A,Bug/Electric,21,Swarm Strike,Bug,Phys,70,—,inherited from Buzzguard,Yellow stars fly,reuses: Star Shower
+Voltwing,Final A,Bug/Electric,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Buzzguard,Spinning blades around user,original
+Voltwing,Final A,Bug/Electric,30,Storm Bolt,Electric,Spec,110,Paralysis (10%),own,Large lightning + flash,original
+Voltwing,Final A,Bug/Electric,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Voltwing,Final A,Bug/Electric,38,Hive Fury,Bug,Phys,95,20% flinch,own,"Drill spiral, screen shake",reuses: Piercing Spiral
+Jabjacket,Final B,Bug/Fighting,1,Slash Strike,Normal,Phys,50,—,inherited from Buzzle,Slash lines,original
+Jabjacket,Final B,Bug/Fighting,1,Pincer Nip,Bug,Phys,45,—,inherited from Buzzle,Generic hit flash,reuses: Power Jab
+Jabjacket,Final B,Bug/Fighting,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Buzzle,Sparkle overlay,reuses: Mirror Act
+Jabjacket,Final B,Bug/Fighting,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Buzzle,Yellow stars fly,original
+Jabjacket,Final B,Bug/Fighting,13,Coin Toss,Normal,Phys,40,—,inherited from Buzzle,Coins scatter,original
+Jabjacket,Final B,Bug/Fighting,17,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Buzzguard,"Flies off, then dives",original
+Jabjacket,Final B,Bug/Fighting,21,Swarm Strike,Bug,Phys,70,—,inherited from Buzzguard,Yellow stars fly,reuses: Star Shower
+Jabjacket,Final B,Bug/Fighting,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Buzzguard,Spinning blades around user,original
+Jabjacket,Final B,Bug/Fighting,30,Grapple Slam,Fighting,Phys,80,Recoil to self,own,Hit flash + recoil,original
+Jabjacket,Final B,Bug/Fighting,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Jabjacket,Final B,Bug/Fighting,38,Hive Fury,Bug,Phys,95,20% flinch,own,"Drill spiral, screen shake",reuses: Piercing Spiral
+Frondove,Base,Grass/Flying,1,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Frondove,Base,Grass/Flying,1,Life Siphon,Grass,Spec,40,Heals user,own,"Green beam, drains HP",original
+Frondove,Base,Grass/Flying,5,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Frondove,Base,Grass/Flying,9,Leaf Cutter,Grass,Spec,55,High crit rate,own,Slash lines,reuses: Slash Strike
+Frondove,Base,Grass/Flying,13,Spore Cloud,Grass,Status,0,Puts target to sleep,own,Green sparkle overlay,reuses: Warm Recovery
+Leaflark,Stage 2,Grass/Flying,1,Coin Toss,Normal,Phys,40,—,inherited from Frondove,Coins scatter,original
+Leaflark,Stage 2,Grass/Flying,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Frondove,"Green beam, drains HP",original
+Leaflark,Stage 2,Grass/Flying,5,Star Shower,Normal,Phys,60,None (never misses),inherited from Frondove,Yellow stars fly,original
+Leaflark,Stage 2,Grass/Flying,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Frondove,Slash lines,reuses: Slash Strike
+Leaflark,Stage 2,Grass/Flying,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Frondove,Green sparkle overlay,reuses: Warm Recovery
+Leaflark,Stage 2,Grass/Flying,17,Skyward Dive,Flying,Phys,70,None (2-turn),own,"Flies off, then dives",original
+Leaflark,Stage 2,Grass/Flying,21,Bramble Rend,Grass,Spec,80,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Leaflark,Stage 2,Grass/Flying,25,Root Bind,Grass,Status,0,Sharply lowers Speed,own,"Green beam, drains HP",reuses: Life Siphon
+Floravian,Final A,Grass/Fairy,1,Coin Toss,Normal,Phys,40,—,inherited from Frondove,Coins scatter,original
+Floravian,Final A,Grass/Fairy,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Frondove,"Green beam, drains HP",original
+Floravian,Final A,Grass/Fairy,5,Star Shower,Normal,Phys,60,None (never misses),inherited from Frondove,Yellow stars fly,original
+Floravian,Final A,Grass/Fairy,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Frondove,Slash lines,reuses: Slash Strike
+Floravian,Final A,Grass/Fairy,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Frondove,Green sparkle overlay,reuses: Warm Recovery
+Floravian,Final A,Grass/Fairy,17,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Leaflark,"Flies off, then dives",original
+Floravian,Final A,Grass/Fairy,21,Bramble Rend,Grass,Spec,80,—,inherited from Leaflark,"Charge, then blade slash",reuses: Wind Slicer
+Floravian,Final A,Grass/Fairy,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Leaflark,"Green beam, drains HP",reuses: Life Siphon
+Floravian,Final A,Grass/Fairy,30,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Floravian,Final A,Grass/Fairy,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Floravian,Final A,Grass/Fairy,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Thornraven,Final B,Grass/Dark,1,Coin Toss,Normal,Phys,40,—,inherited from Frondove,Coins scatter,original
+Thornraven,Final B,Grass/Dark,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Frondove,"Green beam, drains HP",original
+Thornraven,Final B,Grass/Dark,5,Star Shower,Normal,Phys,60,None (never misses),inherited from Frondove,Yellow stars fly,original
+Thornraven,Final B,Grass/Dark,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Frondove,Slash lines,reuses: Slash Strike
+Thornraven,Final B,Grass/Dark,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Frondove,Green sparkle overlay,reuses: Warm Recovery
+Thornraven,Final B,Grass/Dark,17,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Leaflark,"Flies off, then dives",original
+Thornraven,Final B,Grass/Dark,21,Bramble Rend,Grass,Spec,80,—,inherited from Leaflark,"Charge, then blade slash",reuses: Wind Slicer
+Thornraven,Final B,Grass/Dark,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Leaflark,"Green beam, drains HP",reuses: Life Siphon
+Thornraven,Final B,Grass/Dark,30,Umbral Rend,Dark,Phys,95,—,own,Dark swirl/drain,reuses: Nightmare Feast
+Thornraven,Final B,Grass/Dark,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Thornraven,Final B,Grass/Dark,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Bloomble,Base,Grass,1,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Bloomble,Base,Grass,1,Life Siphon,Grass,Spec,40,Heals user,own,"Green beam, drains HP",original
+Bloomble,Base,Grass,5,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Bloomble,Base,Grass,9,Leaf Cutter,Grass,Spec,55,High crit rate,own,Slash lines,reuses: Slash Strike
+Bloomble,Base,Grass,13,Spore Cloud,Grass,Status,0,Puts target to sleep,own,Green sparkle overlay,reuses: Warm Recovery
+Mossmallow,Stage 2,Grass,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Bloomble,Yellow stars fly,original
+Mossmallow,Stage 2,Grass,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Bloomble,"Green beam, drains HP",original
+Mossmallow,Stage 2,Grass,5,Slash Strike,Normal,Phys,50,—,inherited from Bloomble,Slash lines,original
+Mossmallow,Stage 2,Grass,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Bloomble,Slash lines,reuses: Slash Strike
+Mossmallow,Stage 2,Grass,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Bloomble,Green sparkle overlay,reuses: Warm Recovery
+Mossmallow,Stage 2,Grass,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Mossmallow,Stage 2,Grass,21,Bramble Rend,Grass,Spec,80,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Mossmallow,Stage 2,Grass,25,Root Bind,Grass,Status,0,Sharply lowers Speed,own,"Green beam, drains HP",reuses: Life Siphon
+Floraglee,Final A,Grass/Fairy,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Bloomble,Yellow stars fly,original
+Floraglee,Final A,Grass/Fairy,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Bloomble,"Green beam, drains HP",original
+Floraglee,Final A,Grass/Fairy,5,Slash Strike,Normal,Phys,50,—,inherited from Bloomble,Slash lines,original
+Floraglee,Final A,Grass/Fairy,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Bloomble,Slash lines,reuses: Slash Strike
+Floraglee,Final A,Grass/Fairy,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Bloomble,Green sparkle overlay,reuses: Warm Recovery
+Floraglee,Final A,Grass/Fairy,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Mossmallow,Generic hit flash,original
+Floraglee,Final A,Grass/Fairy,21,Bramble Rend,Grass,Spec,80,—,inherited from Mossmallow,"Charge, then blade slash",reuses: Wind Slicer
+Floraglee,Final A,Grass/Fairy,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Mossmallow,"Green beam, drains HP",reuses: Life Siphon
+Floraglee,Final A,Grass/Fairy,30,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Floraglee,Final A,Grass/Fairy,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Floraglee,Final A,Grass/Fairy,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Sporebog,Final B,Grass/Poison,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Bloomble,Yellow stars fly,original
+Sporebog,Final B,Grass/Poison,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Bloomble,"Green beam, drains HP",original
+Sporebog,Final B,Grass/Poison,5,Slash Strike,Normal,Phys,50,—,inherited from Bloomble,Slash lines,original
+Sporebog,Final B,Grass/Poison,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Bloomble,Slash lines,reuses: Slash Strike
+Sporebog,Final B,Grass/Poison,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Bloomble,Green sparkle overlay,reuses: Warm Recovery
+Sporebog,Final B,Grass/Poison,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Mossmallow,Generic hit flash,original
+Sporebog,Final B,Grass/Poison,21,Bramble Rend,Grass,Spec,80,—,inherited from Mossmallow,"Charge, then blade slash",reuses: Wind Slicer
+Sporebog,Final B,Grass/Poison,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Mossmallow,"Green beam, drains HP",reuses: Life Siphon
+Sporebog,Final B,Grass/Poison,30,Sludge Wave,Poison,Phys,90,30% poison,own,Purple splash overlay,reuses: Venom Curse
+Sporebog,Final B,Grass/Poison,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Sporebog,Final B,Grass/Poison,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Cherubick,Base,Fairy/Flying,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Cherubick,Base,Fairy/Flying,1,Glimmer Tap,Fairy,Spec,40,—,own,"Sparkling flash, wide-hit",reuses: Radiant Flash
+Cherubick,Base,Fairy/Flying,5,Charm Ward,Fairy,Status,0,Sharply lowers Attack,own,Sparkle overlay,reuses: Mirror Act
+Cherubick,Base,Fairy/Flying,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Cherubick,Base,Fairy/Flying,13,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Halowing,Stage 2,Fairy/Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Cherubick,Slash lines,original
+Halowing,Stage 2,Fairy/Flying,1,Glimmer Tap,Fairy,Spec,40,—,inherited from Cherubick,"Sparkling flash, wide-hit",reuses: Radiant Flash
+Halowing,Stage 2,Fairy/Flying,5,Charm Ward,Fairy,Status,0,Sharply lowers Attack,inherited from Cherubick,Sparkle overlay,reuses: Mirror Act
+Halowing,Stage 2,Fairy/Flying,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Cherubick,Yellow stars fly,original
+Halowing,Stage 2,Fairy/Flying,13,Coin Toss,Normal,Phys,40,—,inherited from Cherubick,Coins scatter,original
+Halowing,Stage 2,Fairy/Flying,17,Skyward Dive,Flying,Phys,70,None (2-turn),own,"Flies off, then dives",original
+Halowing,Stage 2,Fairy/Flying,21,Radiant Flash,Fairy,Spec,80,—,own,"Sparkling flash, wide-hit",original
+Halowing,Stage 2,Fairy/Flying,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Seraphlume,Final A,Fairy/Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Cherubick,Slash lines,original
+Seraphlume,Final A,Fairy/Flying,1,Glimmer Tap,Fairy,Spec,40,—,inherited from Cherubick,"Sparkling flash, wide-hit",reuses: Radiant Flash
+Seraphlume,Final A,Fairy/Flying,5,Charm Ward,Fairy,Status,0,Sharply lowers Attack,inherited from Cherubick,Sparkle overlay,reuses: Mirror Act
+Seraphlume,Final A,Fairy/Flying,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Cherubick,Yellow stars fly,original
+Seraphlume,Final A,Fairy/Flying,13,Coin Toss,Normal,Phys,40,—,inherited from Cherubick,Coins scatter,original
+Seraphlume,Final A,Fairy/Flying,17,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Halowing,"Flies off, then dives",original
+Seraphlume,Final A,Fairy/Flying,21,Radiant Flash,Fairy,Spec,80,—,inherited from Halowing,"Sparkling flash, wide-hit",original
+Seraphlume,Final A,Fairy/Flying,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Halowing,Spinning blades around user,original
+Seraphlume,Final A,Fairy/Flying,30,Dive Bomb,Flying,Phys,140,None (2-turn),own,"Charge, then diving hit",original
+Seraphlume,Final A,Fairy/Flying,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Seraphlume,Final A,Fairy/Flying,38,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Duskrael,Final B,Dark/Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Cherubick,Slash lines,original
+Duskrael,Final B,Dark/Flying,1,Glimmer Tap,Fairy,Spec,40,—,inherited from Cherubick,"Sparkling flash, wide-hit",reuses: Radiant Flash
+Duskrael,Final B,Dark/Flying,5,Charm Ward,Fairy,Status,0,Sharply lowers Attack,inherited from Cherubick,Sparkle overlay,reuses: Mirror Act
+Duskrael,Final B,Dark/Flying,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Cherubick,Yellow stars fly,original
+Duskrael,Final B,Dark/Flying,13,Coin Toss,Normal,Phys,40,—,inherited from Cherubick,Coins scatter,original
+Duskrael,Final B,Dark/Flying,17,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Halowing,"Flies off, then dives",original
+Duskrael,Final B,Dark/Flying,21,Radiant Flash,Fairy,Spec,80,—,inherited from Halowing,"Sparkling flash, wide-hit",original
+Duskrael,Final B,Dark/Flying,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Halowing,Spinning blades around user,original
+Duskrael,Final B,Dark/Flying,30,Dive Bomb,Flying,Phys,140,None (2-turn),own,"Charge, then diving hit",original
+Duskrael,Final B,Dark/Flying,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Duskrael,Final B,Dark/Flying,38,Umbral Rend,Dark,Phys,95,—,own,Dark swirl/drain,reuses: Nightmare Feast
+Shellot,Base,Normal,1,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Shellot,Base,Normal,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Shellot,Base,Normal,5,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Shellot,Base,Normal,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Shellot,Base,Normal,13,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Shellark,Stage 2,Flying,1,Coin Toss,Normal,Phys,40,—,inherited from Shellot,Coins scatter,original
+Shellark,Stage 2,Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Shellot,Slash lines,original
+Shellark,Stage 2,Flying,5,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Shellot,Spinning blades around user,original
+Shellark,Stage 2,Flying,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Shellot,Yellow stars fly,original
+Shellark,Stage 2,Flying,13,Afterimage,Normal,Status,0,Raises evasion,inherited from Shellot,Afterimage flicker,original
+Shellark,Stage 2,Flying,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Shellark,Stage 2,Flying,21,Skyward Dive,Flying,Phys,70,None (2-turn),own,"Flies off, then dives",original
+Shellark,Stage 2,Flying,25,Updraft,Flying,Status,0,Raises Speed,own,Afterimage flicker,reuses: Afterimage
+Solroost,Final A,Fire/Flying,1,Coin Toss,Normal,Phys,40,—,inherited from Shellot,Coins scatter,original
+Solroost,Final A,Fire/Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Shellot,Slash lines,original
+Solroost,Final A,Fire/Flying,5,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Shellot,Spinning blades around user,original
+Solroost,Final A,Fire/Flying,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Shellot,Yellow stars fly,original
+Solroost,Final A,Fire/Flying,13,Afterimage,Normal,Status,0,Raises evasion,inherited from Shellot,Afterimage flicker,original
+Solroost,Final A,Fire/Flying,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Shellark,Generic hit flash,original
+Solroost,Final A,Fire/Flying,21,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Shellark,"Flies off, then dives",original
+Solroost,Final A,Fire/Flying,25,Updraft,Flying,Status,0,Raises Speed,inherited from Shellark,Afterimage flicker,reuses: Afterimage
+Solroost,Final A,Fire/Flying,30,Dive Bomb,Flying,Phys,140,None (2-turn),own,"Charge, then diving hit",original
+Solroost,Final A,Fire/Flying,34,Cinder Veil,Fire,Status,0,Raises Special,own,Sparkle overlay,reuses: Mirror Act
+Solroost,Final A,Fire/Flying,38,Inferno Burst,Fire,Spec,110,Burn (10%),own,Large flame burst,original
+Lunowl,Final B,Ice/Flying,1,Coin Toss,Normal,Phys,40,—,inherited from Shellot,Coins scatter,original
+Lunowl,Final B,Ice/Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Shellot,Slash lines,original
+Lunowl,Final B,Ice/Flying,5,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Shellot,Spinning blades around user,original
+Lunowl,Final B,Ice/Flying,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Shellot,Yellow stars fly,original
+Lunowl,Final B,Ice/Flying,13,Afterimage,Normal,Status,0,Raises evasion,inherited from Shellot,Afterimage flicker,original
+Lunowl,Final B,Ice/Flying,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Shellark,Generic hit flash,original
+Lunowl,Final B,Ice/Flying,21,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Shellark,"Flies off, then dives",original
+Lunowl,Final B,Ice/Flying,25,Updraft,Flying,Status,0,Raises Speed,inherited from Shellark,Afterimage flicker,reuses: Afterimage
+Lunowl,Final B,Ice/Flying,30,Dive Bomb,Flying,Phys,140,None (2-turn),own,"Charge, then diving hit",original
+Lunowl,Final B,Ice/Flying,34,Frost Veil,Ice,Status,0,Raises Defense,own,Blue shimmer barrier,reuses: Barrier Ward
+Lunowl,Final B,Ice/Flying,38,Frost Ray,Ice,Spec,95,Freeze (10%),own,Beam + freeze sparkle,original
+Roswyrm,Base,Water,1,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Roswyrm,Base,Water,1,Water Splash,Water,Spec,40,—,own,Water jet,original
+Roswyrm,Base,Water,5,Mist Shroud,Water,Status,0,Raises evasion,own,Afterimage flicker,reuses: Afterimage
+Roswyrm,Base,Water,9,Bubble Burst,Water,Spec,65,Lowers Speed (10%),own,Bubbles stream,original
+Roswyrm,Base,Water,13,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Roscale,Stage 2,Water/Dragon,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Roswyrm,Yellow stars fly,original
+Roscale,Stage 2,Water/Dragon,1,Water Splash,Water,Spec,40,—,inherited from Roswyrm,Water jet,original
+Roscale,Stage 2,Water/Dragon,5,Mist Shroud,Water,Status,0,Raises evasion,inherited from Roswyrm,Afterimage flicker,reuses: Afterimage
+Roscale,Stage 2,Water/Dragon,9,Bubble Burst,Water,Spec,65,Lowers Speed (10%),inherited from Roswyrm,Bubbles stream,original
+Roscale,Stage 2,Water/Dragon,13,Slash Strike,Normal,Phys,50,—,inherited from Roswyrm,Slash lines,original
+Roscale,Stage 2,Water/Dragon,17,Scale Ripple,Dragon,Spec,60,—,own,Orange spiral blast,reuses: Draconic Burst
+Roscale,Stage 2,Water/Dragon,21,Torrent Fang,Water,Spec,80,—,own,Water jet,reuses: Water Splash
+Roscale,Stage 2,Water/Dragon,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Pearleserp,Final A,Water/Fairy,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Roswyrm,Yellow stars fly,original
+Pearleserp,Final A,Water/Fairy,1,Water Splash,Water,Spec,40,—,inherited from Roswyrm,Water jet,original
+Pearleserp,Final A,Water/Fairy,5,Mist Shroud,Water,Status,0,Raises evasion,inherited from Roswyrm,Afterimage flicker,reuses: Afterimage
+Pearleserp,Final A,Water/Fairy,9,Bubble Burst,Water,Spec,65,Lowers Speed (10%),inherited from Roswyrm,Bubbles stream,original
+Pearleserp,Final A,Water/Fairy,13,Slash Strike,Normal,Phys,50,—,inherited from Roswyrm,Slash lines,original
+Pearleserp,Final A,Water/Fairy,17,Scale Ripple,Dragon,Spec,60,—,inherited from Roscale,Orange spiral blast,reuses: Draconic Burst
+Pearleserp,Final A,Water/Fairy,21,Torrent Fang,Water,Spec,80,—,inherited from Roscale,Water jet,reuses: Water Splash
+Pearleserp,Final A,Water/Fairy,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Roscale,Spinning blades around user,original
+Pearleserp,Final A,Water/Fairy,30,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Pearleserp,Final A,Water/Fairy,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Pearleserp,Final A,Water/Fairy,38,Tidal Wave,Water,Spec,95,—,own,Large wave washes over,original
+Venomare,Final B,Water/Poison,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Roswyrm,Yellow stars fly,original
+Venomare,Final B,Water/Poison,1,Water Splash,Water,Spec,40,—,inherited from Roswyrm,Water jet,original
+Venomare,Final B,Water/Poison,5,Mist Shroud,Water,Status,0,Raises evasion,inherited from Roswyrm,Afterimage flicker,reuses: Afterimage
+Venomare,Final B,Water/Poison,9,Bubble Burst,Water,Spec,65,Lowers Speed (10%),inherited from Roswyrm,Bubbles stream,original
+Venomare,Final B,Water/Poison,13,Slash Strike,Normal,Phys,50,—,inherited from Roswyrm,Slash lines,original
+Venomare,Final B,Water/Poison,17,Scale Ripple,Dragon,Spec,60,—,inherited from Roscale,Orange spiral blast,reuses: Draconic Burst
+Venomare,Final B,Water/Poison,21,Torrent Fang,Water,Spec,80,—,inherited from Roscale,Water jet,reuses: Water Splash
+Venomare,Final B,Water/Poison,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Roscale,Spinning blades around user,original
+Venomare,Final B,Water/Poison,30,Sludge Wave,Poison,Phys,90,30% poison,own,Purple splash overlay,reuses: Venom Curse
+Venomare,Final B,Water/Poison,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Venomare,Final B,Water/Poison,38,Tidal Wave,Water,Spec,95,—,own,Large wave washes over,original
+Dottella,Base,Bug,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Dottella,Base,Bug,1,Pincer Nip,Bug,Phys,45,—,own,Generic hit flash,reuses: Power Jab
+Dottella,Base,Bug,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,own,Sparkle overlay,reuses: Mirror Act
+Dottella,Base,Bug,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Dottella,Base,Bug,13,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Carapotta,Stage 2,Bug,1,Slash Strike,Normal,Phys,50,—,inherited from Dottella,Slash lines,original
+Carapotta,Stage 2,Bug,1,Pincer Nip,Bug,Phys,45,—,inherited from Dottella,Generic hit flash,reuses: Power Jab
+Carapotta,Stage 2,Bug,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Dottella,Sparkle overlay,reuses: Mirror Act
+Carapotta,Stage 2,Bug,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Dottella,Yellow stars fly,original
+Carapotta,Stage 2,Bug,13,Coin Toss,Normal,Phys,40,—,inherited from Dottella,Coins scatter,original
+Carapotta,Stage 2,Bug,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Carapotta,Stage 2,Bug,21,Swarm Strike,Bug,Phys,70,—,own,Yellow stars fly,reuses: Star Shower
+Carapotta,Stage 2,Bug,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Aegibug,Final A,Bug/Steel,1,Slash Strike,Normal,Phys,50,—,inherited from Dottella,Slash lines,original
+Aegibug,Final A,Bug/Steel,1,Pincer Nip,Bug,Phys,45,—,inherited from Dottella,Generic hit flash,reuses: Power Jab
+Aegibug,Final A,Bug/Steel,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Dottella,Sparkle overlay,reuses: Mirror Act
+Aegibug,Final A,Bug/Steel,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Dottella,Yellow stars fly,original
+Aegibug,Final A,Bug/Steel,13,Coin Toss,Normal,Phys,40,—,inherited from Dottella,Coins scatter,original
+Aegibug,Final A,Bug/Steel,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Carapotta,Generic hit flash,original
+Aegibug,Final A,Bug/Steel,21,Swarm Strike,Bug,Phys,70,—,inherited from Carapotta,Yellow stars fly,reuses: Star Shower
+Aegibug,Final A,Bug/Steel,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Carapotta,Spinning blades around user,original
+Aegibug,Final A,Bug/Steel,30,Forge Strike,Steel,Phys,100,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Aegibug,Final A,Bug/Steel,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Aegibug,Final A,Bug/Steel,38,Hive Fury,Bug,Phys,95,20% flinch,own,"Drill spiral, screen shake",reuses: Piercing Spiral
+Magmara,Final B,Bug/Fire,1,Slash Strike,Normal,Phys,50,—,inherited from Dottella,Slash lines,original
+Magmara,Final B,Bug/Fire,1,Pincer Nip,Bug,Phys,45,—,inherited from Dottella,Generic hit flash,reuses: Power Jab
+Magmara,Final B,Bug/Fire,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Dottella,Sparkle overlay,reuses: Mirror Act
+Magmara,Final B,Bug/Fire,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Dottella,Yellow stars fly,original
+Magmara,Final B,Bug/Fire,13,Coin Toss,Normal,Phys,40,—,inherited from Dottella,Coins scatter,original
+Magmara,Final B,Bug/Fire,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Carapotta,Generic hit flash,original
+Magmara,Final B,Bug/Fire,21,Swarm Strike,Bug,Phys,70,—,inherited from Carapotta,Yellow stars fly,reuses: Star Shower
+Magmara,Final B,Bug/Fire,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Carapotta,Spinning blades around user,original
+Magmara,Final B,Bug/Fire,30,Inferno Burst,Fire,Spec,110,Burn (10%),own,Large flame burst,original
+Magmara,Final B,Bug/Fire,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Magmara,Final B,Bug/Fire,38,Hive Fury,Bug,Phys,95,20% flinch,own,"Drill spiral, screen shake",reuses: Piercing Spiral
+Pinchitin,Base,Bug,1,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Pinchitin,Base,Bug,1,Pincer Nip,Bug,Phys,45,—,own,Generic hit flash,reuses: Power Jab
+Pinchitin,Base,Bug,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,own,Sparkle overlay,reuses: Mirror Act
+Pinchitin,Base,Bug,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Pinchitin,Base,Bug,13,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Clamptera,Stage 2,Bug,1,Coin Toss,Normal,Phys,40,—,inherited from Pinchitin,Coins scatter,original
+Clamptera,Stage 2,Bug,1,Pincer Nip,Bug,Phys,45,—,inherited from Pinchitin,Generic hit flash,reuses: Power Jab
+Clamptera,Stage 2,Bug,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Pinchitin,Sparkle overlay,reuses: Mirror Act
+Clamptera,Stage 2,Bug,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Pinchitin,Yellow stars fly,original
+Clamptera,Stage 2,Bug,13,Slash Strike,Normal,Phys,50,—,inherited from Pinchitin,Slash lines,original
+Clamptera,Stage 2,Bug,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Clamptera,Stage 2,Bug,21,Swarm Strike,Bug,Phys,70,—,own,Yellow stars fly,reuses: Star Shower
+Clamptera,Stage 2,Bug,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Ferraclaw,Final A,Bug/Steel,1,Coin Toss,Normal,Phys,40,—,inherited from Pinchitin,Coins scatter,original
+Ferraclaw,Final A,Bug/Steel,1,Pincer Nip,Bug,Phys,45,—,inherited from Pinchitin,Generic hit flash,reuses: Power Jab
+Ferraclaw,Final A,Bug/Steel,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Pinchitin,Sparkle overlay,reuses: Mirror Act
+Ferraclaw,Final A,Bug/Steel,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Pinchitin,Yellow stars fly,original
+Ferraclaw,Final A,Bug/Steel,13,Slash Strike,Normal,Phys,50,—,inherited from Pinchitin,Slash lines,original
+Ferraclaw,Final A,Bug/Steel,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Clamptera,Generic hit flash,original
+Ferraclaw,Final A,Bug/Steel,21,Swarm Strike,Bug,Phys,70,—,inherited from Clamptera,Yellow stars fly,reuses: Star Shower
+Ferraclaw,Final A,Bug/Steel,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Clamptera,Spinning blades around user,original
+Ferraclaw,Final A,Bug/Steel,30,Forge Strike,Steel,Phys,100,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Ferraclaw,Final A,Bug/Steel,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Ferraclaw,Final A,Bug/Steel,38,Hive Fury,Bug,Phys,95,20% flinch,own,"Drill spiral, screen shake",reuses: Piercing Spiral
+Noxpincer,Final B,Bug/Dark,1,Coin Toss,Normal,Phys,40,—,inherited from Pinchitin,Coins scatter,original
+Noxpincer,Final B,Bug/Dark,1,Pincer Nip,Bug,Phys,45,—,inherited from Pinchitin,Generic hit flash,reuses: Power Jab
+Noxpincer,Final B,Bug/Dark,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Pinchitin,Sparkle overlay,reuses: Mirror Act
+Noxpincer,Final B,Bug/Dark,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Pinchitin,Yellow stars fly,original
+Noxpincer,Final B,Bug/Dark,13,Slash Strike,Normal,Phys,50,—,inherited from Pinchitin,Slash lines,original
+Noxpincer,Final B,Bug/Dark,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Clamptera,Generic hit flash,original
+Noxpincer,Final B,Bug/Dark,21,Swarm Strike,Bug,Phys,70,—,inherited from Clamptera,Yellow stars fly,reuses: Star Shower
+Noxpincer,Final B,Bug/Dark,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Clamptera,Spinning blades around user,original
+Noxpincer,Final B,Bug/Dark,30,Umbral Rend,Dark,Phys,95,—,own,Dark swirl/drain,reuses: Nightmare Feast
+Noxpincer,Final B,Bug/Dark,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Noxpincer,Final B,Bug/Dark,38,Hive Fury,Bug,Phys,95,20% flinch,own,"Drill spiral, screen shake",reuses: Piercing Spiral
+Verdusk,Base,Grass/Flying,1,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Verdusk,Base,Grass/Flying,1,Life Siphon,Grass,Spec,40,Heals user,own,"Green beam, drains HP",original
+Verdusk,Base,Grass/Flying,5,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Verdusk,Base,Grass/Flying,9,Leaf Cutter,Grass,Spec,55,High crit rate,own,Slash lines,reuses: Slash Strike
+Verdusk,Base,Grass/Flying,13,Spore Cloud,Grass,Status,0,Puts target to sleep,own,Green sparkle overlay,reuses: Warm Recovery
+Frondbat,Stage 2,Grass/Flying,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Verdusk,Yellow stars fly,original
+Frondbat,Stage 2,Grass/Flying,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Verdusk,"Green beam, drains HP",original
+Frondbat,Stage 2,Grass/Flying,5,Slash Strike,Normal,Phys,50,—,inherited from Verdusk,Slash lines,original
+Frondbat,Stage 2,Grass/Flying,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Verdusk,Slash lines,reuses: Slash Strike
+Frondbat,Stage 2,Grass/Flying,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Verdusk,Green sparkle overlay,reuses: Warm Recovery
+Frondbat,Stage 2,Grass/Flying,17,Skyward Dive,Flying,Phys,70,None (2-turn),own,"Flies off, then dives",original
+Frondbat,Stage 2,Grass/Flying,21,Bramble Rend,Grass,Spec,80,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Frondbat,Stage 2,Grass/Flying,25,Root Bind,Grass,Status,0,Sharply lowers Speed,own,"Green beam, drains HP",reuses: Life Siphon
+Lunabloom,Final A,Grass/Fairy,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Verdusk,Yellow stars fly,original
+Lunabloom,Final A,Grass/Fairy,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Verdusk,"Green beam, drains HP",original
+Lunabloom,Final A,Grass/Fairy,5,Slash Strike,Normal,Phys,50,—,inherited from Verdusk,Slash lines,original
+Lunabloom,Final A,Grass/Fairy,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Verdusk,Slash lines,reuses: Slash Strike
+Lunabloom,Final A,Grass/Fairy,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Verdusk,Green sparkle overlay,reuses: Warm Recovery
+Lunabloom,Final A,Grass/Fairy,17,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Frondbat,"Flies off, then dives",original
+Lunabloom,Final A,Grass/Fairy,21,Bramble Rend,Grass,Spec,80,—,inherited from Frondbat,"Charge, then blade slash",reuses: Wind Slicer
+Lunabloom,Final A,Grass/Fairy,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Frondbat,"Green beam, drains HP",reuses: Life Siphon
+Lunabloom,Final A,Grass/Fairy,30,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Lunabloom,Final A,Grass/Fairy,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Lunabloom,Final A,Grass/Fairy,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Wraithleaf,Final B,Grass/Ghost,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Verdusk,Yellow stars fly,original
+Wraithleaf,Final B,Grass/Ghost,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Verdusk,"Green beam, drains HP",original
+Wraithleaf,Final B,Grass/Ghost,5,Slash Strike,Normal,Phys,50,—,inherited from Verdusk,Slash lines,original
+Wraithleaf,Final B,Grass/Ghost,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Verdusk,Slash lines,reuses: Slash Strike
+Wraithleaf,Final B,Grass/Ghost,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Verdusk,Green sparkle overlay,reuses: Warm Recovery
+Wraithleaf,Final B,Grass/Ghost,17,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Frondbat,"Flies off, then dives",original
+Wraithleaf,Final B,Grass/Ghost,21,Bramble Rend,Grass,Spec,80,—,inherited from Frondbat,"Charge, then blade slash",reuses: Wind Slicer
+Wraithleaf,Final B,Grass/Ghost,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Frondbat,"Green beam, drains HP",reuses: Life Siphon
+Wraithleaf,Final B,Grass/Ghost,30,Soul Rend,Ghost,Phys,95,Heals user by half damage,own,Dark swirl/drain,reuses: Nightmare Feast
+Wraithleaf,Final B,Grass/Ghost,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Wraithleaf,Final B,Grass/Ghost,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Skettera,Base,Bug,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Skettera,Base,Bug,1,Pincer Nip,Bug,Phys,45,—,own,Generic hit flash,reuses: Power Jab
+Skettera,Base,Bug,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,own,Sparkle overlay,reuses: Mirror Act
+Skettera,Base,Bug,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Skettera,Base,Bug,13,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Skeetrike,Stage 2,Bug/Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Skettera,Slash lines,original
+Skeetrike,Stage 2,Bug/Flying,1,Pincer Nip,Bug,Phys,45,—,inherited from Skettera,Generic hit flash,reuses: Power Jab
+Skeetrike,Stage 2,Bug/Flying,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Skettera,Sparkle overlay,reuses: Mirror Act
+Skeetrike,Stage 2,Bug/Flying,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Skettera,Yellow stars fly,original
+Skeetrike,Stage 2,Bug/Flying,13,Coin Toss,Normal,Phys,40,—,inherited from Skettera,Coins scatter,original
+Skeetrike,Stage 2,Bug/Flying,17,Skyward Dive,Flying,Phys,70,None (2-turn),own,"Flies off, then dives",original
+Skeetrike,Stage 2,Bug/Flying,21,Swarm Strike,Bug,Phys,70,—,own,Yellow stars fly,reuses: Star Shower
+Skeetrike,Stage 2,Bug/Flying,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Aquasting,Final A,Bug/Water,1,Slash Strike,Normal,Phys,50,—,inherited from Skettera,Slash lines,original
+Aquasting,Final A,Bug/Water,1,Pincer Nip,Bug,Phys,45,—,inherited from Skettera,Generic hit flash,reuses: Power Jab
+Aquasting,Final A,Bug/Water,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Skettera,Sparkle overlay,reuses: Mirror Act
+Aquasting,Final A,Bug/Water,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Skettera,Yellow stars fly,original
+Aquasting,Final A,Bug/Water,13,Coin Toss,Normal,Phys,40,—,inherited from Skettera,Coins scatter,original
+Aquasting,Final A,Bug/Water,17,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Skeetrike,"Flies off, then dives",original
+Aquasting,Final A,Bug/Water,21,Swarm Strike,Bug,Phys,70,—,inherited from Skeetrike,Yellow stars fly,reuses: Star Shower
+Aquasting,Final A,Bug/Water,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Skeetrike,Spinning blades around user,original
+Aquasting,Final A,Bug/Water,30,Tidal Wave,Water,Spec,95,—,own,Large wave washes over,original
+Aquasting,Final A,Bug/Water,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Aquasting,Final A,Bug/Water,38,Hive Fury,Bug,Phys,95,20% flinch,own,"Drill spiral, screen shake",reuses: Piercing Spiral
+Venatrix,Final B,Bug/Poison,1,Slash Strike,Normal,Phys,50,—,inherited from Skettera,Slash lines,original
+Venatrix,Final B,Bug/Poison,1,Pincer Nip,Bug,Phys,45,—,inherited from Skettera,Generic hit flash,reuses: Power Jab
+Venatrix,Final B,Bug/Poison,5,Silk Snare,Bug,Status,0,Sharply lowers Speed,inherited from Skettera,Sparkle overlay,reuses: Mirror Act
+Venatrix,Final B,Bug/Poison,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Skettera,Yellow stars fly,original
+Venatrix,Final B,Bug/Poison,13,Coin Toss,Normal,Phys,40,—,inherited from Skettera,Coins scatter,original
+Venatrix,Final B,Bug/Poison,17,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Skeetrike,"Flies off, then dives",original
+Venatrix,Final B,Bug/Poison,21,Swarm Strike,Bug,Phys,70,—,inherited from Skeetrike,Yellow stars fly,reuses: Star Shower
+Venatrix,Final B,Bug/Poison,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Skeetrike,Spinning blades around user,original
+Venatrix,Final B,Bug/Poison,30,Sludge Wave,Poison,Phys,90,30% poison,own,Purple splash overlay,reuses: Venom Curse
+Venatrix,Final B,Bug/Poison,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Venatrix,Final B,Bug/Poison,38,Hive Fury,Bug,Phys,95,20% flinch,own,"Drill spiral, screen shake",reuses: Piercing Spiral
+Fleeceling,Base,Normal,1,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Fleeceling,Base,Normal,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Fleeceling,Base,Normal,5,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Fleeceling,Base,Normal,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Fleeceling,Base,Normal,13,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Ramblewool,Stage 2,Normal,1,Coin Toss,Normal,Phys,40,—,inherited from Fleeceling,Coins scatter,original
+Ramblewool,Stage 2,Normal,1,Slash Strike,Normal,Phys,50,—,inherited from Fleeceling,Slash lines,original
+Ramblewool,Stage 2,Normal,5,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Fleeceling,Spinning blades around user,original
+Ramblewool,Stage 2,Normal,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Fleeceling,Yellow stars fly,original
+Ramblewool,Stage 2,Normal,13,Afterimage,Normal,Status,0,Raises evasion,inherited from Fleeceling,Afterimage flicker,original
+Ramblewool,Stage 2,Normal,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Ramblewool,Stage 2,Normal,21,Power Jab,Normal,Phys,80,—,own,Generic hit flash,original
+Ramblewool,Stage 2,Normal,25,Warm Recovery,Normal,Status,0,Heals user,own,Green sparkle overlay,original
+Voltaram,Final A,Electric,1,Coin Toss,Normal,Phys,40,—,inherited from Fleeceling,Coins scatter,original
+Voltaram,Final A,Electric,1,Slash Strike,Normal,Phys,50,—,inherited from Fleeceling,Slash lines,original
+Voltaram,Final A,Electric,5,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Fleeceling,Spinning blades around user,original
+Voltaram,Final A,Electric,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Fleeceling,Yellow stars fly,original
+Voltaram,Final A,Electric,13,Afterimage,Normal,Status,0,Raises evasion,inherited from Fleeceling,Afterimage flicker,original
+Voltaram,Final A,Electric,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Ramblewool,Generic hit flash,original
+Voltaram,Final A,Electric,21,Power Jab,Normal,Phys,80,—,inherited from Ramblewool,Generic hit flash,original
+Voltaram,Final A,Electric,25,Warm Recovery,Normal,Status,0,Heals user,inherited from Ramblewool,Green sparkle overlay,original
+Voltaram,Final A,Electric,30,Storm Bolt,Electric,Spec,110,Paralysis (10%),own,Large lightning + flash,original
+Voltaram,Final A,Electric,34,Static Pulse,Electric,Status,0,Paralysis,own,Small spark overlay,original
+Voltaram,Final A,Electric,38,Volt Strike,Electric,Spec,95,Paralysis (10%),own,Lightning strike,original
+Glacifleece,Final B,Ice,1,Coin Toss,Normal,Phys,40,—,inherited from Fleeceling,Coins scatter,original
+Glacifleece,Final B,Ice,1,Slash Strike,Normal,Phys,50,—,inherited from Fleeceling,Slash lines,original
+Glacifleece,Final B,Ice,5,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Fleeceling,Spinning blades around user,original
+Glacifleece,Final B,Ice,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Fleeceling,Yellow stars fly,original
+Glacifleece,Final B,Ice,13,Afterimage,Normal,Status,0,Raises evasion,inherited from Fleeceling,Afterimage flicker,original
+Glacifleece,Final B,Ice,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Ramblewool,Generic hit flash,original
+Glacifleece,Final B,Ice,21,Power Jab,Normal,Phys,80,—,inherited from Ramblewool,Generic hit flash,original
+Glacifleece,Final B,Ice,25,Warm Recovery,Normal,Status,0,Heals user,inherited from Ramblewool,Green sparkle overlay,original
+Glacifleece,Final B,Ice,30,Glacial Storm,Ice,Spec,110,Freeze (10%),own,Snowflake barrage,original
+Glacifleece,Final B,Ice,34,Frost Veil,Ice,Status,0,Raises Defense,own,Blue shimmer barrier,reuses: Barrier Ward
+Glacifleece,Final B,Ice,38,Frost Ray,Ice,Spec,95,Freeze (10%),own,Beam + freeze sparkle,original
+Spriglim,Base,Grass,1,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Spriglim,Base,Grass,1,Life Siphon,Grass,Spec,40,Heals user,own,"Green beam, drains HP",original
+Spriglim,Base,Grass,5,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Spriglim,Base,Grass,9,Leaf Cutter,Grass,Spec,55,High crit rate,own,Slash lines,reuses: Slash Strike
+Spriglim,Base,Grass,13,Spore Cloud,Grass,Status,0,Puts target to sleep,own,Green sparkle overlay,reuses: Warm Recovery
+Leafkin,Stage 2,Grass,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Spriglim,Yellow stars fly,original
+Leafkin,Stage 2,Grass,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Spriglim,"Green beam, drains HP",original
+Leafkin,Stage 2,Grass,5,Slash Strike,Normal,Phys,50,—,inherited from Spriglim,Slash lines,original
+Leafkin,Stage 2,Grass,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Spriglim,Slash lines,reuses: Slash Strike
+Leafkin,Stage 2,Grass,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Spriglim,Green sparkle overlay,reuses: Warm Recovery
+Leafkin,Stage 2,Grass,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Leafkin,Stage 2,Grass,21,Bramble Rend,Grass,Spec,80,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Leafkin,Stage 2,Grass,25,Root Bind,Grass,Status,0,Sharply lowers Speed,own,"Green beam, drains HP",reuses: Life Siphon
+Sylphlora,Final A,Grass/Fairy,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Spriglim,Yellow stars fly,original
+Sylphlora,Final A,Grass/Fairy,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Spriglim,"Green beam, drains HP",original
+Sylphlora,Final A,Grass/Fairy,5,Slash Strike,Normal,Phys,50,—,inherited from Spriglim,Slash lines,original
+Sylphlora,Final A,Grass/Fairy,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Spriglim,Slash lines,reuses: Slash Strike
+Sylphlora,Final A,Grass/Fairy,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Spriglim,Green sparkle overlay,reuses: Warm Recovery
+Sylphlora,Final A,Grass/Fairy,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Leafkin,Generic hit flash,original
+Sylphlora,Final A,Grass/Fairy,21,Bramble Rend,Grass,Spec,80,—,inherited from Leafkin,"Charge, then blade slash",reuses: Wind Slicer
+Sylphlora,Final A,Grass/Fairy,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Leafkin,"Green beam, drains HP",reuses: Life Siphon
+Sylphlora,Final A,Grass/Fairy,30,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Sylphlora,Final A,Grass/Fairy,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Sylphlora,Final A,Grass/Fairy,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Verdraxis,Final B,Grass/Dragon,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Spriglim,Yellow stars fly,original
+Verdraxis,Final B,Grass/Dragon,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Spriglim,"Green beam, drains HP",original
+Verdraxis,Final B,Grass/Dragon,5,Slash Strike,Normal,Phys,50,—,inherited from Spriglim,Slash lines,original
+Verdraxis,Final B,Grass/Dragon,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Spriglim,Slash lines,reuses: Slash Strike
+Verdraxis,Final B,Grass/Dragon,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Spriglim,Green sparkle overlay,reuses: Warm Recovery
+Verdraxis,Final B,Grass/Dragon,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Leafkin,Generic hit flash,original
+Verdraxis,Final B,Grass/Dragon,21,Bramble Rend,Grass,Spec,80,—,inherited from Leafkin,"Charge, then blade slash",reuses: Wind Slicer
+Verdraxis,Final B,Grass/Dragon,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Leafkin,"Green beam, drains HP",reuses: Life Siphon
+Verdraxis,Final B,Grass/Dragon,30,Draco Surge,Dragon,Spec,100,—,own,Orange spiral blast,reuses: Draconic Burst
+Verdraxis,Final B,Grass/Dragon,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Verdraxis,Final B,Grass/Dragon,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Fawnix,Base,Fire,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Fawnix,Base,Fire,1,Ember Flick,Fire,Spec,40,10% burn,own,Large flame burst,reuses: Inferno Burst
+Fawnix,Base,Fire,5,Cinder Veil,Fire,Status,0,Raises Special,own,Sparkle overlay,reuses: Mirror Act
+Fawnix,Base,Fire,9,Flame Lash,Fire,Spec,65,10% burn,own,Large flame burst,reuses: Inferno Burst
+Fawnix,Base,Fire,13,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Vulpine,Stage 2,Fire,1,Slash Strike,Normal,Phys,50,—,inherited from Fawnix,Slash lines,original
+Vulpine,Stage 2,Fire,1,Ember Flick,Fire,Spec,40,10% burn,inherited from Fawnix,Large flame burst,reuses: Inferno Burst
+Vulpine,Stage 2,Fire,5,Cinder Veil,Fire,Status,0,Raises Special,inherited from Fawnix,Sparkle overlay,reuses: Mirror Act
+Vulpine,Stage 2,Fire,9,Flame Lash,Fire,Spec,65,10% burn,inherited from Fawnix,Large flame burst,reuses: Inferno Burst
+Vulpine,Stage 2,Fire,13,Star Shower,Normal,Phys,60,None (never misses),inherited from Fawnix,Yellow stars fly,original
+Vulpine,Stage 2,Fire,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Vulpine,Stage 2,Fire,21,Blaze Fang,Fire,Spec,80,10% burn,own,"Fang chomp, flinch back",reuses: Fang Snap
+Vulpine,Stage 2,Fire,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Ferravulp,Final A,Fire/Steel,1,Slash Strike,Normal,Phys,50,—,inherited from Fawnix,Slash lines,original
+Ferravulp,Final A,Fire/Steel,1,Ember Flick,Fire,Spec,40,10% burn,inherited from Fawnix,Large flame burst,reuses: Inferno Burst
+Ferravulp,Final A,Fire/Steel,5,Cinder Veil,Fire,Status,0,Raises Special,inherited from Fawnix,Sparkle overlay,reuses: Mirror Act
+Ferravulp,Final A,Fire/Steel,9,Flame Lash,Fire,Spec,65,10% burn,inherited from Fawnix,Large flame burst,reuses: Inferno Burst
+Ferravulp,Final A,Fire/Steel,13,Star Shower,Normal,Phys,60,None (never misses),inherited from Fawnix,Yellow stars fly,original
+Ferravulp,Final A,Fire/Steel,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Vulpine,Generic hit flash,original
+Ferravulp,Final A,Fire/Steel,21,Blaze Fang,Fire,Spec,80,10% burn,inherited from Vulpine,"Fang chomp, flinch back",reuses: Fang Snap
+Ferravulp,Final A,Fire/Steel,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Vulpine,Spinning blades around user,original
+Ferravulp,Final A,Fire/Steel,30,Forge Strike,Steel,Phys,100,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Ferravulp,Final A,Fire/Steel,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Ferravulp,Final A,Fire/Steel,38,Inferno Burst,Fire,Spec,110,Burn (10%),own,Large flame burst,original
+Cindusk,Final B,Dark/Fire,1,Slash Strike,Normal,Phys,50,—,inherited from Fawnix,Slash lines,original
+Cindusk,Final B,Dark/Fire,1,Ember Flick,Fire,Spec,40,10% burn,inherited from Fawnix,Large flame burst,reuses: Inferno Burst
+Cindusk,Final B,Dark/Fire,5,Cinder Veil,Fire,Status,0,Raises Special,inherited from Fawnix,Sparkle overlay,reuses: Mirror Act
+Cindusk,Final B,Dark/Fire,9,Flame Lash,Fire,Spec,65,10% burn,inherited from Fawnix,Large flame burst,reuses: Inferno Burst
+Cindusk,Final B,Dark/Fire,13,Star Shower,Normal,Phys,60,None (never misses),inherited from Fawnix,Yellow stars fly,original
+Cindusk,Final B,Dark/Fire,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Vulpine,Generic hit flash,original
+Cindusk,Final B,Dark/Fire,21,Blaze Fang,Fire,Spec,80,10% burn,inherited from Vulpine,"Fang chomp, flinch back",reuses: Fang Snap
+Cindusk,Final B,Dark/Fire,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Vulpine,Spinning blades around user,original
+Cindusk,Final B,Dark/Fire,30,Inferno Burst,Fire,Spec,110,Burn (10%),own,Large flame burst,original
+Cindusk,Final B,Dark/Fire,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Cindusk,Final B,Dark/Fire,38,Umbral Rend,Dark,Phys,95,—,own,Dark swirl/drain,reuses: Nightmare Feast
+Frostel,Base,Ice,1,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Frostel,Base,Ice,1,Chill Touch,Ice,Spec,40,10% freeze,own,Beam + freeze sparkle,reuses: Frost Ray
+Frostel,Base,Ice,5,Frost Veil,Ice,Status,0,Raises Defense,own,Blue shimmer barrier,reuses: Barrier Ward
+Frostel,Base,Ice,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Frostel,Base,Ice,13,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Erminice,Stage 2,Ice,1,Coin Toss,Normal,Phys,40,—,inherited from Frostel,Coins scatter,original
+Erminice,Stage 2,Ice,1,Chill Touch,Ice,Spec,40,10% freeze,inherited from Frostel,Beam + freeze sparkle,reuses: Frost Ray
+Erminice,Stage 2,Ice,5,Frost Veil,Ice,Status,0,Raises Defense,inherited from Frostel,Blue shimmer barrier,reuses: Barrier Ward
+Erminice,Stage 2,Ice,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Frostel,Yellow stars fly,original
+Erminice,Stage 2,Ice,13,Slash Strike,Normal,Phys,50,—,inherited from Frostel,Slash lines,original
+Erminice,Stage 2,Ice,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Erminice,Stage 2,Ice,21,Power Jab,Normal,Phys,80,—,own,Generic hit flash,original
+Erminice,Stage 2,Ice,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Aurorine,Final A,Ice/Fairy,1,Coin Toss,Normal,Phys,40,—,inherited from Frostel,Coins scatter,original
+Aurorine,Final A,Ice/Fairy,1,Chill Touch,Ice,Spec,40,10% freeze,inherited from Frostel,Beam + freeze sparkle,reuses: Frost Ray
+Aurorine,Final A,Ice/Fairy,5,Frost Veil,Ice,Status,0,Raises Defense,inherited from Frostel,Blue shimmer barrier,reuses: Barrier Ward
+Aurorine,Final A,Ice/Fairy,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Frostel,Yellow stars fly,original
+Aurorine,Final A,Ice/Fairy,13,Slash Strike,Normal,Phys,50,—,inherited from Frostel,Slash lines,original
+Aurorine,Final A,Ice/Fairy,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Erminice,Generic hit flash,original
+Aurorine,Final A,Ice/Fairy,21,Power Jab,Normal,Phys,80,—,inherited from Erminice,Generic hit flash,original
+Aurorine,Final A,Ice/Fairy,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Erminice,Spinning blades around user,original
+Aurorine,Final A,Ice/Fairy,30,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Aurorine,Final A,Ice/Fairy,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Aurorine,Final A,Ice/Fairy,38,Frost Ray,Ice,Spec,95,Freeze (10%),own,Beam + freeze sparkle,original
+Blizzlash,Final B,Ice/Dark,1,Coin Toss,Normal,Phys,40,—,inherited from Frostel,Coins scatter,original
+Blizzlash,Final B,Ice/Dark,1,Chill Touch,Ice,Spec,40,10% freeze,inherited from Frostel,Beam + freeze sparkle,reuses: Frost Ray
+Blizzlash,Final B,Ice/Dark,5,Frost Veil,Ice,Status,0,Raises Defense,inherited from Frostel,Blue shimmer barrier,reuses: Barrier Ward
+Blizzlash,Final B,Ice/Dark,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Frostel,Yellow stars fly,original
+Blizzlash,Final B,Ice/Dark,13,Slash Strike,Normal,Phys,50,—,inherited from Frostel,Slash lines,original
+Blizzlash,Final B,Ice/Dark,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Erminice,Generic hit flash,original
+Blizzlash,Final B,Ice/Dark,21,Power Jab,Normal,Phys,80,—,inherited from Erminice,Generic hit flash,original
+Blizzlash,Final B,Ice/Dark,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Erminice,Spinning blades around user,original
+Blizzlash,Final B,Ice/Dark,30,Umbral Rend,Dark,Phys,95,—,own,Dark swirl/drain,reuses: Nightmare Feast
+Blizzlash,Final B,Ice/Dark,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Blizzlash,Final B,Ice/Dark,38,Frost Ray,Ice,Spec,95,Freeze (10%),own,Beam + freeze sparkle,original
+Bloopuff,Base,Normal,1,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Bloopuff,Base,Normal,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Bloopuff,Base,Normal,5,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Bloopuff,Base,Normal,9,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Bloopuff,Base,Normal,13,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Floofin,Stage 2,Normal,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Bloopuff,Yellow stars fly,original
+Floofin,Stage 2,Normal,1,Slash Strike,Normal,Phys,50,—,inherited from Bloopuff,Slash lines,original
+Floofin,Stage 2,Normal,5,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Bloopuff,Spinning blades around user,original
+Floofin,Stage 2,Normal,9,Coin Toss,Normal,Phys,40,—,inherited from Bloopuff,Coins scatter,original
+Floofin,Stage 2,Normal,13,Afterimage,Normal,Status,0,Raises evasion,inherited from Bloopuff,Afterimage flicker,original
+Floofin,Stage 2,Normal,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Floofin,Stage 2,Normal,21,Power Jab,Normal,Phys,80,—,own,Generic hit flash,original
+Floofin,Stage 2,Normal,25,Warm Recovery,Normal,Status,0,Heals user,own,Green sparkle overlay,original
+Nimbuspry,Final A,Ice/Fairy,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Bloopuff,Yellow stars fly,original
+Nimbuspry,Final A,Ice/Fairy,1,Slash Strike,Normal,Phys,50,—,inherited from Bloopuff,Slash lines,original
+Nimbuspry,Final A,Ice/Fairy,5,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Bloopuff,Spinning blades around user,original
+Nimbuspry,Final A,Ice/Fairy,9,Coin Toss,Normal,Phys,40,—,inherited from Bloopuff,Coins scatter,original
+Nimbuspry,Final A,Ice/Fairy,13,Afterimage,Normal,Status,0,Raises evasion,inherited from Bloopuff,Afterimage flicker,original
+Nimbuspry,Final A,Ice/Fairy,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Floofin,Generic hit flash,original
+Nimbuspry,Final A,Ice/Fairy,21,Power Jab,Normal,Phys,80,—,inherited from Floofin,Generic hit flash,original
+Nimbuspry,Final A,Ice/Fairy,25,Warm Recovery,Normal,Status,0,Heals user,inherited from Floofin,Green sparkle overlay,original
+Nimbuspry,Final A,Ice/Fairy,30,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Nimbuspry,Final A,Ice/Fairy,34,Decoy Form,Normal,Status,0 (costs 25% HP),Creates substitute,own,Decoy doll appears,original
+Nimbuspry,Final A,Ice/Fairy,38,Frost Ray,Ice,Spec,95,Freeze (10%),own,Beam + freeze sparkle,original
+Stormuff,Final B,Electric/Dark,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Bloopuff,Yellow stars fly,original
+Stormuff,Final B,Electric/Dark,1,Slash Strike,Normal,Phys,50,—,inherited from Bloopuff,Slash lines,original
+Stormuff,Final B,Electric/Dark,5,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Bloopuff,Spinning blades around user,original
+Stormuff,Final B,Electric/Dark,9,Coin Toss,Normal,Phys,40,—,inherited from Bloopuff,Coins scatter,original
+Stormuff,Final B,Electric/Dark,13,Afterimage,Normal,Status,0,Raises evasion,inherited from Bloopuff,Afterimage flicker,original
+Stormuff,Final B,Electric/Dark,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Floofin,Generic hit flash,original
+Stormuff,Final B,Electric/Dark,21,Power Jab,Normal,Phys,80,—,inherited from Floofin,Generic hit flash,original
+Stormuff,Final B,Electric/Dark,25,Warm Recovery,Normal,Status,0,Heals user,inherited from Floofin,Green sparkle overlay,original
+Stormuff,Final B,Electric/Dark,30,Umbral Rend,Dark,Phys,95,—,own,Dark swirl/drain,reuses: Nightmare Feast
+Stormuff,Final B,Electric/Dark,34,Decoy Form,Normal,Status,0 (costs 25% HP),Creates substitute,own,Decoy doll appears,original
+Stormuff,Final B,Electric/Dark,38,Volt Strike,Electric,Spec,95,Paralysis (10%),own,Lightning strike,original
+Mosscoil,Base,Grass,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Mosscoil,Base,Grass,1,Life Siphon,Grass,Spec,40,Heals user,own,"Green beam, drains HP",original
+Mosscoil,Base,Grass,5,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Mosscoil,Base,Grass,9,Leaf Cutter,Grass,Spec,55,High crit rate,own,Slash lines,reuses: Slash Strike
+Mosscoil,Base,Grass,13,Spore Cloud,Grass,Status,0,Puts target to sleep,own,Green sparkle overlay,reuses: Warm Recovery
+Grovesnail,Stage 2,Grass,1,Slash Strike,Normal,Phys,50,—,inherited from Mosscoil,Slash lines,original
+Grovesnail,Stage 2,Grass,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Mosscoil,"Green beam, drains HP",original
+Grovesnail,Stage 2,Grass,5,Star Shower,Normal,Phys,60,None (never misses),inherited from Mosscoil,Yellow stars fly,original
+Grovesnail,Stage 2,Grass,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Mosscoil,Slash lines,reuses: Slash Strike
+Grovesnail,Stage 2,Grass,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Mosscoil,Green sparkle overlay,reuses: Warm Recovery
+Grovesnail,Stage 2,Grass,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Grovesnail,Stage 2,Grass,21,Bramble Rend,Grass,Spec,80,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Grovesnail,Stage 2,Grass,25,Root Bind,Grass,Status,0,Sharply lowers Speed,own,"Green beam, drains HP",reuses: Life Siphon
+Lotushell,Final A,Grass/Water,1,Slash Strike,Normal,Phys,50,—,inherited from Mosscoil,Slash lines,original
+Lotushell,Final A,Grass/Water,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Mosscoil,"Green beam, drains HP",original
+Lotushell,Final A,Grass/Water,5,Star Shower,Normal,Phys,60,None (never misses),inherited from Mosscoil,Yellow stars fly,original
+Lotushell,Final A,Grass/Water,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Mosscoil,Slash lines,reuses: Slash Strike
+Lotushell,Final A,Grass/Water,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Mosscoil,Green sparkle overlay,reuses: Warm Recovery
+Lotushell,Final A,Grass/Water,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Grovesnail,Generic hit flash,original
+Lotushell,Final A,Grass/Water,21,Bramble Rend,Grass,Spec,80,—,inherited from Grovesnail,"Charge, then blade slash",reuses: Wind Slicer
+Lotushell,Final A,Grass/Water,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Grovesnail,"Green beam, drains HP",reuses: Life Siphon
+Lotushell,Final A,Grass/Water,30,Tidal Wave,Water,Spec,95,—,own,Large wave washes over,original
+Lotushell,Final A,Grass/Water,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Lotushell,Final A,Grass/Water,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Ruincoil,Final B,Grass/Rock,1,Slash Strike,Normal,Phys,50,—,inherited from Mosscoil,Slash lines,original
+Ruincoil,Final B,Grass/Rock,1,Life Siphon,Grass,Spec,40,Heals user,inherited from Mosscoil,"Green beam, drains HP",original
+Ruincoil,Final B,Grass/Rock,5,Star Shower,Normal,Phys,60,None (never misses),inherited from Mosscoil,Yellow stars fly,original
+Ruincoil,Final B,Grass/Rock,9,Leaf Cutter,Grass,Spec,55,High crit rate,inherited from Mosscoil,Slash lines,reuses: Slash Strike
+Ruincoil,Final B,Grass/Rock,13,Spore Cloud,Grass,Status,0,Puts target to sleep,inherited from Mosscoil,Green sparkle overlay,reuses: Warm Recovery
+Ruincoil,Final B,Grass/Rock,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Grovesnail,Generic hit flash,original
+Ruincoil,Final B,Grass/Rock,21,Bramble Rend,Grass,Spec,80,—,inherited from Grovesnail,"Charge, then blade slash",reuses: Wind Slicer
+Ruincoil,Final B,Grass/Rock,25,Root Bind,Grass,Status,0,Sharply lowers Speed,inherited from Grovesnail,"Green beam, drains HP",reuses: Life Siphon
+Ruincoil,Final B,Grass/Rock,30,Boulder Fall,Rock,Phys,75,—,own,Rocks fall from top,original
+Ruincoil,Final B,Grass/Rock,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Ruincoil,Final B,Grass/Rock,38,Sunray Blast,Grass,Spec,120,None (2-turn),own,"Charge glow, then beam",original
+Wickisp,Base,Ghost,1,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Wickisp,Base,Ghost,1,Spectral Touch,Ghost,Phys,45,20% flinch,own,Vanish in sparkle,reuses: Phase Shift
+Wickisp,Base,Ghost,5,Haunt Whisper,Ghost,Status,0,Sharply lowers Attack,own,Wavy purple pulse,reuses: Mind Pulse
+Wickisp,Base,Ghost,9,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Wickisp,Base,Ghost,13,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Candlurk,Stage 2,Fire/Ghost,1,Coin Toss,Normal,Phys,40,—,inherited from Wickisp,Coins scatter,original
+Candlurk,Stage 2,Fire/Ghost,1,Spectral Touch,Ghost,Phys,45,20% flinch,inherited from Wickisp,Vanish in sparkle,reuses: Phase Shift
+Candlurk,Stage 2,Fire/Ghost,5,Haunt Whisper,Ghost,Status,0,Sharply lowers Attack,inherited from Wickisp,Wavy purple pulse,reuses: Mind Pulse
+Candlurk,Stage 2,Fire/Ghost,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Wickisp,Yellow stars fly,original
+Candlurk,Stage 2,Fire/Ghost,13,Slash Strike,Normal,Phys,50,—,inherited from Wickisp,Slash lines,original
+Candlurk,Stage 2,Fire/Ghost,17,Phantom Rend,Ghost,Phys,80,—,own,Dark swirl/drain,reuses: Nightmare Feast
+Candlurk,Stage 2,Fire/Ghost,21,Blaze Fang,Fire,Spec,80,10% burn,own,"Fang chomp, flinch back",reuses: Fang Snap
+Candlurk,Stage 2,Fire/Ghost,25,Cinder Veil,Fire,Status,0,Raises Special,own,Sparkle overlay,reuses: Mirror Act
+Halolume,Final A,Fire/Fairy,1,Coin Toss,Normal,Phys,40,—,inherited from Wickisp,Coins scatter,original
+Halolume,Final A,Fire/Fairy,1,Spectral Touch,Ghost,Phys,45,20% flinch,inherited from Wickisp,Vanish in sparkle,reuses: Phase Shift
+Halolume,Final A,Fire/Fairy,5,Haunt Whisper,Ghost,Status,0,Sharply lowers Attack,inherited from Wickisp,Wavy purple pulse,reuses: Mind Pulse
+Halolume,Final A,Fire/Fairy,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Wickisp,Yellow stars fly,original
+Halolume,Final A,Fire/Fairy,13,Slash Strike,Normal,Phys,50,—,inherited from Wickisp,Slash lines,original
+Halolume,Final A,Fire/Fairy,17,Phantom Rend,Ghost,Phys,80,—,inherited from Candlurk,Dark swirl/drain,reuses: Nightmare Feast
+Halolume,Final A,Fire/Fairy,21,Blaze Fang,Fire,Spec,80,10% burn,inherited from Candlurk,"Fang chomp, flinch back",reuses: Fang Snap
+Halolume,Final A,Fire/Fairy,25,Cinder Veil,Fire,Status,0,Raises Special,inherited from Candlurk,Sparkle overlay,reuses: Mirror Act
+Halolume,Final A,Fire/Fairy,30,Lunar Burst,Fairy,Spec,95,Lowers Sp. Atk (30%),own,Pink lunar orb bursts,original
+Halolume,Final A,Fire/Fairy,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Halolume,Final A,Fire/Fairy,38,Inferno Burst,Fire,Spec,110,Burn (10%),own,Large flame burst,original
+Hexabra,Final B,Fire/Ghost,1,Coin Toss,Normal,Phys,40,—,inherited from Wickisp,Coins scatter,original
+Hexabra,Final B,Fire/Ghost,1,Spectral Touch,Ghost,Phys,45,20% flinch,inherited from Wickisp,Vanish in sparkle,reuses: Phase Shift
+Hexabra,Final B,Fire/Ghost,5,Haunt Whisper,Ghost,Status,0,Sharply lowers Attack,inherited from Wickisp,Wavy purple pulse,reuses: Mind Pulse
+Hexabra,Final B,Fire/Ghost,9,Star Shower,Normal,Phys,60,None (never misses),inherited from Wickisp,Yellow stars fly,original
+Hexabra,Final B,Fire/Ghost,13,Slash Strike,Normal,Phys,50,—,inherited from Wickisp,Slash lines,original
+Hexabra,Final B,Fire/Ghost,17,Phantom Rend,Ghost,Phys,80,—,inherited from Candlurk,Dark swirl/drain,reuses: Nightmare Feast
+Hexabra,Final B,Fire/Ghost,21,Blaze Fang,Fire,Spec,80,10% burn,inherited from Candlurk,"Fang chomp, flinch back",reuses: Fang Snap
+Hexabra,Final B,Fire/Ghost,25,Cinder Veil,Fire,Status,0,Raises Special,inherited from Candlurk,Sparkle overlay,reuses: Mirror Act
+Hexabra,Final B,Fire/Ghost,30,Soul Rend,Ghost,Phys,95,Heals user by half damage,own,Dark swirl/drain,reuses: Nightmare Feast
+Hexabra,Final B,Fire/Ghost,34,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Hexabra,Final B,Fire/Ghost,38,Inferno Burst,Fire,Spec,110,Burn (10%),own,Large flame burst,original
+Terratot,Base,Ground,1,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Terratot,Base,Ground,1,Sand Lash,Ground,Phys,45,—,own,"Screen shake, tremors",reuses: Ground Rupture
+Terratot,Base,Ground,5,Mud Veil,Ground,Status,0,Lowers target accuracy,own,Screen flash,reuses: Blinding Light
+Terratot,Base,Ground,9,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Terratot,Base,Ground,13,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Burrosaur,Stage 2,Ground,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Terratot,Yellow stars fly,original
+Burrosaur,Stage 2,Ground,1,Sand Lash,Ground,Phys,45,—,inherited from Terratot,"Screen shake, tremors",reuses: Ground Rupture
+Burrosaur,Stage 2,Ground,5,Mud Veil,Ground,Status,0,Lowers target accuracy,inherited from Terratot,Screen flash,reuses: Blinding Light
+Burrosaur,Stage 2,Ground,9,Slash Strike,Normal,Phys,50,—,inherited from Terratot,Slash lines,original
+Burrosaur,Stage 2,Ground,13,Coin Toss,Normal,Phys,40,—,inherited from Terratot,Coins scatter,original
+Burrosaur,Stage 2,Ground,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Burrosaur,Stage 2,Ground,21,Power Jab,Normal,Phys,80,—,own,Generic hit flash,original
+Burrosaur,Stage 2,Ground,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Ferradillo,Final A,Ground/Steel,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Terratot,Yellow stars fly,original
+Ferradillo,Final A,Ground/Steel,1,Sand Lash,Ground,Phys,45,—,inherited from Terratot,"Screen shake, tremors",reuses: Ground Rupture
+Ferradillo,Final A,Ground/Steel,5,Mud Veil,Ground,Status,0,Lowers target accuracy,inherited from Terratot,Screen flash,reuses: Blinding Light
+Ferradillo,Final A,Ground/Steel,9,Slash Strike,Normal,Phys,50,—,inherited from Terratot,Slash lines,original
+Ferradillo,Final A,Ground/Steel,13,Coin Toss,Normal,Phys,40,—,inherited from Terratot,Coins scatter,original
+Ferradillo,Final A,Ground/Steel,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Burrosaur,Generic hit flash,original
+Ferradillo,Final A,Ground/Steel,21,Power Jab,Normal,Phys,80,—,inherited from Burrosaur,Generic hit flash,original
+Ferradillo,Final A,Ground/Steel,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Burrosaur,Spinning blades around user,original
+Ferradillo,Final A,Ground/Steel,30,Forge Strike,Steel,Phys,100,—,own,"Charge, then blade slash",reuses: Wind Slicer
+Ferradillo,Final A,Ground/Steel,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Ferradillo,Final A,Ground/Steel,38,Ground Rupture,Ground,Phys,100,—,own,"Screen shake, tremors",original
+Rumblejaw,Final B,Ground/Fighting,1,Star Shower,Normal,Phys,60,None (never misses),inherited from Terratot,Yellow stars fly,original
+Rumblejaw,Final B,Ground/Fighting,1,Sand Lash,Ground,Phys,45,—,inherited from Terratot,"Screen shake, tremors",reuses: Ground Rupture
+Rumblejaw,Final B,Ground/Fighting,5,Mud Veil,Ground,Status,0,Lowers target accuracy,inherited from Terratot,Screen flash,reuses: Blinding Light
+Rumblejaw,Final B,Ground/Fighting,9,Slash Strike,Normal,Phys,50,—,inherited from Terratot,Slash lines,original
+Rumblejaw,Final B,Ground/Fighting,13,Coin Toss,Normal,Phys,40,—,inherited from Terratot,Coins scatter,original
+Rumblejaw,Final B,Ground/Fighting,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Burrosaur,Generic hit flash,original
+Rumblejaw,Final B,Ground/Fighting,21,Power Jab,Normal,Phys,80,—,inherited from Burrosaur,Generic hit flash,original
+Rumblejaw,Final B,Ground/Fighting,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Burrosaur,Spinning blades around user,original
+Rumblejaw,Final B,Ground/Fighting,30,Grapple Slam,Fighting,Phys,80,Recoil to self,own,Hit flash + recoil,original
+Rumblejaw,Final B,Ground/Fighting,34,Afterimage,Normal,Status,0,Raises evasion,own,Afterimage flicker,original
+Rumblejaw,Final B,Ground/Fighting,38,Ground Rupture,Ground,Phys,100,—,own,"Screen shake, tremors",original
+Hootusk,Base,Flying,1,Slash Strike,Normal,Phys,50,—,own,Slash lines,original
+Hootusk,Base,Flying,1,Coin Toss,Normal,Phys,40,—,own,Coins scatter,original
+Hootusk,Base,Flying,5,Updraft,Flying,Status,0,Raises Speed,own,Afterimage flicker,reuses: Afterimage
+Hootusk,Base,Flying,9,Wing Slice,Flying,Phys,60,—,own,Slash lines,reuses: Slash Strike
+Hootusk,Base,Flying,13,Star Shower,Normal,Phys,60,None (never misses),own,Yellow stars fly,original
+Hornowl,Stage 2,Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Hootusk,Slash lines,original
+Hornowl,Stage 2,Flying,1,Coin Toss,Normal,Phys,40,—,inherited from Hootusk,Coins scatter,original
+Hornowl,Stage 2,Flying,5,Updraft,Flying,Status,0,Raises Speed,inherited from Hootusk,Afterimage flicker,reuses: Afterimage
+Hornowl,Stage 2,Flying,9,Wing Slice,Flying,Phys,60,—,inherited from Hootusk,Slash lines,reuses: Slash Strike
+Hornowl,Stage 2,Flying,13,Star Shower,Normal,Phys,60,None (never misses),inherited from Hootusk,Yellow stars fly,original
+Hornowl,Stage 2,Flying,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),own,Generic hit flash,original
+Hornowl,Stage 2,Flying,21,Skyward Dive,Flying,Phys,70,None (2-turn),own,"Flies off, then dives",original
+Hornowl,Stage 2,Flying,25,Blade Ritual,Normal,Status,0,Raises Attack (self),own,Spinning blades around user,original
+Glacivane,Final A,Ice/Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Hootusk,Slash lines,original
+Glacivane,Final A,Ice/Flying,1,Coin Toss,Normal,Phys,40,—,inherited from Hootusk,Coins scatter,original
+Glacivane,Final A,Ice/Flying,5,Updraft,Flying,Status,0,Raises Speed,inherited from Hootusk,Afterimage flicker,reuses: Afterimage
+Glacivane,Final A,Ice/Flying,9,Wing Slice,Flying,Phys,60,—,inherited from Hootusk,Slash lines,reuses: Slash Strike
+Glacivane,Final A,Ice/Flying,13,Star Shower,Normal,Phys,60,None (never misses),inherited from Hootusk,Yellow stars fly,original
+Glacivane,Final A,Ice/Flying,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Hornowl,Generic hit flash,original
+Glacivane,Final A,Ice/Flying,21,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Hornowl,"Flies off, then dives",original
+Glacivane,Final A,Ice/Flying,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Hornowl,Spinning blades around user,original
+Glacivane,Final A,Ice/Flying,30,Dive Bomb,Flying,Phys,140,None (2-turn),own,"Charge, then diving hit",original
+Glacivane,Final A,Ice/Flying,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Glacivane,Final A,Ice/Flying,38,Frost Ray,Ice,Spec,95,Freeze (10%),own,Beam + freeze sparkle,original
+Oracowl,Final B,Psychic/Flying,1,Slash Strike,Normal,Phys,50,—,inherited from Hootusk,Slash lines,original
+Oracowl,Final B,Psychic/Flying,1,Coin Toss,Normal,Phys,40,—,inherited from Hootusk,Coins scatter,original
+Oracowl,Final B,Psychic/Flying,5,Updraft,Flying,Status,0,Raises Speed,inherited from Hootusk,Afterimage flicker,reuses: Afterimage
+Oracowl,Final B,Psychic/Flying,9,Wing Slice,Flying,Phys,60,—,inherited from Hootusk,Slash lines,reuses: Slash Strike
+Oracowl,Final B,Psychic/Flying,13,Star Shower,Normal,Phys,60,None (never misses),inherited from Hootusk,Yellow stars fly,original
+Oracowl,Final B,Psychic/Flying,17,Full Body Crash,Normal,Phys,85,Paralysis (30%),inherited from Hornowl,Generic hit flash,original
+Oracowl,Final B,Psychic/Flying,21,Skyward Dive,Flying,Phys,70,None (2-turn),inherited from Hornowl,"Flies off, then dives",original
+Oracowl,Final B,Psychic/Flying,25,Blade Ritual,Normal,Status,0,Raises Attack (self),inherited from Hornowl,Spinning blades around user,original
+Oracowl,Final B,Psychic/Flying,30,Dive Bomb,Flying,Phys,140,None (2-turn),own,"Charge, then diving hit",original
+Oracowl,Final B,Psychic/Flying,34,Crushing Kick,Normal,Phys,120,—,own,Generic hit flash,original
+Oracowl,Final B,Psychic/Flying,38,Mind Crush,Psychic,Spec,90,Lowers Sp. (10%),own,Wavy purple distortion,original

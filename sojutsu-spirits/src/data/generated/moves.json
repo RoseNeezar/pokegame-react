@@ -1,0 +1,3018 @@
+[
+  {
+    "name": "Power Jab",
+    "id": "power-jab",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM001",
+      "animationId": "power-jab",
+      "atlas": "normal-physical-a",
+      "frames": 4,
+      "description": "Generic hit flash"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Wind Slicer",
+    "id": "wind-slicer",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM002",
+      "animationId": "wind-slicer",
+      "atlas": "normal-physical-a",
+      "frames": 6,
+      "description": "Charge, then blade slash"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Blade Ritual",
+    "id": "blade-ritual",
+    "aspect": "Normal",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Raises Attack (self)",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM003",
+      "animationId": "blade-ritual",
+      "atlas": "normal-utility",
+      "frames": 6,
+      "description": "Spinning blades around user"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Gale Force",
+    "id": "gale-force",
+    "aspect": "Normal",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Forces switch",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM004",
+      "animationId": "gale-force",
+      "atlas": "normal-utility",
+      "frames": 6,
+      "description": "Minimal, forces switch"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Crushing Kick",
+    "id": "crushing-kick",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 120,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Signature",
+    "animation": {
+      "source": "original",
+      "tmId": "TM005",
+      "animationId": "crushing-kick",
+      "atlas": "normal-physical-a",
+      "frames": 4,
+      "description": "Generic hit flash"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Venom Curse",
+    "id": "venom-curse",
+    "aspect": "Poison",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Badly poisons",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM006",
+      "animationId": "venom-curse",
+      "atlas": "rock-poison-dragon",
+      "frames": 6,
+      "description": "Purple splash overlay"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Piercing Spiral",
+    "id": "piercing-spiral",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": null,
+    "powerNote": "OHKO",
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (OHKO)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM007",
+      "animationId": "piercing-spiral",
+      "atlas": "normal-physical-a",
+      "frames": 8,
+      "description": "Drill spiral, screen shake"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Full Body Crash",
+    "id": "full-body-crash",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 85,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Paralysis (30%)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM008",
+      "animationId": "full-body-crash",
+      "atlas": "normal-physical-a",
+      "frames": 6,
+      "description": "Generic hit flash"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Reckless Charge",
+    "id": "reckless-charge",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 90,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Recoil to self",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM009",
+      "animationId": "reckless-charge",
+      "atlas": "normal-physical-b",
+      "frames": 6,
+      "description": "Hit flash + recoil"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "All-Out Tackle",
+    "id": "all-out-tackle",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 100,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Recoil to self",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM010",
+      "animationId": "all-out-tackle",
+      "atlas": "normal-physical-b",
+      "frames": 8,
+      "description": "Hit flash + recoil"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 3,
+      "failureMode": "reduced_power",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Bubble Burst",
+    "id": "bubble-burst",
+    "aspect": "Water",
+    "category": "Spec",
+    "power": 65,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Lowers Speed (10%)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM011",
+      "animationId": "bubble-burst",
+      "atlas": "water",
+      "frames": 6,
+      "description": "Bubbles stream"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Water Splash",
+    "id": "water-splash",
+    "aspect": "Water",
+    "category": "Spec",
+    "power": 40,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Early",
+    "animation": {
+      "source": "original",
+      "tmId": "TM012",
+      "animationId": "water-splash",
+      "atlas": "water",
+      "frames": 4,
+      "description": "Water jet"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Frost Ray",
+    "id": "frost-ray",
+    "aspect": "Ice",
+    "category": "Spec",
+    "power": 95,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Freeze (10%)",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM013",
+      "animationId": "frost-ray",
+      "atlas": "ice",
+      "frames": 8,
+      "description": "Beam + freeze sparkle"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Glacial Storm",
+    "id": "glacial-storm",
+    "aspect": "Ice",
+    "category": "Spec",
+    "power": 110,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Freeze (10%)",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM014",
+      "animationId": "glacial-storm",
+      "atlas": "ice",
+      "frames": 8,
+      "description": "Snowflake barrage"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Overload Beam",
+    "id": "overload-beam",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 150,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Recharge next turn",
+    "tier": "Signature",
+    "animation": {
+      "source": "original",
+      "tmId": "TM015",
+      "animationId": "overload-beam",
+      "atlas": "normal-beams-explosives",
+      "frames": 8,
+      "description": "Big orange beam blast"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Coin Toss",
+    "id": "coin-toss",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 40,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Early",
+    "animation": {
+      "source": "original",
+      "tmId": "TM016",
+      "animationId": "coin-toss",
+      "atlas": "normal-physical-b",
+      "frames": 4,
+      "description": "Coins scatter"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Grapple Slam",
+    "id": "grapple-slam",
+    "aspect": "Fighting",
+    "category": "Phys",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Recoil to self",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM017",
+      "animationId": "grapple-slam",
+      "atlas": "fighting",
+      "frames": 6,
+      "description": "Hit flash + recoil"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Retaliate",
+    "id": "retaliate",
+    "aspect": "Fighting",
+    "category": "Phys",
+    "power": null,
+    "powerNote": "2x dmg taken",
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM018",
+      "animationId": "retaliate",
+      "atlas": "fighting",
+      "frames": 6,
+      "description": "Generic hit flash"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 3,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Gravity Slam",
+    "id": "gravity-slam",
+    "aspect": "Fighting",
+    "category": "Phys",
+    "power": null,
+    "powerNote": "= user level",
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (fixed)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM019",
+      "animationId": "gravity-slam",
+      "atlas": "fighting",
+      "frames": 6,
+      "description": "Generic hit flash"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Fury Build",
+    "id": "fury-build",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 20,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Atk rises when hit",
+    "tier": "Early",
+    "animation": {
+      "source": "original",
+      "tmId": "TM020",
+      "animationId": "fury-build",
+      "atlas": "normal-physical-b",
+      "frames": 4,
+      "description": "Hit flash, red tint builds"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Life Siphon",
+    "id": "life-siphon",
+    "aspect": "Grass",
+    "category": "Spec",
+    "power": 40,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Heals user",
+    "tier": "Early",
+    "animation": {
+      "source": "original",
+      "tmId": "TM021",
+      "animationId": "life-siphon",
+      "atlas": "grass",
+      "frames": 6,
+      "description": "Green beam, drains HP"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Sunray Blast",
+    "id": "sunray-blast",
+    "aspect": "Grass",
+    "category": "Spec",
+    "power": 120,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (2-turn)",
+    "tier": "Signature",
+    "animation": {
+      "source": "original",
+      "tmId": "TM022",
+      "animationId": "sunray-blast",
+      "atlas": "grass",
+      "frames": 8,
+      "description": "Charge glow, then beam"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1.35,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": true
+    }
+  },
+  {
+    "name": "Draconic Burst",
+    "id": "draconic-burst",
+    "aspect": "Dragon",
+    "category": "Spec",
+    "power": 40,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (fixed)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM023",
+      "animationId": "draconic-burst",
+      "atlas": "rock-poison-dragon",
+      "frames": 6,
+      "description": "Orange spiral blast"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 3,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Volt Strike",
+    "id": "volt-strike",
+    "aspect": "Electric",
+    "category": "Spec",
+    "power": 95,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Paralysis (10%)",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM024",
+      "animationId": "volt-strike",
+      "atlas": "electric",
+      "frames": 6,
+      "description": "Lightning strike"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Storm Bolt",
+    "id": "storm-bolt",
+    "aspect": "Electric",
+    "category": "Spec",
+    "power": 110,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Paralysis (10%)",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM025",
+      "animationId": "storm-bolt",
+      "atlas": "electric",
+      "frames": 8,
+      "description": "Large lightning + flash"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Ground Rupture",
+    "id": "ground-rupture",
+    "aspect": "Ground",
+    "category": "Phys",
+    "power": 100,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM026",
+      "animationId": "ground-rupture",
+      "atlas": "ground",
+      "frames": 8,
+      "description": "Screen shake, tremors"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Chasm Split",
+    "id": "chasm-split",
+    "aspect": "Ground",
+    "category": "Phys",
+    "power": null,
+    "powerNote": "OHKO",
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (OHKO)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM027",
+      "animationId": "chasm-split",
+      "atlas": "ground",
+      "frames": 8,
+      "description": "Ground crack, shake"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 3,
+      "failureMode": "reduced_power",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Burrow Strike",
+    "id": "burrow-strike",
+    "aspect": "Ground",
+    "category": "Phys",
+    "power": 100,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (2-turn)",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM028",
+      "animationId": "burrow-strike",
+      "atlas": "ground",
+      "frames": 8,
+      "description": "Vanish, reappear"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 1.35,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": true
+    }
+  },
+  {
+    "name": "Mind Crush",
+    "id": "mind-crush",
+    "aspect": "Psychic",
+    "category": "Spec",
+    "power": 90,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Lowers Sp. (10%)",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM029",
+      "animationId": "mind-crush",
+      "atlas": "psychic-a",
+      "frames": 8,
+      "description": "Wavy purple distortion"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Phase Shift",
+    "id": "phase-shift",
+    "aspect": "Psychic",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Escapes battle",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM030",
+      "animationId": "phase-shift",
+      "atlas": "psychic-a",
+      "frames": 4,
+      "description": "Vanish in sparkle"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 1,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Mirror Act",
+    "id": "mirror-act",
+    "aspect": "Normal",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Copies last move",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM031",
+      "animationId": "mirror-act",
+      "atlas": "normal-utility",
+      "frames": 4,
+      "description": "Sparkle overlay"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 2,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Afterimage",
+    "id": "afterimage",
+    "aspect": "Normal",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Raises evasion",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM032",
+      "animationId": "afterimage",
+      "atlas": "normal-utility",
+      "frames": 6,
+      "description": "Afterimage flicker"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Barrier Ward",
+    "id": "barrier-ward",
+    "aspect": "Psychic",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Raises Defense",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM033",
+      "animationId": "barrier-ward",
+      "atlas": "psychic-a",
+      "frames": 6,
+      "description": "Blue shimmer barrier"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Patient Fury",
+    "id": "patient-fury",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": null,
+    "powerNote": "2x stored dmg",
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Delayed counter-hit",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM034",
+      "animationId": "patient-fury",
+      "atlas": "normal-utility",
+      "frames": 8,
+      "description": "Flashes red, charges"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1.35,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": true
+    }
+  },
+  {
+    "name": "Wildcard",
+    "id": "wildcard",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": null,
+    "powerNote": "Varies",
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Random",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM035",
+      "animationId": "wildcard",
+      "atlas": "normal-utility",
+      "frames": 6,
+      "description": "Finger-wag sparkle"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 2,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Detonate",
+    "id": "detonate",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 130,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "User faints",
+    "tier": "Signature",
+    "animation": {
+      "source": "original",
+      "tmId": "TM036",
+      "animationId": "detonate",
+      "atlas": "normal-beams-explosives",
+      "frames": 8,
+      "description": "Big white flash"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 2,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 0,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Bomb Toss",
+    "id": "bomb-toss",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 100,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM037",
+      "animationId": "bomb-toss",
+      "atlas": "normal-physical-b",
+      "frames": 6,
+      "description": "Generic hit flash"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Inferno Burst",
+    "id": "inferno-burst",
+    "aspect": "Fire",
+    "category": "Spec",
+    "power": 110,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Burn (10%)",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM038",
+      "animationId": "inferno-burst",
+      "atlas": "fire",
+      "frames": 8,
+      "description": "Large flame burst"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Star Shower",
+    "id": "star-shower",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 60,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (never misses)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM039",
+      "animationId": "star-shower",
+      "atlas": "normal-beams-explosives",
+      "frames": 6,
+      "description": "Yellow stars fly"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Headlong Charge",
+    "id": "headlong-charge",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 100,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Def up on charge turn",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM040",
+      "animationId": "headlong-charge",
+      "atlas": "normal-physical-b",
+      "frames": 8,
+      "description": "Charge (def up), then hit"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 1.35,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": true
+    }
+  },
+  {
+    "name": "Warm Recovery",
+    "id": "warm-recovery",
+    "aspect": "Normal",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Heals user",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM041",
+      "animationId": "warm-recovery",
+      "atlas": "normal-utility",
+      "frames": 6,
+      "description": "Green sparkle overlay"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Nightmare Feast",
+    "id": "nightmare-feast",
+    "aspect": "Psychic",
+    "category": "Spec",
+    "power": 100,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Heals user",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM042",
+      "animationId": "nightmare-feast",
+      "atlas": "psychic-b",
+      "frames": 8,
+      "description": "Dark swirl/drain"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Dive Bomb",
+    "id": "dive-bomb",
+    "aspect": "Flying",
+    "category": "Phys",
+    "power": 140,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (2-turn)",
+    "tier": "Signature",
+    "animation": {
+      "source": "original",
+      "tmId": "TM043",
+      "animationId": "dive-bomb",
+      "atlas": "flying",
+      "frames": 8,
+      "description": "Charge, then diving hit"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 2,
+      "failureMode": "move_fails",
+      "crgModifier": 1.35,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": true
+    }
+  },
+  {
+    "name": "Deep Slumber",
+    "id": "deep-slumber",
+    "aspect": "Psychic",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Sleep + full heal",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM044",
+      "animationId": "deep-slumber",
+      "atlas": "psychic-b",
+      "frames": 6,
+      "description": "Blue \"Zzz\" sparkle"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Static Pulse",
+    "id": "static-pulse",
+    "aspect": "Electric",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Paralysis",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM045",
+      "animationId": "static-pulse",
+      "atlas": "electric",
+      "frames": 4,
+      "description": "Small spark overlay"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Mind Pulse",
+    "id": "mind-pulse",
+    "aspect": "Psychic",
+    "category": "Spec",
+    "power": null,
+    "powerNote": "~level-based",
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (random)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM046",
+      "animationId": "mind-pulse",
+      "atlas": "psychic-a",
+      "frames": 6,
+      "description": "Wavy purple pulse"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Cataclysm Burst",
+    "id": "cataclysm-burst",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 170,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "User faints",
+    "tier": "Signature",
+    "animation": {
+      "source": "original",
+      "tmId": "TM047",
+      "animationId": "cataclysm-burst",
+      "atlas": "normal-beams-explosives",
+      "frames": 8,
+      "description": "Big white flash"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 0,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Boulder Fall",
+    "id": "boulder-fall",
+    "aspect": "Rock",
+    "category": "Phys",
+    "power": 75,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM048",
+      "animationId": "boulder-fall",
+      "atlas": "rock-poison-dragon",
+      "frames": 6,
+      "description": "Rocks fall from top"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 3,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Triple Strike",
+    "id": "triple-strike",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM049",
+      "animationId": "triple-strike",
+      "atlas": "normal-beams-explosives",
+      "frames": 6,
+      "description": "Tri-colored beam"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Decoy Form",
+    "id": "decoy-form",
+    "aspect": "Normal",
+    "category": "Status",
+    "power": 0,
+    "powerNote": "costs 25% max HP",
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Creates substitute",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM050",
+      "animationId": "decoy-form",
+      "atlas": "normal-utility",
+      "frames": 8,
+      "description": "Decoy doll appears"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Slash Strike",
+    "id": "slash-strike",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 50,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Early",
+    "animation": {
+      "source": "original",
+      "tmId": "TM051",
+      "animationId": "slash-strike",
+      "atlas": "normal-physical-b",
+      "frames": 4,
+      "description": "Slash lines"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Skyward Dive",
+    "id": "skyward-dive",
+    "aspect": "Flying",
+    "category": "Phys",
+    "power": 70,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (2-turn)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM052",
+      "animationId": "skyward-dive",
+      "atlas": "flying",
+      "frames": 8,
+      "description": "Flies off, then dives"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 1.35,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": true
+    }
+  },
+  {
+    "name": "Tidal Wave",
+    "id": "tidal-wave",
+    "aspect": "Water",
+    "category": "Spec",
+    "power": 95,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM053",
+      "animationId": "tidal-wave",
+      "atlas": "water",
+      "frames": 8,
+      "description": "Large wave washes over"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Brute Force",
+    "id": "brute-force",
+    "aspect": "Normal",
+    "category": "Phys",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM054",
+      "animationId": "brute-force",
+      "atlas": "normal-physical-b",
+      "frames": 4,
+      "description": "Generic hit flash"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Blinding Light",
+    "id": "blinding-light",
+    "aspect": "Normal",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Lowers accuracy",
+    "tier": "Status",
+    "animation": {
+      "source": "original",
+      "tmId": "TM055",
+      "animationId": "blinding-light",
+      "atlas": "normal-beams-explosives",
+      "frames": 4,
+      "description": "Screen flash"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 1,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Fang Snap",
+    "id": "fang-snap",
+    "aspect": "Dark",
+    "category": "Phys",
+    "power": 60,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Flinch (30%)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM056",
+      "animationId": "fang-snap",
+      "atlas": "dark",
+      "frames": 4,
+      "description": "Fang chomp, flinch back"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Jaw Crush",
+    "id": "jaw-crush",
+    "aspect": "Dark",
+    "category": "Phys",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Lowers Defense (20%)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM057",
+      "animationId": "jaw-crush",
+      "atlas": "dark",
+      "frames": 6,
+      "description": "Bite down, screen shudders"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 3,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Shadow Jab",
+    "id": "shadow-jab",
+    "aspect": "Dark",
+    "category": "Phys",
+    "power": 70,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "None (priority)",
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM058",
+      "animationId": "shadow-jab",
+      "atlas": "dark",
+      "frames": 4,
+      "description": "Quick shadow-jab"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 4,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 1,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Lunar Burst",
+    "id": "lunar-burst",
+    "aspect": "Fairy",
+    "category": "Spec",
+    "power": 95,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Lowers Sp. Atk (30%)",
+    "tier": "Strong",
+    "animation": {
+      "source": "original",
+      "tmId": "TM059",
+      "animationId": "lunar-burst",
+      "atlas": "fairy",
+      "frames": 8,
+      "description": "Pink lunar orb bursts"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1.2,
+      "radModifier": 1.2,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Radiant Flash",
+    "id": "radiant-flash",
+    "aspect": "Fairy",
+    "category": "Spec",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "original",
+      "tmId": "TM060",
+      "animationId": "radiant-flash",
+      "atlas": "fairy",
+      "frames": 6,
+      "description": "Sparkling flash, wide-hit"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 3,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Pincer Nip",
+    "id": "pincer-nip",
+    "aspect": "Bug",
+    "category": "Phys",
+    "power": 45,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Early",
+    "animation": {
+      "source": "Power Jab",
+      "tmId": "TM001",
+      "animationId": "power-jab",
+      "atlas": "normal-physical-a",
+      "frames": 4,
+      "description": "Generic hit flash"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Silk Snare",
+    "id": "silk-snare",
+    "aspect": "Bug",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Sharply lowers Speed",
+    "tier": "Status",
+    "animation": {
+      "source": "Mirror Act",
+      "tmId": "TM031",
+      "animationId": "mirror-act",
+      "atlas": "normal-utility",
+      "frames": 4,
+      "description": "Sparkle overlay"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Swarm Strike",
+    "id": "swarm-strike",
+    "aspect": "Bug",
+    "category": "Phys",
+    "power": 70,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "Star Shower",
+      "tmId": "TM039",
+      "animationId": "star-shower",
+      "atlas": "normal-beams-explosives",
+      "frames": 6,
+      "description": "Yellow stars fly"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Hive Fury",
+    "id": "hive-fury",
+    "aspect": "Bug",
+    "category": "Phys",
+    "power": 95,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "20% flinch",
+    "tier": "Strong",
+    "animation": {
+      "source": "Piercing Spiral",
+      "tmId": "TM007",
+      "animationId": "piercing-spiral",
+      "atlas": "normal-physical-a",
+      "frames": 8,
+      "description": "Drill spiral, screen shake"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Iron Rap",
+    "id": "iron-rap",
+    "aspect": "Steel",
+    "category": "Phys",
+    "power": 50,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Early",
+    "animation": {
+      "source": "Power Jab",
+      "tmId": "TM001",
+      "animationId": "power-jab",
+      "atlas": "normal-physical-a",
+      "frames": 4,
+      "description": "Generic hit flash"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Plate Guard",
+    "id": "plate-guard",
+    "aspect": "Steel",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Sharply raises Defense",
+    "tier": "Status",
+    "animation": {
+      "source": "Barrier Ward",
+      "tmId": "TM033",
+      "animationId": "barrier-ward",
+      "atlas": "psychic-a",
+      "frames": 6,
+      "description": "Blue shimmer barrier"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Steel Cleave",
+    "id": "steel-cleave",
+    "aspect": "Steel",
+    "category": "Phys",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "High crit rate",
+    "tier": "Mid",
+    "animation": {
+      "source": "Slash Strike",
+      "tmId": "TM051",
+      "animationId": "slash-strike",
+      "atlas": "normal-physical-b",
+      "frames": 4,
+      "description": "Slash lines"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "move_fails",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Forge Strike",
+    "id": "forge-strike",
+    "aspect": "Steel",
+    "category": "Phys",
+    "power": 100,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Strong",
+    "animation": {
+      "source": "Wind Slicer",
+      "tmId": "TM002",
+      "animationId": "wind-slicer",
+      "atlas": "normal-physical-a",
+      "frames": 6,
+      "description": "Charge, then blade slash"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Spectral Touch",
+    "id": "spectral-touch",
+    "aspect": "Ghost",
+    "category": "Phys",
+    "power": 45,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "20% flinch",
+    "tier": "Early",
+    "animation": {
+      "source": "Phase Shift",
+      "tmId": "TM030",
+      "animationId": "phase-shift",
+      "atlas": "psychic-a",
+      "frames": 4,
+      "description": "Vanish in sparkle"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Haunt Whisper",
+    "id": "haunt-whisper",
+    "aspect": "Ghost",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Sharply lowers Attack",
+    "tier": "Status",
+    "animation": {
+      "source": "Mind Pulse",
+      "tmId": "TM046",
+      "animationId": "mind-pulse",
+      "atlas": "psychic-a",
+      "frames": 6,
+      "description": "Wavy purple pulse"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Phantom Rend",
+    "id": "phantom-rend",
+    "aspect": "Ghost",
+    "category": "Phys",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "Nightmare Feast",
+      "tmId": "TM042",
+      "animationId": "nightmare-feast",
+      "atlas": "psychic-b",
+      "frames": 8,
+      "description": "Dark swirl/drain"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Soul Rend",
+    "id": "soul-rend",
+    "aspect": "Ghost",
+    "category": "Phys",
+    "power": 95,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Heals user by half damage",
+    "tier": "Strong",
+    "animation": {
+      "source": "Nightmare Feast",
+      "tmId": "TM042",
+      "animationId": "nightmare-feast",
+      "atlas": "psychic-b",
+      "frames": 8,
+      "description": "Dark swirl/drain"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Leaf Cutter",
+    "id": "leaf-cutter",
+    "aspect": "Grass",
+    "category": "Spec",
+    "power": 55,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "High crit rate",
+    "tier": "Mid",
+    "animation": {
+      "source": "Slash Strike",
+      "tmId": "TM051",
+      "animationId": "slash-strike",
+      "atlas": "normal-physical-b",
+      "frames": 4,
+      "description": "Slash lines"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Bramble Rend",
+    "id": "bramble-rend",
+    "aspect": "Grass",
+    "category": "Spec",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "Wind Slicer",
+      "tmId": "TM002",
+      "animationId": "wind-slicer",
+      "atlas": "normal-physical-a",
+      "frames": 6,
+      "description": "Charge, then blade slash"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Spore Cloud",
+    "id": "spore-cloud",
+    "aspect": "Grass",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Puts target to sleep",
+    "tier": "Status",
+    "animation": {
+      "source": "Warm Recovery",
+      "tmId": "TM041",
+      "animationId": "warm-recovery",
+      "atlas": "normal-utility",
+      "frames": 6,
+      "description": "Green sparkle overlay"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 5,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Root Bind",
+    "id": "root-bind",
+    "aspect": "Grass",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Sharply lowers Speed",
+    "tier": "Status",
+    "animation": {
+      "source": "Life Siphon",
+      "tmId": "TM021",
+      "animationId": "life-siphon",
+      "atlas": "grass",
+      "frames": 6,
+      "description": "Green beam, drains HP"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Wing Slice",
+    "id": "wing-slice",
+    "aspect": "Flying",
+    "category": "Phys",
+    "power": 60,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "Slash Strike",
+      "tmId": "TM051",
+      "animationId": "slash-strike",
+      "atlas": "normal-physical-b",
+      "frames": 4,
+      "description": "Slash lines"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Updraft",
+    "id": "updraft",
+    "aspect": "Flying",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Raises Speed",
+    "tier": "Status",
+    "animation": {
+      "source": "Afterimage",
+      "tmId": "TM032",
+      "animationId": "afterimage",
+      "atlas": "normal-utility",
+      "frames": 6,
+      "description": "Afterimage flicker"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Glimmer Tap",
+    "id": "glimmer-tap",
+    "aspect": "Fairy",
+    "category": "Spec",
+    "power": 40,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Early",
+    "animation": {
+      "source": "Radiant Flash",
+      "tmId": "TM060",
+      "animationId": "radiant-flash",
+      "atlas": "fairy",
+      "frames": 6,
+      "description": "Sparkling flash, wide-hit"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Charm Ward",
+    "id": "charm-ward",
+    "aspect": "Fairy",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Sharply lowers Attack",
+    "tier": "Status",
+    "animation": {
+      "source": "Mirror Act",
+      "tmId": "TM031",
+      "animationId": "mirror-act",
+      "atlas": "normal-utility",
+      "frames": 4,
+      "description": "Sparkle overlay"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Ember Flick",
+    "id": "ember-flick",
+    "aspect": "Fire",
+    "category": "Spec",
+    "power": 40,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "10% burn",
+    "tier": "Early",
+    "animation": {
+      "source": "Inferno Burst",
+      "tmId": "TM038",
+      "animationId": "inferno-burst",
+      "atlas": "fire",
+      "frames": 8,
+      "description": "Large flame burst"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Flame Lash",
+    "id": "flame-lash",
+    "aspect": "Fire",
+    "category": "Spec",
+    "power": 65,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "10% burn",
+    "tier": "Mid",
+    "animation": {
+      "source": "Inferno Burst",
+      "tmId": "TM038",
+      "animationId": "inferno-burst",
+      "atlas": "fire",
+      "frames": 8,
+      "description": "Large flame burst"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "move_fails",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Blaze Fang",
+    "id": "blaze-fang",
+    "aspect": "Fire",
+    "category": "Spec",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "10% burn",
+    "tier": "Mid",
+    "animation": {
+      "source": "Fang Snap",
+      "tmId": "TM056",
+      "animationId": "fang-snap",
+      "atlas": "dark",
+      "frames": 4,
+      "description": "Fang chomp, flinch back"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "move_fails",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Cinder Veil",
+    "id": "cinder-veil",
+    "aspect": "Fire",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Raises Special",
+    "tier": "Status",
+    "animation": {
+      "source": "Mirror Act",
+      "tmId": "TM031",
+      "animationId": "mirror-act",
+      "atlas": "normal-utility",
+      "frames": 4,
+      "description": "Sparkle overlay"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Chill Touch",
+    "id": "chill-touch",
+    "aspect": "Ice",
+    "category": "Spec",
+    "power": 40,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "10% freeze",
+    "tier": "Early",
+    "animation": {
+      "source": "Frost Ray",
+      "tmId": "TM013",
+      "animationId": "frost-ray",
+      "atlas": "ice",
+      "frames": 8,
+      "description": "Beam + freeze sparkle"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Frost Veil",
+    "id": "frost-veil",
+    "aspect": "Ice",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Raises Defense",
+    "tier": "Status",
+    "animation": {
+      "source": "Barrier Ward",
+      "tmId": "TM033",
+      "animationId": "barrier-ward",
+      "atlas": "psychic-a",
+      "frames": 6,
+      "description": "Blue shimmer barrier"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Toxic Spit",
+    "id": "toxic-spit",
+    "aspect": "Poison",
+    "category": "Phys",
+    "power": 40,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "20% poison",
+    "tier": "Early",
+    "animation": {
+      "source": "Venom Curse",
+      "tmId": "TM006",
+      "animationId": "venom-curse",
+      "atlas": "rock-poison-dragon",
+      "frames": 6,
+      "description": "Purple splash overlay"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Venom Fang",
+    "id": "venom-fang",
+    "aspect": "Poison",
+    "category": "Phys",
+    "power": 70,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "20% poison",
+    "tier": "Mid",
+    "animation": {
+      "source": "Fang Snap",
+      "tmId": "TM056",
+      "animationId": "fang-snap",
+      "atlas": "dark",
+      "frames": 4,
+      "description": "Fang chomp, flinch back"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "move_fails",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Sludge Wave",
+    "id": "sludge-wave",
+    "aspect": "Poison",
+    "category": "Phys",
+    "power": 90,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "30% poison",
+    "tier": "Strong",
+    "animation": {
+      "source": "Venom Curse",
+      "tmId": "TM006",
+      "animationId": "venom-curse",
+      "atlas": "rock-poison-dragon",
+      "frames": 6,
+      "description": "Purple splash overlay"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "move_fails",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Spite Glare",
+    "id": "spite-glare",
+    "aspect": "Dark",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Sharply lowers Attack",
+    "tier": "Status",
+    "animation": {
+      "source": "Blinding Light",
+      "tmId": "TM055",
+      "animationId": "blinding-light",
+      "atlas": "normal-beams-explosives",
+      "frames": 4,
+      "description": "Screen flash"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Umbral Rend",
+    "id": "umbral-rend",
+    "aspect": "Dark",
+    "category": "Phys",
+    "power": 95,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Strong",
+    "animation": {
+      "source": "Nightmare Feast",
+      "tmId": "TM042",
+      "animationId": "nightmare-feast",
+      "atlas": "psychic-b",
+      "frames": 8,
+      "description": "Dark swirl/drain"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Mist Shroud",
+    "id": "mist-shroud",
+    "aspect": "Water",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Raises evasion",
+    "tier": "Status",
+    "animation": {
+      "source": "Afterimage",
+      "tmId": "TM032",
+      "animationId": "afterimage",
+      "atlas": "normal-utility",
+      "frames": 6,
+      "description": "Afterimage flicker"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Torrent Fang",
+    "id": "torrent-fang",
+    "aspect": "Water",
+    "category": "Spec",
+    "power": 80,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "Water Splash",
+      "tmId": "TM012",
+      "animationId": "water-splash",
+      "atlas": "water",
+      "frames": 4,
+      "description": "Water jet"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Spark Nip",
+    "id": "spark-nip",
+    "aspect": "Electric",
+    "category": "Spec",
+    "power": 40,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "10% paralysis",
+    "tier": "Early",
+    "animation": {
+      "source": "Static Pulse",
+      "tmId": "TM045",
+      "animationId": "static-pulse",
+      "atlas": "electric",
+      "frames": 4,
+      "description": "Small spark overlay"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Arc Lash",
+    "id": "arc-lash",
+    "aspect": "Electric",
+    "category": "Spec",
+    "power": 65,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "10% paralysis",
+    "tier": "Mid",
+    "animation": {
+      "source": "Volt Strike",
+      "tmId": "TM024",
+      "animationId": "volt-strike",
+      "atlas": "electric",
+      "frames": 6,
+      "description": "Lightning strike"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "move_fails",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Sand Lash",
+    "id": "sand-lash",
+    "aspect": "Ground",
+    "category": "Phys",
+    "power": 45,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Early",
+    "animation": {
+      "source": "Ground Rupture",
+      "tmId": "TM026",
+      "animationId": "ground-rupture",
+      "atlas": "ground",
+      "frames": 8,
+      "description": "Screen shake, tremors"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Mud Veil",
+    "id": "mud-veil",
+    "aspect": "Ground",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Lowers target accuracy",
+    "tier": "Status",
+    "animation": {
+      "source": "Blinding Light",
+      "tmId": "TM055",
+      "animationId": "blinding-light",
+      "atlas": "normal-beams-explosives",
+      "frames": 4,
+      "description": "Screen flash"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Scale Ripple",
+    "id": "scale-ripple",
+    "aspect": "Dragon",
+    "category": "Spec",
+    "power": 60,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Mid",
+    "animation": {
+      "source": "Draconic Burst",
+      "tmId": "TM023",
+      "animationId": "draconic-burst",
+      "atlas": "rock-poison-dragon",
+      "frames": 6,
+      "description": "Orange spiral blast"
+    },
+    "engine": {
+      "mathTier": 2,
+      "impact": 2,
+      "failureMode": "reduced_power",
+      "crgModifier": 0.9,
+      "radModifier": 0.9,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Wyrm Roar",
+    "id": "wyrm-roar",
+    "aspect": "Dragon",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Raises Attack and Special",
+    "tier": "Status",
+    "animation": {
+      "source": "Blade Ritual",
+      "tmId": "TM003",
+      "animationId": "blade-ritual",
+      "atlas": "normal-utility",
+      "frames": 6,
+      "description": "Spinning blades around user"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Draco Surge",
+    "id": "draco-surge",
+    "aspect": "Dragon",
+    "category": "Spec",
+    "power": 100,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Strong",
+    "animation": {
+      "source": "Draconic Burst",
+      "tmId": "TM023",
+      "animationId": "draconic-burst",
+      "atlas": "rock-poison-dragon",
+      "frames": 6,
+      "description": "Orange spiral blast"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 0.8,
+      "radModifier": 0.8,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Stone Fling",
+    "id": "stone-fling",
+    "aspect": "Rock",
+    "category": "Phys",
+    "power": 50,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Early",
+    "animation": {
+      "source": "Boulder Fall",
+      "tmId": "TM048",
+      "animationId": "boulder-fall",
+      "atlas": "rock-poison-dragon",
+      "frames": 6,
+      "description": "Rocks fall from top"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Granite Guard",
+    "id": "granite-guard",
+    "aspect": "Rock",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Sharply raises Defense",
+    "tier": "Status",
+    "animation": {
+      "source": "Barrier Ward",
+      "tmId": "TM033",
+      "animationId": "barrier-ward",
+      "atlas": "psychic-a",
+      "frames": 6,
+      "description": "Blue shimmer barrier"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Palm Thrust",
+    "id": "palm-thrust",
+    "aspect": "Fighting",
+    "category": "Phys",
+    "power": 50,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": null,
+    "tier": "Early",
+    "animation": {
+      "source": "Power Jab",
+      "tmId": "TM001",
+      "animationId": "power-jab",
+      "atlas": "normal-physical-a",
+      "frames": 4,
+      "description": "Generic hit flash"
+    },
+    "engine": {
+      "mathTier": 1,
+      "impact": 1,
+      "failureMode": "reduced_power",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  },
+  {
+    "name": "Focus Stance",
+    "id": "focus-stance",
+    "aspect": "Fighting",
+    "category": "Status",
+    "power": 0,
+    "powerNote": null,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": "Sharply raises Attack",
+    "tier": "Status",
+    "animation": {
+      "source": "Blade Ritual",
+      "tmId": "TM003",
+      "animationId": "blade-ritual",
+      "atlas": "normal-utility",
+      "frames": 6,
+      "description": "Spinning blades around user"
+    },
+    "engine": {
+      "mathTier": 3,
+      "impact": 3,
+      "failureMode": "move_fails",
+      "crgModifier": 1,
+      "radModifier": 1,
+      "priority": 0,
+      "multiTurn": false
+    }
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "name": "sojutsu-spirits",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "SOJUTSU-SPIRITS — a portrait mobile spirit-binding RPG where every strike is earned with arithmetic.",
+  "scripts": {
+    "ingest": "tsx tools/ingest/index.ts",
+    "assets": "tsx tools/assets/build-atlases.ts",
+    "assets:generate": "tsx tools/assets/pixellab-generate.ts",
+    "dev": "vite",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview --port 4173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --max-warnings 0",
+    "verify": "npm run typecheck && npm run lint && npm run test",
+    "smoke": "tsx tools/verify/smoke.ts"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@types/node": "^22.7.5",
+    "@playwright/test": "^1.48.0",
+    "eslint": "^9.12.0",
+    "sharp": "^0.33.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.8.1",
+    "vite": "^5.4.9",
+    "vitest": "^2.1.3"
+  }
+}
