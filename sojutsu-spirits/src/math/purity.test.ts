@@ -28,6 +28,7 @@ import { join, relative } from 'node:path';
  */
 
 const MATH_DIR = new URL('.', import.meta.url).pathname;
+const CORE_DIR = new URL('../core/', import.meta.url).pathname;
 const SELF = 'purity.test.ts';
 
 function sourceFiles(dir: string): string[] {
@@ -40,7 +41,8 @@ function sourceFiles(dir: string): string[] {
   return out.sort();
 }
 
-const FILES = sourceFiles(MATH_DIR);
+const MATH_FILES = sourceFiles(MATH_DIR);
+const CORE_FILES = sourceFiles(CORE_DIR);
 
 /** Every module specifier the file imports or re-exports, in source order. */
 function specifiers(source: string): string[] {
@@ -51,22 +53,27 @@ function specifiers(source: string): string[] {
   return found;
 }
 
-/** Which layer a specifier resolves into, from the point of view of `src/math`. */
-function layerOf(specifier: string): string {
+/** Which layer a specifier resolves into, from the point of view of the scanned file. */
+function layerOf(specifier: string, ownLayer: string): string {
   if (specifier.startsWith('.')) {
     const m = /\.\.\/(?:\.\.\/)*([a-z]+)\//.exec(specifier);
-    return m?.[1] ?? 'math';
+    return m?.[1] ?? ownLayer;
   }
   return `package:${specifier}`;
 }
 
 const ALLOWED_LAYERS = new Set(['math', 'core', 'data', 'package:vitest', 'package:node:fs', 'package:node:path']);
 
+/** Text with template literals, block comments and line comments removed. */
+function stripped(file: string): string {
+  return readFileSync(file, 'utf8').replace(/`[^`]*`|\/\*[\s\S]*?\*\/|\/\/[^\n]*/g, '');
+}
+
 describe('src/math purity (DESIGN.md §2.1 and §8)', () => {
   it('scans every file in the layer', () => {
     // Guards the guard: a broken walk would make every test below vacuously true.
-    expect(FILES.length).toBeGreaterThanOrEqual(12);
-    const names = FILES.map((f) => relative(MATH_DIR, f));
+    expect(MATH_FILES.length).toBeGreaterThanOrEqual(12);
+    const names = MATH_FILES.map((f) => relative(MATH_DIR, f));
     expect(names).toContain('chain.ts');
     expect(names).toContain('question.ts');
     expect(names).toContain('session.ts');
@@ -75,9 +82,9 @@ describe('src/math purity (DESIGN.md §2.1 and §8)', () => {
 
   it('never imports phaser, and never reaches into the rendering layers', () => {
     const offences: string[] = [];
-    for (const file of FILES) {
+    for (const file of MATH_FILES) {
       for (const specifier of specifiers(readFileSync(file, 'utf8'))) {
-        const layer = layerOf(specifier);
+        const layer = layerOf(specifier, 'math');
         if (!ALLOWED_LAYERS.has(layer)) {
           offences.push(`${relative(MATH_DIR, file)} imports ${specifier} (${layer})`);
         }
@@ -88,22 +95,70 @@ describe('src/math purity (DESIGN.md §2.1 and §8)', () => {
 
   it('draws every random number from the seeded Rng, never Math.random', () => {
     const offences: string[] = [];
-    for (const file of FILES) {
+    for (const file of MATH_FILES) {
       // This file names the forbidden call in order to forbid it, so it excludes itself.
       if (file.endsWith(SELF)) continue;
-      const source = readFileSync(file, 'utf8').replace(/`[^`]*`|\/\*[\s\S]*?\*\/|\/\/[^\n]*/g, '');
-      if (/\bMath\s*\.\s*random\b/.test(source)) offences.push(relative(MATH_DIR, file));
+      if (/\bMath\s*\.\s*random\b/.test(stripped(file))) offences.push(relative(MATH_DIR, file));
     }
     expect(offences).toEqual([]);
   });
 
   it('reads no clock — the caller reports elapsed time', () => {
     const offences: string[] = [];
-    for (const file of FILES) {
+    for (const file of MATH_FILES) {
       if (file.endsWith(SELF)) continue;
-      const source = readFileSync(file, 'utf8').replace(/`[^`]*`|\/\*[\s\S]*?\*\/|\/\/[^\n]*/g, '');
-      if (/\bDate\s*\.\s*now\b|\bperformance\s*\.\s*now\b|\bnew\s+Date\b/.test(source)) {
+      if (/\bDate\s*\.\s*now\b|\bperformance\s*\.\s*now\b|\bnew\s+Date\b/.test(stripped(file))) {
         offences.push(relative(MATH_DIR, file));
+      }
+    }
+    expect(offences).toEqual([]);
+  });
+});
+
+/**
+ * The same rule for `src/core`.
+ *
+ * DESIGN.md §2.1 makes the claim about both layers, and `src/core` is the one that actually
+ * matters: it is the battle engine. If a rule file reached a scene, or drew from `Math.random`,
+ * a battle would stop replaying from `(seed, inputs)` and every fixed-vector damage test in the
+ * suite would quietly become a test of nothing.
+ */
+describe('src/core purity (DESIGN.md §2.1 and §8)', () => {
+  it('scans every file in the layer', () => {
+    expect(CORE_FILES.length).toBeGreaterThanOrEqual(12);
+    const names = CORE_FILES.map((f) => relative(CORE_DIR, f));
+    expect(names).toContain('battle.ts');
+    expect(names).toContain('damage.ts');
+    expect(names).toContain('rng.ts');
+  });
+
+  it('never imports phaser, and never reaches up into the game layers', () => {
+    const offences: string[] = [];
+    for (const file of CORE_FILES) {
+      for (const specifier of specifiers(readFileSync(file, 'utf8'))) {
+        const layer = layerOf(specifier, 'core');
+        // src/core may not even import src/math: the rules must not depend on the arithmetic.
+        if (layer === 'math' || !ALLOWED_LAYERS.has(layer)) {
+          offences.push(`${relative(CORE_DIR, file)} imports ${specifier} (${layer})`);
+        }
+      }
+    }
+    expect(offences).toEqual([]);
+  });
+
+  it('draws every random number from the seeded Rng, never Math.random', () => {
+    const offences: string[] = [];
+    for (const file of CORE_FILES) {
+      if (/\bMath\s*\.\s*random\b/.test(stripped(file))) offences.push(relative(CORE_DIR, file));
+    }
+    expect(offences).toEqual([]);
+  });
+
+  it('reads no clock', () => {
+    const offences: string[] = [];
+    for (const file of CORE_FILES) {
+      if (/\bDate\s*\.\s*now\b|\bperformance\s*\.\s*now\b|\bnew\s+Date\b/.test(stripped(file))) {
+        offences.push(relative(CORE_DIR, file));
       }
     }
     expect(offences).toEqual([]);

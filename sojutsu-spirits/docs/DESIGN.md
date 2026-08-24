@@ -17,7 +17,7 @@ Performed before any architecture decision, as the handoff requires.
 | `SOJUTSU_DATA_BUNDLE` | `reference/data/` | **Present and complete.** Battle math, aspect chart, catch rates, encounters, unified moves (104), 5 CSVs. |
 | `PLAYER_ASSETS` | `reference/characters/Manga_Sojutsuka_Player.zip` | **Present.** 48×48, 8 rotations, 4-frame walk N/S/E. PixelLab export v3.1. |
 | `FAWNIX_ASSETS` | `reference/characters/Manga_Fawnix.zip` | **Present.** 32×32, 8 rotations, 5-frame walk N/S/E. |
-| `GEARBIT_ASSET` | `reference/monsterdex/dex/005-gearbit.png` | **Present but degenerate** — 64×64 indexed, 273 bytes. See §7.1. |
+| `GEARBIT_ASSET` | `reference/monsterdex/dex/005-gearbit.png` | **Present, but a placeholder** — 64×64, five colours, 273 bytes, where 72 of the 96 are 512×512 full art. One of 24. See §7.1. |
 | `EXPLORATION_MODE_REFERENCE` | `reference/visual/exploration-mode-reference.png` | **Present.** 853×1844 portrait. Binding. |
 | `MATH_COMBAT_REFERENCE` | `reference/visual/math-combat-reference.png` | **Present.** 852×1846 portrait. Binding. |
 | `FINISH_MODE_REFERENCE` | `reference/visual/finish-mode-reference.png` | **Present.** 853×1844 portrait. Binding. |
@@ -88,9 +88,11 @@ src/ui/       the control deck, HUD, keypad, dialogue — DOM-free, drawn in Pha
 tools/        ingest, asset pipeline, verification harness. Node-side only.
 ```
 
-`src/core` and `src/math` never import Phaser. This is enforced by a unit test
-(`src/core/purity.test.ts`) so the rule cannot rot: the battle engine stays testable, seedable
-and portable, and a rendering bug can never be a damage bug.
+`src/core` and `src/math` never import Phaser, and `src/core` does not import `src/math`
+either — the rules must not depend on the arithmetic. All three constraints are enforced by
+`src/math/purity.test.ts`, which scans both layers for forbidden imports, `Math.random` and any
+read of the clock, so the rule cannot rot. That is what keeps the battle engine testable,
+seedable and portable, and what makes it impossible for a rendering bug to be a damage bug.
 
 ---
 

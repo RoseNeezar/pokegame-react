@@ -367,14 +367,76 @@ async function main(): Promise<void> {
       problems.push({ where: 'menu', detail: 'Menu scene never opened' });
     }
 
+    /* -------------------------------------------------------- the shrine */
+
+    // The single most important progression path in the game: the road past a shrine is
+    // sigil-locked, the sigil opens it, and the curriculum ceiling rises with it.
+    await probe(page, `(() => { window.__SOJUTSU__.scene.getScene('Menu').scene.stop(); return true; })()`);
+    await page.waitForTimeout(300);
+
+    await probe(
+      page,
+      `(() => {
+         const g = window.__SOJUTSU__;
+         g.scene.getScene('World').scene.restart({
+           state: g.registry.get('state'),
+           zone: 'shrine-thicket',
+         });
+         return true;
+       })()`,
+    );
+    await waitFor(page, `window.__SOJUTSU__.registry.get('state').zone === 'shrine-thicket'`, 8000);
+    await page.waitForTimeout(900);
+
+    const gateLocked = `(() => {
+       const w = window.__SOJUTSU__.scene.getScene('World');
+       const exit = w.zone.exits.find((e) => e.requiresSigils);
+       return !!exit && !w.canPass(exit);
+     })()`;
+
+    const sigilsBefore = await probe<number[]>(
+      page,
+      `window.__SOJUTSU__.registry.get('state').flags.sigils`,
+    );
+    const lockedBefore = await probe<boolean>(page, gateLocked);
+    if (sigilsBefore.length !== 0 || !lockedBefore) {
+      problems.push({
+        where: 'shrine',
+        detail: `the road past Shrine 1 should start locked (sigils=${JSON.stringify(sigilsBefore)}, locked=${lockedBefore})`,
+      });
+    } else {
+      step('the road past Shrine 1 starts sigil-locked');
+    }
+    await shot(page, '14-shrine');
+
+    await probe(
+      page,
+      `(() => { window.__SOJUTSU__.registry.get('state').flags.sigils.push(1); return true; })()`,
+    );
+    if (await probe<boolean>(page, gateLocked)) {
+      problems.push({ where: 'shrine', detail: 'the road past Shrine 1 is still locked after Sigil 1' });
+    } else {
+      step('Sigil 1 opens the road to Riverside');
+    }
+
+    const ceiling = await probe<number>(
+      page,
+      `(() => {
+         const n = window.__SOJUTSU__.registry.get('state').flags.sigils.length;
+         return n === 0 ? 1 : n === 1 ? 2 : 3;
+       })()`,
+    );
+    if (ceiling !== 2) {
+      problems.push({ where: 'curriculum', detail: `expected the ceiling to rise to Tier 2, got ${ceiling}` });
+    } else {
+      step('the curriculum ceiling rose to Tier 2');
+    }
+
     /* ------------------------------------------------------- other biomes */
 
     // The starting route is one biome out of eight. A town, a shrine and a cavern each use a
     // different terrain map, prop set and encounter rule, and each is a chance for a zone to
     // throw on entry — which the console listener would catch.
-    await probe(page, `(() => { window.__SOJUTSU__.scene.getScene('Menu').scene.stop(); return true; })()`);
-    await page.waitForTimeout(300);
-
     for (const [zoneId, shotName] of [
       ['rantings-rest', '11-town'],
       ['shrine-thicket', '12-shrine'],
