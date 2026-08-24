@@ -1,0 +1,1600 @@
+{
+  "schema": 1,
+  "atlases": [
+    {
+      "key": "dex",
+      "image": "dex.png",
+      "json": "dex.json",
+      "size": {
+        "w": 1024,
+        "h": 2048
+      },
+      "frames": [
+        "dex/001-helmling",
+        "dex/002-knighton",
+        "dex/003-aureguard",
+        "dex/004-dreadhelm",
+        "dex/005-gearbit",
+        "dex/006-cogskitter",
+        "dex/007-voltracer",
+        "dex/008-scraprowl",
+        "dex/009-nectenna",
+        "dex/010-sproutide",
+        "dex/011-lotusurge",
+        "dex/012-voltroot",
+        "dex/013-budbloom",
+        "dex/014-petalisk",
+        "dex/015-orchlume",
+        "dex/016-venobloom",
+        "dex/017-brontide",
+        "dex/018-brontaur",
+        "dex/019-glacisaur",
+        "dex/020-dracotide",
+        "dex/021-buzzle",
+        "dex/022-buzzguard",
+        "dex/023-voltwing",
+        "dex/024-jabjacket",
+        "dex/025-frondove",
+        "dex/026-leaflark",
+        "dex/027-floravian",
+        "dex/028-thornraven",
+        "dex/029-bloomble",
+        "dex/030-mossmallow",
+        "dex/031-floraglee",
+        "dex/032-sporebog",
+        "dex/033-cherubick",
+        "dex/034-halowing",
+        "dex/035-seraphlume",
+        "dex/036-duskrael",
+        "dex/037-shellot",
+        "dex/038-shellark",
+        "dex/039-solroost",
+        "dex/040-lunowl",
+        "dex/041-roswyrm",
+        "dex/042-roscale",
+        "dex/043-pearleserp",
+        "dex/044-venomare",
+        "dex/045-dottella",
+        "dex/046-carapotta",
+        "dex/047-aegibug",
+        "dex/048-magmara",
+        "dex/049-pinchitin",
+        "dex/050-clamptera",
+        "dex/051-ferraclaw",
+        "dex/052-noxpincer",
+        "dex/053-verdusk",
+        "dex/054-frondbat",
+        "dex/055-lunabloom",
+        "dex/056-wraithleaf",
+        "dex/057-skettera",
+        "dex/058-skeetrike",
+        "dex/059-aquasting",
+        "dex/060-venatrix",
+        "dex/061-fleeceling",
+        "dex/062-ramblewool",
+        "dex/063-voltaram",
+        "dex/064-glacifleece",
+        "dex/065-spriglim",
+        "dex/066-leafkin",
+        "dex/067-sylphlora",
+        "dex/068-verdraxis",
+        "dex/069-fawnix",
+        "dex/070-vulpine",
+        "dex/071-ferravulp",
+        "dex/072-cindusk",
+        "dex/073-frostel",
+        "dex/074-erminice",
+        "dex/075-aurorine",
+        "dex/076-blizzlash",
+        "dex/077-bloopuff",
+        "dex/078-floofin",
+        "dex/079-nimbuspry",
+        "dex/080-stormuff",
+        "dex/081-mosscoil",
+        "dex/082-grovesnail",
+        "dex/083-lotushell",
+        "dex/084-ruincoil",
+        "dex/085-wickisp",
+        "dex/086-candlurk",
+        "dex/087-halolume",
+        "dex/088-hexabra",
+        "dex/089-terratot",
+        "dex/090-burrosaur",
+        "dex/091-ferradillo",
+        "dex/092-rumblejaw",
+        "dex/093-hootusk",
+        "dex/094-hornowl",
+        "dex/095-glacivane",
+        "dex/096-oracowl"
+      ],
+      "animations": []
+    },
+    {
+      "key": "spirits",
+      "image": "spirits.png",
+      "json": "spirits.json",
+      "size": {
+        "w": 256,
+        "h": 512
+      },
+      "frames": [
+        "spirit/001-helmling",
+        "spirit/002-knighton",
+        "spirit/003-aureguard",
+        "spirit/004-dreadhelm",
+        "spirit/005-gearbit",
+        "spirit/006-cogskitter",
+        "spirit/007-voltracer",
+        "spirit/008-scraprowl",
+        "spirit/009-nectenna",
+        "spirit/010-sproutide",
+        "spirit/011-lotusurge",
+        "spirit/012-voltroot",
+        "spirit/013-budbloom",
+        "spirit/014-petalisk",
+        "spirit/015-orchlume",
+        "spirit/016-venobloom",
+        "spirit/017-brontide",
+        "spirit/018-brontaur",
+        "spirit/019-glacisaur",
+        "spirit/020-dracotide",
+        "spirit/021-buzzle",
+        "spirit/022-buzzguard",
+        "spirit/023-voltwing",
+        "spirit/024-jabjacket",
+        "spirit/025-frondove",
+        "spirit/026-leaflark",
+        "spirit/027-floravian",
+        "spirit/028-thornraven",
+        "spirit/029-bloomble",
+        "spirit/030-mossmallow",
+        "spirit/031-floraglee",
+        "spirit/032-sporebog",
+        "spirit/033-cherubick",
+        "spirit/034-halowing",
+        "spirit/035-seraphlume",
+        "spirit/036-duskrael",
+        "spirit/037-shellot",
+        "spirit/038-shellark",
+        "spirit/039-solroost",
+        "spirit/040-lunowl",
+        "spirit/041-roswyrm",
+        "spirit/042-roscale",
+        "spirit/043-pearleserp",
+        "spirit/044-venomare",
+        "spirit/045-dottella",
+        "spirit/046-carapotta",
+        "spirit/047-aegibug",
+        "spirit/048-magmara",
+        "spirit/049-pinchitin",
+        "spirit/050-clamptera",
+        "spirit/051-ferraclaw",
+        "spirit/052-noxpincer",
+        "spirit/053-verdusk",
+        "spirit/054-frondbat",
+        "spirit/055-lunabloom",
+        "spirit/056-wraithleaf",
+        "spirit/057-skettera",
+        "spirit/058-skeetrike",
+        "spirit/059-aquasting",
+        "spirit/060-venatrix",
+        "spirit/061-fleeceling",
+        "spirit/062-ramblewool",
+        "spirit/063-voltaram",
+        "spirit/064-glacifleece",
+        "spirit/065-spriglim",
+        "spirit/066-leafkin",
+        "spirit/067-sylphlora",
+        "spirit/068-verdraxis",
+        "spirit/069-fawnix",
+        "spirit/070-vulpine",
+        "spirit/071-ferravulp",
+        "spirit/072-cindusk",
+        "spirit/073-frostel",
+        "spirit/074-erminice",
+        "spirit/075-aurorine",
+        "spirit/076-blizzlash",
+        "spirit/077-bloopuff",
+        "spirit/078-floofin",
+        "spirit/079-nimbuspry",
+        "spirit/080-stormuff",
+        "spirit/081-mosscoil",
+        "spirit/082-grovesnail",
+        "spirit/083-lotushell",
+        "spirit/084-ruincoil",
+        "spirit/085-wickisp",
+        "spirit/086-candlurk",
+        "spirit/087-halolume",
+        "spirit/088-hexabra",
+        "spirit/089-terratot",
+        "spirit/090-burrosaur",
+        "spirit/091-ferradillo",
+        "spirit/092-rumblejaw",
+        "spirit/093-hootusk",
+        "spirit/094-hornowl",
+        "spirit/095-glacivane",
+        "spirit/096-oracowl"
+      ],
+      "animations": []
+    },
+    {
+      "key": "player",
+      "image": "player.png",
+      "json": "player.json",
+      "size": {
+        "w": 128,
+        "h": 256
+      },
+      "frames": [
+        "player/idle-south",
+        "player/idle-south-east",
+        "player/idle-east",
+        "player/idle-north-east",
+        "player/idle-north",
+        "player/idle-north-west",
+        "player/idle-west",
+        "player/idle-south-west",
+        "player/walk-north-0",
+        "player/walk-north-1",
+        "player/walk-north-2",
+        "player/walk-north-3",
+        "player/walk-south-0",
+        "player/walk-south-1",
+        "player/walk-south-2",
+        "player/walk-south-3",
+        "player/walk-east-0",
+        "player/walk-east-1",
+        "player/walk-east-2",
+        "player/walk-east-3",
+        "player/walk-west-0",
+        "player/walk-west-1",
+        "player/walk-west-2",
+        "player/walk-west-3"
+      ],
+      "animations": [
+        {
+          "key": "player-walk-north",
+          "frames": [
+            "player/walk-north-0",
+            "player/walk-north-1",
+            "player/walk-north-2",
+            "player/walk-north-3"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "player-walk-south",
+          "frames": [
+            "player/walk-south-0",
+            "player/walk-south-1",
+            "player/walk-south-2",
+            "player/walk-south-3"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "player-walk-east",
+          "frames": [
+            "player/walk-east-0",
+            "player/walk-east-1",
+            "player/walk-east-2",
+            "player/walk-east-3"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "player-walk-west",
+          "frames": [
+            "player/walk-west-0",
+            "player/walk-west-1",
+            "player/walk-west-2",
+            "player/walk-west-3"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "key": "companion",
+      "image": "companion.png",
+      "json": "companion.json",
+      "size": {
+        "w": 128,
+        "h": 256
+      },
+      "frames": [
+        "companion/idle-south",
+        "companion/idle-south-east",
+        "companion/idle-east",
+        "companion/idle-north-east",
+        "companion/idle-north",
+        "companion/idle-north-west",
+        "companion/idle-west",
+        "companion/idle-south-west",
+        "companion/walk-north-0",
+        "companion/walk-north-1",
+        "companion/walk-north-2",
+        "companion/walk-north-3",
+        "companion/walk-north-4",
+        "companion/walk-south-0",
+        "companion/walk-south-1",
+        "companion/walk-south-2",
+        "companion/walk-south-3",
+        "companion/walk-south-4",
+        "companion/walk-east-0",
+        "companion/walk-east-1",
+        "companion/walk-east-2",
+        "companion/walk-east-3",
+        "companion/walk-east-4",
+        "companion/walk-west-0",
+        "companion/walk-west-1",
+        "companion/walk-west-2",
+        "companion/walk-west-3",
+        "companion/walk-west-4"
+      ],
+      "animations": [
+        {
+          "key": "companion-walk-north",
+          "frames": [
+            "companion/walk-north-0",
+            "companion/walk-north-1",
+            "companion/walk-north-2",
+            "companion/walk-north-3",
+            "companion/walk-north-4"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "companion-walk-south",
+          "frames": [
+            "companion/walk-south-0",
+            "companion/walk-south-1",
+            "companion/walk-south-2",
+            "companion/walk-south-3",
+            "companion/walk-south-4"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "companion-walk-east",
+          "frames": [
+            "companion/walk-east-0",
+            "companion/walk-east-1",
+            "companion/walk-east-2",
+            "companion/walk-east-3",
+            "companion/walk-east-4"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "companion-walk-west",
+          "frames": [
+            "companion/walk-west-0",
+            "companion/walk-west-1",
+            "companion/walk-west-2",
+            "companion/walk-west-3",
+            "companion/walk-west-4"
+          ],
+          "frameRate": 8,
+          "repeat": -1
+        }
+      ]
+    },
+    {
+      "key": "ui",
+      "image": "ui.png",
+      "json": "ui.json",
+      "size": {
+        "w": 1024,
+        "h": 512
+      },
+      "frames": [
+        "ui/joystick-base",
+        "ui/joystick-knob",
+        "ui/button-round",
+        "ui/button-round-active",
+        "ui/button-action",
+        "ui/button-dash",
+        "ui/button-backpack",
+        "ui/icon-spear",
+        "ui/icon-dash",
+        "ui/icon-backpack",
+        "ui/icon-backspace",
+        "ui/keypad-key",
+        "ui/keypad-key-pressed",
+        "ui/keypad-key-ok",
+        "ui/keypad-key-back",
+        "ui/equation-strip",
+        "ui/back-chip",
+        "ui/portrait-panel-left",
+        "ui/portrait-panel-right",
+        "ui/portrait-slot",
+        "ui/bar-frame-hp",
+        "ui/bar-fill-hp",
+        "ui/bar-frame-chain",
+        "ui/bar-fill-chain",
+        "ui/panel-bracket",
+        "ui/dialogue-panel"
+      ],
+      "animations": []
+    },
+    {
+      "key": "tiles",
+      "image": "tiles.png",
+      "json": "tiles.json",
+      "size": {
+        "w": 256,
+        "h": 512
+      },
+      "frames": [
+        "tiles/grass-0",
+        "tiles/grass-1",
+        "tiles/grass-2",
+        "tiles/dirt-path-0",
+        "tiles/dirt-path-1",
+        "tiles/stone-0",
+        "tiles/stone-1",
+        "tiles/water-edge-0",
+        "tiles/water-deep-0",
+        "tiles/reeds-0",
+        "tiles/bridge-planks-0",
+        "tiles/rock-0",
+        "tiles/rock-1",
+        "tiles/waystone-0",
+        "tiles/lantern-0",
+        "tiles/tree-trunk-0",
+        "tiles/shrine-torii-0",
+        "tiles/tree-canopy-0"
+      ],
+      "animations": []
+    }
+  ],
+  "species": [
+    {
+      "id": "helmling",
+      "dexNo": 1,
+      "name": "Helmling",
+      "dexFrame": "dex/001-helmling",
+      "spiritFrame": "spirit/001-helmling"
+    },
+    {
+      "id": "knighton",
+      "dexNo": 2,
+      "name": "Knighton",
+      "dexFrame": "dex/002-knighton",
+      "spiritFrame": "spirit/002-knighton"
+    },
+    {
+      "id": "aureguard",
+      "dexNo": 3,
+      "name": "Aureguard",
+      "dexFrame": "dex/003-aureguard",
+      "spiritFrame": "spirit/003-aureguard"
+    },
+    {
+      "id": "dreadhelm",
+      "dexNo": 4,
+      "name": "Dreadhelm",
+      "dexFrame": "dex/004-dreadhelm",
+      "spiritFrame": "spirit/004-dreadhelm"
+    },
+    {
+      "id": "gearbit",
+      "dexNo": 5,
+      "name": "Gearbit",
+      "dexFrame": "dex/005-gearbit",
+      "spiritFrame": "spirit/005-gearbit"
+    },
+    {
+      "id": "cogskitter",
+      "dexNo": 6,
+      "name": "Cogskitter",
+      "dexFrame": "dex/006-cogskitter",
+      "spiritFrame": "spirit/006-cogskitter"
+    },
+    {
+      "id": "voltracer",
+      "dexNo": 7,
+      "name": "Voltracer",
+      "dexFrame": "dex/007-voltracer",
+      "spiritFrame": "spirit/007-voltracer"
+    },
+    {
+      "id": "scraprowl",
+      "dexNo": 8,
+      "name": "Scraprowl",
+      "dexFrame": "dex/008-scraprowl",
+      "spiritFrame": "spirit/008-scraprowl"
+    },
+    {
+      "id": "nectenna",
+      "dexNo": 9,
+      "name": "Nectenna",
+      "dexFrame": "dex/009-nectenna",
+      "spiritFrame": "spirit/009-nectenna"
+    },
+    {
+      "id": "sproutide",
+      "dexNo": 10,
+      "name": "Sproutide",
+      "dexFrame": "dex/010-sproutide",
+      "spiritFrame": "spirit/010-sproutide"
+    },
+    {
+      "id": "lotusurge",
+      "dexNo": 11,
+      "name": "Lotusurge",
+      "dexFrame": "dex/011-lotusurge",
+      "spiritFrame": "spirit/011-lotusurge"
+    },
+    {
+      "id": "voltroot",
+      "dexNo": 12,
+      "name": "Voltroot",
+      "dexFrame": "dex/012-voltroot",
+      "spiritFrame": "spirit/012-voltroot"
+    },
+    {
+      "id": "budbloom",
+      "dexNo": 13,
+      "name": "Budbloom",
+      "dexFrame": "dex/013-budbloom",
+      "spiritFrame": "spirit/013-budbloom"
+    },
+    {
+      "id": "petalisk",
+      "dexNo": 14,
+      "name": "Petalisk",
+      "dexFrame": "dex/014-petalisk",
+      "spiritFrame": "spirit/014-petalisk"
+    },
+    {
+      "id": "orchlume",
+      "dexNo": 15,
+      "name": "Orchlume",
+      "dexFrame": "dex/015-orchlume",
+      "spiritFrame": "spirit/015-orchlume"
+    },
+    {
+      "id": "venobloom",
+      "dexNo": 16,
+      "name": "Venobloom",
+      "dexFrame": "dex/016-venobloom",
+      "spiritFrame": "spirit/016-venobloom"
+    },
+    {
+      "id": "brontide",
+      "dexNo": 17,
+      "name": "Brontide",
+      "dexFrame": "dex/017-brontide",
+      "spiritFrame": "spirit/017-brontide"
+    },
+    {
+      "id": "brontaur",
+      "dexNo": 18,
+      "name": "Brontaur",
+      "dexFrame": "dex/018-brontaur",
+      "spiritFrame": "spirit/018-brontaur"
+    },
+    {
+      "id": "glacisaur",
+      "dexNo": 19,
+      "name": "Glacisaur",
+      "dexFrame": "dex/019-glacisaur",
+      "spiritFrame": "spirit/019-glacisaur"
+    },
+    {
+      "id": "dracotide",
+      "dexNo": 20,
+      "name": "Dracotide",
+      "dexFrame": "dex/020-dracotide",
+      "spiritFrame": "spirit/020-dracotide"
+    },
+    {
+      "id": "buzzle",
+      "dexNo": 21,
+      "name": "Buzzle",
+      "dexFrame": "dex/021-buzzle",
+      "spiritFrame": "spirit/021-buzzle"
+    },
+    {
+      "id": "buzzguard",
+      "dexNo": 22,
+      "name": "Buzzguard",
+      "dexFrame": "dex/022-buzzguard",
+      "spiritFrame": "spirit/022-buzzguard"
+    },
+    {
+      "id": "voltwing",
+      "dexNo": 23,
+      "name": "Voltwing",
+      "dexFrame": "dex/023-voltwing",
+      "spiritFrame": "spirit/023-voltwing"
+    },
+    {
+      "id": "jabjacket",
+      "dexNo": 24,
+      "name": "Jabjacket",
+      "dexFrame": "dex/024-jabjacket",
+      "spiritFrame": "spirit/024-jabjacket"
+    },
+    {
+      "id": "frondove",
+      "dexNo": 25,
+      "name": "Frondove",
+      "dexFrame": "dex/025-frondove",
+      "spiritFrame": "spirit/025-frondove"
+    },
+    {
+      "id": "leaflark",
+      "dexNo": 26,
+      "name": "Leaflark",
+      "dexFrame": "dex/026-leaflark",
+      "spiritFrame": "spirit/026-leaflark"
+    },
+    {
+      "id": "floravian",
+      "dexNo": 27,
+      "name": "Floravian",
+      "dexFrame": "dex/027-floravian",
+      "spiritFrame": "spirit/027-floravian"
+    },
+    {
+      "id": "thornraven",
+      "dexNo": 28,
+      "name": "Thornraven",
+      "dexFrame": "dex/028-thornraven",
+      "spiritFrame": "spirit/028-thornraven"
+    },
+    {
+      "id": "bloomble",
+      "dexNo": 29,
+      "name": "Bloomble",
+      "dexFrame": "dex/029-bloomble",
+      "spiritFrame": "spirit/029-bloomble"
+    },
+    {
+      "id": "mossmallow",
+      "dexNo": 30,
+      "name": "Mossmallow",
+      "dexFrame": "dex/030-mossmallow",
+      "spiritFrame": "spirit/030-mossmallow"
+    },
+    {
+      "id": "floraglee",
+      "dexNo": 31,
+      "name": "Floraglee",
+      "dexFrame": "dex/031-floraglee",
+      "spiritFrame": "spirit/031-floraglee"
+    },
+    {
+      "id": "sporebog",
+      "dexNo": 32,
+      "name": "Sporebog",
+      "dexFrame": "dex/032-sporebog",
+      "spiritFrame": "spirit/032-sporebog"
+    },
+    {
+      "id": "cherubick",
+      "dexNo": 33,
+      "name": "Cherubick",
+      "dexFrame": "dex/033-cherubick",
+      "spiritFrame": "spirit/033-cherubick"
+    },
+    {
+      "id": "halowing",
+      "dexNo": 34,
+      "name": "Halowing",
+      "dexFrame": "dex/034-halowing",
+      "spiritFrame": "spirit/034-halowing"
+    },
+    {
+      "id": "seraphlume",
+      "dexNo": 35,
+      "name": "Seraphlume",
+      "dexFrame": "dex/035-seraphlume",
+      "spiritFrame": "spirit/035-seraphlume"
+    },
+    {
+      "id": "duskrael",
+      "dexNo": 36,
+      "name": "Duskrael",
+      "dexFrame": "dex/036-duskrael",
+      "spiritFrame": "spirit/036-duskrael"
+    },
+    {
+      "id": "shellot",
+      "dexNo": 37,
+      "name": "Shellot",
+      "dexFrame": "dex/037-shellot",
+      "spiritFrame": "spirit/037-shellot"
+    },
+    {
+      "id": "shellark",
+      "dexNo": 38,
+      "name": "Shellark",
+      "dexFrame": "dex/038-shellark",
+      "spiritFrame": "spirit/038-shellark"
+    },
+    {
+      "id": "solroost",
+      "dexNo": 39,
+      "name": "Solroost",
+      "dexFrame": "dex/039-solroost",
+      "spiritFrame": "spirit/039-solroost"
+    },
+    {
+      "id": "lunowl",
+      "dexNo": 40,
+      "name": "Lunowl",
+      "dexFrame": "dex/040-lunowl",
+      "spiritFrame": "spirit/040-lunowl"
+    },
+    {
+      "id": "roswyrm",
+      "dexNo": 41,
+      "name": "Roswyrm",
+      "dexFrame": "dex/041-roswyrm",
+      "spiritFrame": "spirit/041-roswyrm"
+    },
+    {
+      "id": "roscale",
+      "dexNo": 42,
+      "name": "Roscale",
+      "dexFrame": "dex/042-roscale",
+      "spiritFrame": "spirit/042-roscale"
+    },
+    {
+      "id": "pearleserp",
+      "dexNo": 43,
+      "name": "Pearleserp",
+      "dexFrame": "dex/043-pearleserp",
+      "spiritFrame": "spirit/043-pearleserp"
+    },
+    {
+      "id": "venomare",
+      "dexNo": 44,
+      "name": "Venomare",
+      "dexFrame": "dex/044-venomare",
+      "spiritFrame": "spirit/044-venomare"
+    },
+    {
+      "id": "dottella",
+      "dexNo": 45,
+      "name": "Dottella",
+      "dexFrame": "dex/045-dottella",
+      "spiritFrame": "spirit/045-dottella"
+    },
+    {
+      "id": "carapotta",
+      "dexNo": 46,
+      "name": "Carapotta",
+      "dexFrame": "dex/046-carapotta",
+      "spiritFrame": "spirit/046-carapotta"
+    },
+    {
+      "id": "aegibug",
+      "dexNo": 47,
+      "name": "Aegibug",
+      "dexFrame": "dex/047-aegibug",
+      "spiritFrame": "spirit/047-aegibug"
+    },
+    {
+      "id": "magmara",
+      "dexNo": 48,
+      "name": "Magmara",
+      "dexFrame": "dex/048-magmara",
+      "spiritFrame": "spirit/048-magmara"
+    },
+    {
+      "id": "pinchitin",
+      "dexNo": 49,
+      "name": "Pinchitin",
+      "dexFrame": "dex/049-pinchitin",
+      "spiritFrame": "spirit/049-pinchitin"
+    },
+    {
+      "id": "clamptera",
+      "dexNo": 50,
+      "name": "Clamptera",
+      "dexFrame": "dex/050-clamptera",
+      "spiritFrame": "spirit/050-clamptera"
+    },
+    {
+      "id": "ferraclaw",
+      "dexNo": 51,
+      "name": "Ferraclaw",
+      "dexFrame": "dex/051-ferraclaw",
+      "spiritFrame": "spirit/051-ferraclaw"
+    },
+    {
+      "id": "noxpincer",
+      "dexNo": 52,
+      "name": "Noxpincer",
+      "dexFrame": "dex/052-noxpincer",
+      "spiritFrame": "spirit/052-noxpincer"
+    },
+    {
+      "id": "verdusk",
+      "dexNo": 53,
+      "name": "Verdusk",
+      "dexFrame": "dex/053-verdusk",
+      "spiritFrame": "spirit/053-verdusk"
+    },
+    {
+      "id": "frondbat",
+      "dexNo": 54,
+      "name": "Frondbat",
+      "dexFrame": "dex/054-frondbat",
+      "spiritFrame": "spirit/054-frondbat"
+    },
+    {
+      "id": "lunabloom",
+      "dexNo": 55,
+      "name": "Lunabloom",
+      "dexFrame": "dex/055-lunabloom",
+      "spiritFrame": "spirit/055-lunabloom"
+    },
+    {
+      "id": "wraithleaf",
+      "dexNo": 56,
+      "name": "Wraithleaf",
+      "dexFrame": "dex/056-wraithleaf",
+      "spiritFrame": "spirit/056-wraithleaf"
+    },
+    {
+      "id": "skettera",
+      "dexNo": 57,
+      "name": "Skettera",
+      "dexFrame": "dex/057-skettera",
+      "spiritFrame": "spirit/057-skettera"
+    },
+    {
+      "id": "skeetrike",
+      "dexNo": 58,
+      "name": "Skeetrike",
+      "dexFrame": "dex/058-skeetrike",
+      "spiritFrame": "spirit/058-skeetrike"
+    },
+    {
+      "id": "aquasting",
+      "dexNo": 59,
+      "name": "Aquasting",
+      "dexFrame": "dex/059-aquasting",
+      "spiritFrame": "spirit/059-aquasting"
+    },
+    {
+      "id": "venatrix",
+      "dexNo": 60,
+      "name": "Venatrix",
+      "dexFrame": "dex/060-venatrix",
+      "spiritFrame": "spirit/060-venatrix"
+    },
+    {
+      "id": "fleeceling",
+      "dexNo": 61,
+      "name": "Fleeceling",
+      "dexFrame": "dex/061-fleeceling",
+      "spiritFrame": "spirit/061-fleeceling"
+    },
+    {
+      "id": "ramblewool",
+      "dexNo": 62,
+      "name": "Ramblewool",
+      "dexFrame": "dex/062-ramblewool",
+      "spiritFrame": "spirit/062-ramblewool"
+    },
+    {
+      "id": "voltaram",
+      "dexNo": 63,
+      "name": "Voltaram",
+      "dexFrame": "dex/063-voltaram",
+      "spiritFrame": "spirit/063-voltaram"
+    },
+    {
+      "id": "glacifleece",
+      "dexNo": 64,
+      "name": "Glacifleece",
+      "dexFrame": "dex/064-glacifleece",
+      "spiritFrame": "spirit/064-glacifleece"
+    },
+    {
+      "id": "spriglim",
+      "dexNo": 65,
+      "name": "Spriglim",
+      "dexFrame": "dex/065-spriglim",
+      "spiritFrame": "spirit/065-spriglim"
+    },
+    {
+      "id": "leafkin",
+      "dexNo": 66,
+      "name": "Leafkin",
+      "dexFrame": "dex/066-leafkin",
+      "spiritFrame": "spirit/066-leafkin"
+    },
+    {
+      "id": "sylphlora",
+      "dexNo": 67,
+      "name": "Sylphlora",
+      "dexFrame": "dex/067-sylphlora",
+      "spiritFrame": "spirit/067-sylphlora"
+    },
+    {
+      "id": "verdraxis",
+      "dexNo": 68,
+      "name": "Verdraxis",
+      "dexFrame": "dex/068-verdraxis",
+      "spiritFrame": "spirit/068-verdraxis"
+    },
+    {
+      "id": "fawnix",
+      "dexNo": 69,
+      "name": "Fawnix",
+      "dexFrame": "dex/069-fawnix",
+      "spiritFrame": "spirit/069-fawnix"
+    },
+    {
+      "id": "vulpine",
+      "dexNo": 70,
+      "name": "Vulpine",
+      "dexFrame": "dex/070-vulpine",
+      "spiritFrame": "spirit/070-vulpine"
+    },
+    {
+      "id": "ferravulp",
+      "dexNo": 71,
+      "name": "Ferravulp",
+      "dexFrame": "dex/071-ferravulp",
+      "spiritFrame": "spirit/071-ferravulp"
+    },
+    {
+      "id": "cindusk",
+      "dexNo": 72,
+      "name": "Cindusk",
+      "dexFrame": "dex/072-cindusk",
+      "spiritFrame": "spirit/072-cindusk"
+    },
+    {
+      "id": "frostel",
+      "dexNo": 73,
+      "name": "Frostel",
+      "dexFrame": "dex/073-frostel",
+      "spiritFrame": "spirit/073-frostel"
+    },
+    {
+      "id": "erminice",
+      "dexNo": 74,
+      "name": "Erminice",
+      "dexFrame": "dex/074-erminice",
+      "spiritFrame": "spirit/074-erminice"
+    },
+    {
+      "id": "aurorine",
+      "dexNo": 75,
+      "name": "Aurorine",
+      "dexFrame": "dex/075-aurorine",
+      "spiritFrame": "spirit/075-aurorine"
+    },
+    {
+      "id": "blizzlash",
+      "dexNo": 76,
+      "name": "Blizzlash",
+      "dexFrame": "dex/076-blizzlash",
+      "spiritFrame": "spirit/076-blizzlash"
+    },
+    {
+      "id": "bloopuff",
+      "dexNo": 77,
+      "name": "Bloopuff",
+      "dexFrame": "dex/077-bloopuff",
+      "spiritFrame": "spirit/077-bloopuff"
+    },
+    {
+      "id": "floofin",
+      "dexNo": 78,
+      "name": "Floofin",
+      "dexFrame": "dex/078-floofin",
+      "spiritFrame": "spirit/078-floofin"
+    },
+    {
+      "id": "nimbuspry",
+      "dexNo": 79,
+      "name": "Nimbuspry",
+      "dexFrame": "dex/079-nimbuspry",
+      "spiritFrame": "spirit/079-nimbuspry"
+    },
+    {
+      "id": "stormuff",
+      "dexNo": 80,
+      "name": "Stormuff",
+      "dexFrame": "dex/080-stormuff",
+      "spiritFrame": "spirit/080-stormuff"
+    },
+    {
+      "id": "mosscoil",
+      "dexNo": 81,
+      "name": "Mosscoil",
+      "dexFrame": "dex/081-mosscoil",
+      "spiritFrame": "spirit/081-mosscoil"
+    },
+    {
+      "id": "grovesnail",
+      "dexNo": 82,
+      "name": "Grovesnail",
+      "dexFrame": "dex/082-grovesnail",
+      "spiritFrame": "spirit/082-grovesnail"
+    },
+    {
+      "id": "lotushell",
+      "dexNo": 83,
+      "name": "Lotushell",
+      "dexFrame": "dex/083-lotushell",
+      "spiritFrame": "spirit/083-lotushell"
+    },
+    {
+      "id": "ruincoil",
+      "dexNo": 84,
+      "name": "Ruincoil",
+      "dexFrame": "dex/084-ruincoil",
+      "spiritFrame": "spirit/084-ruincoil"
+    },
+    {
+      "id": "wickisp",
+      "dexNo": 85,
+      "name": "Wickisp",
+      "dexFrame": "dex/085-wickisp",
+      "spiritFrame": "spirit/085-wickisp"
+    },
+    {
+      "id": "candlurk",
+      "dexNo": 86,
+      "name": "Candlurk",
+      "dexFrame": "dex/086-candlurk",
+      "spiritFrame": "spirit/086-candlurk"
+    },
+    {
+      "id": "halolume",
+      "dexNo": 87,
+      "name": "Halolume",
+      "dexFrame": "dex/087-halolume",
+      "spiritFrame": "spirit/087-halolume"
+    },
+    {
+      "id": "hexabra",
+      "dexNo": 88,
+      "name": "Hexabra",
+      "dexFrame": "dex/088-hexabra",
+      "spiritFrame": "spirit/088-hexabra"
+    },
+    {
+      "id": "terratot",
+      "dexNo": 89,
+      "name": "Terratot",
+      "dexFrame": "dex/089-terratot",
+      "spiritFrame": "spirit/089-terratot"
+    },
+    {
+      "id": "burrosaur",
+      "dexNo": 90,
+      "name": "Burrosaur",
+      "dexFrame": "dex/090-burrosaur",
+      "spiritFrame": "spirit/090-burrosaur"
+    },
+    {
+      "id": "ferradillo",
+      "dexNo": 91,
+      "name": "Ferradillo",
+      "dexFrame": "dex/091-ferradillo",
+      "spiritFrame": "spirit/091-ferradillo"
+    },
+    {
+      "id": "rumblejaw",
+      "dexNo": 92,
+      "name": "Rumblejaw",
+      "dexFrame": "dex/092-rumblejaw",
+      "spiritFrame": "spirit/092-rumblejaw"
+    },
+    {
+      "id": "hootusk",
+      "dexNo": 93,
+      "name": "Hootusk",
+      "dexFrame": "dex/093-hootusk",
+      "spiritFrame": "spirit/093-hootusk"
+    },
+    {
+      "id": "hornowl",
+      "dexNo": 94,
+      "name": "Hornowl",
+      "dexFrame": "dex/094-hornowl",
+      "spiritFrame": "spirit/094-hornowl"
+    },
+    {
+      "id": "glacivane",
+      "dexNo": 95,
+      "name": "Glacivane",
+      "dexFrame": "dex/095-glacivane",
+      "spiritFrame": "spirit/095-glacivane"
+    },
+    {
+      "id": "oracowl",
+      "dexNo": 96,
+      "name": "Oracowl",
+      "dexFrame": "dex/096-oracowl",
+      "spiritFrame": "spirit/096-oracowl"
+    }
+  ],
+  "tiles": [
+    {
+      "frame": "tiles/grass-0",
+      "size": 32,
+      "region": "R1-meadow",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/grass-1",
+      "size": 32,
+      "region": "R2-riverside",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/grass-2",
+      "size": 32,
+      "region": "R3-highland",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/dirt-path-0",
+      "size": 32,
+      "region": "R1-meadow",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/dirt-path-1",
+      "size": 32,
+      "region": "R3-highland",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/stone-0",
+      "size": 32,
+      "region": "R3-highland",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/stone-1",
+      "size": 32,
+      "region": null,
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/water-edge-0",
+      "size": 32,
+      "region": "R2-riverside",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/water-deep-0",
+      "size": 32,
+      "region": "R2-riverside",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/reeds-0",
+      "size": 32,
+      "region": "R2-riverside",
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/bridge-planks-0",
+      "size": 32,
+      "region": "R2-riverside",
+      "overhead": false,
+      "seamless": true
+    },
+    {
+      "frame": "tiles/rock-0",
+      "size": 32,
+      "region": null,
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/rock-1",
+      "size": 64,
+      "region": "R3-highland",
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/waystone-0",
+      "size": 64,
+      "region": "R1-meadow",
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/lantern-0",
+      "size": 64,
+      "region": null,
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/tree-trunk-0",
+      "size": 64,
+      "region": null,
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/shrine-torii-0",
+      "size": 128,
+      "region": null,
+      "overhead": false,
+      "seamless": false
+    },
+    {
+      "frame": "tiles/tree-canopy-0",
+      "size": 128,
+      "region": null,
+      "overhead": true,
+      "seamless": false
+    }
+  ],
+  "characters": {
+    "player": {
+      "atlas": "player",
+      "directions": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walkForDirection": {
+        "south": "south",
+        "south-east": "east",
+        "east": "east",
+        "north-east": "east",
+        "north": "north",
+        "north-west": "west",
+        "west": "west",
+        "south-west": "west"
+      }
+    },
+    "companion": {
+      "atlas": "companion",
+      "directions": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walkForDirection": {
+        "south": "south",
+        "south-east": "east",
+        "east": "east",
+        "north-east": "east",
+        "north": "north",
+        "north-west": "west",
+        "west": "west",
+        "south-west": "west"
+      }
+    }
+  },
+  "origins": {
+    "companion/idle-east": "reference",
+    "companion/idle-north": "reference",
+    "companion/idle-north-east": "reference",
+    "companion/idle-north-west": "reference",
+    "companion/idle-south": "reference",
+    "companion/idle-south-east": "reference",
+    "companion/idle-south-west": "reference",
+    "companion/idle-west": "reference",
+    "companion/walk-east-0": "reference",
+    "companion/walk-east-1": "reference",
+    "companion/walk-east-2": "reference",
+    "companion/walk-east-3": "reference",
+    "companion/walk-east-4": "reference",
+    "companion/walk-north-0": "reference",
+    "companion/walk-north-1": "reference",
+    "companion/walk-north-2": "reference",
+    "companion/walk-north-3": "reference",
+    "companion/walk-north-4": "reference",
+    "companion/walk-south-0": "reference",
+    "companion/walk-south-1": "reference",
+    "companion/walk-south-2": "reference",
+    "companion/walk-south-3": "reference",
+    "companion/walk-south-4": "reference",
+    "companion/walk-west-0": "reference",
+    "companion/walk-west-1": "reference",
+    "companion/walk-west-2": "reference",
+    "companion/walk-west-3": "reference",
+    "companion/walk-west-4": "reference",
+    "dex/001-helmling": "generated",
+    "dex/002-knighton": "reference",
+    "dex/003-aureguard": "reference",
+    "dex/004-dreadhelm": "reference",
+    "dex/005-gearbit": "generated",
+    "dex/006-cogskitter": "reference",
+    "dex/007-voltracer": "reference",
+    "dex/008-scraprowl": "reference",
+    "dex/009-nectenna": "generated",
+    "dex/010-sproutide": "reference",
+    "dex/011-lotusurge": "reference",
+    "dex/012-voltroot": "reference",
+    "dex/013-budbloom": "generated",
+    "dex/014-petalisk": "reference",
+    "dex/015-orchlume": "reference",
+    "dex/016-venobloom": "reference",
+    "dex/017-brontide": "generated",
+    "dex/018-brontaur": "reference",
+    "dex/019-glacisaur": "reference",
+    "dex/020-dracotide": "reference",
+    "dex/021-buzzle": "generated",
+    "dex/022-buzzguard": "reference",
+    "dex/023-voltwing": "reference",
+    "dex/024-jabjacket": "reference",
+    "dex/025-frondove": "generated",
+    "dex/026-leaflark": "reference",
+    "dex/027-floravian": "reference",
+    "dex/028-thornraven": "reference",
+    "dex/029-bloomble": "generated",
+    "dex/030-mossmallow": "reference",
+    "dex/031-floraglee": "reference",
+    "dex/032-sporebog": "reference",
+    "dex/033-cherubick": "generated",
+    "dex/034-halowing": "reference",
+    "dex/035-seraphlume": "reference",
+    "dex/036-duskrael": "reference",
+    "dex/037-shellot": "generated",
+    "dex/038-shellark": "reference",
+    "dex/039-solroost": "reference",
+    "dex/040-lunowl": "reference",
+    "dex/041-roswyrm": "generated",
+    "dex/042-roscale": "reference",
+    "dex/043-pearleserp": "reference",
+    "dex/044-venomare": "reference",
+    "dex/045-dottella": "generated",
+    "dex/046-carapotta": "reference",
+    "dex/047-aegibug": "reference",
+    "dex/048-magmara": "reference",
+    "dex/049-pinchitin": "generated",
+    "dex/050-clamptera": "reference",
+    "dex/051-ferraclaw": "reference",
+    "dex/052-noxpincer": "reference",
+    "dex/053-verdusk": "generated",
+    "dex/054-frondbat": "reference",
+    "dex/055-lunabloom": "reference",
+    "dex/056-wraithleaf": "reference",
+    "dex/057-skettera": "generated",
+    "dex/058-skeetrike": "reference",
+    "dex/059-aquasting": "reference",
+    "dex/060-venatrix": "reference",
+    "dex/061-fleeceling": "generated",
+    "dex/062-ramblewool": "reference",
+    "dex/063-voltaram": "reference",
+    "dex/064-glacifleece": "reference",
+    "dex/065-spriglim": "generated",
+    "dex/066-leafkin": "reference",
+    "dex/067-sylphlora": "reference",
+    "dex/068-verdraxis": "reference",
+    "dex/069-fawnix": "generated",
+    "dex/070-vulpine": "reference",
+    "dex/071-ferravulp": "reference",
+    "dex/072-cindusk": "reference",
+    "dex/073-frostel": "generated",
+    "dex/074-erminice": "reference",
+    "dex/075-aurorine": "reference",
+    "dex/076-blizzlash": "reference",
+    "dex/077-bloopuff": "generated",
+    "dex/078-floofin": "reference",
+    "dex/079-nimbuspry": "reference",
+    "dex/080-stormuff": "reference",
+    "dex/081-mosscoil": "generated",
+    "dex/082-grovesnail": "reference",
+    "dex/083-lotushell": "reference",
+    "dex/084-ruincoil": "reference",
+    "dex/085-wickisp": "generated",
+    "dex/086-candlurk": "reference",
+    "dex/087-halolume": "reference",
+    "dex/088-hexabra": "reference",
+    "dex/089-terratot": "generated",
+    "dex/090-burrosaur": "reference",
+    "dex/091-ferradillo": "reference",
+    "dex/092-rumblejaw": "reference",
+    "dex/093-hootusk": "generated",
+    "dex/094-hornowl": "reference",
+    "dex/095-glacivane": "reference",
+    "dex/096-oracowl": "reference",
+    "player/idle-east": "reference",
+    "player/idle-north": "reference",
+    "player/idle-north-east": "reference",
+    "player/idle-north-west": "reference",
+    "player/idle-south": "reference",
+    "player/idle-south-east": "reference",
+    "player/idle-south-west": "reference",
+    "player/idle-west": "reference",
+    "player/walk-east-0": "reference",
+    "player/walk-east-1": "reference",
+    "player/walk-east-2": "reference",
+    "player/walk-east-3": "reference",
+    "player/walk-north-0": "reference",
+    "player/walk-north-1": "reference",
+    "player/walk-north-2": "reference",
+    "player/walk-north-3": "reference",
+    "player/walk-south-0": "reference",
+    "player/walk-south-1": "reference",
+    "player/walk-south-2": "reference",
+    "player/walk-south-3": "reference",
+    "player/walk-west-0": "reference",
+    "player/walk-west-1": "reference",
+    "player/walk-west-2": "reference",
+    "player/walk-west-3": "reference",
+    "spirit/001-helmling": "generated",
+    "spirit/002-knighton": "reference",
+    "spirit/003-aureguard": "reference",
+    "spirit/004-dreadhelm": "reference",
+    "spirit/005-gearbit": "generated",
+    "spirit/006-cogskitter": "reference",
+    "spirit/007-voltracer": "reference",
+    "spirit/008-scraprowl": "reference",
+    "spirit/009-nectenna": "generated",
+    "spirit/010-sproutide": "reference",
+    "spirit/011-lotusurge": "reference",
+    "spirit/012-voltroot": "reference",
+    "spirit/013-budbloom": "generated",
+    "spirit/014-petalisk": "reference",
+    "spirit/015-orchlume": "reference",
+    "spirit/016-venobloom": "reference",
+    "spirit/017-brontide": "generated",
+    "spirit/018-brontaur": "reference",
+    "spirit/019-glacisaur": "reference",
+    "spirit/020-dracotide": "reference",
+    "spirit/021-buzzle": "generated",
+    "spirit/022-buzzguard": "reference",
+    "spirit/023-voltwing": "reference",
+    "spirit/024-jabjacket": "reference",
+    "spirit/025-frondove": "generated",
+    "spirit/026-leaflark": "reference",
+    "spirit/027-floravian": "reference",
+    "spirit/028-thornraven": "reference",
+    "spirit/029-bloomble": "generated",
+    "spirit/030-mossmallow": "reference",
+    "spirit/031-floraglee": "reference",
+    "spirit/032-sporebog": "reference",
+    "spirit/033-cherubick": "generated",
+    "spirit/034-halowing": "reference",
+    "spirit/035-seraphlume": "reference",
+    "spirit/036-duskrael": "reference",
+    "spirit/037-shellot": "generated",
+    "spirit/038-shellark": "reference",
+    "spirit/039-solroost": "reference",
+    "spirit/040-lunowl": "reference",
+    "spirit/041-roswyrm": "generated",
+    "spirit/042-roscale": "reference",
+    "spirit/043-pearleserp": "reference",
+    "spirit/044-venomare": "reference",
+    "spirit/045-dottella": "generated",
+    "spirit/046-carapotta": "reference",
+    "spirit/047-aegibug": "reference",
+    "spirit/048-magmara": "reference",
+    "spirit/049-pinchitin": "generated",
+    "spirit/050-clamptera": "reference",
+    "spirit/051-ferraclaw": "reference",
+    "spirit/052-noxpincer": "reference",
+    "spirit/053-verdusk": "generated",
+    "spirit/054-frondbat": "reference",
+    "spirit/055-lunabloom": "reference",
+    "spirit/056-wraithleaf": "reference",
+    "spirit/057-skettera": "generated",
+    "spirit/058-skeetrike": "reference",
+    "spirit/059-aquasting": "reference",
+    "spirit/060-venatrix": "reference",
+    "spirit/061-fleeceling": "generated",
+    "spirit/062-ramblewool": "reference",
+    "spirit/063-voltaram": "reference",
+    "spirit/064-glacifleece": "reference",
+    "spirit/065-spriglim": "generated",
+    "spirit/066-leafkin": "reference",
+    "spirit/067-sylphlora": "reference",
+    "spirit/068-verdraxis": "reference",
+    "spirit/069-fawnix": "generated",
+    "spirit/070-vulpine": "reference",
+    "spirit/071-ferravulp": "reference",
+    "spirit/072-cindusk": "reference",
+    "spirit/073-frostel": "generated",
+    "spirit/074-erminice": "reference",
+    "spirit/075-aurorine": "reference",
+    "spirit/076-blizzlash": "reference",
+    "spirit/077-bloopuff": "generated",
+    "spirit/078-floofin": "reference",
+    "spirit/079-nimbuspry": "reference",
+    "spirit/080-stormuff": "reference",
+    "spirit/081-mosscoil": "generated",
+    "spirit/082-grovesnail": "reference",
+    "spirit/083-lotushell": "reference",
+    "spirit/084-ruincoil": "reference",
+    "spirit/085-wickisp": "generated",
+    "spirit/086-candlurk": "reference",
+    "spirit/087-halolume": "reference",
+    "spirit/088-hexabra": "reference",
+    "spirit/089-terratot": "generated",
+    "spirit/090-burrosaur": "reference",
+    "spirit/091-ferradillo": "reference",
+    "spirit/092-rumblejaw": "reference",
+    "spirit/093-hootusk": "generated",
+    "spirit/094-hornowl": "reference",
+    "spirit/095-glacivane": "reference",
+    "spirit/096-oracowl": "reference",
+    "tiles/bridge-planks-0": "generated",
+    "tiles/dirt-path-0": "generated",
+    "tiles/dirt-path-1": "generated",
+    "tiles/grass-0": "generated",
+    "tiles/grass-1": "generated",
+    "tiles/grass-2": "generated",
+    "tiles/lantern-0": "generated",
+    "tiles/reeds-0": "generated",
+    "tiles/rock-0": "generated",
+    "tiles/rock-1": "generated",
+    "tiles/shrine-torii-0": "generated",
+    "tiles/stone-0": "generated",
+    "tiles/stone-1": "generated",
+    "tiles/tree-canopy-0": "generated",
+    "tiles/tree-trunk-0": "generated",
+    "tiles/water-deep-0": "generated",
+    "tiles/water-edge-0": "generated",
+    "tiles/waystone-0": "generated",
+    "ui/back-chip": "procedural",
+    "ui/bar-fill-chain": "procedural",
+    "ui/bar-fill-hp": "procedural",
+    "ui/bar-frame-chain": "procedural",
+    "ui/bar-frame-hp": "procedural",
+    "ui/button-action": "generated",
+    "ui/button-backpack": "generated",
+    "ui/button-dash": "procedural",
+    "ui/button-round": "procedural",
+    "ui/button-round-active": "procedural",
+    "ui/dialogue-panel": "procedural",
+    "ui/equation-strip": "procedural",
+    "ui/icon-backpack": "generated",
+    "ui/icon-backspace": "procedural",
+    "ui/icon-dash": "procedural",
+    "ui/icon-spear": "generated",
+    "ui/joystick-base": "procedural",
+    "ui/joystick-knob": "procedural",
+    "ui/keypad-key": "procedural",
+    "ui/keypad-key-back": "procedural",
+    "ui/keypad-key-ok": "procedural",
+    "ui/keypad-key-pressed": "procedural",
+    "ui/panel-bracket": "generated",
+    "ui/portrait-panel-left": "procedural",
+    "ui/portrait-panel-right": "procedural",
+    "ui/portrait-slot": "procedural"
+  },
+  "placeholders": []
+}

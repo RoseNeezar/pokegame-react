@@ -1,7 +1,12 @@
 import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
+import { dirname } from 'node:path';
+import { generatedAssets } from './tools/vite-generated-assets.ts';
+
+const ROOT = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  plugins: [generatedAssets(ROOT)],
   base: './',
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
